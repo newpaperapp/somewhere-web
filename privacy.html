@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somewhere — 개인정보처리방침</title>
+    <meta name="description" content="Somewhere 개인정보처리방침 / Privacy Policy" />
+    <meta name="theme-color" content="#f5f5f5" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/app-icon.svg" />
+    <link rel="preload" as="font" type="font/woff2"
+      href="assets/fonts/PretendardVariable.woff2" crossorigin />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check,content_copy" />
+    <link rel="stylesheet" href="assets/css/style.css?v=20260615-layout2" />
+  </head>
+  <body>
+    <!-- ===== Nav ===== -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="brand" href="index.html" aria-label="Somewhere">
+          <img class="logo" src="assets/img/app-icon.svg" alt="" />
+          <span>Somewhere</span>
+        </a>
+        <nav class="nav__actions">
+          <button class="icon-btn" data-action="toggle-lang"
+            data-i18n="lang.toggle" data-i18n-aria="lang.name">English</button>
+          <button class="icon-btn" data-action="toggle-theme"
+            data-theme-icon aria-label="Toggle theme">
+            <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
+            </svg>
+            <svg class="ico-moon hidden" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal">
+      <div class="container">
+        <div class="legal__wrap">
+          <a class="back-link" href="index.html">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+            <span class="lang-ko">홈으로</span><span class="lang-en">Home</span>
+          </a>
+
+          <h1>
+            <span class="lang-ko">개인정보처리방침</span><span class="lang-en">Privacy Policy</span>
+          </h1>
+
+          <!-- effective date (left) + past-policy date picker (right) -->
+          <div class="legal__head">
+            <p class="updated muted">
+              <span data-eff-label>시행일</span>: <span data-eff-date>2026년 6월 15일</span>
+            </p>
+            <div class="legal__versions">
+              <label class="legal__versions-label" for="policy-version" data-versions-label>지난 개인정보처리방침</label>
+              <span class="legal__select-wrap">
+                <select id="policy-version" class="legal__select" aria-label="개인정보처리방침 버전 선택"></select>
+              </span>
+            </div>
+          </div>
+
+          <!-- ===================================================================
+               Current — 2026-06-15
+               =================================================================== -->
+          <div class="policy" data-version="current" data-lang="ko">
+            <p>
+              NP Somewhere(이하 "회사" 또는 "운영자")는 「개인정보 보호법」 제30조에 따라
+              정보주체(이용자)의 개인정보를 보호하고 관련 고충을 신속하게 처리하기 위하여
+              다음과 같이 개인정보 처리방침을 수립·공개합니다. 본 방침은 여행 계획 앱
+              "Somewhere"(이하 "서비스")에 적용됩니다.
+            </p>
+
+            <h2>제1조 - 개인정보의 처리 목적</h2>
+            <p>
+              회사는 다음의 목적을 위하여 개인정보를 처리하며, 그 목적 이외의 용도로는
+              이용하지 않습니다. 이용 목적이 변경되는 경우 「개인정보 보호법」 제18조에 따라
+              별도의 동의를 받는 등 필요한 조치를 이행합니다.
+            </p>
+            <ul>
+              <li>회원 가입 및 관리, 본인 확인, 서비스 부정이용 방지</li>
+              <li>여행 일정 생성·저장 및 친구 초대·공유 등 서비스 제공</li>
+              <li>서비스 개선, Google Analytics for Firebase를 통한 이용 통계 분석 및 고객 문의 대응</li>
+              <li>광고 게재(맞춤형 광고 포함)</li>
+            </ul>
+
+            <h2>제2조 - 수집하는 개인정보의 항목 및 수집 방법</h2>
+            <ul>
+              <li>
+                회원 정보: 이메일 주소, 사용자 식별자(userId), 닉네임, 프로필 이미지
+                (소셜 로그인 이용 시 해당 제공자로부터 받는 정보 포함)
+              </li>
+              <li>서비스 이용 콘텐츠: 이용자가 작성한 여행 일정, 장소(장소명·좌표 등), 메모, 예산, 이동 거리 등</li>
+              <li>
+                위치정보(선택): 이용자가 기기 위치 권한을 허용한 경우 현재 위치
+                (지도에서 현 위치를 표시하는 용도)
+              </li>
+              <li>
+                자동 생성·수집 정보: 기기 정보(기기 종류, OS·앱 버전), IP 주소, 접속 일시 및
+                이용 기록, 광고 식별자(ADID/IDFA), Google Analytics for Firebase를 통해
+                수집되는 앱 이용 통계 정보
+              </li>
+            </ul>
+            <p>
+              현재 위치정보는 이용자의 기기에서 지도에 현 위치를 표시하는 용도로만 처리되며,
+              회사 서버 또는 클라우드에 전송·저장하지 않습니다. 다만 이용자가 여행 일정에 장소를
+              추가·저장하는 경우 해당 장소의 이름, 주소, 좌표 등은 여행 일정 데이터로 저장될 수
+              있습니다. 개인정보는 회원가입 및 서비스 이용 과정에서 이용자가 직접 입력하거나
+              서비스 이용 중 자동으로 생성·수집됩니다.
+            </p>
+
+            <h2>제3조 - 개인정보의 처리 및 보유 기간</h2>
+            <p>
+              회사는 법령에 따른 보유·이용기간 또는 정보주체로부터 동의받은 기간 내에서
+              개인정보를 처리·보유합니다. 원칙적으로 회원 탈퇴 또는 처리 목적이 달성되면 해당
+              정보를 지체 없이 파기하며, 관계 법령에 따라 보존할 필요가 있는 경우에는 해당
+              법령에서 정한 기간 동안 보관합니다.
+            </p>
+
+            <h2>제4조 - 개인정보 처리의 위탁</h2>
+            <p>회사는 원활한 서비스 제공을 위하여 다음과 같이 개인정보 처리 업무를 위탁합니다.</p>
+            <ul>
+              <li>수탁자: Google LLC (Google Firebase, Google Play 서비스)</li>
+              <li>
+                위탁 업무: 회원 인증, 데이터 저장·운영, Google Analytics for Firebase를 통한
+                이용 통계 분석, Google Play 서비스 제공
+              </li>
+            </ul>
+            <p>
+              회사는 위탁계약 시 개인정보가 안전하게 관리되도록 필요한 사항을 규정·감독합니다.
+              Google의 개인정보 처리에 관한 자세한 내용은
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>에서
+              확인할 수 있습니다.
+            </p>
+
+            <h2>제5조 - 개인정보의 국외 이전</h2>
+            <p>
+              회사가 직접 저장·운영하는 회원 정보 및 여행 일정 데이터는 Firebase/Google Cloud의
+              asia-northeast3(서울) 리전을 사용하여 처리·저장합니다. 다만 Google Analytics for
+              Firebase, AdMob, Google Play 서비스 등 Google 서비스의 운영 과정에서 일부 정보가
+              국외에 소재한 서버에 저장·처리될 수 있습니다.
+            </p>
+            <ul>
+              <li>이전받는 자: Google LLC</li>
+              <li>이전되는 국가: 미국 등 Google이 서버를 운영하는 국가</li>
+              <li>이전 일시 및 방법: 서비스 이용 시 정보통신망을 통한 전송</li>
+              <li>이전 항목: 자동 생성·수집 정보, 광고 식별자 및 Google 서비스 운영에 필요한 정보</li>
+              <li>이용 목적 및 보유기간: Google 개인정보처리방침에 따름</li>
+            </ul>
+            <p>이용자는 서비스를 이용하지 않거나 계정을 삭제함으로써 국외 이전을 거부할 수 있습니다.</p>
+
+            <h2>제6조 - 행태정보의 수집·이용 및 거부</h2>
+            <p>
+              회사는 이용자에게 광고를 제공하기 위하여 Google AdMob을 이용하며, 이 과정에서 광고
+              식별자 등 행태정보가 수집·이용될 수 있습니다.
+            </p>
+            <ul>
+              <li>수집 항목: 광고 식별자(ADID/IDFA), 광고 노출·클릭 등 이용 기록</li>
+              <li>수집 목적: 맞춤형 광고를 포함한 광고 제공 및 성과 측정</li>
+            </ul>
+            <p>이용자는 다음 방법으로 맞춤형 광고를 거부하거나 광고 식별자를 재설정할 수 있습니다.</p>
+            <ul>
+              <li>Android: 설정 → Google → 광고 → "광고 ID 삭제" 또는 "맞춤형 광고 선택 해제"</li>
+              <li>iOS: 설정 → 개인정보 보호 및 보안 → 추적 → 앱의 추적 요청 거부</li>
+            </ul>
+
+            <h2>제7조 - 개인정보 자동 수집 장치의 설치·운영 및 거부</h2>
+            <p>회사의 앱 서비스는 이용자 정보를 저장·조회하는 쿠키(cookie)를 사용하지 않습니다.</p>
+
+            <h2>제8조 - 개인정보의 파기 절차 및 방법</h2>
+            <p>
+              회사는 보유기간이 경과하거나 처리 목적이 달성되는 등 개인정보가 불필요하게 된 때에는
+              지체 없이 파기합니다. 파기 사유가 발생한 개인정보를 선정하고 개인정보 보호책임자의
+              승인을 거쳐 파기하며, 전자적 파일은 복구·재생되지 않도록 기술적 방법으로 삭제합니다.
+              이용자는 앱 내 계정 삭제 기능 또는 <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span>
+              문의를 통해 파기를 요청할 수 있습니다.
+            </p>
+
+            <h2>제9조 - 개인정보의 안전성 확보 조치</h2>
+            <ul>
+              <li>관리적 조치: 내부관리계획 수립·시행, 접근 권한의 차등 부여 및 관리</li>
+              <li>기술적 조치: 개인정보 처리 시스템 접근통제, 전송 구간 암호화(HTTPS) 등</li>
+              <li>물리적 조치: 데이터가 저장된 시스템에 대한 접근 통제</li>
+            </ul>
+
+            <h2>제10조 - 정보주체와 법정대리인의 권리·의무 및 행사 방법</h2>
+            <p>
+              정보주체는 언제든지 개인정보의 열람·정정·삭제·처리정지를 요구할 수 있습니다. 권리
+              행사는 앱 내 기능(계정 정보 수정, 계정 삭제) 또는 전자우편
+              (<span class="contact-email" data-contact-email>npsomewhere@gmail.com</span>)을 통해 하실 수 있으며,
+              회사는 지체 없이 조치합니다. 정보주체는 법정대리인이나 위임받은 자를 통해 권리를
+              행사할 수 있으며, 이 경우 「개인정보 처리 방법에 관한 고시」 별지 서식에 따른 위임장을
+              제출하여야 합니다. 열람·처리정지 요구는 「개인정보 보호법」 제35조 제4항, 제37조 제2항에
+              따라 제한될 수 있습니다.
+            </p>
+
+            <h2>제11조 - 만 14세 미만 아동의 개인정보</h2>
+            <p>
+              서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 회사는 만 14세 미만 아동의
+              개인정보를 고의로 수집하지 않습니다. 만 14세 미만 아동의 개인정보가 수집된 사실을
+              알게 된 경우 지체 없이 파기합니다.
+            </p>
+
+            <h2>제12조 - 개인정보 보호책임자</h2>
+            <p>
+              회사는 개인정보 처리에 관한 업무를 총괄하여 책임지고, 정보주체의 문의·불만 및 피해
+              구제를 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.
+            </p>
+            <ul>
+              <li>개인정보 보호책임자: 이세종 (개발자)</li>
+              <li>연락처: <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span></li>
+            </ul>
+
+            <h2>제13조 - 권익침해 구제 방법</h2>
+            <p>
+              정보주체는 개인정보 침해로 인한 구제를 받기 위하여 아래 기관에 분쟁 해결이나 상담을
+              신청할 수 있습니다.
+            </p>
+            <ul>
+              <li>개인정보분쟁조정위원회: (국번없이) 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)</li>
+              <li>개인정보침해신고센터: (국번없이) 118 (<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>)</li>
+              <li>대검찰청: (국번없이) 1301 (<a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a>)</li>
+              <li>경찰청: (국번없이) 182 (<a href="https://ecrm.cyber.go.kr" target="_blank" rel="noopener">ecrm.cyber.go.kr</a>)</li>
+            </ul>
+
+            <h2>제14조 - 개인정보 처리방침의 변경</h2>
+            <p>
+              이 개인정보처리방침은 2026년 6월 15일부터 적용됩니다. 법령·서비스 변경에 따라 내용이
+              추가·삭제·수정될 수 있으며, 변경 시 본 페이지를 통해 공지합니다. 이전에 적용되었던
+              방침은 위 "지난 개인정보처리방침"에서 날짜별로 확인할 수 있습니다.
+            </p>
+          </div>
+
+          <div class="policy" data-version="current" data-lang="en" hidden>
+            <p>
+              NP Somewhere ("we", "us", or the "Operator") establishes and discloses this Privacy
+              Policy in accordance with Article 30 of the Personal Information Protection Act (PIPA)
+              of Korea to protect users' personal information and to handle related concerns
+              promptly. This policy applies to the travel-planning app "Somewhere" (the "Service").
+            </p>
+
+            <h2>1. Purpose of Processing</h2>
+            <p>
+              We process personal information for the following purposes only and will obtain
+              separate consent under Article 18 of PIPA if the purpose changes:
+            </p>
+            <ul>
+              <li>Account registration and management, identity verification, and prevention of misuse</li>
+              <li>Providing the Service, including creating/saving trips and inviting/sharing with friends</li>
+              <li>Improving the Service, analyzing usage statistics through Google Analytics for Firebase, and responding to inquiries</li>
+              <li>Serving ads (including personalized ads)</li>
+            </ul>
+
+            <h2>2. Information We Collect and How</h2>
+            <ul>
+              <li>
+                Account information: email address, user identifier (userId), nickname, and profile
+                image (including data received from the provider when you use social sign-in)
+              </li>
+              <li>Service content: trips, places (including place names and coordinates), notes, budgets, travel distances, and other content you create</li>
+              <li>
+                Location information (optional): your current location if you allow device location
+                permission, used to show your current position on the map
+              </li>
+              <li>
+                Automatically collected: device information (device type, OS/app version), IP address,
+                access logs (date/time and usage), advertising identifier (ADID/IDFA), and app usage
+                statistics collected through Google Analytics for Firebase
+              </li>
+            </ul>
+            <p>
+              Current location information is processed only on your device to show your current
+              position on the map and is not transmitted to or stored on our servers or cloud services.
+              If you add and save a place to a trip, however, the place name, address, coordinates,
+              and related details may be stored as trip data. Information is provided directly by you
+              or generated automatically while you use the Service.
+            </p>
+
+            <h2>3. Retention and Deletion</h2>
+            <p>
+              We retain personal information within the period required by law or consented to by
+              you. In principle, we delete your information without delay when you close your account
+              or the purpose of processing is achieved, except where retention is required by
+              applicable law.
+            </p>
+
+            <h2>4. Outsourcing of Processing</h2>
+            <p>To operate the Service we entrust certain processing to:</p>
+            <ul>
+              <li>Processor: Google LLC (Google Firebase, Google Play services)</li>
+              <li>
+                Tasks: authentication, data storage/operation, usage analytics through Google
+                Analytics for Firebase, and Google Play services
+              </li>
+            </ul>
+            <p>
+              We supervise the processor to ensure personal information is handled securely. For
+              details, see
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+            </p>
+
+            <h2>5. Overseas Transfer</h2>
+            <p>
+              Account and trip data that we directly store and operate is processed and stored using
+              the Firebase/Google Cloud asia-northeast3 (Seoul) region. However, in the course of
+              operating Google services such as Google Analytics for Firebase, AdMob, and Google Play
+              services, some information may be stored or processed on servers located outside Korea.
+            </p>
+            <ul>
+              <li>Transferred to: Google LLC</li>
+              <li>Countries: the United States and other countries where Google operates servers</li>
+              <li>When/how: transmitted over the network while you use the Service</li>
+              <li>Items: automatically collected information, advertising identifiers, and information required to operate Google services</li>
+              <li>Purpose and retention: as set out in Google's Privacy Policy</li>
+            </ul>
+            <p>You may refuse the transfer by not using the Service or by deleting your account.</p>
+
+            <h2>6. Behavioral Information for Ads and Opt-Out</h2>
+            <p>
+              We use Google AdMob to serve ads, which may collect and use behavioral information such
+              as your advertising identifier.
+            </p>
+            <ul>
+              <li>Items: advertising identifier (ADID/IDFA), ad impression/click and usage records</li>
+              <li>Purpose: serving ads (including personalized ads) and measuring performance</li>
+            </ul>
+            <p>You can opt out of personalized ads or reset your advertising ID:</p>
+            <ul>
+              <li>Android: Settings → Google → Ads → "Delete advertising ID" or "Opt out of Ads Personalization"</li>
+              <li>iOS: Settings → Privacy &amp; Security → Tracking → turn off "Allow Apps to Request to Track"</li>
+            </ul>
+
+            <h2>7. Cookies</h2>
+            <p>The Service (app) does not use cookies to store or retrieve user information.</p>
+
+            <h2>8. Destruction Procedure and Method</h2>
+            <p>
+              We destroy personal information without delay when it is no longer needed. Eligible
+              data is selected and destroyed with the approval of the data protection officer;
+              electronic files are deleted using technical methods that prevent recovery. You may
+              request destruction via the in-app account deletion feature or by contacting
+              <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span>.
+            </p>
+
+            <h2>9. Security Measures</h2>
+            <ul>
+              <li>Administrative: establishing and operating an internal management plan; least-privilege access management</li>
+              <li>Technical: access control for processing systems and encryption of data in transit (HTTPS)</li>
+              <li>Physical: access control to systems where data is stored</li>
+            </ul>
+
+            <h2>10. Your Rights and How to Exercise Them</h2>
+            <p>
+              You may request access, correction, deletion, or suspension of processing at any time
+              through in-app features (edit account, delete account) or by email
+              (<span class="contact-email" data-contact-email>npsomewhere@gmail.com</span>); we will act without delay.
+              You may exercise rights through a legal representative or agent with a power of attorney
+              in the prescribed form. These rights may be limited under Articles 35(4) and 37(2) of PIPA.
+            </p>
+
+            <h2>11. Children Under 14</h2>
+            <p>
+              The Service is not directed to children under the age of 14, and we do not knowingly
+              collect their personal information. If we learn that we have collected such information,
+              we will delete it without delay.
+            </p>
+
+            <h2>12. Data Protection Officer</h2>
+            <ul>
+              <li>Officer: Sejong Lee (Developer)</li>
+              <li>Contact: <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span></li>
+            </ul>
+
+            <h2>13. Remedies for Rights Infringement</h2>
+            <p>You may contact the following for dispute resolution or counseling:</p>
+            <ul>
+              <li>Personal Information Dispute Mediation Committee: 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)</li>
+              <li>KISA Privacy Infringement Report Center: 118 (<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>)</li>
+              <li>Supreme Prosecutors' Office: 1301 (<a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a>)</li>
+              <li>National Police Agency: 182 (<a href="https://ecrm.cyber.go.kr" target="_blank" rel="noopener">ecrm.cyber.go.kr</a>)</li>
+            </ul>
+
+            <h2>14. Changes to This Policy</h2>
+            <p>
+              This Privacy Policy is effective as of June 15, 2026. It may be amended due to changes
+              in law or the Service, and changes will be announced on this page. Previously effective
+              versions are available by date under "Previous policy" above.
+            </p>
+          </div>
+
+          <!-- ===================================================================
+               Past — 2024-10-23 (Korean)
+               =================================================================== -->
+          <div class="policy" data-version="20241023" data-lang="ko" hidden>
+            <p class="muted">※ 이 버전은 과거에 적용되었던 개인정보처리방침으로, 현재는 효력이 없습니다.</p>
+            <p>
+              NP Somewhere(이하 'Somewhere')는 「개인정보 보호법」 제30조에 따라 정보주체의
+              개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기
+              위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다.
+            </p>
+
+            <h2>제1조 — 개인정보의 처리 목적</h2>
+            <p>
+              NP Somewhere은(는) 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는
+              개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며 이용 목적이 변경되는 경우에는
+              「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할
+              예정입니다.
+            </p>
+            <ul>
+              <li>재화 또는 서비스 제공: 서비스 제공, 콘텐츠 제공을 목적으로 개인정보를 처리합니다.</li>
+            </ul>
+
+            <h2>제2조 — 개인정보의 처리 및 보유 기간</h2>
+            <ul>
+              <li>NP Somewhere은(는) 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</li>
+              <li>&lt;재화 또는 서비스 제공&gt;와 관련한 개인정보는 수집·이용에 관한 동의일로부터 &lt;보유 안 함&gt;까지 위 이용목적을 위하여 보유·이용됩니다.</li>
+              <li>보유근거: Google Firebase, Admob의 개인정보처리방침은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> 에서 확인하실 수 있습니다.</li>
+            </ul>
+
+            <h2>제3조 — 개인정보의 제3자 제공</h2>
+            <ul>
+              <li>NP Somewhere은(는) 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 정보주체의 동의, 법률의 특별한 규정 등 「개인정보 보호법」 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.</li>
+              <li>NP Somewhere은(는) 다음과 같이 개인정보를 제3자에게 제공하고 있습니다.</li>
+            </ul>
+            <ul>
+              <li>제공받는 자: 구글 파이어베이스, 애드몹 (Google Firebase, Admob)</li>
+              <li>제공받는 자의 개인정보 이용목적: <a href="https://policies.google.com/privacy?hl=ko#whycollect" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+              <li>제공받는 자의 보유·이용기간: <a href="https://policies.google.com/technologies/retention?hl=ko" target="_blank" rel="noopener">Google 데이터 보관 정책</a></li>
+            </ul>
+
+            <h2>제4조 — 정보주체와 법정대리인의 권리·의무 및 그 행사방법</h2>
+            <ul>
+              <li>정보주체는 NP Somewhere에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.</li>
+              <li>제1항에 따른 권리 행사는 「개인정보 보호법」 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 NP Somewhere은(는) 이에 대해 지체 없이 조치하겠습니다.</li>
+              <li>제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 "개인정보 처리 방법에 관한 고시(제2020-7호)" 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.</li>
+              <li>개인정보 열람 및 처리정지 요구는 「개인정보 보호법」 제35조 제4항, 제37조 제2항에 의하여 정보주체의 권리가 제한될 수 있습니다.</li>
+              <li>개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.</li>
+              <li>NP Somewhere은(는) 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.</li>
+            </ul>
+
+            <h2>제5조 — 처리하는 개인정보의 항목</h2>
+            <ul>
+              <li>NP Somewhere은(는) 다음의 개인정보 항목을 처리하고 있습니다.</li>
+              <li>재화 또는 서비스 제공 — 필수항목: <a href="https://policies.google.com/privacy?hl=ko#infocollect" target="_blank" rel="noopener">Google 개인정보처리방침(수집 정보)</a></li>
+            </ul>
+
+            <h2>제6조 — 개인정보의 파기</h2>
+            <ul>
+              <li>NP Somewhere은(는) 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.</li>
+              <li>정보주체로부터 동의받은 개인정보 보유기간이 경과하거나 처리목적이 달성되었음에도 다른 법령에 따라 개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 보존합니다.</li>
+              <li>파기절차: NP Somewhere은(는) 파기 사유가 발생한 개인정보를 선정하고, 개인정보 보호책임자의 승인을 받아 개인정보를 파기합니다.</li>
+              <li>파기방법: 계정 삭제 기능 또는 <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span> 연락</li>
+            </ul>
+
+            <h2>제7조 — 개인정보의 안전성 확보 조치</h2>
+            <ul>
+              <li>내부관리계획의 수립 및 시행: 개인정보의 안전한 처리를 위하여 내부관리계획을 수립하고 시행하고 있습니다.</li>
+            </ul>
+
+            <h2>제8조 — 개인정보 자동 수집 장치의 설치·운영 및 거부에 관한 사항</h2>
+            <p>
+              NP Somewhere은(는) 이용자에게 개별적인 맞춤서비스를 제공하기 위해 이용정보를
+              저장하고 수시로 불러오는 '쿠키(cookie)'를 사용하지 않습니다.
+            </p>
+
+            <h2>제9조 — 개인정보 보호책임자</h2>
+            <ul>
+              <li>성명: 이세종</li>
+              <li>직책: 개발자</li>
+              <li>연락처: <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span></li>
+            </ul>
+            <p>
+              정보주체께서는 NP Somewhere의 서비스를 이용하시면서 발생한 모든 개인정보 보호 관련
+              문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 보호책임자에게 문의하실 수
+              있습니다. NP Somewhere은(는) 정보주체의 문의에 대해 지체 없이 답변 및 처리해
+              드릴 것입니다.
+            </p>
+
+            <h2>제10조 — 개인정보 열람청구</h2>
+            <p>
+              정보주체는 「개인정보 보호법」 제35조에 따른 개인정보의 열람 청구를 아래 연락처로
+              하실 수 있습니다. NP Somewhere은(는) 정보주체의 개인정보 열람청구가 신속하게
+              처리되도록 노력하겠습니다.
+            </p>
+            <ul>
+              <li>연락처: <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span></li>
+            </ul>
+
+            <h2>제11조 — 권익침해 구제방법</h2>
+            <p>
+              정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 한국인터넷
+              진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다.
+            </p>
+            <ul>
+              <li>개인정보분쟁조정위원회: (국번없이) 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)</li>
+              <li>개인정보침해신고센터: (국번없이) 118 (<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>)</li>
+              <li>대검찰청: (국번없이) 1301 (<a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a>)</li>
+              <li>경찰청: (국번없이) 182 (<a href="https://ecrm.cyber.go.kr" target="_blank" rel="noopener">ecrm.cyber.go.kr</a>)</li>
+            </ul>
+            <p>
+              「개인정보보호법」 제35조(개인정보의 열람), 제36조(개인정보의 정정·삭제),
+              제37조(개인정보의 처리정지 등)의 규정에 의한 요구에 대하여 공공기관의 장이 행한 처분
+              또는 부작위로 인하여 권리 또는 이익의 침해를 받은 자는 행정심판법이 정하는 바에 따라
+              행정심판을 청구할 수 있습니다. (중앙행정심판위원회
+              <a href="https://www.simpan.go.kr" target="_blank" rel="noopener">www.simpan.go.kr</a>)
+            </p>
+
+            <h2>제12조 — 개인정보 처리방침 변경</h2>
+            <p>이 개인정보처리방침은 2024년 10월 23일부터 적용되었습니다.</p>
+          </div>
+
+          <!-- ===================================================================
+               Past — 2023-10-21 (Korean)
+               =================================================================== -->
+          <div class="policy" data-version="20231021" data-lang="ko" hidden>
+            <p class="muted">※ 이 버전은 과거에 적용되었던 개인정보처리방침으로, 현재는 효력이 없습니다.</p>
+            <p>
+              NP Somewhere(이하 'Somewhere')는 「개인정보 보호법」 제30조에 따라 정보주체의
+              개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기
+              위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다.
+            </p>
+
+            <h2>제1조 — 개인정보의 처리 목적</h2>
+            <p>
+              NP Somewhere은(는) 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는
+              개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며 이용 목적이 변경되는 경우에는
+              「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할
+              예정입니다.
+            </p>
+            <ul>
+              <li>재화 또는 서비스 제공: 서비스 제공, 콘텐츠 제공을 목적으로 개인정보를 처리합니다.</li>
+            </ul>
+
+            <h2>제2조 — 개인정보의 처리 및 보유 기간</h2>
+            <ul>
+              <li>NP Somewhere은(는) 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</li>
+              <li>&lt;재화 또는 서비스 제공&gt;와 관련한 개인정보는 수집·이용에 관한 동의일로부터 &lt;보유 안 함&gt;까지 위 이용목적을 위하여 보유·이용됩니다.</li>
+              <li>보유근거: Google Firebase, Admob의 개인정보처리방침은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> 에서 확인하실 수 있습니다.</li>
+            </ul>
+
+            <h2>제3조 — 개인정보의 제3자 제공</h2>
+            <ul>
+              <li>NP Somewhere은(는) 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 정보주체의 동의, 법률의 특별한 규정 등 「개인정보 보호법」 제17조 및 제18조에 해당하는 경우에만 개인정보를 제3자에게 제공합니다.</li>
+              <li>NP Somewhere은(는) 다음과 같이 개인정보를 제3자에게 제공하고 있습니다.</li>
+            </ul>
+            <ul>
+              <li>제공받는 자: 구글 파이어베이스, 애드몹 (Google Firebase, Admob)</li>
+              <li>제공받는 자의 개인정보 이용목적: <a href="https://policies.google.com/privacy?hl=ko#whycollect" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+              <li>제공받는 자의 보유·이용기간: <a href="https://policies.google.com/technologies/retention?hl=ko" target="_blank" rel="noopener">Google 데이터 보관 정책</a></li>
+            </ul>
+
+            <h2>제4조 — 정보주체와 법정대리인의 권리·의무 및 그 행사방법</h2>
+            <ul>
+              <li>정보주체는 NP Somewhere에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.</li>
+              <li>제1항에 따른 권리 행사는 「개인정보 보호법」 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 NP Somewhere은(는) 이에 대해 지체 없이 조치하겠습니다.</li>
+              <li>제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 "개인정보 처리 방법에 관한 고시(제2020-7호)" 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.</li>
+              <li>개인정보 열람 및 처리정지 요구는 「개인정보 보호법」 제35조 제4항, 제37조 제2항에 의하여 정보주체의 권리가 제한될 수 있습니다.</li>
+              <li>개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.</li>
+              <li>NP Somewhere은(는) 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.</li>
+            </ul>
+
+            <h2>제5조 — 처리하는 개인정보의 항목</h2>
+            <ul>
+              <li>NP Somewhere은(는) 다음의 개인정보 항목을 처리하고 있습니다.</li>
+              <li>재화 또는 서비스 제공 — 필수항목: <a href="https://policies.google.com/privacy?hl=ko#infocollect" target="_blank" rel="noopener">Google 개인정보처리방침(수집 정보)</a></li>
+            </ul>
+
+            <h2>제6조 — 개인정보의 파기</h2>
+            <ul>
+              <li>NP Somewhere은(는) 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.</li>
+              <li>정보주체로부터 동의받은 개인정보 보유기간이 경과하거나 처리목적이 달성되었음에도 다른 법령에 따라 개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 보존합니다.</li>
+              <li>파기절차: NP Somewhere은(는) 파기 사유가 발생한 개인정보를 선정하고, 개인정보 보호책임자의 승인을 받아 개인정보를 파기합니다.</li>
+              <li>파기방법: 계정 삭제 기능 또는 <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span> 연락</li>
+            </ul>
+
+            <h2>제7조 — 개인정보의 안전성 확보 조치</h2>
+            <ul>
+              <li>내부관리계획의 수립 및 시행: 개인정보의 안전한 처리를 위하여 내부관리계획을 수립하고 시행하고 있습니다.</li>
+            </ul>
+
+            <h2>제8조 — 개인정보 자동 수집 장치의 설치·운영 및 거부에 관한 사항</h2>
+            <ul>
+              <li>NP Somewhere은(는) 이용자에게 개별적인 맞춤서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 '쿠키(cookie)'를 사용합니다.</li>
+              <li>쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에게 보내는 소량의 정보이며 이용자들의 PC 컴퓨터내의 하드디스크에 저장되기도 합니다.</li>
+              <li>쿠키의 사용 목적: 이용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기 검색어, 보안접속 여부 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 사용됩니다.</li>
+              <li>쿠키의 설치·운영 및 거부: 웹브라우저 상단의 도구 → 인터넷 옵션 → 개인정보 메뉴의 옵션 설정을 통해 쿠키 저장을 거부할 수 있습니다.</li>
+              <li>쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.</li>
+            </ul>
+
+            <h2>제9조 — 개인정보 보호책임자</h2>
+            <ul>
+              <li>성명: 이세종</li>
+              <li>직책: 개발자</li>
+              <li>연락처: <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span></li>
+            </ul>
+
+            <h2>제10조 — 개인정보 열람청구</h2>
+            <p>
+              정보주체는 「개인정보 보호법」 제35조에 따른 개인정보의 열람 청구를 아래 연락처로
+              하실 수 있습니다. NP Somewhere은(는) 정보주체의 개인정보 열람청구가 신속하게
+              처리되도록 노력하겠습니다.
+            </p>
+            <ul>
+              <li>연락처: <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span></li>
+            </ul>
+
+            <h2>제11조 — 권익침해 구제방법</h2>
+            <p>
+              정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 한국인터넷
+              진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다.
+            </p>
+            <ul>
+              <li>개인정보분쟁조정위원회: (국번없이) 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)</li>
+              <li>개인정보침해신고센터: (국번없이) 118 (<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>)</li>
+              <li>대검찰청: (국번없이) 1301 (<a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a>)</li>
+              <li>경찰청: (국번없이) 182 (<a href="https://ecrm.cyber.go.kr" target="_blank" rel="noopener">ecrm.cyber.go.kr</a>)</li>
+            </ul>
+
+            <h2>제12조 — 개인정보 처리방침 변경</h2>
+            <p>이 개인정보처리방침은 2023년 10월 21일부터 적용되었습니다.</p>
+          </div>
+
+          <!-- ===================================================================
+               Past — 2023-10-21 (English)
+               =================================================================== -->
+          <div class="policy" data-version="20231021" data-lang="en" hidden>
+            <p class="muted">※ This version was previously in effect and is no longer current.</p>
+            <p>
+              This privacy policy applies to the Somewhere app (the "Application") for mobile
+              devices that was created by Sejong Lee (the "Service Provider") as an Ad Supported
+              service. This service is intended for use "AS IS".
+            </p>
+
+            <h2>Information Collection and Use</h2>
+            <p>The Application collects information when you download and use it. This information may include:</p>
+            <ul>
+              <li>Your device's Internet Protocol address (e.g. IP address)</li>
+              <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
+              <li>The time spent on the Application</li>
+              <li>The operating system you use on your mobile device</li>
+            </ul>
+            <p>The Application does not gather precise information about the location of your mobile device.</p>
+            <p>
+              The Service Provider may use the information you provided to contact you from time to
+              time to provide you with important information, required notices and marketing
+              promotions.
+            </p>
+            <p>
+              For a better experience, while using the Application, the Service Provider may require
+              you to provide us with certain personally identifiable information, including but not
+              limited to Email, userId. The information that the Service Provider request will be
+              retained by them and used as described in this privacy policy.
+            </p>
+
+            <h2>Third Party Access</h2>
+            <p>
+              Only aggregated, anonymized data is periodically transmitted to external services to
+              aid the Service Provider in improving the Application and their service. The Service
+              Provider may share your information with third parties in the ways that are described
+              in this privacy statement.
+            </p>
+            <p>
+              The Application utilizes third-party services that have their own Privacy Policy about
+              handling data:
+            </p>
+            <ul>
+              <li>Google Play Services</li>
+              <li>AdMob</li>
+              <li>Google Analytics for Firebase</li>
+            </ul>
+            <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+            <ul>
+              <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
+              <li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+              <li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+            </ul>
+
+            <h2>Opt-Out Rights</h2>
+            <p>
+              You can stop all collection of information by the Application easily by uninstalling
+              it or deleting your account. You may use the standard uninstall processes as may be
+              available as part of your mobile device or via the mobile application marketplace or
+              network.
+            </p>
+
+            <h2>Data Retention Policy</h2>
+            <p>
+              The Service Provider will retain User Provided data for as long as you use the
+              Application and for a reasonable time thereafter. If you'd like them to delete User
+              Provided Data that you have provided via the Application, please contact them at
+              <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span> and they will respond in a reasonable time.
+            </p>
+
+            <h2>Children</h2>
+            <p>
+              The Service Provider does not use the Application to knowingly solicit data from or
+              market to children under the age of 13. The Application does not address anyone under
+              the age of 13. The Service Provider does not knowingly collect personally identifiable
+              information from children under 13 years of age. In the case the Service Provider
+              discover that a child under 13 has provided personal information, the Service Provider
+              will immediately delete this from their servers.
+            </p>
+            <p>
+              If you are a parent or guardian and you are aware that your child has provided us with
+              personal information, please contact the Service Provider (<span class="contact-email" data-contact-email>npsomewhere@gmail.com</span>) so
+              that they will be able to take the necessary actions.
+            </p>
+
+            <h2>Security</h2>
+            <p>
+              The Service Provider is concerned about safeguarding the confidentiality of your
+              information. The Service Provider provides physical, electronic, and procedural
+              safeguards to protect information the Service Provider processes and maintains.
+            </p>
+
+            <h2>Changes</h2>
+            <p>
+              This Privacy Policy may be updated from time to time for any reason. The Service
+              Provider will notify you of any changes to the Privacy Policy by updating this page
+              with the new Privacy Policy. You are advised to consult this Privacy Policy regularly
+              for any changes, as continued use is deemed approval of all changes.
+            </p>
+            <p>This privacy policy is effective as of Oct 21, 2023.</p>
+
+            <h2>Your Consent</h2>
+            <p>
+              By using the Application, you are consenting to the processing of your information as
+              set forth in this Privacy Policy now and as amended by us.
+            </p>
+
+            <h2>Contact Us</h2>
+            <p>
+              If you have any questions regarding privacy while using the Application, or have
+              questions about the practices, please contact the Service Provider via email at
+              <span class="contact-email" data-contact-email>npsomewhere@gmail.com</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="brand" href="index.html" aria-label="Somewhere">
+          <img class="logo" src="assets/img/app-icon.svg" alt="" />
+          <span>Somewhere</span>
+        </a>
+        <span class="footer__meta">© 2026 Somewhere</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js?v=20260615-email-copy"></script>
+    <script src="assets/js/privacy.js"></script>
+  </body>
+</html>
