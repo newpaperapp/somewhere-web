@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somewhere — Download</title>
+    <meta name="description" content="Download Somewhere on the App Store or Google Play." />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta name="robots" content="noindex" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/app-icon.svg" />
+    <link rel="preload" as="font" type="font/woff2"
+      href="assets/fonts/PretendardVariable.woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/style.css?v=20260615-layout2" />
+
+    <script src="assets/js/config.js"></script>
+    <!-- redirect runs ASAP (mobile UAs leave this page immediately) -->
+    <script src="assets/js/redirect.js"></script>
+  </head>
+  <body>
+    <main class="redirect">
+      <div class="redirect__card">
+        <img class="redirect__logo" src="assets/img/app-icon.svg" alt="Somewhere" />
+
+        <!-- shown while auto-redirecting on mobile -->
+        <div id="auto-state">
+          <div class="spinner" aria-hidden="true"></div>
+          <h1 data-i18n="redirect.auto.title">스토어로 이동 중…</h1>
+          <p data-i18n="redirect.auto.sub">잠시만 기다려 주세요.</p>
+        </div>
+
+        <!-- shown on desktop / unknown platforms -->
+        <div id="manual-state" class="hidden">
+          <h1 data-i18n="redirect.manual.title">Somewhere 다운로드</h1>
+          <p data-i18n="redirect.manual.sub">사용 중인 기기의 스토어를 선택하세요.</p>
+          <div class="store-badges redirect__buttons" role="group" aria-label="Store download links">
+            <a class="store-badge store-badge--ios" data-store="ios" target="_blank"
+              rel="noopener" aria-label="Download on the App Store">
+              <img src="assets/img/badges/download_on_the_app_store.svg"
+                alt="Download on the App Store" width="120" height="40" />
+            </a>
+            <a class="store-badge store-badge--android" data-store="android" target="_blank"
+              rel="noopener" aria-label="Get it on Google Play">
+              <img src="assets/img/badges/get_it_on_google_play.svg"
+                alt="Get it on Google Play" width="135" height="40" />
+            </a>
+          </div>
+          <a class="redirect__home" href="index.html" data-i18n="redirect.home">홈으로</a>
+          <p class="store-legal">
+            Apple and the Apple logo are trademarks of Apple Inc., registered in
+            the U.S. and other countries. App Store is a service mark of Apple
+            Inc., registered in the U.S. and other countries. Google Play and the
+            Google Play logo are trademarks of Google LLC.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js?v=20260615-email-copy"></script>
+  </body>
+</html>
