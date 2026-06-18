@@ -57,6 +57,7 @@ const I18N = {
 
     "cta.title": "지금 여행을 시작하세요",
     "cta.sub": "지금 Somewhere를 다운로드하고 첫 여행을 만들어 보세요.",
+    "cta.qr": "카메라로 스캔해서 다운로드",
 
     "footer.developer": "개발자",
     "footer.contact": "문의",
@@ -123,6 +124,7 @@ const I18N = {
 
     "cta.title": "Start your journey today",
     "cta.sub": "Download Somewhere and create your first trip.",
+    "cta.qr": "Scan to download",
 
     "footer.developer": "Developer",
     "footer.contact": "Contact",
