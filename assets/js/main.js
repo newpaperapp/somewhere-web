@@ -97,6 +97,30 @@
     });
   }
 
+  /* ---- QR codes ---------------------------------------------------------- */
+  // Renders a QR for any [data-qr] element. The value is resolved against the
+  // current location, so the code always points at this deployment (works on
+  // localhost, github.io, or a custom domain) and the linked page branches by OS.
+  function wireQRCodes() {
+    if (typeof qrcode !== "function") return;
+    document.querySelectorAll("[data-qr]").forEach((el) => {
+      if (el.dataset.qrDone) return;
+      const target = el.getAttribute("data-qr");
+      if (!target) return;
+      let url;
+      try {
+        url = new URL(target, window.location.href).href;
+      } catch (_) {
+        url = target;
+      }
+      const qr = qrcode(0, "M");
+      qr.addData(url);
+      qr.make();
+      el.innerHTML = qr.createSvgTag({ cellSize: 4, scalable: true });
+      el.dataset.qrDone = "1";
+    });
+  }
+
   /* ---- Nav reveal (home page only: hidden at top, shows after scroll) ----- */
   function wireNavReveal() {
     // Other pages keep the nav always visible (sticky); only the home page hides it.
@@ -141,6 +165,7 @@
     }
 
     wireStoreLinks();
+    wireQRCodes();
     wireNavReveal();
     wireReveal();
 

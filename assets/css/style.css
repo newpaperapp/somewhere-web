@@ -712,12 +712,23 @@ a {
 
 /* CTA band */
 .cta {
+  --cta-qr-gutter: clamp(24px, 3.6vw, 40px);
+  --cta-qr-card-size: clamp(224px, 28vw, 288px);
   background: linear-gradient(120deg, var(--brand-blue) 0%, var(--brand-purple) 100%);
   border-radius: var(--r-dialog);
-  padding: clamp(40px, 6vw, 64px);
-  text-align: center;
+  padding: var(--cta-qr-gutter) var(--cta-qr-gutter) var(--cta-qr-gutter) clamp(40px, 6vw, 64px);
+  text-align: left;
   color: #fff;
   box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(28px, 5vw, 56px);
+}
+
+.cta__text {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .cta h2 {
@@ -734,7 +745,56 @@ a {
 }
 
 .cta__buttons {
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+/* QR — scan to open the OS-branching download page */
+.cta__qr {
+  flex: none;
+  position: relative;
+  width: var(--cta-qr-card-size);
+  height: var(--cta-qr-card-size);
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--shadow-md);
+}
+
+.cta__qr-code {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: clamp(30px, 5vw, 36px);
+}
+
+.cta__qr-code svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cta__qr-label {
+  position: absolute;
+  bottom: clamp(10px, 1.6vw, 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 700;
+  text-align: center;
+  width: max-content;
+  max-width: min(320px, 100vw - 40px);
+  color: #868686;
+}
+
+:root[data-theme="dark"] .cta__qr {
+  box-shadow: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .cta__qr {
+    box-shadow: none;
+  }
 }
 
 /* ---- Footer -------------------------------------------------------------- */
@@ -1146,6 +1206,21 @@ html[lang="en"] .lang-ko {
   }
 }
 
+/* Phones/small tablets: stack the CTA and center every element. */
+@media (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cta__text {
+    width: 100%;
+  }
+  .cta__buttons {
+    justify-content: center;
+  }
+}
+
 @media (min-width: 861px) {
   .feature-story .section__head h2 {
     white-space: nowrap;
@@ -1224,7 +1299,10 @@ html[lang="en"] .lang-ko {
   .store-badge--android img {
     width: clamp(117px, 35vw, 135px);
   }
-  .hero__cta,
+  .hero__cta {
+    flex-direction: row;
+    justify-content: center;
+  }
   .cta__buttons {
     flex-direction: row;
     justify-content: center;

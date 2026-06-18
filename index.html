@@ -24,7 +24,7 @@
       href="assets/fonts/PretendardVariable.woff2" crossorigin />
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check,content_copy" />
-    <link rel="stylesheet" href="assets/css/style.css?v=20260615-layout2" />
+    <link rel="stylesheet" href="assets/css/style.css?v=20260618-cta-qr4" />
   </head>
   <body class="is-home">
     <!-- ===== Nav ===== -->
@@ -208,19 +208,26 @@
       <section class="section" id="download">
         <div class="container">
           <div class="cta reveal">
-            <h2 data-i18n="cta.title">지금 여행을 시작하세요</h2>
-            <p data-i18n="cta.sub">지금 Somewhere를 다운로드하고 첫 여행을 만들어 보세요.</p>
-            <div class="store-badges cta__buttons" role="group" aria-label="Store download links">
-              <a class="store-badge store-badge--ios" data-store="ios" target="_blank"
-                rel="noopener" aria-label="Download on the App Store">
-                <img src="assets/img/badges/download_on_the_app_store.svg"
-                  alt="Download on the App Store" width="120" height="40" />
-              </a>
-              <a class="store-badge store-badge--android" data-store="android" target="_blank"
-                rel="noopener" aria-label="Get it on Google Play">
-                <img src="assets/img/badges/get_it_on_google_play.svg"
-                  alt="Get it on Google Play" width="135" height="40" />
-              </a>
+            <div class="cta__text">
+              <h2 data-i18n="cta.title">지금 여행을 시작하세요</h2>
+              <p data-i18n="cta.sub">지금 Somewhere를 다운로드하고 첫 여행을 만들어 보세요.</p>
+              <div class="store-badges cta__buttons" role="group" aria-label="Store download links">
+                <a class="store-badge store-badge--ios" data-store="ios" target="_blank"
+                  rel="noopener" aria-label="Download on the App Store">
+                  <img src="assets/img/badges/download_on_the_app_store.svg"
+                    alt="Download on the App Store" width="120" height="40" />
+                </a>
+                <a class="store-badge store-badge--android" data-store="android" target="_blank"
+                  rel="noopener" aria-label="Get it on Google Play">
+                  <img src="assets/img/badges/get_it_on_google_play.svg"
+                    alt="Get it on Google Play" width="135" height="40" />
+                </a>
+              </div>
+            </div>
+            <div class="cta__qr">
+              <span class="cta__qr-code"
+                data-qr="https://newpaperapp.github.io/somewhere-web/download" aria-hidden="true"></span>
+              <span class="cta__qr-label" data-i18n="cta.qr">카메라로 스캔해서 다운로드</span>
             </div>
           </div>
         </div>
@@ -257,6 +264,7 @@
 
     <script src="assets/js/config.js"></script>
     <script src="assets/js/i18n.js"></script>
-    <script src="assets/js/main.js?v=20260615-email-copy"></script>
+    <script src="assets/js/vendor/qrcode-generator.min.js"></script>
+    <script src="assets/js/main.js?v=20260618-cta-qr"></script>
   </body>
 </html>
