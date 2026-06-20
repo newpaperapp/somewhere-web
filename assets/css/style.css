@@ -1245,17 +1245,26 @@ html[lang="en"] .lang-ko {
     padding: 0 20px;
   }
   .nav__inner {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .nav .brand span {
-    display: none;
+  .nav .brand {
+    font-size: 16px;
+    gap: 8px;
+  }
+  .nav .brand .logo {
+    width: 28px;
+    height: 28px;
   }
   .nav__actions {
     gap: 6px;
   }
   .nav__link {
     padding: 0 4px;
+    font-size: 13px;
+  }
+  .nav__actions .icon-btn[data-action="toggle-lang"] {
+    width: 54px;
     font-size: 13px;
   }
   .hero-shots {
