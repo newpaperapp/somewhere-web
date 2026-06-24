@@ -52,7 +52,7 @@ const I18N = {
     "pro.eyebrow": "구독",
     "pro.title": "Somewhere Pro 구독제",
     "pro.ads": "광고 제거",
-    "pro.trips": "최대 여행수 10 → 500개",
+    "pro.trips": "최대 여행수 10 → 300개",
     "pro.friends": "최대 친구 초대 수(여행 당) 5 → 50명",
 
     "cta.title": "지금 여행을 시작하세요",
@@ -62,6 +62,7 @@ const I18N = {
     "footer.developer": "개발자",
     "footer.contact": "문의",
     "footer.privacy": "개인정보처리방침",
+    "footer.terms": "이용약관",
     "footer.rights": "여행 계획 앱",
 
     /* redirect */
@@ -119,7 +120,7 @@ const I18N = {
     "pro.eyebrow": "Subscription",
     "pro.title": "Somewhere Pro",
     "pro.ads": "Remove ads",
-    "pro.trips": "Maximum trips: 10 → 500",
+    "pro.trips": "Maximum trips: 10 → 300",
     "pro.friends": "Maximum invited friends per trip: 5 → 50",
 
     "cta.title": "Start your journey today",
@@ -129,6 +130,7 @@ const I18N = {
     "footer.developer": "Developer",
     "footer.contact": "Contact",
     "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms of Service",
     "footer.rights": "Trip Planner App",
 
     /* redirect */

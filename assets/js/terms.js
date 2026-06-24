@@ -1,23 +1,28 @@
 /* ============================================================
-   Somewhere — privacy page version picker
-   - Shows one policy version at a time (current + past).
+   Somewhere — terms page version picker
+   - Shows one terms version at a time (current + past).
    - The date dropdown (right of the effective date) switches versions.
    - Available versions differ per language; selection falls back to
      "current" when the chosen date has no version in the active language.
    - Reacts to language changes dispatched by assets/js/i18n.js.
+
+   To add a past version later (when these terms are revised):
+     1. Add an entry to VERSIONS below (keep it newest-first), e.g.
+        { id: "20260624", ko: "2026년 6월 24일", en: "June 24, 2026", langs: ["ko", "en"] }
+        and drop `current: true` from the entry that is no longer current.
+     2. Add matching bodies in terms.html:
+        <div class="policy" data-version="20260624" data-lang="ko" hidden> … </div>
+        <div class="policy" data-version="20260624" data-lang="en" hidden> … </div>
    ============================================================ */
 (function () {
   // Newest first. `langs` lists which languages have this version.
   const VERSIONS = [
     { id: "current", ko: "2026년 6월 24일", en: "June 24, 2026", langs: ["ko", "en"], current: true },
-    { id: "20260615", ko: "2026년 6월 15일", en: "June 15, 2026", langs: ["ko", "en"] },
-    { id: "20241023", ko: "2024년 10월 23일", en: "October 23, 2024", langs: ["ko"] },
-    { id: "20231021", ko: "2023년 10월 21일", en: "October 21, 2023", langs: ["ko", "en"] },
   ];
 
   const TXT = {
-    ko: { eff: "시행일", versions: "지난 개인정보처리방침", current: " (현재)" },
-    en: { eff: "Effective", versions: "Previous policy", current: " (current)" },
+    ko: { eff: "시행일", versions: "지난 이용약관", current: " (현재)" },
+    en: { eff: "Effective", versions: "Previous terms", current: " (current)" },
   };
 
   let selectedId = "current";
@@ -25,7 +30,7 @@
   function render() {
     const wrap = document.querySelector(".legal__wrap");
     if (!wrap) return;
-    const select = wrap.querySelector("#policy-version");
+    const select = wrap.querySelector("#terms-version");
     if (!select) return;
 
     const lang = document.documentElement.lang === "en" ? "en" : "ko";
@@ -46,7 +51,7 @@
       render();
     };
 
-    // show only the matching (language + version) policy body
+    // show only the matching (language + version) terms body
     wrap.querySelectorAll(".policy").forEach((el) => {
       el.hidden = !(el.dataset.lang === lang && el.dataset.version === selectedId);
     });
