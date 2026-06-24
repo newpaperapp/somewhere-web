@@ -156,6 +156,17 @@
     els.forEach((el) => io.observe(el));
   }
 
+  window.SomewhereUI = Object.assign(window.SomewhereUI || {}, {
+    refreshDynamicContent: function () {
+      wireStoreLinks();
+      wireQRCodes();
+    },
+  });
+
+  window.addEventListener("somewhere:contentloaded", function () {
+    window.SomewhereUI.refreshDynamicContent();
+  });
+
   /* ---- Init -------------------------------------------------------------- */
   document.addEventListener("DOMContentLoaded", function () {
     applyTheme(currentTheme());
