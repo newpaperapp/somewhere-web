@@ -48,6 +48,7 @@ const I18N = {
     "support.theme": "라이트 / 다크 모드 지원",
     "support.account": "계정 연동 지원",
     "support.language": "한국어 / 영어 지원",
+    "support.platform": "Android, iOS, iPadOS 및 macOS 지원",
 
     "pro.eyebrow": "구독",
     "pro.title": "Somewhere Pro 구독제",
@@ -116,6 +117,7 @@ const I18N = {
     "support.theme": "Light / dark mode support",
     "support.account": "Account linking support",
     "support.language": "Korean / English support",
+    "support.platform": "Android, iOS, iPadOS and macOS support",
 
     "pro.eyebrow": "Subscription",
     "pro.title": "Somewhere Pro",
