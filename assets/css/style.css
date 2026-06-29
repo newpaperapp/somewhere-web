@@ -1252,9 +1252,8 @@ html[lang="en"] .lang-ko {
     font-size: 16px;
     gap: 8px;
   }
-  .nav .brand .logo {
-    width: 28px;
-    height: 28px;
+  .nav .brand > span {
+    display: none;
   }
   .nav__actions {
     gap: 6px;

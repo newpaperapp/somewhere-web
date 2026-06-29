@@ -8,7 +8,7 @@
   window.SomewhereLegalDoc.init({
     selectId: "terms-version",
     labels: {
-      ko: { eff: "시행일", versions: "지난 이용약관", current: " (현재)" },
+      ko: { eff: "시행일", versions: "지난 서비스 이용약관", current: " (현재)" },
       en: { eff: "Effective", versions: "Previous terms", current: " (current)" },
     },
     versions: [
