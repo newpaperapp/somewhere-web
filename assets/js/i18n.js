@@ -63,7 +63,7 @@ const I18N = {
     "footer.developer": "개발자",
     "footer.contact": "문의",
     "footer.privacy": "개인정보처리방침",
-    "footer.terms": "이용약관",
+    "footer.terms": "서비스 이용약관",
     "footer.rights": "여행 계획 앱",
 
     /* redirect */
