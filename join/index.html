@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="theme-color" content="#f5f5f5" />
+    <title>Somewhere — 여행 초대</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/img/app-icon.svg" />
+    <style>
+      @font-face {
+        font-family: "Pretendard";
+        font-display: swap;
+        src: url("../assets/fonts/PretendardVariable.woff2") format("woff2");
+      }
+
+      :root {
+        color-scheme: light dark;
+        --background: #f5f5f5;
+        --surface: #ffffff;
+        --text: #111111;
+        --muted: #6e6e6e;
+        --outline: #e2e2e2;
+        --primary: #0072f3;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #1a1a1a;
+          --surface: #272727;
+          --text: #ffffff;
+          --muted: #b2b2b2;
+          --outline: #3d3d3d;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: var(--background);
+        color: var(--text);
+        font-family: "Pretendard", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      main {
+        width: min(100%, 480px);
+        padding: 36px 28px;
+        border: 1px solid var(--outline);
+        border-radius: 28px;
+        background: var(--surface);
+        text-align: center;
+        box-shadow: 0 14px 40px rgb(0 0 0 / 10%);
+      }
+
+      img {
+        width: 84px;
+        height: 84px;
+        margin: 0 auto 22px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(26px, 7vw, 34px);
+        line-height: 1.25;
+      }
+
+      p {
+        margin: 14px 0 0;
+        color: var(--muted);
+        line-height: 1.65;
+        word-break: keep-all;
+      }
+
+      .stores {
+        display: grid;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .store {
+        display: block;
+        padding: 14px 18px;
+        border-radius: 16px;
+        background: var(--primary);
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .store--secondary {
+        border: 1px solid var(--outline);
+        background: transparent;
+        color: var(--text);
+      }
+
+      .home {
+        display: inline-block;
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      [lang="en"] {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="../assets/img/app-icon.svg" alt="Somewhere" />
+      <h1>여행 초대를 받았어요</h1>
+      <p>
+        Somewhere 앱을 설치한 뒤 전달받은 초대 링크를 다시 눌러주세요.
+        앱에서 로그인하고 여행 정보를 확인한 후 참가할 수 있습니다.
+      </p>
+      <p lang="en">
+        Install Somewhere, then open the invitation link again to review and
+        join the trip in the app.
+      </p>
+      <div class="stores">
+        <a
+          class="store"
+          href="https://apps.apple.com/app/id6780403625"
+          rel="noopener noreferrer"
+        >App Store에서 다운로드</a>
+        <a
+          class="store store--secondary"
+          href="https://play.google.com/store/apps/details?id=com.newpaper.somewhere"
+          rel="noopener noreferrer"
+        >Google Play에서 다운로드</a>
+      </div>
+      <a class="home" href="../index.html">Somewhere 홈으로</a>
+    </main>
+  </body>
+</html>

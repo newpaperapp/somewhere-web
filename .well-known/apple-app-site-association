@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "UZVG3HB42D.com.newpaperapp.somewhere",
+          "UZVG3HB42D.com.newpaperapp.somewhere.debug"
+        ],
+        "components": [
+          {
+            "/": "/join/*",
+            "comment": "Somewhere trip invitation links"
+          }
+        ]
+      }
+    ]
+  }
+}
