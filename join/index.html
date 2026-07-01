@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#f5f5f5" />
     <title>Somewhere — 여행 초대</title>
     <link rel="icon" type="image/svg+xml" href="../assets/img/app-icon.svg" />
+    <script src="../assets/js/i18n.js"></script>
     <style>
       @font-face {
         font-family: "Pretendard";
@@ -109,57 +110,85 @@
         font-size: 14px;
       }
 
-      [lang="en"] {
-        font-size: 14px;
+      html[lang="ko"] .lang-en,
+      html[lang="en"] .lang-ko {
+        display: none;
       }
     </style>
   </head>
   <body>
     <main>
       <img src="../assets/img/app-icon.svg" alt="Somewhere" />
-      <h1>여행 초대를 받았어요</h1>
-      <p>
+      <h1 class="lang-ko">여행 초대를 받았어요</h1>
+      <h1 class="lang-en">You've been invited</h1>
+      <p class="lang-ko">
         Somewhere 앱이 설치되어 있다면 아래 버튼을 눌러 여행 정보를 확인하고
         참가할 수 있습니다.
       </p>
-      <p lang="en">
+      <p class="lang-en">
         If Somewhere is installed, use the button below to review and join the
         trip in the app.
       </p>
       <div class="stores">
         <a class="store" id="open-app" href="#" hidden>
-          앱에서 열기 · Open in app
+          <span class="lang-ko">앱에서 열기</span>
+          <span class="lang-en">Open in App</span>
         </a>
-        <a
-          class="store"
-          href="https://apps.apple.com/app/id6780403625"
-          rel="noopener noreferrer"
-        >App Store에서 다운로드</a>
-        <a
-          class="store store--secondary"
-          href="https://play.google.com/store/apps/details?id=com.newpaper.somewhere"
-          rel="noopener noreferrer"
-        >Google Play에서 다운로드</a>
+        <a class="store store--secondary" id="download-app" href="../download.html">
+          <span class="lang-ko">앱 다운로드</span>
+          <span class="lang-en">Download App</span>
+        </a>
       </div>
-      <a class="home" href="../index.html">Somewhere 홈으로</a>
+      <a class="home" href="../index.html">
+        <span class="lang-ko">Somewhere 홈으로</span>
+        <span class="lang-en">Go to Somewhere Home</span>
+      </a>
     </main>
     <script>
       (function () {
-        const button = document.getElementById("open-app");
+        // Apply detected language preference
+        if (window.SomewhereI18N) {
+          const lang = SomewhereI18N.detectLang();
+          SomewhereI18N.applyLang(lang);
+          
+          // Set initial page title based on language
+          document.title = lang === "ko" 
+            ? "Somewhere — 여행 초대" 
+            : "Somewhere — Trip Invitation";
+            
+          // Listen for dynamic language changes
+          window.addEventListener("somewhere:langchange", function (e) {
+            const currentLang = e.detail;
+            document.title = currentLang === "ko" 
+              ? "Somewhere — 여행 초대" 
+              : "Somewhere — Trip Invitation";
+          });
+        }
+
+        const openAppBtn = document.getElementById("open-app");
         const token = new URLSearchParams(window.location.search).get("token");
+
+        // Only show "Open in App" button if a valid token is present
+        if (!/^[A-Za-z0-9_-]{43}$/.test(token || "")) {
+          return;
+        }
+
         const isAndroid = /Android/i.test(navigator.userAgent);
-
-        if (!isAndroid || !/^[A-Za-z0-9_-]{43}$/.test(token || "")) return;
-
-        const fallbackUrl = encodeURIComponent(window.location.href);
-        button.href =
-          "intent://npsomewhere.com/join/?token=" +
-          encodeURIComponent(token) +
-          "#Intent;scheme=https;package=com.newpaper.somewhere;" +
-          "S.browser_fallback_url=" +
-          fallbackUrl +
-          ";end";
-        button.hidden = false;
+        if (isAndroid) {
+          const fallbackUrl = encodeURIComponent(window.location.href);
+          openAppBtn.href =
+            "intent://npsomewhere.com/join/?token=" +
+            encodeURIComponent(token) +
+            "#Intent;scheme=https;package=com.newpaper.somewhere;" +
+            "S.browser_fallback_url=" +
+            fallbackUrl +
+            ";end";
+        } else {
+          // For iOS and other platforms, use the Universal Link URL
+          openAppBtn.href = window.location.href;
+        }
+        
+        openAppBtn.hidden = false;
       })();
     </script>
   </body>
