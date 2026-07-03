@@ -184,8 +184,10 @@
             fallbackUrl +
             ";end";
         } else {
-          // For iOS and other platforms, use the Universal Link URL
-          openAppBtn.href = window.location.href;
+          // A different associated subdomain lets Safari leave the current site and open the app.
+          openAppBtn.href =
+            "https://open.npsomewhere.com/join/?token=" +
+            encodeURIComponent(token);
         }
         
         openAppBtn.hidden = false;
