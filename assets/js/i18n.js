@@ -28,14 +28,14 @@ const I18N = {
     "feature.map.alt": "태블릿에서 보는 Somewhere 여행 지도 화면",
     "feature.live.dynamic.title": "실시간 현황",
     "feature.live.dynamic.desc":
-      "홈 화면의 Dynamic Island에서 여행 현황을 실시간으로 확인하세요 (Somewhere Pro에서 이용 가능)",
+      "홈 화면의 Dynamic Island에서 현재 여행 현황을 확인하세요 (Somewhere Pro에서 이용 가능)",
     "feature.live.dynamic.alt":
-      "홈 화면의 Dynamic Island에서 확인하는 실시간 여행 일정",
+      "홈 화면의 Dynamic Island에서 확인하는 현재 여행 현황",
     "feature.live.lock.title": "실시간 현황",
     "feature.live.lock.desc":
-      "잠금 화면에서 여행 현황을 한눈에 확인하세요 (Somewhere Pro에서 이용 가능)",
+      "잠금 화면에서 현재 여행 현황을 한눈에 확인하세요 (Somewhere Pro에서 이용 가능)",
     "feature.live.lock.alt":
-      "잠금 화면 하단에서 확인하는 실시간 여행 일정",
+      "잠금 화면 하단에서 확인하는 현재 여행 현황",
     "feature.ai.kicker": "AI",
     "feature.ai.title": "AI 맞춤 여행 생성",
     "feature.ai.desc":
@@ -108,14 +108,14 @@ const I18N = {
     "feature.map.alt": "Somewhere trip map on a tablet",
     "feature.live.dynamic.title": "Live Activities",
     "feature.live.dynamic.desc":
-      "See live trip updates in the Dynamic Island from your Home Screen (Available on Somewhere Pro)",
+      "See your current trip status in the Dynamic Island from your Home Screen (Available on Somewhere Pro)",
     "feature.live.dynamic.alt":
-      "Live trip updates in the Dynamic Island on the Home Screen",
+      "Current trip status in the Dynamic Island on the Home Screen",
     "feature.live.lock.title": "Live Activities",
     "feature.live.lock.desc":
-      "Follow live trip updates at a glance on your Lock Screen (Available on Somewhere Pro)",
+      "View your current trip status at a glance on your Lock Screen (Available on Somewhere Pro)",
     "feature.live.lock.alt":
-      "Live trip updates at the bottom of the Lock Screen",
+      "Current trip status at the bottom of the Lock Screen",
     "feature.ai.kicker": "AI",
     "feature.ai.title": "AI-generated custom trips",
     "feature.ai.desc":
