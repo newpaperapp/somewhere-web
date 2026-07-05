@@ -26,6 +26,16 @@ const I18N = {
     "feature.map.desc":
       "가고 싶은 장소를 지도에 표시하고, 이동 동선을 한눈에 확인하세요.",
     "feature.map.alt": "태블릿에서 보는 Somewhere 여행 지도 화면",
+    "feature.live.dynamic.title": "실시간 현황",
+    "feature.live.dynamic.desc":
+      "홈 화면의 Dynamic Island에서 여행 현황을 실시간으로 확인하세요 (Somewhere Pro에서 이용 가능)",
+    "feature.live.dynamic.alt":
+      "홈 화면의 Dynamic Island에서 확인하는 실시간 여행 일정",
+    "feature.live.lock.title": "실시간 현황",
+    "feature.live.lock.desc":
+      "잠금 화면에서 여행 현황을 한눈에 확인하세요 (Somewhere Pro에서 이용 가능)",
+    "feature.live.lock.alt":
+      "잠금 화면 하단에서 확인하는 실시간 여행 일정",
     "feature.ai.kicker": "AI",
     "feature.ai.title": "AI 맞춤 여행 생성",
     "feature.ai.desc":
@@ -55,6 +65,7 @@ const I18N = {
     "pro.ads": "광고 제거",
     "pro.trips": "최대 여행수 10 → 300개",
     "pro.friends": "최대 친구 초대 수(여행 당) 5 → 50명",
+    "pro.liveActivities": "실시간 현황",
 
     "cta.title": "지금 여행을 시작하세요",
     "cta.sub": "지금 Somewhere를 다운로드하고 첫 여행을 만들어 보세요.",
@@ -95,6 +106,16 @@ const I18N = {
     "feature.map.desc":
       "Mark the places you want to visit and see your travel route at a glance.",
     "feature.map.alt": "Somewhere trip map on a tablet",
+    "feature.live.dynamic.title": "Live Activities",
+    "feature.live.dynamic.desc":
+      "See live trip updates in the Dynamic Island from your Home Screen (Available on Somewhere Pro)",
+    "feature.live.dynamic.alt":
+      "Live trip updates in the Dynamic Island on the Home Screen",
+    "feature.live.lock.title": "Live Activities",
+    "feature.live.lock.desc":
+      "Follow live trip updates at a glance on your Lock Screen (Available on Somewhere Pro)",
+    "feature.live.lock.alt":
+      "Live trip updates at the bottom of the Lock Screen",
     "feature.ai.kicker": "AI",
     "feature.ai.title": "AI-generated custom trips",
     "feature.ai.desc":
@@ -124,6 +145,7 @@ const I18N = {
     "pro.ads": "Remove ads",
     "pro.trips": "Maximum trips: 10 → 300",
     "pro.friends": "Maximum invited friends per trip: 5 → 50",
+    "pro.liveActivities": "Live Activities",
 
     "cta.title": "Start your journey today",
     "cta.sub": "Download Somewhere and create your first trip.",
