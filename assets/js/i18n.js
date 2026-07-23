@@ -16,7 +16,7 @@ const I18N = {
     "hero.title.1": "Somewhere",
     "hero.title.2": "여행 계획 앱",
     "hero.lead":
-      "나만의 여행 계획을 손쉽게 세워보세요. 여행 만들기부터 지도 동선 확인, 친구 초대, 대화면 최적화까지 여행 준비에 필요한 흐름을 한 곳에 모읍니다.",
+      "나만의 여행 계획을 손쉽게 세워보세요. 여행 계획부터 지도 동선 확인, 소비 내역 기록 및 정산까지 여행 준비에 필요한 흐름을 한 곳에 모아드려요.",
     "hero.note": "App Store · Google Play 무료 다운로드",
     "hero.screen.trips": "Somewhere 여행 목록 화면",
     "hero.screen.map": "Somewhere 지도 동선 화면",
@@ -36,11 +36,11 @@ const I18N = {
       "잠금 화면에서 현재 여행 현황을 한눈에 확인하세요 (Somewhere Pro에서 이용 가능)",
     "feature.live.lock.alt":
       "잠금 화면 하단에서 확인하는 현재 여행 현황",
-    "feature.ai.kicker": "AI",
-    "feature.ai.title": "AI 맞춤 여행 생성",
-    "feature.ai.desc":
-      "여행 생성 AI가 원하는 여행을 간편하게 만들어드려요.",
-    "feature.ai.alt": "AI 여행 유형 선택 화면",
+    "feature.expense.kicker": "지출",
+    "feature.expense.title": "지출 내역과 정산",
+    "feature.expense.desc":
+      "여행의 소비 내역을 기록하고, 정산 기능으로 친구에게 얼마를 보낼지 손쉽게 확인하세요.",
+    "feature.expense.alt": "여행 소비 지출 내역 및 정산 화면",
     "feature.together.kicker": "협업",
     "feature.together.title": "함께 만드는 여행",
     "feature.together.desc":
@@ -54,7 +54,6 @@ const I18N = {
 
     "support.eyebrow": "지원 기능",
     "support.title": "다양한 기능",
-    "support.budget": "장소별 예산 입력, 총 예산 확인 기능",
     "support.theme": "라이트 / 다크 모드 지원",
     "support.account": "계정 연동 지원",
     "support.language": "한국어 / 영어 지원",
@@ -66,6 +65,7 @@ const I18N = {
     "pro.trips": "최대 여행 수 증가",
     "pro.friends": "친구 초대 수 증가",
     "pro.liveActivities": "실시간 현황",
+    "pro.expenseImages": "소비 내역 영수증·사진 첨부",
 
     "cta.title": "지금 여행을 시작하세요",
     "cta.sub": "지금 Somewhere를 다운로드하고 첫 여행을 만들어 보세요.",
@@ -96,7 +96,7 @@ const I18N = {
     "hero.title.1": "Somewhere",
     "hero.title.2": "Trip Planner App",
     "hero.lead":
-      "Build your own trip without the busywork. Somewhere brings trip creation, route maps, friend invites, and large-screen layouts into one planning flow.",
+      "Build your own trip without the busywork. Somewhere brings trip planning, route maps, and expense tracking & settlement into one planning flow.",
     "hero.note": "Free on the App Store and Google Play",
     "hero.screen.trips": "Somewhere trips screen",
     "hero.screen.map": "Somewhere route map screen",
@@ -116,11 +116,11 @@ const I18N = {
       "View your current trip status at a glance on your Lock Screen (Available on Somewhere Pro)",
     "feature.live.lock.alt":
       "Current trip status at the bottom of the Lock Screen",
-    "feature.ai.kicker": "AI",
-    "feature.ai.title": "AI-generated custom trips",
-    "feature.ai.desc":
-      "Trip-generation AI helps you create the kind of trip you want more easily.",
-    "feature.ai.alt": "AI trip type selection screen",
+    "feature.expense.kicker": "Expense",
+    "feature.expense.title": "Expenses & Settlement",
+    "feature.expense.desc":
+      "Record your travel spending and easily calculate settlement amounts to send to friends.",
+    "feature.expense.alt": "Travel expense details and settlement screen",
     "feature.together.kicker": "Together",
     "feature.together.title": "Plan trips together",
     "feature.together.desc":
@@ -134,7 +134,6 @@ const I18N = {
 
     "support.eyebrow": "Included",
     "support.title": "Various features",
-    "support.budget": "Place-level budgets and total budget overview",
     "support.theme": "Light / dark mode support",
     "support.account": "Account linking support",
     "support.language": "Korean / English support",
@@ -146,6 +145,7 @@ const I18N = {
     "pro.trips": "Increased maximum trips",
     "pro.friends": "Increased friend invite limit",
     "pro.liveActivities": "Live Activities",
+    "pro.expenseImages": "Attach expense receipts & photos",
 
     "cta.title": "Start your journey today",
     "cta.sub": "Download Somewhere and create your first trip.",
