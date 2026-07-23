@@ -63,8 +63,8 @@ const I18N = {
     "pro.eyebrow": "구독",
     "pro.title": "Somewhere Pro 구독제",
     "pro.ads": "광고 제거",
-    "pro.trips": "최대 여행수 10 → 300개",
-    "pro.friends": "최대 친구 초대 수(여행 당) 5 → 50명",
+    "pro.trips": "최대 여행 수 증가",
+    "pro.friends": "친구 초대 수 증가",
     "pro.liveActivities": "실시간 현황",
 
     "cta.title": "지금 여행을 시작하세요",
@@ -143,8 +143,8 @@ const I18N = {
     "pro.eyebrow": "Subscription",
     "pro.title": "Somewhere Pro",
     "pro.ads": "Remove ads",
-    "pro.trips": "Maximum trips: 10 → 300",
-    "pro.friends": "Maximum invited friends per trip: 5 → 50",
+    "pro.trips": "Increased maximum trips",
+    "pro.friends": "Increased friend invite limit",
     "pro.liveActivities": "Live Activities",
 
     "cta.title": "Start your journey today",
