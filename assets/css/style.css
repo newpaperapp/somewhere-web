@@ -868,6 +868,26 @@ a {
   color: var(--primary);
 }
 
+.footer__business {
+  flex: 1 1 100%;
+  color: var(--on-surface-variant);
+  font-size: 13px;
+}
+
+.footer__business summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  cursor: pointer;
+  font-weight: 650;
+  color: var(--on-surface);
+}
+
+.footer__business-body {
+  margin-top: 8px;
+  line-height: 1.7;
+}
+
 .footer__legal,
 .store-legal {
   color: var(--on-surface-variant);

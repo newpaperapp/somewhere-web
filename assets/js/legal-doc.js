@@ -84,8 +84,36 @@
       const available = versions.filter((v) => v.langs.includes(lang));
       if (!available.some((v) => v.id === selectedId)) selectedId = currentVersion.id;
       const selected = available.find((v) => v.id === selectedId) || currentVersion;
+
+      // Finder opens pages with the file: protocol, where browsers commonly block
+      // fetch() of local fragments. Keep the current document embedded in the page
+      // readable there; date-based history remains available when served over HTTP.
+      const staticSections = content.querySelectorAll(".policy[data-lang]");
+      if (window.location.protocol === "file:" && staticSections.length) {
+        const currentLabel =
+          (lang === "en" ? currentVersion.en : currentVersion.ko) +
+          (t.current || "");
+        select.innerHTML = `<option value="${escapeHtml(currentVersion.id)}">${escapeHtml(currentLabel)}</option>`;
+        select.value = currentVersion.id;
+        select.disabled = true;
+        const versionsControl = select.closest(".legal__versions");
+        if (versionsControl) versionsControl.hidden = true;
+        setText(wrap, "[data-eff-label]", t.eff || "");
+        setText(wrap, "[data-eff-date]", lang === "en" ? currentVersion.en : currentVersion.ko);
+        staticSections.forEach((section) => {
+          section.hidden = section.dataset.lang !== lang;
+        });
+        content.hidden = false;
+        if (loading) loading.hidden = true;
+        window.dispatchEvent(new CustomEvent("somewhere:contentloaded"));
+        return;
+      }
+
       const seq = ++renderSeq;
 
+      select.disabled = false;
+      const versionsControl = select.closest(".legal__versions");
+      if (versionsControl) versionsControl.hidden = false;
       select.innerHTML = available
         .map((v) => {
           const label = (lang === "en" ? v.en : v.ko) + (v.current ? t.current : "");
