@@ -10,6 +10,6 @@ window.SOMEWHERE = {
   // App Store — TODO: replace id0000000000 with the real App Store ID at release.
   APP_STORE_URL: "https://apps.apple.com/app/id6780403625",
 
-  CONTACT_EMAIL: "npsomewhere@gmail.com",
+  CONTACT_EMAIL: "contact@npsomewhere.com",
   DEVELOPER: "Sejong Lee",
 };

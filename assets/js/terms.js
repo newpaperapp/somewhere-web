@@ -13,12 +13,19 @@
     },
     versions: [
       {
+        id: "2026-08-13",
+        ko: "2026년 8월 13일",
+        en: "August 13, 2026",
+        path: "assets/legal/terms/2026-08-13.html",
+        langs: ["ko", "en"],
+        current: true,
+      },
+      {
         id: "2026-06-24",
         ko: "2026년 6월 24일",
         en: "June 24, 2026",
         path: "assets/legal/terms/2026-06-24.html",
         langs: ["ko", "en"],
-        current: true,
       },
     ],
   });
