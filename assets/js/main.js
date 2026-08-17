@@ -45,18 +45,12 @@
 
   function wireStoreLinks() {
     const cfg = window.SOMEWHERE || {};
-    if (window.SomewhereInAppDownload) {
-      window.SomewhereInAppDownload.wireDownloadLinks();
-    } else {
-      // Keep the ordinary-anchor behaviour if the optional helper ever fails
-      // to load, rather than making a download CTA inert.
-      document.querySelectorAll("[data-store='ios']").forEach((a) => {
-        a.href = cfg.APP_STORE_URL;
-      });
-      document.querySelectorAll("[data-store='android']").forEach((a) => {
-        a.href = cfg.PLAY_STORE_URL;
-      });
-    }
+    document.querySelectorAll("[data-store='ios']").forEach((a) => {
+      a.href = cfg.APP_STORE_URL;
+    });
+    document.querySelectorAll("[data-store='android']").forEach((a) => {
+      a.href = cfg.PLAY_STORE_URL;
+    });
     document.querySelectorAll("[data-contact-email]").forEach((el) => {
       if (!el.textContent.trim()) el.textContent = cfg.CONTACT_EMAIL;
       el.removeAttribute("role");
