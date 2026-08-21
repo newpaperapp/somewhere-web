@@ -46,9 +46,17 @@
   function wireStoreLinks() {
     const cfg = window.SOMEWHERE || {};
     document.querySelectorAll("[data-store='ios']").forEach((a) => {
+      if (a.classList.contains("store-badge--disabled") || a.getAttribute("aria-disabled") === "true") {
+        a.removeAttribute("href");
+        return;
+      }
       a.href = cfg.APP_STORE_URL;
     });
     document.querySelectorAll("[data-store='android']").forEach((a) => {
+      if (a.classList.contains("store-badge--disabled") || a.getAttribute("aria-disabled") === "true") {
+        a.removeAttribute("href");
+        return;
+      }
       a.href = cfg.PLAY_STORE_URL;
     });
     document.querySelectorAll("[data-contact-email]").forEach((el) => {
