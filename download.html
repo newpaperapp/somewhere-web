@@ -26,14 +26,14 @@
         <div id="auto-state">
           <div class="spinner" aria-hidden="true"></div>
           <h1 data-i18n="redirect.auto.title">스토어로 이동 중…</h1>
-          <p data-i18n="redirect.auto.sub">잠시만 기다려 주세요.</p>
+          <p data-i18n="redirect.auto.sub">잠시만 기다려 주세요</p>
           <a class="redirect__home" href="index.html" data-i18n="redirect.home">홈으로</a>
         </div>
 
         <!-- shown on desktop / unknown platforms -->
         <div id="manual-state" class="hidden">
           <h1 data-i18n="redirect.manual.title">Somewhere 다운로드</h1>
-          <p data-i18n="redirect.manual.sub">사용 중인 기기의 스토어를 선택하세요.</p>
+          <p data-i18n="redirect.manual.sub">사용 중인 기기의 스토어를 선택하세요</p>
           <div class="redirect__download-card">
             <div class="store-badges redirect__buttons" role="group" aria-label="Store download links">
               <a class="store-badge store-badge--ios" data-store="ios" target="_blank"
@@ -41,8 +41,8 @@
                 <img src="assets/img/badges/download_on_the_app_store.svg"
                   alt="Download on the App Store" width="120" height="40" />
               </a>
-              <a class="store-badge store-badge--android" data-store="android" target="_blank"
-                rel="noopener" aria-label="Get it on Google Play">
+              <a class="store-badge store-badge--android store-badge--disabled" data-store="android"
+                aria-disabled="true" tabindex="-1" aria-label="Get it on Google Play">
                 <img src="assets/img/badges/get_it_on_google_play.svg"
                   alt="Get it on Google Play" width="135" height="40" />
               </a>

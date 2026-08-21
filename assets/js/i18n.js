@@ -17,14 +17,14 @@ const I18N = {
     "hero.title.2": "여행 계획 앱",
     "hero.lead":
       "나만의 여행 계획을 손쉽게 세워보세요. 여행 계획부터 지도 동선 확인, 소비 내역 기록 및 정산까지 여행 준비에 필요한 흐름을 한 곳에 모아드려요.",
-    "hero.note": "App Store · Google Play 무료 다운로드",
+    "hero.note": "App Store 무료 다운로드 · Google Play 준비중",
     "hero.screen.trips": "Somewhere 여행 목록 화면",
     "hero.screen.map": "Somewhere 지도 동선 화면",
 
     "feature.map.kicker": "지도",
     "feature.map.title": "지도로 확인하는 여행 동선",
     "feature.map.desc":
-      "가고 싶은 장소를 지도에 표시하고, 이동 동선을 한눈에 확인하세요.",
+      "가고 싶은 장소를 지도에 표시하고, 이동 동선을 한눈에 확인하세요",
     "feature.map.alt": "태블릿에서 보는 Somewhere 여행 지도 화면",
     "feature.live.dynamic.title": "실시간 현황",
     "feature.live.dynamic.desc":
@@ -39,36 +39,41 @@ const I18N = {
     "feature.expense.kicker": "지출",
     "feature.expense.title": "지출 내역과 정산",
     "feature.expense.desc":
-      "여행의 소비 내역을 기록하고, 정산 기능으로 친구에게 얼마를 보낼지 손쉽게 확인하세요.",
+      "여행의 소비 내역을 기록하고, 정산 기능으로 친구에게 얼마를 보낼지 손쉽게 확인하세요",
     "feature.expense.alt": "여행 소비 지출 내역 및 정산 화면",
     "feature.together.kicker": "협업",
     "feature.together.title": "함께 만드는 여행",
     "feature.together.desc":
-      "친구를 초대해 서로 아이디어를 더하고, 같이 여행을 준비하세요.",
+      "친구를 초대해 서로 아이디어를 더하고, 같이 여행을 준비하세요",
     "feature.together.alt": "여행 친구 초대 및 권한 화면",
     "feature.large.kicker": "대화면",
     "feature.large.title": "대화면 최적화 UI",
     "feature.large.desc":
-      "폴더블, 태블릿 등 큰 화면에서도 편리하게 이용해보세요.",
+      "폴더블, 태블릿 등 큰 화면에서도 편리하게 이용해보세요",
     "feature.large.alt": "폴더블에서 보는 Somewhere 여행 일정 화면",
 
     "support.eyebrow": "지원 기능",
     "support.title": "다양한 기능",
-    "support.theme": "라이트 / 다크 모드 지원",
     "support.account": "계정 연동 지원",
-    "support.language": "한국어 / 영어 지원",
-    "support.platform": "Android, iOS, iPadOS 및 macOS 지원",
+    "support.platform": "iOS, iPadOS, macOS 및 visionOS 지원",
+    "support.language": "한국어, 영어, 일본어, 중국어(간체·번체), 스페인어, 프랑스어, 독일어 지원",
+
+    "a11y.eyebrow": "접근성",
+    "a11y.title": "접근성",
+    "a11y.darkMode": "라이트/다크 모드 지원",
+    "a11y.fontSize": "글꼴 및 디스플레이 크기 조절",
+    "a11y.screenReader": "스크린 리더 (VoiceOver) 지원",
 
     "pro.eyebrow": "구독",
     "pro.title": "Somewhere Pro 구독제",
     "pro.ads": "광고 제거",
+    "pro.liveActivities": "실시간 현황",
     "pro.trips": "최대 여행 수 증가",
     "pro.friends": "친구 초대 수 증가",
-    "pro.liveActivities": "실시간 현황",
     "pro.expenseImages": "소비 내역 영수증·사진 첨부",
 
     "cta.title": "지금 여행을 시작하세요",
-    "cta.sub": "지금 Somewhere를 다운로드하고 첫 여행을 만들어 보세요.",
+    "cta.sub": "지금 Somewhere를 다운로드하고 첫 여행을 만들어 보세요",
     "cta.qr": "카메라로 스캔해서 다운로드",
 
     "footer.developer": "개발자",
@@ -79,9 +84,9 @@ const I18N = {
 
     /* redirect */
     "redirect.auto.title": "스토어로 이동 중…",
-    "redirect.auto.sub": "잠시만 기다려 주세요.",
+    "redirect.auto.sub": "잠시만 기다려 주세요",
     "redirect.manual.title": "Somewhere 다운로드",
-    "redirect.manual.sub": "사용 중인 기기의 스토어를 선택하세요.",
+    "redirect.manual.sub": "사용 중인 기기의 스토어를 선택하세요",
     "redirect.home": "홈으로",
   },
 
@@ -97,14 +102,14 @@ const I18N = {
     "hero.title.2": "Trip Planner App",
     "hero.lead":
       "Build your own trip without the busywork. Somewhere brings trip planning, route maps, and expense tracking & settlement into one planning flow.",
-    "hero.note": "Free on the App Store and Google Play",
+    "hero.note": "Free on the App Store · Coming soon to Google Play",
     "hero.screen.trips": "Somewhere trips screen",
     "hero.screen.map": "Somewhere route map screen",
 
     "feature.map.kicker": "Map",
     "feature.map.title": "Travel routes on a map",
     "feature.map.desc":
-      "Mark the places you want to visit and see your travel route at a glance.",
+      "Mark the places you want to visit and see your travel route at a glance",
     "feature.map.alt": "Somewhere trip map on a tablet",
     "feature.live.dynamic.title": "Live Activities",
     "feature.live.dynamic.desc":
@@ -119,36 +124,42 @@ const I18N = {
     "feature.expense.kicker": "Expense",
     "feature.expense.title": "Expenses & Settlement",
     "feature.expense.desc":
-      "Record your travel spending and easily calculate settlement amounts to send to friends.",
+      "Record your travel spending and easily calculate settlement amounts to send to friends",
     "feature.expense.alt": "Travel expense details and settlement screen",
     "feature.together.kicker": "Together",
     "feature.together.title": "Plan trips together",
     "feature.together.desc":
-      "Invite friends, collect ideas, and prepare for the trip together.",
+      "Invite friends, collect ideas, and prepare for the trip together",
     "feature.together.alt": "Trip mates invitation and permission screen",
     "feature.large.kicker": "Large screens",
     "feature.large.title": "Optimized for bigger displays",
     "feature.large.desc":
-      "Use Somewhere comfortably on foldables, tablets, and other large screens.",
+      "Use Somewhere comfortably on foldables, tablets, and other large screens",
     "feature.large.alt": "Somewhere itinerary screen on a foldable device",
 
     "support.eyebrow": "Included",
     "support.title": "Various features",
-    "support.theme": "Light / dark mode support",
     "support.account": "Account linking support",
-    "support.language": "Korean / English support",
-    "support.platform": "Android, iOS, iPadOS and macOS support",
+    "support.platform": "iOS, iPadOS, macOS and visionOS support",
+    "support.language":
+      "Supports Korean, English, Japanese, Chinese (Simplified & Traditional), Spanish, French, German",
+
+    "a11y.eyebrow": "Accessibility",
+    "a11y.title": "Accessibility",
+    "a11y.darkMode": "Light and dark mode support",
+    "a11y.fontSize": "Adjustable font & display size",
+    "a11y.screenReader": "Screen reader (VoiceOver) support",
 
     "pro.eyebrow": "Subscription",
     "pro.title": "Somewhere Pro",
     "pro.ads": "Remove ads",
+    "pro.liveActivities": "Live Activities",
     "pro.trips": "Increased maximum trips",
     "pro.friends": "Increased friend invite limit",
-    "pro.liveActivities": "Live Activities",
     "pro.expenseImages": "Attach expense receipts & photos",
 
     "cta.title": "Start your journey today",
-    "cta.sub": "Download Somewhere and create your first trip.",
+    "cta.sub": "Download Somewhere and create your first trip",
     "cta.qr": "Scan to download",
 
     "footer.developer": "Developer",
@@ -159,9 +170,9 @@ const I18N = {
 
     /* redirect */
     "redirect.auto.title": "Taking you to the store…",
-    "redirect.auto.sub": "Please wait a moment.",
+    "redirect.auto.sub": "Please wait a moment",
     "redirect.manual.title": "Download Somewhere",
-    "redirect.manual.sub": "Choose the store for your device.",
+    "redirect.manual.sub": "Choose the store for your device",
     "redirect.home": "Home",
   },
 };
