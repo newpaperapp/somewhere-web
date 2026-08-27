@@ -5,6 +5,8 @@ Thumbs.db
 
 # Local agent/tool state
 .claude/
+COMMIT_RULE.md
+
 
 # Local environment files
 .env
