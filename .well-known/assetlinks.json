@@ -3,9 +3,10 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.newpaper.somewhere",
+      "package_name": "com.newpaperapp.somewhere",
       "sha256_cert_fingerprints": [
-        "14:76:78:3A:9B:35:01:6C:EC:3D:E3:B6:80:5C:D9:67:74:F1:BA:7D:3A:0B:A1:9F:20:4D:36:2A:32:38:31:DB"
+        "14:76:78:3A:9B:35:01:6C:EC:3D:E3:B6:80:5C:D9:67:74:F1:BA:7D:3A:0B:A1:9F:20:4D:36:2A:32:38:31:DB",
+        "C4:F8:3D:37:89:11:D7:7D:FA:A4:98:8A:59:9C:35:B1:0A:08:CE:0A:F2:DA:13:4D:99:E0:E3:F2:EA:FE:1E:8F"
       ]
     }
   },
@@ -13,10 +14,12 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.newpaper.somewhere.debug",
+      "package_name": "com.newpaperapp.somewhere.debug",
       "sha256_cert_fingerprints": [
+        "4D:63:17:2B:F4:72:BC:F9:93:9C:11:DB:14:78:57:55:6D:2B:2E:FE:C3:D4:12:4D:54:B5:9B:18:B1:59:3B:07",
         "BB:4C:3C:F2:41:36:70:A0:24:A3:35:E4:11:AD:CE:EB:DE:75:1C:B8:74:E3:80:F5:D4:2E:D6:C3:93:0B:45:5E"
       ]
     }
   }
 ]
+
