@@ -17,7 +17,7 @@ const I18N = {
     "hero.title.2": "여행 계획 앱",
     "hero.lead":
       "나만의 여행 계획을 손쉽게 세워보세요. 여행 계획부터 지도 동선 확인, 소비 내역 기록 및 정산까지 여행 준비에 필요한 흐름을 한 곳에 모아드려요.",
-    "hero.note": "App Store 무료 다운로드 · Google Play 준비중",
+    "hero.note": "App Store · Google Play 무료 다운로드",
     "hero.screen.trips": "Somewhere 여행 목록 화면",
     "hero.screen.map": "Somewhere 지도 동선 화면",
 
@@ -55,7 +55,7 @@ const I18N = {
     "support.eyebrow": "지원 기능",
     "support.title": "다양한 기능",
     "support.account": "계정 연동 지원",
-    "support.platform": "iOS, iPadOS, macOS 및 visionOS 지원",
+    "support.platform": "Android, iOS, iPadOS, macOS 및 visionOS 지원",
     "support.language": "한국어, 영어, 일본어, 중국어(간체·번체), 스페인어, 프랑스어, 독일어 지원",
 
     "a11y.eyebrow": "접근성",
@@ -102,7 +102,7 @@ const I18N = {
     "hero.title.2": "Trip Planner App",
     "hero.lead":
       "Build your own trip without the busywork. Somewhere brings trip planning, route maps, and expense tracking & settlement into one planning flow.",
-    "hero.note": "Free on the App Store · Coming soon to Google Play",
+    "hero.note": "Free on the App Store and Google Play",
     "hero.screen.trips": "Somewhere trips screen",
     "hero.screen.map": "Somewhere route map screen",
 
@@ -140,7 +140,7 @@ const I18N = {
     "support.eyebrow": "Included",
     "support.title": "Various features",
     "support.account": "Account linking support",
-    "support.platform": "iOS, iPadOS, macOS and visionOS support",
+    "support.platform": "Android, iOS, iPadOS, macOS and visionOS support",
     "support.language":
       "Supports Korean, English, Japanese, Chinese (Simplified & Traditional), Spanish, French, German",
 

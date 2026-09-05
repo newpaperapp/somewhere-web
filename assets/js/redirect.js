@@ -15,9 +15,8 @@
     (/Macintosh/.test(ua) && "ontouchend" in document);
 
   let target = null;
-  // Google Play is currently disabled
-  // if (isAndroid) target = cfg.PLAY_STORE_URL;
-  if (isIOS) target = cfg.APP_STORE_URL;
+  if (isAndroid) target = cfg.PLAY_STORE_URL;
+  else if (isIOS) target = cfg.APP_STORE_URL;
 
   if (target) {
     window.location.replace(target);
