@@ -4,6 +4,13 @@
 (function () {
   const THEME_KEY = "somewhere-theme";
 
+  function localized(key, fallback) {
+    if (window.SomewhereI18N && typeof window.SomewhereI18N.get === "function") {
+      return window.SomewhereI18N.get(key) || fallback;
+    }
+    return fallback;
+  }
+
   /* ---- Theme (light / dark) ---------------------------------------------- */
   function currentTheme() {
     return (
@@ -63,23 +70,19 @@
       if (!el.textContent.trim()) el.textContent = cfg.CONTACT_EMAIL;
       el.removeAttribute("role");
       el.removeAttribute("tabindex");
-      // don't double-inject the copy button
-      if (
-        el.nextElementSibling &&
-        el.nextElementSibling.classList.contains("copy-btn")
-      ) {
+      const copyButton = el.nextElementSibling;
+      const copyLabel = localized("footer.copyEmail", "Copy email address");
+
+      // Keep an existing copy button localized after a language change.
+      if (copyButton && copyButton.classList.contains("copy-btn")) {
+        copyButton.setAttribute("aria-label", copyLabel);
         return;
       }
 
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "copy-btn";
-      btn.setAttribute(
-        "aria-label",
-        document.documentElement.lang === "ko"
-          ? "이메일 주소 복사"
-          : "Copy email address"
-      );
+      btn.setAttribute("aria-label", copyLabel);
       btn.innerHTML =
         '<span class="material-symbols-rounded" aria-hidden="true">content_copy</span>';
       el.insertAdjacentElement("afterend", btn);
@@ -175,6 +178,10 @@
     window.SomewhereUI.refreshDynamicContent();
   });
 
+  window.addEventListener("somewhere:langchange", function () {
+    wireStoreLinks();
+  });
+
   /* ---- Init -------------------------------------------------------------- */
   document.addEventListener("DOMContentLoaded", function () {
     applyTheme(currentTheme());
@@ -188,9 +195,9 @@
     wireNavReveal();
     wireReveal();
 
-    document.querySelectorAll("[data-action='toggle-lang']").forEach((btn) => {
-      btn.addEventListener("click", function () {
-        if (window.SomewhereI18N) window.SomewhereI18N.toggleLang();
+    document.querySelectorAll("[data-action='change-lang']").forEach((select) => {
+      select.addEventListener("change", function () {
+        if (window.SomewhereI18N) window.SomewhereI18N.applyLang(select.value);
       });
     });
 

@@ -4,7 +4,9 @@
    ============================================================ */
 (function () {
   function currentLang() {
-    return document.documentElement.lang === "en" ? "en" : "ko";
+    // Legal documents are intentionally available in Korean and English only.
+    // All other website languages use the English legal body and labels.
+    return document.documentElement.lang === "ko" ? "ko" : "en";
   }
 
   function escapeHtml(value) {

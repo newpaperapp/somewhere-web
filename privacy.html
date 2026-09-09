@@ -12,7 +12,8 @@
       href="assets/fonts/PretendardVariable.woff2" crossorigin />
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check,content_copy" />
-    <link rel="stylesheet" href="assets/css/style.css?v=20260618-cta-qr4" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
+    <link rel="stylesheet" href="assets/css/style.css?v=20260909-i18n" />
   </head>
   <body>
     <!-- ===== Nav ===== -->
@@ -23,12 +24,23 @@
           <span>Somewhere</span>
         </a>
         <nav class="nav__actions">
-          <a class="nav__link" href="privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
-          <a class="nav__link" href="terms.html" data-i18n="footer.terms">서비스 이용약관</a>
-          <button class="icon-btn" data-action="toggle-lang"
-            data-i18n="lang.toggle" data-i18n-aria="lang.name">English</button>
+          <label class="language-picker">
+            <span class="material-icons-round language-picker__icon" aria-hidden="true">language</span>
+            <span class="language-picker__value" data-language-value aria-hidden="true">한국어</span>
+            <select class="language-picker__select" data-action="change-lang"
+              data-i18n-aria="lang.select" aria-label="언어 선택">
+              <option value="ko" data-i18n="lang.option.ko">한국어</option>
+              <option value="en" data-i18n="lang.option.en">English</option>
+              <option value="ja" data-i18n="lang.option.ja">日本語</option>
+              <option value="zh-CN" data-i18n="lang.option.zh-CN">简体中文</option>
+              <option value="zh-TW" data-i18n="lang.option.zh-TW">繁體中文</option>
+              <option value="fr" data-i18n="lang.option.fr">Français</option>
+              <option value="de" data-i18n="lang.option.de">Deutsch</option>
+              <option value="es" data-i18n="lang.option.es">Español</option>
+            </select>
+          </label>
           <button class="icon-btn" data-action="toggle-theme"
-            data-theme-icon aria-label="Toggle theme">
+            data-theme-icon data-i18n-aria="theme.toggle" aria-label="테마 전환">
             <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" aria-hidden="true">
               <circle cx="12" cy="12" r="4" />
@@ -771,30 +783,18 @@
         </div>
 
         <details class="footer__business">
-          <summary>
-            <span class="lang-ko">사업자 정보</span><span class="lang-en">Business information</span>
-          </summary>
-          <div class="footer__business-body">
-            <div class="lang-ko">
-              상호: 엔피(NP)<br />
-              대표자: 이세종<br />
-              사업자등록번호: 545-01-04035<br />
-              통신판매업 신고번호: 제 2026-서울양천-0818 호<br />
-              사업장 소재지: 서울특별시 양천구 중앙로45길 25-22, 402호(신정동, 신정빌라)<br />
-              이메일: contact@npsomewhere.com
-            </div>
-            <div class="lang-en">
-              Business name: NP<br />
-              Representative: Sejong Lee<br />
-              Business registration number: 545-01-04035<br />
-              Mail-order business report number: 2026-Seoul Yangcheon-0818<br />
-              Business address: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />
-              Email: contact@npsomewhere.com
-            </div>
+          <summary data-i18n="footer.business">사업자 정보</summary>
+          <div class="footer__business-body" data-i18n-html="footer.businessInfo">
+            상호: 엔피(NP)<br />
+            대표자: 이세종<br />
+            사업자등록번호: 545-01-04035<br />
+            통신판매업 신고번호: 제 2026-서울양천-0818 호<br />
+            사업장 소재지: 서울특별시 양천구 중앙로45길 25-22, 402호(신정동, 신정빌라)<br />
+            이메일: contact@npsomewhere.com
           </div>
         </details>
       </div>
-      <p class="footer__legal">
+      <p class="footer__legal" data-i18n="footer.legal">
         Apple and the Apple logo are trademarks of Apple Inc., registered in the
         U.S. and other countries. App Store is a service mark of Apple Inc.,
         registered in the U.S. and other countries. Google Play and the Google
@@ -803,8 +803,8 @@
     </footer>
 
     <script src="assets/js/config.js"></script>
-    <script src="assets/js/i18n.js"></script>
-    <script src="assets/js/main.js?v=20260618-cta-qr"></script>
+    <script src="assets/js/i18n.js?v=20260909-i18n"></script>
+    <script src="assets/js/main.js?v=20260909-i18n"></script>
     <script src="assets/js/legal-doc.js"></script>
     <script src="assets/js/privacy.js"></script>
   </body>
