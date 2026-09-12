@@ -8,15 +8,71 @@
       name="description"
       content="SOMEWHERE와 함께 여행을 시작하세요. 일정을 계획하고 지도에 기록하고 친구와 함께 떠나는 여행 계획 앱."
     />
+    <meta name="keywords" content="Somewhere, 여행 계획, 여행 플래너, 여행 일정, 지도 동선, 여행 가계부, 정산 앱" />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#f5f5f5" />
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://npsomewhere.com/" />
+
     <!-- Open Graph -->
+    <meta property="og:site_name" content="Somewhere" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://npsomewhere.com/" />
     <meta property="og:title" content="Somewhere — 여행 계획 앱" />
     <meta
       property="og:description"
       content="일정을 계획하고, 지도에 기록하고, 친구와 함께 떠나세요"
     />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://npsomewhere.com/assets/img/og-image.png" />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="1260" />
+    <meta property="og:image:alt" content="Somewhere — 여행 계획 앱" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Somewhere — 여행 계획 앱" />
+    <meta
+      name="twitter:description"
+      content="일정을 계획하고, 지도에 기록하고, 친구와 함께 떠나세요"
+    />
+    <meta name="twitter:image" content="https://npsomewhere.com/assets/img/og-image.png" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://npsomewhere.com/#website",
+          "url": "https://npsomewhere.com/",
+          "name": "Somewhere",
+          "description": "일정을 계획하고 지도에 기록하고 친구와 함께 떠나는 여행 계획 앱",
+          "inLanguage": "ko-KR"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://npsomewhere.com/#app",
+          "name": "Somewhere",
+          "operatingSystem": "iOS, Android",
+          "applicationCategory": "TravelApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW"
+          },
+          "description": "일정을 계획하고 지도에 기록하고 친구와 함께 떠나는 여행 계획 앱",
+          "url": "https://npsomewhere.com/",
+          "downloadUrl": [
+            "https://apps.apple.com/app/id6780403625",
+            "https://play.google.com/store/apps/details?id=com.newpaperapp.somewhere"
+          ]
+        }
+      ]
+    }
+    </script>
 
     <link rel="icon" type="image/svg+xml" href="assets/img/app-icon.svg" />
     <link rel="apple-touch-icon" href="assets/img/app-icon.svg" />
@@ -107,7 +163,8 @@
               data-i18n-src-en="assets/img/screens/1-apple-en-trips.png"
               data-i18n-alt="hero.screen.trips"
               alt="Somewhere 여행 목록 화면"
-              width="990" height="2024" />
+              width="990" height="2024"
+              fetchpriority="high" />
             <img class="screen-shot screen-shot--overlap"
               src="assets/img/screens/2-android-ko-tripmap.png"
               data-i18n-src-ko="assets/img/screens/2-android-ko-tripmap.png"
@@ -122,6 +179,7 @@
       <!-- ===== Feature story ===== -->
       <section class="section feature-story" id="features">
         <div class="container">
+          <h2 class="sr-only" data-i18n="nav.features">주요 기능</h2>
           <div class="story-grid">
             <article class="story-card story-card--wide reveal">
               <div class="story-card__copy">

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /join/
+Disallow: /download
+Disallow: /assets/legal/
+
+Sitemap: https://npsomewhere.com/sitemap.xml
