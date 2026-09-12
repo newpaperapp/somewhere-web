@@ -67,7 +67,7 @@
       const message =
         lang === "en"
           ? "Could not load this document. Please refresh the page or try again later."
-          : "문서를 불러오지 못했습니다. 페이지를 새로고침하거나 잠시 후 다시 시도해 주세요.";
+          : "문서를 불러오지 못했어요. 페이지를 새로고침하거나 잠시 후 다시 시도해 주세요.";
       content.innerHTML = `<div class="policy"><p class="muted">${escapeHtml(message)}</p></div>`;
       content.hidden = false;
     }

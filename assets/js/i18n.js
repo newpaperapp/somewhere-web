@@ -112,11 +112,11 @@ const I18N = {
     "join.documentTitle": "여행 초대",
     "join.title": "여행 초대를 받았어요",
     "join.description":
-      "Somewhere 앱이 설치되어 있다면 아래 버튼을 눌러 여행 정보를 확인하고 참가할 수 있습니다.",
+      "Somewhere 앱이 설치되어 있다면 아래 버튼을 눌러 여행 정보를 확인하고 참가할 수 있어요.",
     "join.open": "앱에서 열기",
     "join.download": "앱 다운로드",
     "join.home": "Somewhere 홈으로",
-    "error.notFound": "페이지를 찾을 수 없습니다",
+    "error.notFound": "페이지를 찾을 수 없어요",
     "error.home": "홈으로",
   },
 
