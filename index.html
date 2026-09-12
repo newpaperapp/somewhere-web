@@ -81,7 +81,7 @@
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check,content_copy" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
-    <link rel="stylesheet" href="assets/css/style.css?v=20260909-mobile-brand" />
+    <link rel="stylesheet" href="assets/css/style.css?v=20260912-qr-badge" />
   </head>
   <body class="is-home">
     <!-- ===== Nav ===== -->
@@ -150,6 +150,14 @@
                 rel="noopener" data-i18n-aria="store.android" aria-label="Google Play에서 다운로드">
                 <img src="assets/img/badges/get_it_on_google_play.svg"
                   data-i18n-alt="store.android" alt="Google Play에서 다운로드" width="135" height="40" />
+              </a>
+              <a class="store-badge store-badge--qr" href="#download"
+                data-action="scroll-to-qr"
+                data-i18n-aria="store.qr" aria-label="QR 코드로 이동"
+                data-i18n-title="store.qr" title="QR 코드로 이동">
+                <svg class="ico-qr" viewBox="0 -960 960 960" width="32" height="32" fill="currentColor" aria-hidden="true">
+                  <path d="M520-120v-80h80v80h-80Zm-80-80v-200h80v200h-80Zm320-120v-160h80v160h-80Zm-80-160v-80h80v80h-80Zm-480 80v-80h80v80h-80Zm-80-80v-80h80v80h-80Zm360-280v-80h80v80h-80ZM180-660h120v-120H180v120Zm-60 20v-160q0-17 11.5-28.5T160-840h160q17 0 28.5 11.5T360-800v160q0 17-11.5 28.5T320-600H160q-17 0-28.5-11.5T120-640Zm60 460h120v-120H180v120Zm-60 20v-160q0-17 11.5-28.5T160-360h160q17 0 28.5 11.5T360-320v160q0 17-11.5 28.5T320-120H160q-17 0-28.5-11.5T120-160Zm540-500h120v-120H660v120Zm-60 20v-160q0-17 11.5-28.5T640-840h160q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H640q-17 0-28.5-11.5T600-640Zm80 520v-120h-80v-80h160v120h80v80H680ZM520-400v-80h160v80H520Zm-160 0v-80h-80v-80h240v80h-80v80h-80Zm40-200v-160h80v80h80v80H400Zm-190-90v-60h60v60h-60Zm0 480v-60h60v60h-60Zm480-480v-60h60v60h-60Z"/>
+                </svg>
               </a>
             </div>
             <p class="hero__note" data-i18n="hero.note">App Store · Google Play 무료 다운로드</p>
@@ -354,7 +362,7 @@
                 </a>
               </div>
             </div>
-            <div class="cta__qr">
+            <div class="cta__qr" id="qr">
               <span class="cta__qr-code"
                 data-qr="https://npsomewhere.com/download" aria-hidden="true"></span>
               <span class="cta__qr-label" data-i18n="cta.qr">카메라로 스캔해서 다운로드</span>
@@ -405,8 +413,8 @@
     </footer>
 
     <script src="assets/js/config.js"></script>
-    <script src="assets/js/i18n.js?v=20260909-i18n"></script>
+    <script src="assets/js/i18n.js?v=20260912-qr-badge"></script>
     <script src="assets/js/vendor/qrcode-generator.min.js"></script>
-    <script src="assets/js/main.js?v=20260909-i18n"></script>
+    <script src="assets/js/main.js?v=20260912-qr-badge"></script>
   </body>
 </html>

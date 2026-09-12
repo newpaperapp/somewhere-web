@@ -167,10 +167,46 @@
     els.forEach((el) => io.observe(el));
   }
 
+  /* ---- QR scroll --------------------------------------------------------- */
+  function wireQRScroll() {
+    document.querySelectorAll("[data-action='scroll-to-qr']").forEach((btn) => {
+      btn.addEventListener("click", function (e) {
+        const qrEl =
+          document.getElementById("qr") ||
+          document.querySelector(".cta__qr") ||
+          document.getElementById("download");
+        if (!qrEl) return;
+        e.preventDefault();
+        const prefersReducedMotion =
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        qrEl.scrollIntoView({
+          behavior: prefersReducedMotion ? "auto" : "smooth",
+          block: "center",
+        });
+
+        const qrContainer = document.querySelector(".cta__qr");
+        if (qrContainer && !prefersReducedMotion) {
+          qrContainer.classList.remove("is-highlighted");
+          void qrContainer.offsetWidth;
+          qrContainer.classList.add("is-highlighted");
+          window.setTimeout(function () {
+            qrContainer.classList.remove("is-highlighted");
+          }, 1200);
+        }
+
+        if (window.history && window.history.pushState) {
+          window.history.pushState(null, "", "#qr");
+        }
+      });
+    });
+  }
+
   window.SomewhereUI = Object.assign(window.SomewhereUI || {}, {
     refreshDynamicContent: function () {
       wireStoreLinks();
       wireQRCodes();
+      wireQRScroll();
     },
   });
 
@@ -192,6 +228,7 @@
 
     wireStoreLinks();
     wireQRCodes();
+    wireQRScroll();
     wireNavReveal();
     wireReveal();
 

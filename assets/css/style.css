@@ -380,6 +380,38 @@ a {
   width: 135px;
 }
 
+.store-badge--qr {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  color: var(--on-surface-variant);
+  border: 0;
+  border-radius: 8px;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.store-badge--qr:hover {
+  color: var(--on-surface);
+  transform: translateY(-1px);
+}
+
+.store-badge--qr:active {
+  transform: scale(0.94);
+}
+
+.store-badge--qr .ico-qr {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
 .store-badge--disabled,
 .store-badge[aria-disabled="true"] {
   cursor: not-allowed;
@@ -981,6 +1013,7 @@ a {
   justify-content: center;
   gap: 12px;
   background: transparent;
+  scroll-margin-top: calc(var(--nav-h) + 32px);
 }
 
 .cta__qr-code {
@@ -990,6 +1023,23 @@ a {
   height: clamp(150px, 16vw, 190px);
   border-radius: 18px;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.cta__qr.is-highlighted .cta__qr-code {
+  animation: qrHighlight 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes qrHighlight {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .cta__qr-code svg {
@@ -1429,6 +1479,9 @@ html[lang="ko"] .lang-en {
   html {
     scroll-behavior: auto;
   }
+  .cta__qr.is-highlighted .cta__qr-code {
+    animation: none;
+  }
 }
 
 /* ---- Responsive ---------------------------------------------------------- */
@@ -1578,6 +1631,16 @@ html[lang="ko"] .lang-en {
   }
   .store-badge--android img {
     width: clamp(117px, 35vw, 135px);
+  }
+  .store-badge--qr {
+    width: clamp(34px, 10vw, 40px);
+    height: clamp(34px, 10vw, 40px);
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+  }
+  .store-badge--qr .ico-qr {
+    width: clamp(26px, 7.5vw, 32px);
+    height: clamp(26px, 7.5vw, 32px);
   }
   .redirect__buttons .store-badge--ios {
     padding-inline: clamp(6.5px, 2vw, 7.5px);

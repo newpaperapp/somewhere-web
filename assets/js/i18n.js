@@ -23,6 +23,7 @@ const I18N = {
     "store.downloadGroup": "스토어 다운로드 링크",
     "store.ios": "App Store에서 다운로드",
     "store.android": "Google Play에서 다운로드",
+    "store.qr": "QR 코드로 이동",
     "theme.toggle": "테마 전환",
 
     "hero.eyebrow": "Somewhere 여행 계획 앱",
@@ -137,6 +138,7 @@ const I18N = {
     "store.downloadGroup": "Store download links",
     "store.ios": "Download on the App Store",
     "store.android": "Get it on Google Play",
+    "store.qr": "Go to QR code",
     "theme.toggle": "Toggle theme",
 
     "hero.eyebrow": "Somewhere Trip Planner App",
@@ -252,6 +254,7 @@ const I18N = {
     "store.downloadGroup": "ストアのダウンロードリンク",
     "store.ios": "App Storeからダウンロード",
     "store.android": "Google Playで入手",
+    "store.qr": "QRコードへ移動",
     "theme.toggle": "テーマを切り替え",
 
     "hero.eyebrow": "Somewhere 旅行計画アプリ",
@@ -366,6 +369,7 @@ const I18N = {
     "store.downloadGroup": "应用商店下载链接",
     "store.ios": "在 App Store 下载",
     "store.android": "在 Google Play 获取",
+    "store.qr": "前往二维码",
     "theme.toggle": "切换主题",
 
     "hero.eyebrow": "Somewhere 旅行规划应用",
@@ -475,6 +479,7 @@ const I18N = {
     "store.downloadGroup": "應用程式商店下載連結",
     "store.ios": "在 App Store 下載",
     "store.android": "在 Google Play 取得",
+    "store.qr": "前往QR碼",
     "theme.toggle": "切換主題",
 
     "hero.eyebrow": "Somewhere 旅行規劃應用程式",
@@ -584,6 +589,7 @@ const I18N = {
     "store.downloadGroup": "Liens de téléchargement des stores",
     "store.ios": "Télécharger sur l’App Store",
     "store.android": "Disponible sur Google Play",
+    "store.qr": "Accéder au code QR",
     "theme.toggle": "Changer de thème",
 
     "hero.eyebrow": "Application de voyage Somewhere",
@@ -699,6 +705,7 @@ const I18N = {
     "store.downloadGroup": "Download-Links der Stores",
     "store.ios": "Im App Store laden",
     "store.android": "Bei Google Play laden",
+    "store.qr": "Zum QR-Code springen",
     "theme.toggle": "Darstellung wechseln",
 
     "hero.eyebrow": "Somewhere Reiseplaner-App",
@@ -814,6 +821,7 @@ const I18N = {
     "store.downloadGroup": "Enlaces de descarga de las tiendas",
     "store.ios": "Descargar en App Store",
     "store.android": "Disponible en Google Play",
+    "store.qr": "Ir al código QR",
     "theme.toggle": "Cambiar tema",
 
     "hero.eyebrow": "Aplicación de viajes Somewhere",
@@ -983,6 +991,11 @@ function applyLang(requestedLang) {
     const key = el.getAttribute("data-i18n-aria");
     const value = getString(key, lang);
     if (value !== "") el.setAttribute("aria-label", value);
+  });
+  document.querySelectorAll("[data-i18n-title]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-title");
+    const value = getString(key, lang);
+    if (value !== "") el.setAttribute("title", value);
   });
   document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
     const key = el.getAttribute("data-i18n-alt");
