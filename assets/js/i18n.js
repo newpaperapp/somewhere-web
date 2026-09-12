@@ -77,7 +77,8 @@ const I18N = {
     "a11y.title": "접근성",
     "a11y.darkMode": "라이트/다크 모드 지원",
     "a11y.fontSize": "글꼴 및 디스플레이 크기 조절",
-    "a11y.screenReader": "스크린 리더 (VoiceOver) 지원",
+    "a11y.contrast": "대비 정도 조절",
+    "a11y.screenReader": "스크린 리더 (TalkBack, VoiceOver) 지원",
 
     "pro.eyebrow": "구독",
     "pro.title": "Somewhere Pro 구독제",
@@ -194,7 +195,8 @@ const I18N = {
     "a11y.title": "Accessibility",
     "a11y.darkMode": "Light and dark mode support",
     "a11y.fontSize": "Adjustable font & display size",
-    "a11y.screenReader": "Screen reader (VoiceOver) support",
+    "a11y.contrast": "Adjustable contrast level",
+    "a11y.screenReader": "Screen reader (TalkBack, VoiceOver) support",
 
     "pro.eyebrow": "Subscription",
     "pro.title": "Somewhere Pro",
@@ -311,7 +313,8 @@ const I18N = {
     "a11y.title": "アクセシビリティ",
     "a11y.darkMode": "ライト／ダークモードに対応",
     "a11y.fontSize": "フォントと表示サイズを調整可能",
-    "a11y.screenReader": "スクリーンリーダー（VoiceOver）に対応",
+    "a11y.contrast": "コントラストを調整可能",
+    "a11y.screenReader": "スクリーンリーダー（TalkBack、VoiceOver）に対応",
 
     "pro.eyebrow": "サブスクリプション",
     "pro.title": "Somewhere Pro",
@@ -422,7 +425,8 @@ const I18N = {
     "a11y.title": "无障碍",
     "a11y.darkMode": "支持浅色和深色模式",
     "a11y.fontSize": "可调整字体和显示大小",
-    "a11y.screenReader": "支持屏幕阅读器（VoiceOver）",
+    "a11y.contrast": "可调整对比度",
+    "a11y.screenReader": "支持屏幕阅读器（TalkBack、VoiceOver）",
 
     "pro.eyebrow": "订阅",
     "pro.title": "Somewhere Pro",
@@ -533,7 +537,8 @@ const I18N = {
     "a11y.title": "無障礙功能",
     "a11y.darkMode": "支援淺色與深色模式",
     "a11y.fontSize": "可調整字型與顯示大小",
-    "a11y.screenReader": "支援螢幕閱讀器（VoiceOver）",
+    "a11y.contrast": "可調整對比度",
+    "a11y.screenReader": "支援螢幕閱讀器（TalkBack、VoiceOver）",
 
     "pro.eyebrow": "訂閱",
     "pro.title": "Somewhere Pro",
@@ -650,7 +655,9 @@ const I18N = {
     "a11y.title": "Accessibilité",
     "a11y.darkMode": "Prise en charge des modes clair et sombre",
     "a11y.fontSize": "Taille de police et d’affichage réglable",
-    "a11y.screenReader": "Prise en charge du lecteur d’écran (VoiceOver)",
+    "a11y.contrast": "Contraste réglable",
+    "a11y.screenReader":
+      "Prise en charge du lecteur d’écran (TalkBack, VoiceOver)",
 
     "pro.eyebrow": "Abonnement",
     "pro.title": "Somewhere Pro",
@@ -769,7 +776,9 @@ const I18N = {
     "a11y.title": "Barrierefreiheit",
     "a11y.darkMode": "Unterstützung für hellen und dunklen Modus",
     "a11y.fontSize": "Schrift- und Anzeigegröße anpassbar",
-    "a11y.screenReader": "Unterstützung für Screenreader (VoiceOver)",
+    "a11y.contrast": "Kontrast anpassbar",
+    "a11y.screenReader":
+      "Unterstützung für Screenreader (TalkBack, VoiceOver)",
 
     "pro.eyebrow": "Abonnement",
     "pro.title": "Somewhere Pro",
@@ -887,7 +896,9 @@ const I18N = {
     "a11y.title": "Accesibilidad",
     "a11y.darkMode": "Compatibilidad con modo claro y oscuro",
     "a11y.fontSize": "Tamaño de fuente y pantalla ajustable",
-    "a11y.screenReader": "Compatibilidad con lectores de pantalla (VoiceOver)",
+    "a11y.contrast": "Contraste ajustable",
+    "a11y.screenReader":
+      "Compatibilidad con lectores de pantalla (TalkBack, VoiceOver)",
 
     "pro.eyebrow": "Suscripción",
     "pro.title": "Somewhere Pro",
