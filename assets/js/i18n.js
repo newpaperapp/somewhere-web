@@ -121,6 +121,8 @@ const I18N = {
     "join.home": "Somewhere 홈으로",
     "error.notFound": "페이지를 찾을 수 없어요",
     "error.home": "홈으로",
+    "legal.redirect.title": "개인정보처리방침으로 이동 중이에요",
+    "legal.redirect.open": "개인정보처리방침 열기",
   },
 
   en: {
@@ -240,6 +242,8 @@ const I18N = {
     "join.home": "Go to Somewhere Home",
     "error.notFound": "Page not found",
     "error.home": "Home",
+    "legal.redirect.title": "Taking you to the Privacy Policy",
+    "legal.redirect.open": "Open the Privacy Policy",
   },
 
   ja: {
@@ -357,6 +361,8 @@ const I18N = {
     "join.home": "Somewhereホームへ",
     "error.notFound": "ページが見つかりません",
     "error.home": "ホームへ",
+    "legal.redirect.title": "プライバシーポリシーへ移動しています",
+    "legal.redirect.open": "プライバシーポリシーを開く",
   },
 
   "zh-CN": {
@@ -469,6 +475,8 @@ const I18N = {
     "join.home": "前往 Somewhere 首页",
     "error.notFound": "找不到页面",
     "error.home": "返回首页",
+    "legal.redirect.title": "正在前往隐私政策",
+    "legal.redirect.open": "打开隐私政策",
   },
 
   "zh-TW": {
@@ -581,6 +589,8 @@ const I18N = {
     "join.home": "前往 Somewhere 首頁",
     "error.notFound": "找不到頁面",
     "error.home": "返回首頁",
+    "legal.redirect.title": "正在前往隱私權政策",
+    "legal.redirect.open": "開啟隱私權政策",
   },
 
   fr: {
@@ -702,6 +712,8 @@ const I18N = {
     "join.home": "Accéder à l’accueil de Somewhere",
     "error.notFound": "Page introuvable",
     "error.home": "Accueil",
+    "legal.redirect.title": "Redirection vers la politique de confidentialité",
+    "legal.redirect.open": "Ouvrir la politique de confidentialité",
   },
 
   de: {
@@ -822,6 +834,8 @@ const I18N = {
     "join.home": "Zur Somewhere-Startseite",
     "error.notFound": "Seite nicht gefunden",
     "error.home": "Startseite",
+    "legal.redirect.title": "Weiterleitung zur Datenschutzerklärung",
+    "legal.redirect.open": "Datenschutzerklärung öffnen",
   },
 
   es: {
@@ -942,6 +956,8 @@ const I18N = {
     "join.home": "Ir al inicio de Somewhere",
     "error.notFound": "No se ha encontrado la página",
     "error.home": "Inicio",
+    "legal.redirect.title": "Te llevamos a la política de privacidad",
+    "legal.redirect.open": "Abrir la política de privacidad",
   },
 };
 
