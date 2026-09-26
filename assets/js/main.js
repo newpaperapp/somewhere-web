@@ -13,17 +13,16 @@
 
   /* ---- Theme (light / dark) ---------------------------------------------- */
   function currentTheme() {
-    return (
-      localStorage.getItem(THEME_KEY) ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light")
-    );
+    try {
+      const saved = localStorage.getItem(THEME_KEY);
+      if (saved === "dark" || saved === "light") return saved;
+    } catch (_) { /* Storage can be unavailable in private browsing. */ }
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   }
 
   function applyTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem(THEME_KEY, theme);
+    try { localStorage.setItem(THEME_KEY, theme); } catch (_) { /* Optional preference. */ }
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute("content", theme === "dark" ? "#1a1a1a" : "#f5f5f5");
     document.querySelectorAll("[data-theme-icon]").forEach((el) => {
@@ -57,14 +56,14 @@
         a.removeAttribute("href");
         return;
       }
-      a.href = cfg.APP_STORE_URL;
+      if (cfg.APP_STORE_URL) a.href = cfg.APP_STORE_URL;
     });
     document.querySelectorAll("[data-store='android']").forEach((a) => {
       if (a.classList.contains("store-badge--disabled") || a.getAttribute("aria-disabled") === "true") {
         a.removeAttribute("href");
         return;
       }
-      a.href = cfg.PLAY_STORE_URL;
+      if (cfg.PLAY_STORE_URL) a.href = cfg.PLAY_STORE_URL;
     });
     document.querySelectorAll("[data-contact-email]").forEach((el) => {
       if (!el.textContent.trim()) el.textContent = cfg.CONTACT_EMAIL;
@@ -164,7 +163,10 @@
       },
       { threshold: 0.12 }
     );
-    els.forEach((el) => io.observe(el));
+    els.forEach((el) => {
+      io.observe(el);
+      el.classList.add("reveal--animated");
+    });
   }
 
   /* ---- QR scroll --------------------------------------------------------- */
@@ -234,7 +236,7 @@
 
     document.querySelectorAll("[data-action='change-lang']").forEach((select) => {
       select.addEventListener("change", function () {
-        if (window.SomewhereI18N) window.SomewhereI18N.applyLang(select.value);
+        if (window.SomewhereI18N) window.SomewhereI18N.selectLang(select.value);
       });
     });
 

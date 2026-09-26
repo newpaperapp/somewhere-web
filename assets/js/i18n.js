@@ -983,8 +983,13 @@ function normalizeLang(value) {
 }
 
 function detectLang() {
-  const saved = normalizeLang(localStorage.getItem(STORAGE_KEY));
-  if (saved) return saved;
+  // A landing URL always serves the same language to people and crawlers.
+  const pageLang = normalizeLang(document.documentElement.getAttribute("data-page-lang"));
+  if (pageLang) return pageLang;
+  try {
+    const saved = normalizeLang(localStorage.getItem(STORAGE_KEY));
+    if (saved) return saved;
+  } catch (_) { /* Optional preference. */ }
   return normalizeLang(navigator.language || "en") || "en";
 }
 
@@ -1007,7 +1012,7 @@ function updateDocumentTitle(lang) {
     document.title = `Somewhere — ${getString("redirect.manual.title", lang)}`;
     return;
   }
-  if (path.endsWith("/index.html") || path === "/") {
+  if (document.documentElement.hasAttribute("data-page-lang") || path.endsWith("/index.html") || path === "/") {
     document.title = `Somewhere — ${getString("hero.title.2", lang)}`;
   }
 }
@@ -1067,19 +1072,37 @@ function applyLang(requestedLang) {
     el.textContent = getString(`lang.option.${lang}`, lang);
   });
 
+  document.querySelectorAll("a[href='index.html'], a[data-home-link]").forEach((el) => {
+    el.setAttribute("data-home-link", "");
+    el.setAttribute("href", lang === "ko" ? "/" : `/${lang.toLowerCase()}/`);
+  });
+
   updateDocumentTitle(lang);
 
-  localStorage.setItem(STORAGE_KEY, lang);
+  try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) { /* Optional preference. */ }
 
   // Let page-specific components (for example, the legal version picker)
   // react without duplicating language state.
   window.dispatchEvent(new CustomEvent("somewhere:langchange", { detail: lang }));
 }
 
+function selectLang(requestedLang) {
+  const lang = normalizeLang(requestedLang) || "en";
+  if (document.documentElement.hasAttribute("data-page-lang")) {
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) { /* Optional preference. */ }
+    const path = lang === "ko" ? "/" : `/${lang.toLowerCase()}/`;
+    if (lang !== document.documentElement.getAttribute("data-page-lang")) {
+      window.location.assign(path + window.location.search + window.location.hash);
+    }
+    return;
+  }
+  applyLang(lang);
+}
+
 function toggleLang() {
   const currentIndex = SUPPORTED.indexOf(window.__lang);
   const nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % SUPPORTED.length;
-  applyLang(SUPPORTED[nextIndex]);
+  selectLang(SUPPORTED[nextIndex]);
 }
 
 window.SomewhereI18N = {
@@ -1088,5 +1111,6 @@ window.SomewhereI18N = {
   normalizeLang,
   get: getString,
   applyLang,
+  selectLang,
   toggleLang,
 };

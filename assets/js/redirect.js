@@ -19,6 +19,7 @@
   else if (isIOS) target = cfg.APP_STORE_URL;
 
   if (target) {
+    document.documentElement.classList.add("redirect--auto");
     window.location.replace(target);
   } else {
     // desktop / unknown: hide spinner, show manual choices

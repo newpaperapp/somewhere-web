@@ -24,6 +24,7 @@ pnpm-debug.log*
 
 # Dependencies and package-manager caches
 node_modules/
+__pycache__/
 .npm/
 .pnpm-store/
 

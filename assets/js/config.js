@@ -7,7 +7,7 @@ window.SOMEWHERE = {
   PLAY_STORE_URL:
     "https://play.google.com/store/apps/details?id=com.newpaperapp.somewhere",
 
-  // App Store — TODO: replace id0000000000 with the real App Store ID at release.
+  // App Store
   APP_STORE_URL: "https://apps.apple.com/app/id6780403625",
 
   CONTACT_EMAIL: "contact@npsomewhere.com",

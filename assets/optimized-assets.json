@@ -1,0 +1,385 @@
+{
+  "images": [
+    {
+      "source": "assets/img/screens/1-apple-en-trips.png",
+      "output": "assets/img/screens/1-apple-en-trips.webp",
+      "before": 778286,
+      "after": 471016
+    },
+    {
+      "source": "assets/img/screens/1-apple-ko-trips.png",
+      "output": "assets/img/screens/1-apple-ko-trips.webp",
+      "before": 769038,
+      "after": 466336
+    },
+    {
+      "source": "assets/img/screens/2-android-en-tripmap.png",
+      "output": "assets/img/screens/2-android-en-tripmap.webp",
+      "before": 629288,
+      "after": 367536
+    },
+    {
+      "source": "assets/img/screens/2-android-ko-tripmap.png",
+      "output": "assets/img/screens/2-android-ko-tripmap.webp",
+      "before": 609654,
+      "after": 355460
+    },
+    {
+      "source": "assets/img/screens/3-apple-en-tablet-tripmap.png",
+      "output": "assets/img/screens/3-apple-en-tablet-tripmap.webp",
+      "before": 1067703,
+      "after": 611562
+    },
+    {
+      "source": "assets/img/screens/3-apple-ko-tablet-tripmap.png",
+      "output": "assets/img/screens/3-apple-ko-tablet-tripmap.webp",
+      "before": 993097,
+      "after": 573640
+    },
+    {
+      "source": "assets/img/screens/4-apple-en-live-activities-dynamic-island.png",
+      "output": "assets/img/screens/4-apple-en-live-activities-dynamic-island.webp",
+      "before": 1890304,
+      "after": 1142124
+    },
+    {
+      "source": "assets/img/screens/4-apple-ko-live-activities-dynamic-island.png",
+      "output": "assets/img/screens/4-apple-ko-live-activities-dynamic-island.webp",
+      "before": 1875356,
+      "after": 1132814
+    },
+    {
+      "source": "assets/img/screens/5-apple-en-live-activities-lock-screen.png",
+      "output": "assets/img/screens/5-apple-en-live-activities-lock-screen.webp",
+      "before": 1986480,
+      "after": 1221682
+    },
+    {
+      "source": "assets/img/screens/5-apple-ko-live-activities-lock-screen.png",
+      "output": "assets/img/screens/5-apple-ko-live-activities-lock-screen.webp",
+      "before": 1969989,
+      "after": 1213126
+    },
+    {
+      "source": "assets/img/screens/6-apple-en-expense.png",
+      "output": "assets/img/screens/6-apple-en-expense.webp",
+      "before": 553172,
+      "after": 294390
+    },
+    {
+      "source": "assets/img/screens/6-apple-ko-expense.png",
+      "output": "assets/img/screens/6-apple-ko-expense.webp",
+      "before": 506457,
+      "after": 268458
+    },
+    {
+      "source": "assets/img/screens/7-apple-en-tripmates.png",
+      "output": "assets/img/screens/7-apple-en-tripmates.webp",
+      "before": 529153,
+      "after": 311562
+    },
+    {
+      "source": "assets/img/screens/7-apple-ko-tripmates.png",
+      "output": "assets/img/screens/7-apple-ko-tripmates.webp",
+      "before": 518669,
+      "after": 304342
+    },
+    {
+      "source": "assets/img/screens/8-android-en-foldable-trip.png",
+      "output": "assets/img/screens/8-android-en-foldable-trip.webp",
+      "before": 877170,
+      "after": 478478
+    },
+    {
+      "source": "assets/img/screens/8-android-ko-foldable-trip.png",
+      "output": "assets/img/screens/8-android-ko-foldable-trip.webp",
+      "before": 842972,
+      "after": 460100
+    }
+  ],
+  "font": {
+    "sourceBytes": 2057688,
+    "subsets": [
+      {
+        "output": "assets/fonts/subsets/Pretendard-latin.woff2",
+        "bytes": 74676,
+        "codepointCount": 525
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-ko-common.woff2",
+        "bytes": 40252,
+        "codepointCount": 212
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-00.woff2",
+        "bytes": 36816,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-01.woff2",
+        "bytes": 38908,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-02.woff2",
+        "bytes": 37788,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-03.woff2",
+        "bytes": 24464,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-04.woff2",
+        "bytes": 16376,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-05.woff2",
+        "bytes": 56168,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-06.woff2",
+        "bytes": 77524,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-07.woff2",
+        "bytes": 38104,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-08.woff2",
+        "bytes": 47448,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-09.woff2",
+        "bytes": 48508,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-10.woff2",
+        "bytes": 53992,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-11.woff2",
+        "bytes": 61808,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-12.woff2",
+        "bytes": 50580,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-13.woff2",
+        "bytes": 50020,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-14.woff2",
+        "bytes": 47008,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-15.woff2",
+        "bytes": 49544,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-16.woff2",
+        "bytes": 51696,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-17.woff2",
+        "bytes": 52256,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-18.woff2",
+        "bytes": 54404,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-19.woff2",
+        "bytes": 49768,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-20.woff2",
+        "bytes": 49360,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-21.woff2",
+        "bytes": 43872,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-22.woff2",
+        "bytes": 48236,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-23.woff2",
+        "bytes": 45532,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-24.woff2",
+        "bytes": 45956,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-25.woff2",
+        "bytes": 49616,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-26.woff2",
+        "bytes": 41900,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-27.woff2",
+        "bytes": 48740,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-28.woff2",
+        "bytes": 47692,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-29.woff2",
+        "bytes": 58304,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-30.woff2",
+        "bytes": 55580,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-31.woff2",
+        "bytes": 60540,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-32.woff2",
+        "bytes": 58608,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-33.woff2",
+        "bytes": 55880,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-34.woff2",
+        "bytes": 62028,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-35.woff2",
+        "bytes": 54592,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-36.woff2",
+        "bytes": 54988,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-37.woff2",
+        "bytes": 49564,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-38.woff2",
+        "bytes": 63236,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-39.woff2",
+        "bytes": 55112,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-40.woff2",
+        "bytes": 56832,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-41.woff2",
+        "bytes": 56276,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-42.woff2",
+        "bytes": 51740,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-43.woff2",
+        "bytes": 56124,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-44.woff2",
+        "bytes": 47600,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-45.woff2",
+        "bytes": 48780,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-46.woff2",
+        "bytes": 45108,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-47.woff2",
+        "bytes": 47892,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-48.woff2",
+        "bytes": 53824,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-49.woff2",
+        "bytes": 66120,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-50.woff2",
+        "bytes": 52668,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-51.woff2",
+        "bytes": 58456,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-52.woff2",
+        "bytes": 76808,
+        "codepointCount": 256
+      },
+      {
+        "output": "assets/fonts/subsets/Pretendard-extra-53.woff2",
+        "bytes": 22624,
+        "codepointCount": 31
+      }
+    ]
+  }
+}
