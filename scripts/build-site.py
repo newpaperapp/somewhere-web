@@ -235,6 +235,11 @@ def validate(output, data):
                     continue
                 asset = output / parts.path.lstrip("/")
                 assert asset.exists(), f"Broken {lang} link: {value}"
+    ko_alias = output / "ko" / "index.html"
+    ko_nodes = list(Document(ko_alias.read_text()).elements())
+    assert next(n for n in ko_nodes if n.tag == "html").attrs["lang"] == "ko"
+    assert [n.attrs["href"] for n in ko_nodes if n.tag == "link" and n.attrs.get("rel") == "canonical"] == [ORIGIN + "/"]
+    assert [n.attrs["value"] for n in ko_nodes if n.tag == "option" and "selected" in n.attrs] == ["ko"]
     for name in ["CNAME", ".nojekyll", "robots.txt", ".well-known/apple-app-site-association", ".well-known/assetlinks.json", "join/index.html", "privacy/index.html", "assets/fonts/PretendardVariable.woff2"]:
         assert (ROOT / name).read_bytes() == (output / name).read_bytes(), f"Changed protected entry point: {name}"
     assert not list(output.rglob("*.md"))
@@ -272,6 +277,10 @@ def main():
         target = output / home_path(lang).lstrip("/") / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(landing(source, lang, data))
+    # Keep / as the canonical Korean URL while serving the manually requested /ko/ path.
+    ko_alias = output / "ko" / "index.html"
+    ko_alias.parent.mkdir(parents=True, exist_ok=True)
+    ko_alias.write_text(landing(source, "ko", data))
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
     entries = [(ORIGIN + home_path(lang), "2026-09-26") for lang in data["languages"]]
