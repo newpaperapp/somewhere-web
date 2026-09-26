@@ -102,7 +102,7 @@ const I18N = {
     "footer.copyEmail": "이메일 주소 복사",
     "footer.business": "사업자 정보",
     "footer.businessInfo":
-      "상호: 엔피(NP)<br />대표자: 이세종<br />사업자등록번호: 545-01-04035<br />통신판매업 신고번호: 제 2026-서울양천-0818 호<br />사업장 소재지: 서울특별시 양천구 중앙로45길 25-22, 402호(신정동, 신정빌라)<br />이메일: contact@npsomewhere.com",
+      "상호: 엔피(NP)<br />대표자: 이세종<br />사업자등록번호: 545-01-04035<br />통신판매업 신고번호: 제 2026-서울양천-0818 호<br />사업장 소재지: 서울특별시 양천구 중앙로45길 25-22, 402호(신정동, 신정빌라)<br />이메일: np@npsomewhere.com",
     "footer.legal":
       "Apple 및 Apple 로고는 미국 및 기타 국가에 등록된 Apple Inc.의 상표입니다. App Store는 Apple Inc.의 서비스 상표입니다. Google Play 및 Google Play 로고는 Google LLC의 상표입니다.",
 
@@ -223,7 +223,7 @@ const I18N = {
     "footer.copyEmail": "Copy email address",
     "footer.business": "Business information",
     "footer.businessInfo":
-      "Business name: NP<br />Representative: Sejong Lee<br />Business registration number: 545-01-04035<br />Mail-order business report number: 2026-Seoul Yangcheon-0818<br />Business address: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />Email: contact@npsomewhere.com",
+      "Business name: NP<br />Representative: Sejong Lee<br />Business registration number: 545-01-04035<br />Mail-order business report number: 2026-Seoul Yangcheon-0818<br />Business address: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />Email: np@npsomewhere.com",
     "footer.legal":
       "Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.",
 
@@ -342,7 +342,7 @@ const I18N = {
     "footer.copyEmail": "メールアドレスをコピー",
     "footer.business": "事業者情報",
     "footer.businessInfo":
-      "商号: NP<br />代表者: Sejong Lee<br />事業者登録番号: 545-01-04035<br />通信販売業申告番号: 2026-Seoul Yangcheon-0818<br />事業所所在地: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />メール: contact@npsomewhere.com",
+      "商号: NP<br />代表者: Sejong Lee<br />事業者登録番号: 545-01-04035<br />通信販売業申告番号: 2026-Seoul Yangcheon-0818<br />事業所所在地: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />メール: np@npsomewhere.com",
     "footer.legal":
       "AppleおよびAppleロゴは、米国その他の国で登録されたApple Inc.の商標です。App StoreはApple Inc.のサービスマークです。Google PlayおよびGoogle PlayロゴはGoogle LLCの商標です。",
 
@@ -456,7 +456,7 @@ const I18N = {
     "footer.copyEmail": "复制电子邮箱地址",
     "footer.business": "企业信息",
     "footer.businessInfo":
-      "企业名称：NP<br />代表人：Sejong Lee<br />营业执照号：545-01-04035<br />网络销售业务申报编号：2026-Seoul Yangcheon-0818<br />营业地址：25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />电子邮箱：contact@npsomewhere.com",
+      "企业名称：NP<br />代表人：Sejong Lee<br />营业执照号：545-01-04035<br />网络销售业务申报编号：2026-Seoul Yangcheon-0818<br />营业地址：25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />电子邮箱：np@npsomewhere.com",
     "footer.legal":
       "Apple 及 Apple 标志是 Apple Inc. 在美国和其他国家注册的商标。App Store 是 Apple Inc. 的服务标志。Google Play 及 Google Play 标志是 Google LLC 的商标。",
 
@@ -570,7 +570,7 @@ const I18N = {
     "footer.copyEmail": "複製電子郵件地址",
     "footer.business": "企業資訊",
     "footer.businessInfo":
-      "企業名稱：NP<br />代表人：Sejong Lee<br />營業執照號碼：545-01-04035<br />網路銷售業務申報編號：2026-Seoul Yangcheon-0818<br />營業地址：25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />電子郵件：contact@npsomewhere.com",
+      "企業名稱：NP<br />代表人：Sejong Lee<br />營業執照號碼：545-01-04035<br />網路銷售業務申報編號：2026-Seoul Yangcheon-0818<br />營業地址：25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />電子郵件：np@npsomewhere.com",
     "footer.legal":
       "Apple 及 Apple 標誌是 Apple Inc. 在美國及其他國家註冊的商標。App Store 是 Apple Inc. 的服務標章。Google Play 及 Google Play 標誌是 Google LLC 的商標。",
 
@@ -693,7 +693,7 @@ const I18N = {
     "footer.copyEmail": "Copier l’adresse e-mail",
     "footer.business": "Informations sur l’entreprise",
     "footer.businessInfo":
-      "Nom de l’entreprise : NP<br />Représentant : Sejong Lee<br />Numéro d’enregistrement : 545-01-04035<br />Numéro de déclaration de vente à distance : 2026-Seoul Yangcheon-0818<br />Adresse : 25-22 Jungang-ro 45-gil, Yangcheon-gu, Séoul, 08060, République de Corée<br />E-mail : contact@npsomewhere.com",
+      "Nom de l’entreprise : NP<br />Représentant : Sejong Lee<br />Numéro d’enregistrement : 545-01-04035<br />Numéro de déclaration de vente à distance : 2026-Seoul Yangcheon-0818<br />Adresse : 25-22 Jungang-ro 45-gil, Yangcheon-gu, Séoul, 08060, République de Corée<br />E-mail : np@npsomewhere.com",
     "footer.legal":
       "Apple et le logo Apple sont des marques commerciales d’Apple Inc., déposées aux États-Unis et dans d’autres pays. App Store est une marque de service d’Apple Inc. Google Play et le logo Google Play sont des marques commerciales de Google LLC.",
 
@@ -815,7 +815,7 @@ const I18N = {
     "footer.copyEmail": "E-Mail-Adresse kopieren",
     "footer.business": "Unternehmensinformationen",
     "footer.businessInfo":
-      "Unternehmensname: NP<br />Vertreter: Sejong Lee<br />Unternehmensregisternummer: 545-01-04035<br />Meldungsnummer für den Versandhandel: 2026-Seoul Yangcheon-0818<br />Geschäftsadresse: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republik Korea<br />E-Mail: contact@npsomewhere.com",
+      "Unternehmensname: NP<br />Vertreter: Sejong Lee<br />Unternehmensregisternummer: 545-01-04035<br />Meldungsnummer für den Versandhandel: 2026-Seoul Yangcheon-0818<br />Geschäftsadresse: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republik Korea<br />E-Mail: np@npsomewhere.com",
     "footer.legal":
       "Apple und das Apple-Logo sind Marken von Apple Inc., die in den USA und anderen Ländern eingetragen sind. App Store ist eine Dienstleistungsmarke von Apple Inc. Google Play und das Google-Play-Logo sind Marken von Google LLC.",
 
@@ -937,7 +937,7 @@ const I18N = {
     "footer.copyEmail": "Copiar dirección de correo",
     "footer.business": "Información de la empresa",
     "footer.businessInfo":
-      "Nombre de la empresa: NP<br />Representante: Sejong Lee<br />Número de registro empresarial: 545-01-04035<br />Número de declaración de venta por correo: 2026-Seoul Yangcheon-0818<br />Domicilio social: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seúl, 08060, República de Corea<br />Correo: contact@npsomewhere.com",
+      "Nombre de la empresa: NP<br />Representante: Sejong Lee<br />Número de registro empresarial: 545-01-04035<br />Número de declaración de venta por correo: 2026-Seoul Yangcheon-0818<br />Domicilio social: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seúl, 08060, República de Corea<br />Correo: np@npsomewhere.com",
     "footer.legal":
       "Apple y el logotipo de Apple son marcas comerciales de Apple Inc., registradas en EE. UU. y otros países. App Store es una marca de servicio de Apple Inc. Google Play y el logotipo de Google Play son marcas comerciales de Google LLC.",
 

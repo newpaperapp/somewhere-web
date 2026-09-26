@@ -144,7 +144,7 @@ def landing(source, lang, data):
     schema = {
         "@context": "https://schema.org", "@graph": [
             {"@type": "Organization", "@id": ORIGIN + "/#organization", "name": "NP", "alternateName": "엔피",
-             "url": ORIGIN + "/", "logo": ORIGIN + "/assets/img/app-icon.svg", "email": "contact@npsomewhere.com"},
+             "url": ORIGIN + "/", "logo": ORIGIN + "/assets/img/app-icon.svg", "email": "np@npsomewhere.com"},
             {"@type": "WebSite", "@id": ORIGIN + "/#website", "url": ORIGIN + "/", "name": "Somewhere",
              "inLanguage": data["languages"], "publisher": {"@id": ORIGIN + "/#organization"}},
             {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": title,
@@ -284,7 +284,7 @@ def main():
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
     entries = [(ORIGIN + home_path(lang), "2026-09-26") for lang in data["languages"]]
-    entries += [(ORIGIN + "/" + page, "2026-09-12") for page in ["privacy.html", "terms.html"]]
+    entries += [(ORIGIN + "/" + page, "2026-09-28") for page in ["privacy.html", "terms.html"]]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += "".join(f"  <url><loc>{url}</loc><lastmod>{date}</lastmod></url>\n" for url, date in entries) + "</urlset>\n"
     (output / "sitemap.xml").write_text(sitemap)
