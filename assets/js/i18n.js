@@ -123,6 +123,8 @@ const I18N = {
     "error.home": "홈으로",
     "legal.redirect.title": "개인정보처리방침으로 이동 중이에요",
     "legal.redirect.open": "개인정보처리방침 열기",
+    "legal.redirect.termsTitle": "서비스 이용약관으로 이동 중이에요",
+    "legal.redirect.termsOpen": "서비스 이용약관 열기",
   },
 
   en: {
@@ -223,7 +225,7 @@ const I18N = {
     "footer.copyEmail": "Copy email address",
     "footer.business": "Business information",
     "footer.businessInfo":
-      "Business name: NP<br />Representative: Sejong Lee<br />Business registration number: 545-01-04035<br />Mail-order business report number: 2026-Seoul Yangcheon-0818<br />Business address: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />Email: np@npsomewhere.com",
+      "Business name: NP<br />Representative: Sejong Lee<br />Business registration number: 545-01-04035<br />Mail-order business report number: 2026-Seoul Yangcheon-0818<br />Business address: Room 402, Sinjeong Villa, 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul 08060, Republic of Korea<br />Email: np@npsomewhere.com",
     "footer.legal":
       "Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.",
 
@@ -244,6 +246,8 @@ const I18N = {
     "error.home": "Home",
     "legal.redirect.title": "Taking you to the Privacy Policy",
     "legal.redirect.open": "Open the Privacy Policy",
+    "legal.redirect.termsTitle": "Taking you to the Terms of Service",
+    "legal.redirect.termsOpen": "Open the Terms of Service",
   },
 
   ja: {
@@ -342,7 +346,7 @@ const I18N = {
     "footer.copyEmail": "メールアドレスをコピー",
     "footer.business": "事業者情報",
     "footer.businessInfo":
-      "商号: NP<br />代表者: Sejong Lee<br />事業者登録番号: 545-01-04035<br />通信販売業申告番号: 2026-Seoul Yangcheon-0818<br />事業所所在地: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />メール: np@npsomewhere.com",
+      "商号: NP<br />代表者: Sejong Lee<br />事業者登録番号: 545-01-04035<br />通信販売業申告番号: 2026-Seoul Yangcheon-0818<br />事業所所在地: 大韓民国 08060 ソウル特別市陽川区中央路45ギル25-22 新亭ヴィラ402号<br />メール: np@npsomewhere.com",
     "footer.legal":
       "AppleおよびAppleロゴは、米国その他の国で登録されたApple Inc.の商標です。App StoreはApple Inc.のサービスマークです。Google PlayおよびGoogle PlayロゴはGoogle LLCの商標です。",
 
@@ -456,7 +460,7 @@ const I18N = {
     "footer.copyEmail": "复制电子邮箱地址",
     "footer.business": "企业信息",
     "footer.businessInfo":
-      "企业名称：NP<br />代表人：Sejong Lee<br />营业执照号：545-01-04035<br />网络销售业务申报编号：2026-Seoul Yangcheon-0818<br />营业地址：25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />电子邮箱：np@npsomewhere.com",
+      "企业名称：NP<br />代表人：Sejong Lee<br />营业执照号：545-01-04035<br />网络销售业务申报编号：2026-Seoul Yangcheon-0818<br />营业地址：Room 402, Sinjeong Villa, 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul 08060, Republic of Korea<br />电子邮箱：np@npsomewhere.com",
     "footer.legal":
       "Apple 及 Apple 标志是 Apple Inc. 在美国和其他国家注册的商标。App Store 是 Apple Inc. 的服务标志。Google Play 及 Google Play 标志是 Google LLC 的商标。",
 
@@ -570,7 +574,7 @@ const I18N = {
     "footer.copyEmail": "複製電子郵件地址",
     "footer.business": "企業資訊",
     "footer.businessInfo":
-      "企業名稱：NP<br />代表人：Sejong Lee<br />營業執照號碼：545-01-04035<br />網路銷售業務申報編號：2026-Seoul Yangcheon-0818<br />營業地址：25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republic of Korea<br />電子郵件：np@npsomewhere.com",
+      "企業名稱：NP<br />代表人：Sejong Lee<br />營業執照號碼：545-01-04035<br />網路銷售業務申報編號：2026-Seoul Yangcheon-0818<br />營業地址：Room 402, Sinjeong Villa, 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul 08060, Republic of Korea<br />電子郵件：np@npsomewhere.com",
     "footer.legal":
       "Apple 及 Apple 標誌是 Apple Inc. 在美國及其他國家註冊的商標。App Store 是 Apple Inc. 的服務標章。Google Play 及 Google Play 標誌是 Google LLC 的商標。",
 
@@ -693,7 +697,7 @@ const I18N = {
     "footer.copyEmail": "Copier l’adresse e-mail",
     "footer.business": "Informations sur l’entreprise",
     "footer.businessInfo":
-      "Nom de l’entreprise : NP<br />Représentant : Sejong Lee<br />Numéro d’enregistrement : 545-01-04035<br />Numéro de déclaration de vente à distance : 2026-Seoul Yangcheon-0818<br />Adresse : 25-22 Jungang-ro 45-gil, Yangcheon-gu, Séoul, 08060, République de Corée<br />E-mail : np@npsomewhere.com",
+      "Nom de l’entreprise : NP<br />Représentant : Sejong Lee<br />Numéro d’enregistrement : 545-01-04035<br />Numéro de déclaration de vente à distance : 2026-Seoul Yangcheon-0818<br />Adresse : Room 402, Sinjeong Villa, 25-22 Jungang-ro 45-gil, Yangcheon-gu, Séoul 08060, République de Corée<br />E-mail : np@npsomewhere.com",
     "footer.legal":
       "Apple et le logo Apple sont des marques commerciales d’Apple Inc., déposées aux États-Unis et dans d’autres pays. App Store est une marque de service d’Apple Inc. Google Play et le logo Google Play sont des marques commerciales de Google LLC.",
 
@@ -815,7 +819,7 @@ const I18N = {
     "footer.copyEmail": "E-Mail-Adresse kopieren",
     "footer.business": "Unternehmensinformationen",
     "footer.businessInfo":
-      "Unternehmensname: NP<br />Vertreter: Sejong Lee<br />Unternehmensregisternummer: 545-01-04035<br />Meldungsnummer für den Versandhandel: 2026-Seoul Yangcheon-0818<br />Geschäftsadresse: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul, 08060, Republik Korea<br />E-Mail: np@npsomewhere.com",
+      "Unternehmensname: NP<br />Vertreter: Sejong Lee<br />Unternehmensregisternummer: 545-01-04035<br />Meldungsnummer für den Versandhandel: 2026-Seoul Yangcheon-0818<br />Geschäftsadresse: Room 402, Sinjeong Villa, 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seoul 08060, Republik Korea<br />E-Mail: np@npsomewhere.com",
     "footer.legal":
       "Apple und das Apple-Logo sind Marken von Apple Inc., die in den USA und anderen Ländern eingetragen sind. App Store ist eine Dienstleistungsmarke von Apple Inc. Google Play und das Google-Play-Logo sind Marken von Google LLC.",
 
@@ -937,7 +941,7 @@ const I18N = {
     "footer.copyEmail": "Copiar dirección de correo",
     "footer.business": "Información de la empresa",
     "footer.businessInfo":
-      "Nombre de la empresa: NP<br />Representante: Sejong Lee<br />Número de registro empresarial: 545-01-04035<br />Número de declaración de venta por correo: 2026-Seoul Yangcheon-0818<br />Domicilio social: 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seúl, 08060, República de Corea<br />Correo: np@npsomewhere.com",
+      "Nombre de la empresa: NP<br />Representante: Sejong Lee<br />Número de registro empresarial: 545-01-04035<br />Número de declaración de venta por correo: 2026-Seoul Yangcheon-0818<br />Domicilio social: Room 402, Sinjeong Villa, 25-22 Jungang-ro 45-gil, Yangcheon-gu, Seúl 08060, República de Corea<br />Correo: np@npsomewhere.com",
     "footer.legal":
       "Apple y el logotipo de Apple son marcas comerciales de Apple Inc., registradas en EE. UU. y otros países. App Store es una marca de servicio de Apple Inc. Google Play y el logotipo de Google Play son marcas comerciales de Google LLC.",
 
@@ -963,6 +967,7 @@ const I18N = {
 
 const SUPPORTED = ["ko", "en", "ja", "zh-CN", "zh-TW", "fr", "de", "es"];
 const STORAGE_KEY = "somewhere-lang";
+const EXPLICIT_STORAGE_KEY = "somewhere-lang-explicit";
 
 function normalizeLang(value) {
   const raw = String(value || "").trim().replace(/_/g, "-").toLowerCase();
@@ -983,14 +988,35 @@ function normalizeLang(value) {
 }
 
 function detectLang() {
-  // A landing URL always serves the same language to people and crawlers.
+  // Each localized landing URL remains fixed for people and crawlers.
   const pageLang = normalizeLang(document.documentElement.getAttribute("data-page-lang"));
   if (pageLang) return pageLang;
+  // Legal pages use their region/document selector as the language source of truth.
+  const legalDocumentLang = normalizeLang(document.documentElement.dataset.legalLang);
+  if (document.documentElement.hasAttribute("data-legal-document") && legalDocumentLang) {
+    return legalDocumentLang;
+  }
+  let explicit = null;
+  let saved = null;
   try {
-    const saved = normalizeLang(localStorage.getItem(STORAGE_KEY));
-    if (saved) return saved;
+    explicit = normalizeLang(localStorage.getItem(EXPLICIT_STORAGE_KEY));
+    saved = normalizeLang(localStorage.getItem(STORAGE_KEY));
   } catch (_) { /* Optional preference. */ }
-  return normalizeLang(navigator.language || "en") || "en";
+  if (explicit) return explicit;
+
+  const preferences = Array.isArray(navigator.languages) && navigator.languages.length
+    ? navigator.languages
+    : [navigator.language || "en"];
+  let browserLanguage = null;
+  for (const preference of preferences) {
+    browserLanguage = normalizeLang(preference);
+    if (browserLanguage) break;
+  }
+
+  // Before locale routing existed, the Korean root URL was persisted as though
+  // the visitor had selected Korean. Treat that legacy value as a default.
+  if (saved && saved !== "ko") return saved;
+  return browserLanguage || saved || "en";
 }
 
 function getString(key, lang = window.__lang || "en") {
@@ -1000,12 +1026,14 @@ function getString(key, lang = window.__lang || "en") {
 
 function updateDocumentTitle(lang) {
   const path = window.location.pathname;
-  if (path.endsWith("/privacy.html")) {
-    document.title = `Somewhere — ${lang === "ko" ? "개인정보처리방침" : "Privacy Policy"}`;
+  const legalRegion = document.documentElement.dataset.legalRegion;
+  const keepRegionalLegalTitle = legalRegion && legalRegion !== "kr";
+  if (!keepRegionalLegalTitle && path.endsWith("/privacy.html")) {
+    document.title = `Somewhere — ${lang === "ko" ? "대한민국 개인정보처리방침" : "Korea Privacy Policy"}`;
     return;
   }
-  if (path.endsWith("/terms.html")) {
-    document.title = `Somewhere — ${lang === "ko" ? "서비스 이용약관" : "Terms of Service"}`;
+  if (!keepRegionalLegalTitle && path.endsWith("/terms.html")) {
+    document.title = `Somewhere — ${lang === "ko" ? "대한민국 이용약관" : "Korea Terms of Service"}`;
     return;
   }
   if (path.endsWith("/download.html")) {
@@ -1088,6 +1116,7 @@ function applyLang(requestedLang) {
 
 function selectLang(requestedLang) {
   const lang = normalizeLang(requestedLang) || "en";
+  try { localStorage.setItem(EXPLICIT_STORAGE_KEY, lang); } catch (_) { /* Optional preference. */ }
   if (document.documentElement.hasAttribute("data-page-lang")) {
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) { /* Optional preference. */ }
     const path = lang === "ko" ? "/" : `/${lang.toLowerCase()}/`;

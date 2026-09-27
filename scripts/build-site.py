@@ -17,6 +17,7 @@ from site_common import ROOT, ORIGIN, catalog, home_path
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 LOCALES = {"ko": "ko_KR", "en": "en_US", "ja": "ja_JP", "zh-CN": "zh_CN", "zh-TW": "zh_TW",
            "fr": "fr_FR", "de": "de_DE", "es": "es_ES"}
+LEGAL_ROUTES = {lang: {"privacy.html": "/privacy", "terms.html": "/terms"} for lang in LOCALES}
 
 
 class Element:
@@ -200,7 +201,9 @@ def landing(source, lang, data):
         # Assets and utility links resolve correctly at every language URL.
         for attribute in ["href", "src", "data-i18n-src-ko", "data-i18n-src-en"]:
             value = attrs.get(attribute, "")
-            if value.startswith("assets/") or value in {"privacy.html", "terms.html", "download.html"}:
+            if value in {"privacy.html", "terms.html"}:
+                attrs[attribute] = LEGAL_ROUTES[lang][value]
+            elif value.startswith("assets/") or value == "download.html":
                 attrs[attribute] = "/" + value
             elif value == "index.html":
                 attrs[attribute] = home_path(lang)
@@ -225,6 +228,11 @@ def validate(output, data):
         assert alternatives == {l: ORIGIN + home_path(l) for l in data["languages"]} | {"x-default": ORIGIN + "/"}
         selected = [n.attrs["value"] for n in nodes if n.tag == "option" and "selected" in n.attrs]
         assert selected == [lang]
+        policy_links = [
+            n.attrs["href"] for n in nodes
+            if n.tag == "a" and n.attrs.get("href") in {"/privacy", "/terms"}
+        ]
+        assert policy_links == ["/privacy", "/terms"]
         for node in nodes:
             if node.tag == "script" and node.attrs.get("type") == "application/ld+json":
                 json.loads("".join(node.children))
@@ -240,7 +248,7 @@ def validate(output, data):
     assert next(n for n in ko_nodes if n.tag == "html").attrs["lang"] == "ko"
     assert [n.attrs["href"] for n in ko_nodes if n.tag == "link" and n.attrs.get("rel") == "canonical"] == [ORIGIN + "/"]
     assert [n.attrs["value"] for n in ko_nodes if n.tag == "option" and "selected" in n.attrs] == ["ko"]
-    for name in ["CNAME", ".nojekyll", "robots.txt", ".well-known/apple-app-site-association", ".well-known/assetlinks.json", "join/index.html", "privacy/index.html", "assets/fonts/PretendardVariable.woff2"]:
+    for name in ["CNAME", ".nojekyll", "robots.txt", ".well-known/apple-app-site-association", ".well-known/assetlinks.json", "join/index.html", "privacy/index.html", "terms/index.html", "assets/fonts/PretendardVariable.woff2"]:
         assert (ROOT / name).read_bytes() == (output / name).read_bytes(), f"Changed protected entry point: {name}"
     assert not list(output.rglob("*.md"))
     validate_resources(output)
@@ -255,7 +263,7 @@ def main():
     output.mkdir()
     # Explicit public entry points prevent accidental publication of local docs,
     # repository internals, optimizer tools or agent configuration.
-    for name in ["assets", ".well-known", "join", "privacy"]:
+    for name in ["assets", ".well-known", "join", "privacy", "terms", "ja", "eu", "us"]:
         shutil.copytree(ROOT / name, output / name, ignore=shutil.ignore_patterns("*.md", "__pycache__", "optimized-assets.json"))
     for source in ROOT.iterdir():
         if source.is_file() and (source.suffix == ".html" or source.name in {"CNAME", ".nojekyll", "robots.txt", "app-ads.txt"}):
@@ -284,14 +292,19 @@ def main():
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
     entries = [(ORIGIN + home_path(lang), "2026-09-26") for lang in data["languages"]]
-    entries += [(ORIGIN + "/" + page, "2026-09-28") for page in ["privacy.html", "terms.html"]]
+    entries += [(ORIGIN + "/" + page, "2026-09-28") for page in [
+        "privacy.html", "terms.html", "ja/privacy.html", "ja/terms.html", "ja/commercial-transactions.html",
+        "us/privacy.html", "us/terms.html", "eu/privacy.html", "eu/terms.html",
+        "eu/fr/privacy.html", "eu/fr/terms.html", "eu/de/privacy.html", "eu/de/terms.html",
+        "eu/es/privacy.html", "eu/es/terms.html",
+    ]]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += "".join(f"  <url><loc>{url}</loc><lastmod>{date}</lastmod></url>\n" for url, date in entries) + "</urlset>\n"
     (output / "sitemap.xml").write_text(sitemap)
     llms = "# Somewhere\n\n> A travel planning app for schedules, route maps, shared trips, expenses and settlement.\n\n"
     llms += "The app is free to download. Optional Somewhere Pro subscriptions provide additional features; free download does not mean every feature is free.\n\n## Official product pages\n\n"
     llms += "".join(f"- [{lang}]({ORIGIN + home_path(lang)}): {text(data['translations'][lang]['hero.title.2'])}\n" for lang in data["languages"])
-    llms += f"\n## Downloads and policies\n\n- [App Store]({data['config']['APP_STORE_URL']})\n- [Google Play]({data['config']['PLAY_STORE_URL']})\n- [Privacy policy](https://npsomewhere.com/privacy.html)\n- [Terms of service](https://npsomewhere.com/terms.html)\n"
+    llms += f"\n## Downloads and policies\n\n- [App Store]({data['config']['APP_STORE_URL']})\n- [Google Play]({data['config']['PLAY_STORE_URL']})\n- [Privacy policy (Korea, Korean/English)](https://npsomewhere.com/privacy.html)\n- [Terms of service (Korea, Korean/English)](https://npsomewhere.com/terms.html)\n- [Privacy policy (Japan)](https://npsomewhere.com/ja/privacy.html)\n- [Terms of service (Japan)](https://npsomewhere.com/ja/terms.html)\n- [Specified Commercial Transactions Act disclosure (Japan)](https://npsomewhere.com/ja/commercial-transactions.html)\n- [U.S. Privacy Notice](https://npsomewhere.com/us/privacy.html)\n- [U.S. Terms of Service](https://npsomewhere.com/us/terms.html)\n- [EU Privacy Notice (English)](https://npsomewhere.com/eu/privacy.html)\n- [EU Terms of Service (English)](https://npsomewhere.com/eu/terms.html)\n- [EU Privacy Notice (French)](https://npsomewhere.com/eu/fr/privacy.html)\n- [EU Privacy Notice (German)](https://npsomewhere.com/eu/de/privacy.html)\n- [EU Privacy Notice (Spanish)](https://npsomewhere.com/eu/es/privacy.html)\n"
     (output / "llms.txt").write_text(llms)
     validate(output, data)
     print(f"Built {len(data['languages'])} static landing languages and {len(entries)} sitemap URLs in dist/")

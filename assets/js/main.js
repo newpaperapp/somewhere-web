@@ -41,12 +41,19 @@
     const textarea = document.createElement("textarea");
     textarea.value = text;
     textarea.setAttribute("readonly", "");
-    textarea.style.position = "fixed";
-    textarea.style.top = "-1000px";
+    textarea.className = "copy-helper-textarea";
+    textarea.tabIndex = -1;
+    textarea.setAttribute("aria-hidden", "true");
     document.body.appendChild(textarea);
     textarea.select();
     document.execCommand("copy");
     textarea.remove();
+  }
+
+  function copyButtonIcon(copied) {
+    return copied
+      ? '<svg class="copy-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6" /></svg>'
+      : '<svg class="copy-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2" /><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" /></svg>';
   }
 
   function wireStoreLinks() {
@@ -82,19 +89,17 @@
       btn.type = "button";
       btn.className = "copy-btn";
       btn.setAttribute("aria-label", copyLabel);
-      btn.innerHTML =
-        '<span class="material-symbols-rounded" aria-hidden="true">content_copy</span>';
+      btn.innerHTML = copyButtonIcon(false);
       el.insertAdjacentElement("afterend", btn);
 
       btn.addEventListener("click", async function () {
-        const icon = btn.querySelector(".material-symbols-rounded");
         const email = el.textContent.trim() || cfg.CONTACT_EMAIL;
         try {
           await copyText(email);
-          icon.textContent = "check";
+          btn.innerHTML = copyButtonIcon(true);
           btn.classList.add("is-copied");
           window.setTimeout(function () {
-            icon.textContent = "content_copy";
+            btn.innerHTML = copyButtonIcon(false);
             btn.classList.remove("is-copied");
           }, 1200);
         } catch (_) {

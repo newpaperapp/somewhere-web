@@ -274,6 +274,10 @@ a {
   transition: background 0.15s ease, border-color 0.15s ease;
 }
 
+[data-legal-document] .language-picker {
+  display: none;
+}
+
 .language-picker:hover,
 .language-picker:focus-within {
   border-color: var(--outline);
@@ -1164,9 +1168,21 @@ a {
   transition: color 0.15s ease, background 0.15s ease;
 }
 
+.copy-helper-textarea {
+  position: fixed;
+  top: -1000px;
+  left: 0;
+}
+
 .copy-btn:hover {
   color: var(--primary);
   background: var(--surface-dim);
+}
+
+.copy-btn__icon {
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 
 .copy-btn .material-symbols-rounded {
@@ -1249,6 +1265,26 @@ a {
   color: var(--primary);
 }
 
+.legal__top-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-bottom: 28px;
+}
+
+.legal__top-row .back-link {
+  margin-bottom: 0;
+}
+
+.legal__top-row .legal__crosslink {
+  margin-left: auto;
+  color: var(--on-surface);
+  font-size: 14px;
+  text-align: right;
+}
+
 /* sub-headings inside legal articles */
 .legal h3 {
   font-size: 17px;
@@ -1274,6 +1310,87 @@ a {
 
 .legal__head .updated {
   margin: 0;
+}
+
+.legal-jurisdiction {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 12px;
+  margin: 18px 0 24px;
+  padding: 16px 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.legal-jurisdiction label {
+  display: grid;
+  flex: 0 0 min(180px, 100%);
+  gap: 7px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.legal-jurisdiction .legal__select-wrap,
+.legal-jurisdiction .legal__select {
+  width: 100%;
+}
+
+.legal-jurisdiction .legal__select-wrap {
+  left: -12px;
+}
+
+.legal-report {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.legal-report label {
+  display: grid;
+  gap: 7px;
+  font-weight: 700;
+}
+
+.legal-report input,
+.legal-report textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  background: var(--surface);
+  font: inherit;
+}
+
+.legal-report textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.legal-report__check {
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  font-weight: 500 !important;
+}
+
+.legal-report__check input {
+  width: auto;
+  margin-top: 4px;
+}
+
+.legal-report button {
+  justify-self: start;
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--primary);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 .legal__versions {
