@@ -147,7 +147,7 @@
               <li>문의·제보(선택): Google Forms 등에 제출한 이메일·문의 내용·첨부 이미지·파일 또는 Instagram 프로필·DM·댓글 내용</li>
               <li>위치정보(선택): 기기 위치 권한을 허용한 경우 지도에 표시하는 현재 위치</li>
               <li>자동 수집 정보: 기기 종류·OS·앱 버전·세부 기기 정보, 도시 수준 위치, IP 주소, 접속 일시·이용 기록, 오류·진단 정보, 광고 식별자(ADID/IDFA), 앱 화면·기능 이용 통계 및 Google Signals 기반 분석 정보</li>
-              <li>Sentry 인증 오류 진단(프로젝트 DSN이 설정되고 로그인 오류가 보고된 경우): 인증 제공자·오류 단계·오류 코드·오류 유형·스택 추적·앱 버전·운영체제/기기 진단정보. 오류 메시지는 일반 문구로 바꾸며 계정 ID·이메일·오류가 난 앱 요청의 본문·헤더·탐색 기록은 보고서에 넣지 않아요. 오류 보고에 연결 IP 주소가 자동으로 포함될 수 있으며, Sentry의 IP 저장 여부는 프로젝트 개인정보 설정에 따라 달라요. 로그인 오류 해결과 서비스 안정성 개선에 이용해요.</li>
+              <li>Sentry 오류 진단(프로젝트 DSN이 설정된 경우 로그인 오류 또는 일부 기능의 진단 대상 오류가 보고될 때): 로그인 오류의 인증 제공자, 일부 기능 오류의 기능 구분·작업명·오류 단계·진단 코드, 오류 유형·정제된 스택 추적, 앱 버전·플랫폼·운영체제/기기 진단정보. 오류 메시지는 일반 문구로 바꾸며 계정 ID·이메일·여행·경비 내용·AI 입력·URL·토큰·앱 요청/응답 본문·헤더·탐색 기록은 보고서에 넣지 않아요. 오류 보고에 연결 IP 주소가 자동으로 포함될 수 있으며, Sentry의 IP 저장 여부는 프로젝트 개인정보 설정에 따라 달라요. 로그인과 일부 기능의 오류 해결 및 서비스 안정성 개선에 이용해요.</li>
             </ul>
             <p>
               이용자가 직접 입력·업로드하거나 서비스 이용 중 자동으로 생성되는 정보를 수집해요. 트리플 가져오기는 이용자가 제출한 외부 공유 페이지에서 정보를 읽고,
@@ -188,7 +188,7 @@
             <h3>수집 항목별 처리 근거</h3>
             <ul>
               <li>동의 없이 처리하는 정보 — 계정·프로필, 여행·공유 콘텐츠, 이용자가 요청한 AI 입력·일정 편집·가져오기 정보, 구독·크레딧 정보: 서비스 계약의 체결·이행을 위한 처리(개인정보 보호법 제15조 제1항 제4호)</li>
-              <li>동의 없이 처리하는 정보 — Sentry 인증 오류 보고를 포함한 오류·보안 기록, 앱·기기 무결성 검증 정보, 탈퇴 및 가입 보너스 중복 수령 방지 기록, 광고 보상 검증 기록: 최소한의 정보로 보안·부정이용을 방지하기 위한 정당한 이익(제15조 제1항 제6호). 회사의 이익이 정보주체의 권리보다 명백히 우선하는 범위에 한해 처리해요.</li>
+              <li>동의 없이 처리하는 정보 — Sentry 로그인·일부 기능 오류 진단 기록을 포함한 오류·보안 기록, 앱·기기 무결성 검증 정보, 탈퇴 및 가입 보너스 중복 수령 방지 기록, 광고 보상 검증 기록: 최소한의 정보로 보안·부정이용을 방지하기 위한 정당한 이익(제15조 제1항 제6호). 회사의 이익이 정보주체의 권리보다 명백히 우선하는 범위에 한해 처리해요.</li>
               <li>동의 없이 처리하는 정보 — 서비스 운영·개선을 위한 이용 통계: 정보주체의 권리를 침해하지 않는 범위의 정당한 이익(제15조 제1항 제6호). 광고 개인화에 필요한 처리는 별도 광고 동의·설정 및 적용 법령에 따라 구분해요.</li>
               <li>동의를 받아 처리하는 정보 — 동의가 필요한 맞춤형 광고·추적 및 선택적 위치정보: 정보주체의 동의(제15조 제1항 제1호). 위치 권한, 기기 추적 설정 및 표시되는 광고 개인정보 옵션을 통해 선택할 수 있어요.</li>
               <li>법령에 따라 보존하는 거래·분쟁 기록: 법적 의무 이행(제15조 제1항 제2호). 실제로 회사가 보유하는 기록에 한해 해당 법정 기간을 적용해요.</li>
@@ -234,7 +234,7 @@
               <li>Instagram 문의: 이용자가 삭제하거나 Meta/Instagram 정책에 따른 기간, 회사의 별도 복사본 없음</li>
               <li>기기 내 캐시·설정·로컬 알림 정보: 앱 삭제 또는 앱 데이터 삭제 시까지</li>
               <li>앱·기기 보안 검증: App Check는 증명 자료를 보관하지 않으며, 재전송 방지 기능에 사용하지 않는 토큰은 Firebase 서비스에 보관하지 않아요. 검증 제공자가 처리하는 증명 자료에는 Google 또는 Apple의 보안 서비스 보유 기준이 적용돼요.</li>
-              <li>Sentry 인증 오류 보고: Sentry 프로젝트의 보유기간 설정에 따라 보관한 뒤 Sentry의 삭제 기준에 따라 삭제해요.</li>
+              <li>Sentry 오류 진단 보고: Sentry 프로젝트의 보유기간 설정에 따라 보관한 뒤 Sentry의 삭제 기준에 따라 삭제해요.</li>
             </ul>
             <p>
               회사가 실제로 보유하는 기록 중 전자상거래법상 보존 대상은 표시·광고 기록 6개월, 계약·청약철회 및 대금결제·공급 기록 5년, 소비자 불만·분쟁 처리
@@ -268,7 +268,7 @@
               <li>Google LLC: Firebase Authentication·Firestore·Storage·Cloud Functions를 통한 인증·저장·클라우드 운영, Firebase App Check 앱·기기 보안 검증, Google Places API 장소 검색·검증, Google Forms/Drive 문의 접수·첨부파일 보관, 적용되는 계약 범위의 이용 통계 처리</li>
               <li>OpenAI OpCo, LLC: Responses API를 통한 AI 여행 생성, AI 대화·일정 편집</li>
               <li>RevenueCat, Inc.: 구독·구매 복원·entitlement 확인, 고객 식별자 및 구독 관리 링크 처리</li>
-              <li>Functional Software, Inc. (Sentry): 로그인 인증 오류 진단·분석을 위한 오류 보고 처리. <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentry 데이터 처리계약</a> 및 <a href="https://sentry.io/legal/subprocessors/" target="_blank" rel="noopener">재수탁자 안내</a></li>
+              <li>Functional Software, Inc. (Sentry): 로그인 및 일부 기능의 선택된 오류 진단 보고 처리. <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentry 데이터 처리계약</a> 및 <a href="https://sentry.io/legal/subprocessors/" target="_blank" rel="noopener">재수탁자 안내</a></li>
             </ul>
             <p>
               회사는 수탁자의 업무·보호조치·재위탁·삭제 및 권리 요청 처리 등을 계약에 반영하고 관리·감독해요. Apple의 로그인·App Store 결제·App Attest/DeviceCheck 검증,
@@ -302,8 +302,8 @@
             <h3>Functional Software, Inc. (Sentry)</h3>
             <ul>
               <li>이전 국가: 미국·독일 등 Sentry가 제공하는 처리 리전. 실제 저장 리전은 프로젝트 설정에 따라 달라요.</li>
-              <li>이전 시기·방법: DSN이 설정된 앱에서 로그인 인증 오류를 보고할 때 진단정보를 정보통신망으로 전송해요.</li>
-              <li>이전 항목·목적: 인증 제공자·오류 단계·코드·유형, 스택 추적, 앱 버전·운영체제/기기 진단정보, 연결 IP 주소가 보고서에 자동 포함될 수 있음 / 로그인 오류 해결과 서비스 안정성 개선</li>
+              <li>이전 시기·방법: DSN이 설정된 앱에서 로그인 오류 또는 일부 기능의 진단 대상 오류가 보고될 때 진단정보를 정보통신망으로 전송해요.</li>
+              <li>이전 항목·목적: 로그인 오류의 인증 제공자·단계·코드와 일부 기능 오류의 기능 구분·작업명·오류 단계·진단 코드, 오류 유형·정제된 스택 추적, 앱 버전·플랫폼·운영체제/기기 진단정보, 보고서에 자동 포함될 수 있는 연결 IP 주소 / 로그인 및 선택된 기능 오류 해결과 서비스 안정성 개선</li>
               <li>보유기간: Sentry 프로젝트의 보유기간 설정에 따라 보관한 뒤 Sentry의 삭제 기준에 따라 삭제해요. 자세한 처리 리전·기간은 <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentry 데이터 처리계약</a>과 프로젝트 설정에서 확인할 수 있어요.</li>
             </ul>
             <h3>Google LLC</h3>
@@ -514,7 +514,7 @@
               <li>Optional support: email, inquiry content, images/files submitted through Google Forms, or Instagram profile/DM/comment content</li>
               <li>Optional location: current position displayed on the map when device location permission is granted</li>
               <li>Automatically collected: device type/OS/app version/granular device details, city-level location, IP address, access/usage logs, diagnostics, advertising identifiers (ADID/IDFA), screen/feature statistics, and Google Signals analytics information</li>
-              <li>Sentry authentication diagnostics (only when a project DSN is configured and a sign-in error is reported): authentication provider/stage/error code, exception type and stack trace, app release, and operating-system/device diagnostics. We normalize exception messages and do not include account IDs, email addresses, the failed app request’s body or headers, or breadcrumbs. Sentry may automatically associate the connection IP address with a report; whether it stores IP addresses depends on the project’s privacy settings. We use reports to diagnose sign-in failures and improve service reliability.</li>
+              <li>Selected Sentry error diagnostics (only when a project DSN is configured and a sign-in error or selected operation failure is reported): authentication provider for sign-in errors; feature, operation name, error stage, and diagnostic code for selected operation failures; exception type and sanitized stack trace; app version/platform and operating-system/device diagnostics. Exception messages are replaced with generic text. Reports exclude account IDs, email addresses, trip/expense content, AI prompts, URLs/tokens, request/response bodies or headers, and breadcrumbs. Sentry may automatically associate the connection IP address with a report; whether it stores IP addresses depends on the project's privacy settings. We use reports to diagnose sign-in and selected operation failures and improve service reliability.</li>
             </ul>
             <p>
               Information is provided directly by you or generated during use. A Triple import reads
@@ -570,7 +570,7 @@
             <h3>Legal bases by information category</h3>
             <ul>
               <li>Without separate consent — account/profile, trip and sharing content, requested AI inputs and itinerary edits, imports, subscriptions, and credits: processing necessary to enter into or perform the Service contract (PIPA Article 15(1)(4))</li>
-              <li>Without separate consent — error/security logs including Sentry sign-in diagnostics, app/device integrity verification, account-deletion and sign-up bonus claims, and ad-reward verification records: legitimate interests in security and preventing misuse using minimal information (Article 15(1)(6)). We rely on this basis only where our interests clearly outweigh the impact on your rights.</li>
+              <li>Without separate consent — error/security logs including Sentry sign-in and selected-operation diagnostics, app/device integrity verification, account-deletion and sign-up bonus claims, and ad-reward verification records: legitimate interests in security and preventing misuse using minimal information (Article 15(1)(6)). We rely on this basis only where our interests clearly outweigh the impact on your rights.</li>
               <li>Without separate consent — operational usage statistics: legitimate interests in operating and improving the Service without infringing your rights (Article 15(1)(6)). Processing for ads personalization is handled separately under applicable advertising consent, settings, and law.</li>
               <li>With consent — personalized advertising/tracking and optional location processing where consent is required: your consent (Article 15(1)(1)). You can use location permissions, device tracking settings, and available ad privacy options.</li>
               <li>Records retained under law — transaction and dispute records: compliance with legal obligations (Article 15(1)(2)). Statutory periods apply only to records we actually hold.</li>
@@ -622,7 +622,7 @@
               <li>Instagram inquiries: until user deletion or for the period set by Meta/Instagram; no separate company copy</li>
               <li>Device caches/preferences/local-notification data: until the app or app data is deleted</li>
               <li>App/device security verification: App Check does not retain attestation material; Firebase services do not retain tokens unused for replay protection. Attestation material handled by Google or Apple follows that provider’s security-service retention criteria.</li>
-              <li>Sentry authentication reports: retained for the period configured for the Sentry project, then deleted under Sentry’s retention and deletion terms.</li>
+              <li>Sentry error reports: retained for the period configured for the Sentry project, then deleted under Sentry’s retention and deletion terms.</li>
             </ul>
             <p>
               For records we actually hold that fall under Korea’s Electronic Commerce Act,
@@ -665,7 +665,7 @@
               <li>Google LLC: authentication, storage, and cloud operations through Firebase Authentication/Firestore/Storage/Cloud Functions; Firebase App Check app/device security verification; Google Places API search/verification; Google Forms/Drive support and attachments; and analytics within the applicable processing agreement</li>
               <li>OpenAI OpCo, LLC: AI trip generation, conversations, and itinerary editing through the Responses API</li>
               <li>RevenueCat, Inc.: subscription/purchase restoration/entitlement checks, customer identifiers, and subscription-management links</li>
-              <li>Functional Software, Inc. (Sentry): authentication-error reporting and diagnostics. See Sentry’s <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Data Processing Addendum</a> and <a href="https://sentry.io/legal/subprocessors/" target="_blank" rel="noopener">subprocessor list</a>.</li>
+              <li>Functional Software, Inc. (Sentry): sign-in and selected-operation error reporting and diagnostics. See Sentry’s <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Data Processing Addendum</a> and <a href="https://sentry.io/legal/subprocessors/" target="_blank" rel="noopener">subprocessor list</a></li>
             </ul>
             <p>
               Our processing agreements address tasks, safeguards, subprocessors, deletion, and
@@ -705,8 +705,8 @@
             <h3>Functional Software, Inc. (Sentry)</h3>
             <ul>
               <li>Countries: the United States or Germany and other Sentry service locations; the project’s configured Sentry region determines its storage location.</li>
-              <li>When/how: diagnostic information is sent over the network when a sign-in error is reported by an app with a configured DSN.</li>
-              <li>Items/purpose: authentication provider/stage/code/type, stack trace, app release, operating-system/device diagnostics, and the connection IP address that may be automatically associated with a report / diagnose sign-in failures and improve service reliability.</li>
+              <li>When/how: diagnostic information is sent over the network when a sign-in error or selected operation failure is reported by an app with a configured DSN.</li>
+              <li>Items/purpose: authentication provider/stage/code for sign-in errors; feature/operation name/error stage/diagnostic code for selected operation errors; exception type and sanitized stack trace; app version/platform, operating-system/device diagnostics, and connection IP address that may be automatically associated with a report / diagnose sign-in and selected-operation failures and improve service reliability.</li>
               <li>Retention: the period configured for the Sentry project, followed by deletion under Sentry’s terms. See the <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentry Data Processing Addendum</a> and project settings for the exact region and period.</li>
             </ul>
             <h3>Google LLC</h3>

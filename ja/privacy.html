@@ -64,7 +64,7 @@
               <li>お問い合わせ情報（任意。Google Forms等に入力したメールアドレス、本文、添付ファイル、またはInstagramのプロフィール・DM・コメント）：お問い合わせ、障害・不具合への対応</li>
               <li>位置情報（任意。端末の位置情報利用を許可した場合の現在地）：地図上で現在地を表示する機能の提供。現在地は当社のFirebaseデータベースに保存しません。</li>
               <li>自動取得情報（端末の種類・OS・アプリ版・詳細な端末情報、都市レベルの位置、IPアドレス、アクセス日時・利用履歴、エラー・診断情報、広告識別子、画面・機能の利用統計、Google Signalsに基づく分析情報）：サービスの運営・改善、障害・セキュリティ対応、広告の表示・効果測定</li>
-            <li>Sentryの認証エラー診断（プロジェクトDSN設定時にログインエラーが報告された場合）：認証提供者・発生段階・エラーコード・エラー種別・スタックトレース・アプリ版・OS／端末の診断情報。エラーメッセージは一般化し、アカウントID・メールアドレス・失敗したアプリリクエストの本文／ヘッダー・操作履歴は報告に含めません。接続元IPアドレスが報告に自動的に関連付けられる場合があり、Sentryでの保存有無はプロジェクトのプライバシー設定によります。ログインエラーの解決とサービスの安定性向上に利用します。</li></ul>
+            <li>Sentryのエラー診断（プロジェクトDSNが設定され、ログインエラーまたは一部機能の対象エラーが報告された場合）：ログインエラーの認証プロバイダー、対象エラーの機能・処理名・エラー段階・診断コード、例外の種類・サニタイズ済みスタックトレース、アプリ版・プラットフォーム・OS／端末の診断情報。例外メッセージは一般的な文言に置き換えます。アカウントID・メールアドレス・旅行／支出内容・AI入力・URL／トークン・アプリ要求／応答の本文・ヘッダー・操作履歴は報告に含めません。接続元IPアドレスが報告に自動的に関連付けられる場合があり、Sentryでの保存有無はプロジェクトのプライバシー設定によります。ログインおよび対象機能のエラー解決とサービスの安定性向上に利用します。</li></ul>
             <p>GoogleまたはAppleのログインを選択した場合、各提供者から認証IDや利用者が許可したプロフィール情報を受け取ります。Tripleの取込機能では利用者が指定した共有ページから情報を取得します。アプリストアやRevenueCatから購入・サブスクリプションの状態を受け取る場合があります。</p>
 
             <h2>3. AI機能、位置情報、広告</h2>
@@ -89,7 +89,7 @@
               <li>Instagram上の問い合わせ：利用者による削除またはMeta／Instagramの保存基準まで。当社は別途コピーを保存しません。</li>
               <li>端末内のキャッシュ・設定・ローカル通知情報：アプリまたはアプリデータの削除まで</li>
               <li>法令により保存が必要な記録：適用される法定期間。韓国の電子商取引関連法令の保存対象として当社が実際に保有する場合、広告記録は6か月、契約・撤回・決済・供給記録は5年、消費者苦情・紛争記録は3年保存します。</li>
-            <li>Sentryの認証エラー報告：Sentryプロジェクトの保存期間設定に従って保管し、その後Sentryの削除基準に従って削除します。</li></ul>
+            <li>Sentryのエラー報告：Sentryプロジェクトの保存期間設定に従って保管し、その後Sentryの削除基準に従って削除します。</li></ul>
             <p>アプリを削除しただけではクラウドアカウントやアプリストアのサブスクリプションは削除・解約されません。アカウント削除時はRevenueCatに顧客データ削除を依頼し、失敗した依頼は自動で再試行します。外部事業者の購入記録やバックアップは、各事業者の方針・法令に基づき残る場合があります。</p>
 
             <h2>5. 第三者提供・委託先</h2>
@@ -99,7 +99,7 @@
               <li>Google LLC：Firebase認証・データベース・ストレージ・クラウド機能、App Check、Places API、Google Forms／Drive、適用される範囲の利用統計</li>
               <li>OpenAI OpCo, LLC：Responses APIによるAI旅行作成・会話・日程編集</li>
               <li>RevenueCat, Inc.：サブスクリプション・購入復元・利用資格の確認と管理</li>
-            <li>Functional Software, Inc.（Sentry）：ログイン認証エラーの報告・診断。<a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentryデータ処理契約</a>および<a href="https://sentry.io/legal/subprocessors/" target="_blank" rel="noopener">再委託先一覧</a>をご確認ください。</li></ul>
+            <li>Functional Software, Inc.（Sentry）：ログインおよび一部機能の選択されたエラー診断。<a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentryデータ処理契約</a>および<a href="https://sentry.io/legal/subprocessors/" target="_blank" rel="noopener">再委託先一覧</a>をご確認ください。</li></ul>
             <p>AppleはAppleログイン、App Store決済、App Attest／DeviceCheckを提供します。GoogleはGoogle Play決済、AdMob広告を提供します。Meta／InstagramはInstagram上で利用者が問い合わせた場合に同サービスを提供します。これらの処理には各事業者のプライバシーポリシーが適用されます。委託先の詳細は <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a>、<a href="https://openai.com/policies/data-processing-addendum/" target="_blank" rel="noopener">OpenAI</a>、<a href="https://www.revenuecat.com/dpa" target="_blank" rel="noopener">RevenueCat</a>、<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a>、<a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener">Instagram</a>の各案内をご確認ください。</p>
 
             <h2>6. 外国にある事業者への提供・保管</h2>
@@ -110,7 +110,7 @@
               <li>RevenueCat, Inc.（米国）：Firebase UIDに基づく顧客識別子、商品・アプリ・購入・サブスクリプションの状態、取引検証情報</li>
               <li>Apple Inc.（米国およびAppleが各サービスについて公表する処理地域）：ログイン識別子、購入・サブスクリプション情報、端末の証明情報</li>
               <li>Meta Platforms, Inc.（Instagramを利用してお問い合わせいただく場合）：Instagram上のプロフィールと送信されたメッセージ・コメント</li>
-            <li>Sentry（米国、ドイツ等のサービス処理地域）：対象は認証提供者・段階・コード・種別、スタックトレース、アプリ版・OS／端末の診断情報、報告に自動的に関連付けられる場合がある接続元IPアドレスです。DSN設定時のログインエラー報告でネットワーク送信し、エラー解決・サービス安定化に利用します。IPアドレスの保存有無、保存期間と実際のリージョンはSentryプロジェクトの設定によります。詳しくは<a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentryデータ処理契約</a>とプロジェクト設定をご確認ください。</li></ul>
+            <li>Sentry（米国、ドイツ等のサービス処理地域）：対象はログインエラーの認証プロバイダー・段階・コードと、選択された処理エラーの機能・処理名・エラー段階・診断コード、例外の種類・サニタイズ済みスタックトレース、アプリ版・プラットフォーム・OS／端末の診断情報、報告に自動的に関連付けられる場合がある接続元IPアドレスです。プロジェクトDSNが設定されたアプリでログインまたは選択された処理エラーが報告された場合にネットワーク送信し、エラー解決とサービス安定化に利用します。IPアドレスの保存有無、保存期間と実際のリージョンはSentryプロジェクトの設定によります。詳しくは<a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentryデータ処理契約</a>とプロジェクト設定をご確認ください。</li></ul>
             <p>当社は、委託契約、各事業者が公開するデータ処理契約（DPA）および再委託先情報を確認し、委託先の監督、目的外利用の制限、安全管理、再委託先の管理、削除・返却等の措置を求めます。外国にある第三者への個人データ提供について本人同意を根拠とする場合は、移転先の国名、当該国の個人情報保護制度、および移転先が講じる保護措置に関する情報を同意前に提供します。同等の保護措置を継続する仕組みを根拠とする場合は、その仕組みと実施状況を定期的に確認します。</p>
             <p>各事業者の処理地域、再委託先、保護措置および保存条件は上記リンクで確認できます。特定の移転先・法的根拠・保護措置に関する情報は、本人確認のうえ、<a href="mailto:contact@npsomewhere.com">contact@npsomewhere.com</a>へお問い合わせください。認証・AI・購入管理に必要な移転を拒否すると、該当機能を利用できない場合があります。任意のパーソナライズ広告を拒否しても、基本的な旅行機能は利用できます。</p>
 
