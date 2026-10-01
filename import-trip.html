@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트리플 여행, 지출 내역 Somewhere로 가져오기 — Somewhere</title>
+    <meta name="description" content="트리플 여행 일정과 지출 내역을 Somewhere로 간편하게 가져오는 방법 안내" />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self';"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://npsomewhere.com/import-trip" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Somewhere" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://npsomewhere.com/import-trip" />
+    <meta property="og:title" content="트리플 여행, 지출 내역 Somewhere로 가져오기 — Somewhere" />
+    <meta property="og:description" content="트리플 여행 일정과 지출 내역을 Somewhere로 간편하게 가져오는 방법 안내" />
+    <meta property="og:image" content="https://npsomewhere.com/assets/img/og-image.png" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="트리플 여행, 지출 내역 Somewhere로 가져오기 — Somewhere" />
+    <meta name="twitter:description" content="트리플 여행 일정과 지출 내역을 Somewhere로 간편하게 가져오는 방법 안내" />
+    <meta name="twitter:image" content="https://npsomewhere.com/assets/img/og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/app-icon.svg" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script>
+      try {
+        const saved = localStorage.getItem("somewhere-theme");
+        const theme =
+          saved === "dark" || saved === "light"
+            ? saved
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (_) {}
+    </script>
+
+    <style>
+      .guide-main {
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 40px 20px 100px;
+      }
+      .guide-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 0 20px;
+        color: var(--on-surface);
+        letter-spacing: -0.02em;
+        line-height: 1.35;
+        word-break: keep-all;
+      }
+      .guide-intro-notice {
+        margin: 0 0 40px;
+        padding-left: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: var(--on-surface);
+        word-break: keep-all;
+      }
+      .guide-intro-notice li + li {
+        margin-top: 6px;
+      }
+      .guide-section {
+        margin-top: 92px;
+      }
+      .guide-section:first-of-type {
+        margin-top: 0;
+      }
+      .guide-section-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 20px;
+        padding-left: 16px;
+        color: var(--on-surface);
+        letter-spacing: -0.01em;
+        line-height: 1.4;
+      }
+      .guide-images {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .guide-images img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+      }
+      .guide-tip {
+        margin: 14px 0 0;
+        padding-left: 16px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--on-surface-variant);
+        word-break: keep-all;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="guide-main">
+      <h1 class="guide-title">트리플 여행, 지출 내역<br />Somewhere로 가져오기</h1>
+      <ul class="guide-intro-notice">
+        <li>각 여행마다 [여행]과 [지출 내역]을 하나씩 가져와야 해요</li>
+        <li>[여행]을 먼저 가져오고 [지출 내역]을 그다음에 가져와야 해요</li>
+      </ul>
+
+      <section class="guide-section">
+        <h2 class="guide-section-title">여행 가져오기</h2>
+        <div class="guide-images">
+          <img
+            src="assets/img/guide/triple/import-trip-1.png"
+            alt="트리플 여행 화면 상단 공유 아이콘 선택"
+            width="1180"
+            height="438"
+          />
+          <img
+            src="assets/img/guide/triple/import-trip-2.png"
+            alt="일정 링크 공유하기 (보기전용) 선택"
+            width="1180"
+            height="566"
+          />
+          <img
+            src="assets/img/guide/triple/import-trip-3.png"
+            alt="더보기 선택"
+            width="1180"
+            height="652"
+          />
+          <img
+            src="assets/img/guide/triple/import-trip-4.png"
+            alt="공유 시트에서 Somewhere 앱 선택"
+            width="1188"
+            height="1145"
+          />
+        </div>
+        <p class="guide-tip">
+          안보일 경우 맨 오른쪽에 있는 ‘더 보기’ 선택 후 ’Somewhere 앱’ 선택
+        </p>
+      </section>
+
+      <section class="guide-section">
+        <h2 class="guide-section-title">지출 내역 가져오기</h2>
+        <div class="guide-images">
+          <img
+            src="assets/img/guide/triple/import-expense-1.png"
+            alt="가계부 선택"
+            width="1180"
+            height="710"
+          />
+          <img
+            src="assets/img/guide/triple/import-expense-2.png"
+            alt="가계부 메뉴 선택"
+            width="1180"
+            height="394"
+          />
+          <img
+            src="assets/img/guide/triple/import-expense-3.png"
+            alt="가계부 내보내기 (CSV) 선택"
+            width="1180"
+            height="604"
+          />
+          <img
+            src="assets/img/guide/triple/import-expense-4.png"
+            alt="공유 시트에서 Somewhere 앱 선택"
+            width="1188"
+            height="1145"
+          />
+        </div>
+        <p class="guide-tip">
+          안보일 경우 맨 오른쪽에 있는 ‘더 보기’ 선택 후 ’Somewhere 앱’ 선택
+        </p>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <a class="brand" href="index.html" aria-label="Somewhere">
+            <img class="logo" src="assets/img/app-icon.svg" alt="" />
+            <span>Somewhere</span>
+          </a>
+          <p class="footer__meta">
+            <span data-i18n="footer.contact">문의</span>:
+            <span class="contact-email" data-contact-email>contact@npsomewhere.com</span>
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <a href="privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
+          <a href="terms.html" data-i18n="footer.terms">서비스 이용약관</a>
+          <span class="footer__meta">© 2026 Somewhere</span>
+        </div>
+
+        <details class="footer__business">
+          <summary data-i18n="footer.business">사업자 정보</summary>
+          <div class="footer__business-body" data-i18n-html="footer.businessInfo">
+            상호: 엔피(NP)<br />
+            대표자: 이세종<br />
+            사업자등록번호: 545-01-04035<br />
+            통신판매업 신고번호: 제 2026-서울양천-0818 호<br />
+            사업장 소재지: 서울특별시 양천구 중앙로45길 25-22, 402호(신정동, 신정빌라)<br />
+            이메일: np@npsomewhere.com
+          </div>
+        </details>
+      </div>
+      <p class="footer__legal" data-i18n="footer.legal">
+        Apple and the Apple logo are trademarks of Apple Inc., registered in the
+        U.S. and other countries. App Store is a service mark of Apple Inc.,
+        registered in the U.S. and other countries. Google Play and the Google
+        Play logo are trademarks of Google LLC.
+      </p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
