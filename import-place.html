@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>구글 지도에서 장소 Somewhere로 가져오기 — Somewhere</title>
-    <meta name="description" content="구글 지도에서 장소를 Somewhere로 간편하게 가져오는 방법 안내" />
+    <meta
+      name="description"
+      content="구글 지도에서 장소를 Somewhere로 간편하게 가져오는 방법 안내 / Learn how to easily import places from Google Maps into Somewhere"
+    />
     <meta name="theme-color" content="#f5f5f5" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta
@@ -20,30 +23,48 @@
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://npsomewhere.com/import-place" />
     <meta property="og:title" content="구글 지도에서 장소 Somewhere로 가져오기 — Somewhere" />
-    <meta property="og:description" content="구글 지도에서 장소를 Somewhere로 간편하게 가져오는 방법 안내" />
+    <meta
+      property="og:description"
+      content="구글 지도에서 장소를 Somewhere로 간편하게 가져오는 방법 안내 / Learn how to easily import places from Google Maps into Somewhere"
+    />
     <meta property="og:image" content="https://npsomewhere.com/assets/img/og-image.png" />
     <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="구글 지도에서 장소 Somewhere로 가져오기 — Somewhere" />
-    <meta name="twitter:description" content="구글 지도에서 장소를 Somewhere로 간편하게 가져오는 방법 안내" />
+    <meta
+      name="twitter:description"
+      content="구글 지도에서 장소를 Somewhere로 간편하게 가져오는 방법 안내 / Learn how to easily import places from Google Maps into Somewhere"
+    />
     <meta name="twitter:image" content="https://npsomewhere.com/assets/img/og-image.png" />
 
     <link rel="icon" type="image/svg+xml" href="assets/img/app-icon.svg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <script>
       try {
-        const saved = localStorage.getItem("somewhere-theme");
+        const savedTheme = localStorage.getItem("somewhere-theme");
         const theme =
-          saved === "dark" || saved === "light"
-            ? saved
+          savedTheme === "dark" || savedTheme === "light"
+            ? savedTheme
             : window.matchMedia("(prefers-color-scheme: dark)").matches
             ? "dark"
             : "light";
         document.documentElement.setAttribute("data-theme", theme);
+
+        const params = new URLSearchParams(window.location.search);
+        const paramLang = params.get("lang");
+        if (paramLang) {
+          try {
+            localStorage.setItem("somewhere-lang-explicit", paramLang);
+            localStorage.setItem("somewhere-lang", paramLang);
+          } catch (_) {}
+          document.documentElement.setAttribute("lang", paramLang === "ko" ? "ko" : "en");
+        }
       } catch (_) {}
     </script>
 
@@ -51,7 +72,13 @@
       .guide-main {
         max-width: 440px;
         margin: 0 auto;
-        padding: 40px 20px 100px;
+        padding: 24px 20px 100px;
+      }
+      .guide-top-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 24px;
       }
       .guide-title {
         font-size: 24px;
@@ -88,25 +115,45 @@
   </head>
   <body>
     <main class="guide-main">
-      <h1 class="guide-title">구글 지도에서 장소<br />Somewhere로 가져오기</h1>
+      <div class="guide-top-nav">
+        <label class="language-picker">
+          <span class="material-icons-round language-picker__icon" aria-hidden="true">language</span>
+          <span class="language-picker__value" data-language-value aria-hidden="true">한국어</span>
+          <select class="language-picker__select" data-action="change-lang"
+            data-i18n-aria="lang.select" aria-label="언어 선택">
+            <option value="ko" data-i18n="lang.option.ko">한국어</option>
+            <option value="en" data-i18n="lang.option.en">English</option>
+          </select>
+        </label>
+      </div>
+
+      <h1 class="guide-title">
+        <span class="lang-ko">구글 지도에서 장소<br />Somewhere로 가져오기</span>
+        <span class="lang-en">Import Places from Google Maps<br />to Somewhere</span>
+      </h1>
 
       <section class="guide-section">
         <div class="guide-images">
           <img
             src="assets/img/guide/google-maps/import-place-1.png"
             alt="구글 지도 장소 화면 하단 공유 선택"
+            data-alt-ko="구글 지도 장소 화면 하단 공유 선택"
+            data-alt-en="Tap Share at the bottom of the place details in Google Maps"
             width="1188"
             height="1158"
           />
           <img
             src="assets/img/guide/google-maps/import-place-2.png"
             alt="공유 시트에서 Somewhere 앱 선택"
+            data-alt-ko="공유 시트에서 Somewhere 앱 선택"
+            data-alt-en="Select Somewhere in the share sheet"
             width="1188"
             height="1145"
           />
         </div>
         <p class="guide-tip">
-          안보일 경우 맨 오른쪽에 있는 ‘더 보기’ 선택 후 ’Somewhere 앱’ 선택
+          <span class="lang-ko">안보일 경우 맨 오른쪽에 있는 ‘더 보기’ 선택 후 ’Somewhere 앱’ 선택</span>
+          <span class="lang-en">If you don't see it, tap 'More' on the far right and select Somewhere</span>
         </p>
       </section>
     </main>
@@ -151,6 +198,41 @@
       </p>
     </footer>
 
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      (function () {
+        function updateGuideContent(lang) {
+          const isKo = lang === "ko";
+          const altLang = isKo ? "ko" : "en";
+
+          const select = document.querySelector(".language-picker__select");
+          if (select) {
+            select.value = altLang;
+          }
+          const label = document.querySelector("[data-language-value]");
+          if (label) {
+            label.textContent = isKo ? "한국어" : "English";
+          }
+
+          document.querySelectorAll("img[data-alt-ko][data-alt-en]").forEach((img) => {
+            img.setAttribute("alt", img.getAttribute(`data-alt-${altLang}`));
+          });
+
+          document.title = isKo
+            ? "구글 지도에서 장소 Somewhere로 가져오기 — Somewhere"
+            : "Import Places from Google Maps to Somewhere — Somewhere";
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const currentLang = document.documentElement.getAttribute("lang") || "ko";
+          updateGuideContent(currentLang);
+
+          window.addEventListener("somewhere:langchange", function (e) {
+            updateGuideContent(e.detail);
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
