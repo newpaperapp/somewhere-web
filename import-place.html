@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>구글 지도에서 장소 Somewhere로 가져오기 — Somewhere</title>
+    <meta name="description" content="구글 지도에서 장소를 Somewhere로 간편하게 가져오는 방법 안내" />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self';"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://npsomewhere.com/import-place" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Somewhere" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://npsomewhere.com/import-place" />
+    <meta property="og:title" content="구글 지도에서 장소 Somewhere로 가져오기 — Somewhere" />
+    <meta property="og:description" content="구글 지도에서 장소를 Somewhere로 간편하게 가져오는 방법 안내" />
+    <meta property="og:image" content="https://npsomewhere.com/assets/img/og-image.png" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="구글 지도에서 장소 Somewhere로 가져오기 — Somewhere" />
+    <meta name="twitter:description" content="구글 지도에서 장소를 Somewhere로 간편하게 가져오는 방법 안내" />
+    <meta name="twitter:image" content="https://npsomewhere.com/assets/img/og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/app-icon.svg" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script>
+      try {
+        const saved = localStorage.getItem("somewhere-theme");
+        const theme =
+          saved === "dark" || saved === "light"
+            ? saved
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (_) {}
+    </script>
+
+    <style>
+      .guide-main {
+        max-width: 440px;
+        margin: 0 auto;
+        padding: 40px 20px 100px;
+      }
+      .guide-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 0 24px;
+        color: var(--on-surface);
+        letter-spacing: -0.02em;
+        line-height: 1.35;
+        word-break: keep-all;
+      }
+      .guide-section {
+        margin-top: 0;
+      }
+      .guide-images {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .guide-images img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+      }
+      .guide-tip {
+        margin: 14px 0 0;
+        padding-left: 16px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--on-surface-variant);
+        word-break: keep-all;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="guide-main">
+      <h1 class="guide-title">구글 지도에서 장소<br />Somewhere로 가져오기</h1>
+
+      <section class="guide-section">
+        <div class="guide-images">
+          <img
+            src="assets/img/guide/google-maps/import-place-1.png"
+            alt="구글 지도 장소 화면 하단 공유 선택"
+            width="1188"
+            height="1158"
+          />
+          <img
+            src="assets/img/guide/google-maps/import-place-2.png"
+            alt="공유 시트에서 Somewhere 앱 선택"
+            width="1188"
+            height="1145"
+          />
+        </div>
+        <p class="guide-tip">
+          안보일 경우 맨 오른쪽에 있는 ‘더 보기’ 선택 후 ’Somewhere 앱’ 선택
+        </p>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <a class="brand" href="index.html" aria-label="Somewhere">
+            <img class="logo" src="assets/img/app-icon.svg" alt="" />
+            <span>Somewhere</span>
+          </a>
+          <p class="footer__meta">
+            <span data-i18n="footer.contact">문의</span>:
+            <span class="contact-email" data-contact-email>contact@npsomewhere.com</span>
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <a href="privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
+          <a href="terms.html" data-i18n="footer.terms">서비스 이용약관</a>
+          <span class="footer__meta">© 2026 Somewhere</span>
+        </div>
+
+        <details class="footer__business">
+          <summary data-i18n="footer.business">사업자 정보</summary>
+          <div class="footer__business-body" data-i18n-html="footer.businessInfo">
+            상호: 엔피(NP)<br />
+            대표자: 이세종<br />
+            사업자등록번호: 545-01-04035<br />
+            통신판매업 신고번호: 제 2026-서울양천-0818 호<br />
+            사업장 소재지: 서울특별시 양천구 중앙로45길 25-22, 402호(신정동, 신정빌라)<br />
+            이메일: np@npsomewhere.com
+          </div>
+        </details>
+      </div>
+      <p class="footer__legal" data-i18n="footer.legal">
+        Apple and the Apple logo are trademarks of Apple Inc., registered in the
+        U.S. and other countries. App Store is a service mark of Apple Inc.,
+        registered in the U.S. and other countries. Google Play and the Google
+        Play logo are trademarks of Google LLC.
+      </p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
