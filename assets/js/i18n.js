@@ -7,6 +7,9 @@
 
 const I18N = {
   ko: {
+    "langBanner.message": "이 페이지는 한국어로도 볼 수 있어요",
+    "langBanner.action": "한국어로 보기",
+    "langBanner.close": "닫기",
     "lang.name": "한국어",
     "lang.select": "언어 선택",
     "lang.option.ko": "한국어",
@@ -128,6 +131,9 @@ const I18N = {
   },
 
   en: {
+    "langBanner.message": "This page is also available in English",
+    "langBanner.action": "View in English",
+    "langBanner.close": "Close",
     "lang.name": "English",
     "lang.select": "Select language",
     "lang.option.ko": "한국어",
@@ -251,6 +257,9 @@ const I18N = {
   },
 
   ja: {
+    "langBanner.message": "このページは日本語でもご覧いただけます",
+    "langBanner.action": "日本語で見る",
+    "langBanner.close": "閉じる",
     "lang.name": "日本語",
     "lang.select": "言語を選択",
     "lang.option.ko": "한국어",
@@ -370,6 +379,9 @@ const I18N = {
   },
 
   "zh-CN": {
+    "langBanner.message": "此页面也提供简体中文版本",
+    "langBanner.action": "查看简体中文版",
+    "langBanner.close": "关闭",
     "lang.name": "简体中文",
     "lang.select": "选择语言",
     "lang.option.ko": "한국어",
@@ -484,6 +496,9 @@ const I18N = {
   },
 
   "zh-TW": {
+    "langBanner.message": "此頁面也提供繁體中文版本",
+    "langBanner.action": "查看繁體中文版",
+    "langBanner.close": "關閉",
     "lang.name": "繁體中文",
     "lang.select": "選擇語言",
     "lang.option.ko": "한국어",
@@ -598,6 +613,9 @@ const I18N = {
   },
 
   fr: {
+    "langBanner.message": "Cette page est aussi disponible en français",
+    "langBanner.action": "Voir en français",
+    "langBanner.close": "Fermer",
     "lang.name": "Français",
     "lang.select": "Choisir la langue",
     "lang.option.ko": "한국어",
@@ -721,6 +739,9 @@ const I18N = {
   },
 
   de: {
+    "langBanner.message": "Diese Seite gibt es auch auf Deutsch",
+    "langBanner.action": "Auf Deutsch ansehen",
+    "langBanner.close": "Schließen",
     "lang.name": "Deutsch",
     "lang.select": "Sprache auswählen",
     "lang.option.ko": "한국어",
@@ -843,6 +864,9 @@ const I18N = {
   },
 
   es: {
+    "langBanner.message": "Esta página también está disponible en español",
+    "langBanner.action": "Ver en español",
+    "langBanner.close": "Cerrar",
     "lang.name": "Español",
     "lang.select": "Seleccionar idioma",
     "lang.option.ko": "한국어",
