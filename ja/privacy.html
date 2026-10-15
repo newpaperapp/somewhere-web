@@ -37,7 +37,7 @@
           </div>
           <h1>日本向けプライバシーポリシー</h1>
           <div class="legal__head">
-            <p class="updated muted">制定・施行日：2026年9月28日</p>
+            <p class="updated muted">制定・施行日：2026年10月16日</p>
           </div>
 
           <article class="policy">
@@ -68,7 +68,7 @@
             <p>GoogleまたはAppleのログインを選択した場合、各提供者から認証IDや利用者が許可したプロフィール情報を受け取ります。Tripleの取込機能では利用者が指定した共有ページから情報を取得します。アプリストアやRevenueCatから購入・サブスクリプションの状態を受け取る場合があります。</p>
 
             <h2>3. AI機能、位置情報、広告</h2>
-            <p>AI旅行作成では利用者の依頼内容と旅行情報をOpenAIに送信します。AI会話・日程編集では入力内容、直近の会話、編集中の旅行・場所・メモを送信します。編集依頼に同行者一覧、支出、写真ファイルは含めません。場所の確認に必要な場所名・言語・座標等をGoogle Places APIに送信する場合があります。OpenAI APIの入出力は、当社が明示的に学習利用に参加しない限り、既定ではモデル学習に使用されません。当社は応答保存機能を使用しませんが、サービスの安全性確保に必要なログは提供者の方針に従って別途保存されることがあります。</p>
+            <p>AI旅行作成では利用者の依頼内容と旅行情報をAnthropicに送信し、Anthropicが処理できない場合に限り同じ情報をOpenAIに送信します。AI会話・日程編集も同じ順序で送信します。AI会話・日程編集では入力内容、直近の会話、編集中の旅行・場所・メモを送信します。編集依頼に同行者一覧、支出、写真ファイルは含めません。場所の確認に必要な場所名・言語・座標等をGoogle Places APIに送信する場合があります。Anthropicは商用利用規約に基づきAPIの入出力をモデル学習に使用しません。OpenAI APIの入出力は、当社が明示的に学習利用に参加しない限り、既定ではモデル学習に使用されません。当社はOpenAIの応答保存機能を使用しませんが、サービスの安全性確保に必要なログは提供者の方針に従って別途保存されることがあります。</p>
             <p>AIの回答は旅行計画の参考情報です。AIが利用者の権利や義務に重大な影響を及ぼす決定を行うことはなく、日程変更案を適用するかどうかは利用者が選択します。健康情報等の要配慮個人情報、本人確認番号、第三者の個人情報、パスワードをAIメッセージやメモに入力しないでください。</p>
             <p>Google AdMobは広告識別子、広告の表示・クリック・視聴、アプリ・端末情報、都市レベルの位置等を広告配信・効果測定に利用する場合があります。Google Analytics for FirebaseはUID、画面・機能の利用イベント等を分析します。広告のパーソナライズや追跡について、同意や端末設定が必要な場合は、アプリ内の広告プライバシー設定、Google UMP、端末の広告・追跡設定から確認・変更できます。非パーソナライズ広告が表示される場合があります。</p>
             <p>当社ウェブサイトに当社が設置する広告追跡Cookieや行動ターゲティング広告スクリプトはありません。言語・テーマの選択はブラウザーのローカルストレージに保存される場合があります。ブラウザーのサイトデータ削除により削除できます。</p>
@@ -97,16 +97,18 @@
             <p>サービス提供のため、次の事業者に処理を委託します。各社が自らのログイン・決済・広告・サポート機能を提供する際の独立した処理とは区別されます。</p>
             <ul>
               <li>Google LLC：Firebase認証・データベース・ストレージ・クラウド機能、App Check、Places API、Google Forms／Drive、適用される範囲の利用統計</li>
-              <li>OpenAI OpCo, LLC：Responses APIによるAI旅行作成・会話・日程編集</li>
+              <li>Anthropic, PBC：Claude APIによるAI旅行作成・会話・日程編集</li>
+              <li>OpenAI OpCo, LLC：Anthropicが処理できない場合のResponses APIによるAI旅行作成・会話・日程編集</li>
               <li>RevenueCat, Inc.：サブスクリプション・購入復元・利用資格の確認と管理</li>
             <li>Functional Software, Inc.（Sentry）：ログインおよび一部機能の選択されたエラー診断。<a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentryデータ処理契約</a>および<a href="https://sentry.io/legal/subprocessors/" target="_blank" rel="noopener">再委託先一覧</a>をご確認ください。</li></ul>
-            <p>AppleはAppleログイン、App Store決済、App Attest／DeviceCheckを提供します。GoogleはGoogle Play決済、AdMob広告を提供します。Meta／InstagramはInstagram上で利用者が問い合わせた場合に同サービスを提供します。これらの処理には各事業者のプライバシーポリシーが適用されます。委託先の詳細は <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a>、<a href="https://openai.com/policies/data-processing-addendum/" target="_blank" rel="noopener">OpenAI</a>、<a href="https://www.revenuecat.com/dpa" target="_blank" rel="noopener">RevenueCat</a>、<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a>、<a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener">Instagram</a>の各案内をご確認ください。</p>
+            <p>AppleはAppleログイン、App Store決済、App Attest／DeviceCheckを提供します。GoogleはGoogle Play決済、AdMob広告を提供します。Meta／InstagramはInstagram上で利用者が問い合わせた場合に同サービスを提供します。これらの処理には各事業者のプライバシーポリシーが適用されます。委託先の詳細は <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a>、<a href="https://www.anthropic.com/legal/data-processing-addendum" target="_blank" rel="noopener">Anthropic</a>、<a href="https://openai.com/policies/data-processing-addendum/" target="_blank" rel="noopener">OpenAI</a>、<a href="https://www.revenuecat.com/dpa" target="_blank" rel="noopener">RevenueCat</a>、<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a>、<a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener">Instagram</a>の各案内をご確認ください。</p>
 
             <h2>6. 外国にある事業者への提供・保管</h2>
             <p>当社が管理する主要なFirestoreデータと、ソウルリージョンを選択したクラウド機能はGoogle Cloudのasia-northeast3（韓国・ソウル）で処理します。Firebase Authentication、AI、分析、広告、決済・購入確認等は米国または各サービスのグローバルな処理地域で取り扱われる場合があります。</p>
             <ul>
               <li>Google LLC（米国およびサービス別の処理地域）：認証情報、App Check等の証明情報、Places検索語・座標、利用イベント・端末／広告識別子、決済確認情報、お問い合わせと添付ファイル</li>
-              <li>OpenAI OpCo, LLC（米国および公開されている再委託先の処理地域）：利用者が送信したAI入力、直近の会話、旅行・場所・メモ情報と安全性識別子</li>
+              <li>Anthropic, PBC（米国で保管し、<a href="https://www.anthropic.com/subprocessors" target="_blank" rel="noopener">再委託先一覧</a>で公表する米国・欧州・アジア・オーストラリアの地域で処理）：利用者が送信したAI入力、直近の会話、旅行・場所・メモ情報と安全性識別子。API入出力は30日以内に削除され、利用ポリシー違反として検出された場合は最大2年間保存されます。</li>
+              <li>OpenAI OpCo, LLC（米国および公開されている再委託先の処理地域。Anthropicが処理できない場合のみ）：利用者が送信したAI入力、直近の会話、旅行・場所・メモ情報と安全性識別子</li>
               <li>RevenueCat, Inc.（米国）：Firebase UIDに基づく顧客識別子、商品・アプリ・購入・サブスクリプションの状態、取引検証情報</li>
               <li>Apple Inc.（米国およびAppleが各サービスについて公表する処理地域）：ログイン識別子、購入・サブスクリプション情報、端末の証明情報</li>
               <li>Meta Platforms, Inc.（Instagramを利用してお問い合わせいただく場合）：Instagram上のプロフィールと送信されたメッセージ・コメント</li>
@@ -138,7 +140,7 @@
             </ul>
 
             <h2>11. 本ポリシーの変更</h2>
-            <p>本ポリシーは2026年9月28日から適用します。法令またはサービスの変更に応じて改定する場合は、このページまたはサービス内で改定日と主な内容をお知らせします。個人情報の新たな利用目的を追加する場合は、必要な通知・同意等を行います。</p>
+            <p>本ポリシーは2026年10月16日から適用します。今回の改定では、AI機能の主な委託先にAnthropic, PBCを追加し、OpenAIをAnthropicが処理できない場合の代替委託先としました。法令またはサービスの変更に応じて改定する場合は、このページまたはサービス内で改定日と主な内容をお知らせします。個人情報の新たな利用目的を追加する場合は、必要な通知・同意等を行います。</p>
             <p>個人情報保護法の2026年改正法は2026年7月に公布され、一部を除き政令で定める日に施行される予定です。各規定の施行状況を確認し、必要に応じて本ポリシーを更新します。</p>
             <p>適用法令・ガイドライン：<a href="https://www.ppc.go.jp/en/legal/" target="_blank" rel="noopener">日本の個人情報保護委員会「法令・ガイドライン」</a>、<a href="https://www.ppc.go.jp/personalinfo/legal/guidelines_offshore/" target="_blank" rel="noopener">外国にある第三者への提供に関するガイドライン</a>、<a href="https://www.ppc.go.jp/news/press/2026/260717/" target="_blank" rel="noopener">2026年改正法の公布について</a></p>
           </article>

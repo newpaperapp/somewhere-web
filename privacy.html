@@ -99,7 +99,7 @@
           <!-- effective date (left) + past-policy date picker (right) -->
           <div class="legal__head">
             <p class="updated muted">
-              <span data-eff-label>시행일</span>: <span data-eff-date>2026년 9월 28일</span>
+              <span data-eff-label>시행일</span>: <span data-eff-date>2026년 10월 16일</span>
             </p>
             <div class="legal__versions">
               <label class="legal__versions-label" for="policy-version" data-versions-label>지난 개인정보처리방침</label>
@@ -154,7 +154,7 @@
               대상 이미지의 사본을 회사의 저장소에 보관해요.
             </p>
             <p>
-              AI 대화·일정 편집에서는 입력 메시지와 최근 대화, 현재 편집 중인 여행·날짜·장소의 제목·좌표·메모 등을 OpenAI에 전송해요. 편집 요청에 동행자
+              AI 대화·일정 편집에서는 입력 메시지와 최근 대화, 현재 편집 중인 여행·날짜·장소의 제목·좌표·메모 등을 Anthropic에 전송하고, Anthropic이 요청을 처리하지 못하면 같은 정보를 OpenAI에 전송해요. AI 여행 생성 요청도 같은 순서로 전송해요. 편집 요청에 동행자
               목록·지출·사진 파일은 포함하지 않으며, 장소 검증에 필요한 장소명·언어·좌표 등은 Google Places API로 전송할 수 있어요.
             </p>
             <p>
@@ -167,9 +167,9 @@
               문의·신고하거나 이의를 제기할 수 있어요.
             </p>
             <p>
-              OpenAI 정책상 API 입력·출력은 회사가 학습용 데이터 공유에 명시적으로 참여하지 않는 한 기본적으로 모델 학습에 사용되지 않아요.
-              서비스는 응답 저장 기능을 사용하지 않아요. 회사가 학습을 위한 새로운 이용 목적을 추가하는 경우 해당 목적·범위를 안내하고 필요한 동의 등
-              법적 근거를 먼저 갖춰요. 서비스 보안·악용 방지 로그는 OpenAI의 데이터 처리 정책에 따라 별도로 보관될 수 있어요.
+              Anthropic은 <a href="https://www.anthropic.com/legal/commercial-terms" target="_blank" rel="noopener">상용 이용약관</a>에 따라 API 입력·출력을 모델 학습에 사용하지 않고, OpenAI 정책상 API 입력·출력은 회사가 학습용 데이터 공유에 명시적으로 참여하지 않는 한 기본적으로 모델 학습에 사용되지 않아요.
+              서비스는 OpenAI 응답 저장 기능을 사용하지 않아요. 회사가 학습을 위한 새로운 이용 목적을 추가하는 경우 해당 목적·범위를 안내하고 필요한 동의 등
+              법적 근거를 먼저 갖춰요. 서비스 보안·악용 방지 로그는 각 사업자의 데이터 처리 정책에 따라 별도로 보관될 수 있어요.
             </p>
             <p>
               현재 위치는 지도 표시용으로 사용하며 회사의 Firebase 데이터베이스에 저장하지 않아요. 지도 제공자가 위치·기기 정보를 처리할 수 있고, 이용자가
@@ -266,7 +266,8 @@
             </p>
             <ul>
               <li>Google LLC: Firebase Authentication·Firestore·Storage·Cloud Functions를 통한 인증·저장·클라우드 운영, Firebase App Check 앱·기기 보안 검증, Google Places API 장소 검색·검증, Google Forms/Drive 문의 접수·첨부파일 보관, 적용되는 계약 범위의 이용 통계 처리</li>
-              <li>OpenAI OpCo, LLC: Responses API를 통한 AI 여행 생성, AI 대화·일정 편집</li>
+              <li>Anthropic, PBC: Claude API를 통한 AI 여행 생성, AI 대화·일정 편집</li>
+              <li>OpenAI OpCo, LLC: Anthropic이 요청을 처리하지 못할 때 Responses API를 통한 AI 여행 생성, AI 대화·일정 편집</li>
               <li>RevenueCat, Inc.: 구독·구매 복원·entitlement 확인, 고객 식별자 및 구독 관리 링크 처리</li>
               <li>Functional Software, Inc. (Sentry): 로그인 및 일부 기능의 선택된 오류 진단 보고 처리. <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Sentry 데이터 처리계약</a> 및 <a href="https://sentry.io/legal/subprocessors/" target="_blank" rel="noopener">재수탁자 안내</a></li>
             </ul>
@@ -279,7 +280,8 @@
               사업자별 처리 정보와 문의 경로: <a href="https://firebase.google.com/support/privacy"
               target="_blank" rel="noopener">Firebase 개인정보 안내</a>, <a
               href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google
-              개인정보처리방침</a>, <a href="https://openai.com/policies/data-processing-addendum/"
+              개인정보처리방침</a>, <a href="https://www.anthropic.com/legal/data-processing-addendum" target="_blank" rel="noopener">Anthropic 데이터 처리계약</a>,
+              <a href="https://openai.com/policies/data-processing-addendum/"
               target="_blank" rel="noopener">OpenAI 데이터 처리계약</a>, <a
               href="https://www.revenuecat.com/dpa" target="_blank" rel="noopener">RevenueCat 데이터
               처리계약</a>, <a href="https://www.apple.com/legal/privacy/" target="_blank"
@@ -314,11 +316,19 @@
               <li>이전 항목·목적: 계정 식별자·이메일·프로필(인증), 증명 자료·App Check 토큰(앱·기기 무결성 검증), 장소 검색어·좌표(지도·장소 검증), UID·이용 이벤트·기기/광고 식별자(분석·광고·보상 검증), 구독/거래 검증 정보(결제), 문의·첨부파일(고객지원)</li>
               <li>보유기간: 회사 관리 데이터는 제3조의 기간. Firebase Authentication의 기타 인증 정보는 삭제 요청까지, 요청 후 운영·백업 시스템에서 180일 이내 삭제되며 IP 로그는 수주 동안 보관돼요. 회사의 Analytics 사용자·이벤트 데이터 설정은 2개월이고, Google이 독립적으로 처리하는 광고·결제·보안 기록은 <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener">Google 보유기간 기준</a>에 따라 해당 목적 달성·계정/설정 삭제 또는 법정 보존 기간까지 보관돼요.</li>
             </ul>
+            <h3>Anthropic, PBC</h3>
+            <ul>
+              <li>이전 국가: 미국. Anthropic은 미국 데이터센터에 저장하며, 처리는 <a href="https://www.anthropic.com/subprocessors" target="_blank" rel="noopener">Anthropic 재수탁자 목록</a>에 공개한 미국·유럽·아시아·호주의 국가에서 이루어질 수 있어요.</li>
+              <li>연락처: privacy@anthropic.com</li>
+              <li>이전 시기·방법: AI 여행 생성·대화·일정 편집 요청 시 정보통신망을 통한 전송</li>
+              <li>이전 항목·목적: 제2조의 AI 입력·최근 대화·여행/장소/메모 정보와 해시된 안전성 식별자 등 요청 관련 정보 / AI 답변·일정 생성·편집 제안 및 안전성 확보</li>
+              <li>보유기간: API 입력·출력은 수신·생성 후 30일 이내에 삭제돼요. 이용 정책 위반으로 분류된 요청은 최대 2년, 법령상 보관 의무가 있으면 그에 필요한 기간 동안 보관될 수 있어요. 상세 기준은 <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data" target="_blank" rel="noopener">Anthropic 데이터 보유 안내</a>에서 확인할 수 있어요.</li>
+            </ul>
             <h3>OpenAI OpCo, LLC</h3>
             <ul>
               <li>이전 국가: 미국 및 <a href="https://openai.com/policies/sub-processor-list/" target="_blank" rel="noopener">OpenAI 재수탁자 목록</a>에 공개한 처리 국가. API 처리가 미국 내에서만 이루어지는 것으로 제한하지 않아요.</li>
               <li>연락처: privacy@openai.com / <a href="https://privacy.openai.com/" target="_blank" rel="noopener">개인정보 문의 포털</a></li>
-              <li>이전 시기·방법: AI 여행 생성·대화·일정 편집 요청 시 정보통신망을 통한 전송</li>
+              <li>이전 시기·방법: AI 여행 생성·대화·일정 편집 요청을 Anthropic이 처리하지 못할 때 정보통신망을 통한 전송</li>
               <li>이전 항목·목적: 제2조의 AI 입력·최근 대화·여행/장소/메모 정보와 해시된 안전성 식별자 등 요청 관련 정보 / AI 답변·일정 생성·편집 제안 및 안전성 확보</li>
               <li>보유기간: 응답 저장 기능은 사용하지 않아요. 모델 처리에 필요한 임시 캐시는 최대 24시간, 악용 방지 로그는 기본 최대 30일이며 법적 의무 또는 서비스·제3자의 피해 방지를 위해 필요한 경우 더 보관될 수 있어요. 상세 기준은 <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener">OpenAI API 데이터 보유 안내</a>에서 확인할 수 있어요.</li>
             </ul>
@@ -472,7 +482,7 @@
 
             <h2>제15조 - 개인정보 처리방침의 변경</h2>
             <p>
-              이 개인정보처리방침은 2026년 9월 28일부터 적용돼요. 변경 시 시행일·주요 변경사항을 본 페이지 또는 서비스 내에서 안내하고, 권리에 중대한 영향을
+              이 개인정보처리방침은 2026년 10월 16일부터 적용돼요. 2026년 10월 16일 개정에서는 AI 여행 생성·대화·일정 편집의 처리 수탁자 및 국외 이전 대상에 Anthropic, PBC를 추가하고, OpenAI는 Anthropic이 요청을 처리하지 못할 때 이용하는 대체 수탁자로 변경했어요. 변경 시 시행일·주요 변경사항을 본 페이지 또는 서비스 내에서 안내하고, 권리에 중대한 영향을
               미치는 변경은 개정 전 또는 개정 즉시 알리며 별도 동의가 필요한 경우 동의를 받아요. 이전 방침은 위 「지난 개인정보처리방침」에서 확인할 수 있어요.
             </p>
 
@@ -523,7 +533,9 @@
             </p>
             <p>
               AI conversations and itinerary editing send your message, recent conversation, and
-              titles, coordinates, and notes from the current trip/date/place draft to OpenAI. The
+              titles, coordinates, and notes from the current trip/date/place draft to Anthropic, and
+              send the same information to OpenAI only if Anthropic cannot process the request. AI
+              trip generation requests follow the same order. The
               edit payload excludes companion lists, expenses, and photo files. Place names,
               language, and coordinates needed for verification may be sent to Google Places API.
             </p>
@@ -539,11 +551,12 @@
               <span class="contact-email" data-contact-email>contact@npsomewhere.com</span>.
             </p>
             <p>
-              Under OpenAI’s policy, API inputs and outputs are not used for model training by
+              Under its <a href="https://www.anthropic.com/legal/commercial-terms" target="_blank" rel="noopener">Commercial Terms</a>, Anthropic does not train models on API inputs
+              and outputs. Under OpenAI’s policy, API inputs and outputs are not used for model training by
               default unless we explicitly opt into training-data sharing. The Service does not
-              use response storage. Before introducing a new training purpose, we will disclose
+              use OpenAI response storage. Before introducing a new training purpose, we will disclose
               its purpose and scope and establish the required legal basis, including consent
-              where necessary. OpenAI may separately retain security and abuse-prevention logs
+              where necessary. Each provider may separately retain security and abuse-prevention logs
               under its data-processing policy.
             </p>
             <p>
@@ -663,7 +676,8 @@
             </p>
             <ul>
               <li>Google LLC: authentication, storage, and cloud operations through Firebase Authentication/Firestore/Storage/Cloud Functions; Firebase App Check app/device security verification; Google Places API search/verification; Google Forms/Drive support and attachments; and analytics within the applicable processing agreement</li>
-              <li>OpenAI OpCo, LLC: AI trip generation, conversations, and itinerary editing through the Responses API</li>
+              <li>Anthropic, PBC: AI trip generation, conversations, and itinerary editing through the Claude API</li>
+              <li>OpenAI OpCo, LLC: AI trip generation, conversations, and itinerary editing through the Responses API when Anthropic cannot process the request</li>
               <li>RevenueCat, Inc.: subscription/purchase restoration/entitlement checks, customer identifiers, and subscription-management links</li>
               <li>Functional Software, Inc. (Sentry): sign-in and selected-operation error reporting and diagnostics. See Sentry’s <a href="https://sentry.io/legal/dpa/" target="_blank" rel="noopener">Data Processing Addendum</a> and <a href="https://sentry.io/legal/subprocessors/" target="_blank" rel="noopener">subprocessor list</a></li>
             </ul>
@@ -679,7 +693,8 @@
               href="https://firebase.google.com/support/privacy" target="_blank"
               rel="noopener">Firebase privacy information</a>, <a
               href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google
-              Privacy Policy</a>, <a href="https://openai.com/policies/data-processing-addendum/"
+              Privacy Policy</a>, <a href="https://www.anthropic.com/legal/data-processing-addendum" target="_blank" rel="noopener">Anthropic DPA</a>,
+              <a href="https://openai.com/policies/data-processing-addendum/"
               target="_blank" rel="noopener">OpenAI DPA</a>, <a
               href="https://www.revenuecat.com/dpa" target="_blank" rel="noopener">RevenueCat
               DPA</a>, <a href="https://www.apple.com/legal/privacy/" target="_blank"
@@ -717,11 +732,19 @@
               <li>Items/purposes: identifiers/email/profile for authentication; attestation material/App Check tokens for app/device integrity; queries/coordinates for maps and place verification; UID/events/device/ad identifiers for analytics, ads, and reward verification; subscription/transaction data for payments; inquiries/attachments for support</li>
               <li>Retention: company-managed data follows Section 3. Other Firebase Authentication information is held until deletion is requested and removed from live/backup systems within 180 days afterward; IP logs are kept for a few weeks. Our Analytics user/event setting is 2 months. Google’s independent advertising, payment, and security records follow <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener">Google retention criteria</a> until the purpose is fulfilled, account/settings deletion, or the relevant legal period.</li>
             </ul>
+            <h3>Anthropic, PBC</h3>
+            <ul>
+              <li>Countries: United States. Anthropic stores data in U.S. data centers and may process it in countries in the United States, Europe, Asia, and Australia disclosed in <a href="https://www.anthropic.com/subprocessors" target="_blank" rel="noopener">Anthropic’s subprocessor list</a>.</li>
+              <li>Contact: privacy@anthropic.com</li>
+              <li>When/how: network transmission when you request AI trip generation, conversations, or itinerary editing</li>
+              <li>Items/purposes: AI inputs/recent conversation/trip/place/note data from Section 2, hashed safety identifiers, and request-related information / AI replies, itinerary generation/edit proposals, and safety</li>
+              <li>Retention: API inputs and outputs are deleted within 30 days of receipt or generation. Requests flagged for usage-policy violations may be kept for up to 2 years, and data may be kept longer where required by law. See <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data" target="_blank" rel="noopener">Anthropic data retention</a> for details.</li>
+            </ul>
             <h3>OpenAI OpCo, LLC</h3>
             <ul>
               <li>Countries: United States and processing countries disclosed in <a href="https://openai.com/policies/sub-processor-list/" target="_blank" rel="noopener">OpenAI’s subprocessor list</a>. API processing is not restricted to the United States.</li>
               <li>Contact: privacy@openai.com / <a href="https://privacy.openai.com/" target="_blank" rel="noopener">privacy request portal</a></li>
-              <li>When/how: network transmission when you request AI trip generation, conversations, or itinerary editing</li>
+              <li>When/how: network transmission when Anthropic cannot process an AI trip generation, conversation, or itinerary-editing request</li>
               <li>Items/purposes: AI inputs/recent conversation/trip/place/note data from Section 2, hashed safety identifiers, and request-related information / AI replies, itinerary generation/edit proposals, and safety</li>
               <li>Retention: response storage is not used. Temporary model-processing caches may last up to 24 hours; default abuse-monitoring logs are kept for up to 30 days, or longer where required by law or necessary to protect the service or third parties from harm. See <a href="https://developers.openai.com/api/docs/guides/your-data" target="_blank" rel="noopener">OpenAI API data retention</a> for details.</li>
             </ul>
@@ -898,7 +921,10 @@
 
             <h2>15. Changes to This Policy</h2>
             <p>
-              This Privacy Policy is effective September 28, 2026. We announce the effective date
+              This Privacy Policy is effective October 16, 2026. The October 16, 2026 revision adds
+              Anthropic, PBC as a processor and international transfer recipient for AI trip
+              generation, conversations, and itinerary editing, and makes OpenAI the fallback
+              processor used when Anthropic cannot process a request. We announce the effective date
               and material changes on this page or in the Service, notify changes that significantly
               affect your rights before or at amendment, and obtain separate consent where required.
               Earlier policies remain available in the Previous policy selector.
@@ -958,6 +984,6 @@
     <script src="assets/js/i18n.js?v=20260928-korea-legal-titles"></script>
     <script src="assets/js/main.js?v=20260909-i18n"></script>
     <script src="assets/js/legal-doc.js"></script>
-    <script src="assets/js/privacy.js?v=20260928-legal"></script>
+    <script src="assets/js/privacy.js?v=20261016-legal"></script>
   </body>
 </html>

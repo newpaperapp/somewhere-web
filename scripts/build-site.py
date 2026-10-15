@@ -292,11 +292,13 @@ def main():
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
     entries = [(ORIGIN + home_path(lang), "2026-09-26") for lang in data["languages"]]
+    entries += [(ORIGIN + "/" + page, "2026-10-16") for page in [
+        "privacy.html", "ja/privacy.html", "us/privacy.html", "eu/privacy.html",
+        "eu/fr/privacy.html", "eu/de/privacy.html", "eu/es/privacy.html",
+    ]]
     entries += [(ORIGIN + "/" + page, "2026-09-28") for page in [
-        "privacy.html", "terms.html", "ja/privacy.html", "ja/terms.html", "ja/commercial-transactions.html",
-        "us/privacy.html", "us/terms.html", "eu/privacy.html", "eu/terms.html",
-        "eu/fr/privacy.html", "eu/fr/terms.html", "eu/de/privacy.html", "eu/de/terms.html",
-        "eu/es/privacy.html", "eu/es/terms.html",
+        "terms.html", "ja/terms.html", "ja/commercial-transactions.html",
+        "us/terms.html", "eu/terms.html", "eu/fr/terms.html", "eu/de/terms.html", "eu/es/terms.html",
     ]]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += "".join(f"  <url><loc>{url}</loc><lastmod>{date}</lastmod></url>\n" for url, date in entries) + "</urlset>\n"
