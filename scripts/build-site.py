@@ -217,6 +217,38 @@ def landing(source, lang, data):
     return document.render()
 
 
+def whats_new(output, data):
+    """Render whats-new/releases.json into the page so crawlers and no-JS readers get the cards.
+
+    Korean is the default text; each note carries every translation for the page script.
+    Returns the newest release date (YYYY-MM-DD) for the sitemap.
+    """
+    releases = json.loads((ROOT / "whats-new/releases.json").read_text())["releases"]
+    ko = data["translations"]["ko"]
+    cards = []
+    for index, release in enumerate(releases):
+        badge = (f'<span class="news-card__badge" data-i18n="whatsNew.latest">{html.escape(ko["whatsNew.latest"])}</span>'
+                 if index == 0 else "")
+        items = "".join(
+            f'<li data-news-item="{html.escape(json.dumps(item, ensure_ascii=False), quote=True)}">'
+            f'{html.escape(item.get("ko") or item["en"])}</li>'
+            for item in release["items"])
+        cards.append(
+            f'<section class="news-card{" news-card--latest" if index == 0 else ""}">'
+            f'<div class="news-card__header"><h2 class="news-card__version">v{html.escape(release["version"])}</h2>'
+            f'{badge}<span class="news-card__date">{html.escape(release["date"])}</span></div>'
+            f'<ul class="news-card__items">{items}</ul></section>')
+    if not cards:
+        cards.append(f'<p class="news-status" data-i18n="whatsNew.empty">{html.escape(ko["whatsNew.empty"])}</p>')
+    page = output / "whats-new/index.html"
+    content = page.read_text()
+    placeholder = "<!-- whats-new:releases -->"
+    assert content.count(placeholder) == 1, "whats-new/index.html needs exactly one releases placeholder"
+    page.write_text(content.replace(placeholder, "".join(cards)))
+    dates = [release["date"] for release in releases if release["date"].count(".") == 2]
+    return dates[0].replace(".", "-") if dates else None
+
+
 def validate(output, data):
     for lang in data["languages"]:
         target = output / home_path(lang).lstrip("/") / "index.html"
@@ -263,11 +295,12 @@ def main():
     output.mkdir()
     # Explicit public entry points prevent accidental publication of local docs,
     # repository internals, optimizer tools or agent configuration.
-    for name in ["assets", ".well-known", "join", "privacy", "terms", "ja", "eu", "us"]:
+    for name in ["assets", ".well-known", "join", "privacy", "terms", "whats-new", "ja", "eu", "us"]:
         shutil.copytree(ROOT / name, output / name, ignore=shutil.ignore_patterns("*.md", "__pycache__", "optimized-assets.json"))
     for source in ROOT.iterdir():
         if source.is_file() and (source.suffix == ".html" or source.name in {"CNAME", ".nojekyll", "robots.txt", "app-ads.txt"}):
             shutil.copy2(source, output / source.name)
+    whats_new_lastmod = whats_new(output, data)
     download = output / "download.html"
     content = download.read_text()
     for store, key in [("ios", "APP_STORE_URL"), ("android", "PLAY_STORE_URL")]:
@@ -300,6 +333,9 @@ def main():
         "terms.html", "ja/terms.html", "ja/commercial-transactions.html",
         "us/terms.html", "eu/terms.html", "eu/fr/terms.html", "eu/de/terms.html", "eu/es/terms.html",
     ]]
+    # Changes with every published release, so it follows the newest release date.
+    if whats_new_lastmod:
+        entries += [(ORIGIN + "/whats-new/", whats_new_lastmod)]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += "".join(f"  <url><loc>{url}</loc><lastmod>{date}</lastmod></url>\n" for url, date in entries) + "</urlset>\n"
     (output / "sitemap.xml").write_text(sitemap)

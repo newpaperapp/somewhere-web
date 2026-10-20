@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>새로운 기능 — Somewhere</title>
+    <meta name="description" content="Somewhere에 새로 추가된 기능을 소개해요 / See what's new in Somewhere" />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self';"
+    />
+
+    <link rel="canonical" href="https://npsomewhere.com/whats-new/" />
+
+    <meta property="og:site_name" content="Somewhere" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://npsomewhere.com/whats-new/" />
+    <meta property="og:title" content="새로운 기능 — Somewhere" />
+    <meta property="og:description" content="Somewhere에 새로 추가된 기능을 소개해요 / See what's new in Somewhere" />
+    <meta property="og:image" content="https://npsomewhere.com/assets/img/og-image.png" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="새로운 기능 — Somewhere" />
+    <meta name="twitter:description" content="Somewhere에 새로 추가된 기능을 소개해요 / See what's new in Somewhere" />
+    <meta name="twitter:image" content="https://npsomewhere.com/assets/img/og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/img/app-icon.svg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
+    <link rel="stylesheet" href="/assets/css/fonts.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("somewhere-theme");
+        const theme =
+          savedTheme === "dark" || savedTheme === "light"
+            ? savedTheme
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (_) {}
+    </script>
+
+    <style>
+      .news-main {
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 24px 20px 100px;
+      }
+      .news-top-nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 24px;
+      }
+      .news-title {
+        padding-left: 20px;
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0 0 8px;
+        color: var(--on-surface);
+        letter-spacing: -0.02em;
+        line-height: 1.35;
+        word-break: keep-all;
+      }
+      .news-subtitle {
+        padding-left: 20px;
+        margin: 0 0 32px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: var(--on-surface-variant);
+        word-break: keep-all;
+      }
+      .news-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .news-card {
+        background: var(--surface-container);
+        border-radius: var(--r-card);
+        padding: 20px 20px 18px;
+        box-shadow: var(--shadow-sm);
+      }
+      .news-card--latest {
+        outline: 2px solid var(--primary);
+        outline-offset: -2px;
+      }
+      .news-card__header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      .news-card__version {
+        margin: 0;
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--on-surface);
+        letter-spacing: -0.01em;
+      }
+      .news-card__badge {
+        padding: 2px 8px;
+        border-radius: var(--r-pill);
+        background: var(--primary);
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .news-card__date {
+        margin-left: auto;
+        font-size: 13px;
+        color: var(--on-surface-variant);
+        font-variant-numeric: tabular-nums;
+      }
+      .news-card__items {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: var(--on-surface);
+        word-break: keep-all;
+      }
+      .news-card__items li + li {
+        margin-top: 6px;
+      }
+      .news-status {
+        padding: 32px 0;
+        text-align: center;
+        font-size: 15px;
+        color: var(--on-surface-variant);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="news-main">
+      <div class="news-top-nav">
+        <label class="language-picker">
+          <span class="material-icons-round language-picker__icon" aria-hidden="true">language</span>
+          <span class="language-picker__value" data-language-value aria-hidden="true">한국어</span>
+          <select class="language-picker__select" data-action="change-lang"
+            data-i18n-aria="lang.select" aria-label="언어 선택">
+            <option value="ko" data-i18n="lang.option.ko">한국어</option>
+            <option value="en" data-i18n="lang.option.en">English</option>
+            <option value="ja" data-i18n="lang.option.ja">日本語</option>
+            <option value="zh-CN" data-i18n="lang.option.zh-CN">简体中文</option>
+            <option value="zh-TW" data-i18n="lang.option.zh-TW">繁體中文</option>
+            <option value="fr" data-i18n="lang.option.fr">Français</option>
+            <option value="de" data-i18n="lang.option.de">Deutsch</option>
+            <option value="es" data-i18n="lang.option.es">Español</option>
+          </select>
+        </label>
+      </div>
+
+      <h1 class="news-title" data-i18n="whatsNew.title">새로운 기능</h1>
+      <p class="news-subtitle" data-i18n="whatsNew.subtitle">Somewhere에 새로 추가된 기능을 소개해요</p>
+
+      <!-- Cards are rendered from releases.json by scripts/build-site.py. -->
+      <div class="news-list"><!-- whats-new:releases --></div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <a class="brand" href="/" data-home-link aria-label="Somewhere">
+            <img class="logo" src="/assets/img/app-icon.svg" alt="" />
+            <span>Somewhere</span>
+          </a>
+          <p class="footer__meta">
+            <span data-i18n="footer.contact">문의</span>:
+            <span class="contact-email" data-contact-email>contact@npsomewhere.com</span>
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <a href="/privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
+          <a href="/terms.html" data-i18n="footer.terms">서비스 이용약관</a>
+          <span class="footer__meta">© 2026 Somewhere</span>
+        </div>
+
+        <details class="footer__business">
+          <summary data-i18n="footer.business">사업자 정보</summary>
+          <div class="footer__business-body" data-i18n-html="footer.businessInfo">
+            상호: 엔피(NP)<br />
+            대표자: 이세종<br />
+            사업자등록번호: 545-01-04035<br />
+            통신판매업 신고번호: 제 2026-서울양천-0818 호<br />
+            사업장 소재지: 서울특별시 양천구 중앙로45길 25-22, 402호(신정동, 신정빌라)<br />
+            이메일: np@npsomewhere.com
+          </div>
+        </details>
+      </div>
+      <p class="footer__legal" data-i18n="footer.legal">
+        Apple and the Apple logo are trademarks of Apple Inc., registered in the
+        U.S. and other countries. App Store is a service mark of Apple Inc.,
+        registered in the U.S. and other countries. Google Play and the Google
+        Play logo are trademarks of Google LLC.
+      </p>
+    </footer>
+
+    <script src="/assets/js/i18n.js?v=20261020-whats-new"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+      (function () {
+        // The app passes its language as ?lang=. Android reports Chinese as a bare "zh",
+        // so the browser's own Chinese variant decides between Simplified and Traditional.
+        function requestedLang() {
+          const param = new URLSearchParams(window.location.search).get("lang");
+          if (!param) return null;
+          if (param.toLowerCase() === "zh") {
+            const browserZh = (navigator.languages || []).find((lang) => /^zh/i.test(lang));
+            if (browserZh) return browserZh;
+          }
+          return param;
+        }
+
+        function showLang(lang) {
+          document.querySelectorAll("[data-news-item]").forEach((li) => {
+            const texts = JSON.parse(li.getAttribute("data-news-item"));
+            li.textContent = texts[lang] || texts.en;
+          });
+          document.title = `${window.SomewhereI18N.get("whatsNew.title", lang)} — Somewhere`;
+        }
+
+        // Registered after main.js, so the ?lang= language replaces its stored-preference pick.
+        // applyLang() saves the language for the whole site; restore the saved value so a link
+        // from the app does not change the language of the site's other pages.
+        document.addEventListener("DOMContentLoaded", function () {
+          if (!window.SomewhereI18N) return;
+          window.addEventListener("somewhere:langchange", (event) => showLang(event.detail));
+          const lang = requestedLang();
+          if (lang) {
+            let saved = null;
+            try { saved = localStorage.getItem("somewhere-lang"); } catch (_) {}
+            window.SomewhereI18N.applyLang(lang);
+            try {
+              if (saved === null) localStorage.removeItem("somewhere-lang");
+              else localStorage.setItem("somewhere-lang", saved);
+            } catch (_) {}
+          }
+          showLang(window.__lang || "en");
+        });
+      })();
+    </script>
+  </body>
+</html>

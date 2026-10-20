@@ -1,0 +1,456 @@
+{
+  "releases": [
+    {
+      "version": "4.0.0",
+      "date": "2026.10.22",
+      "items": [
+        {
+          "ko": "홈 화면용 여행 D-day 위젯과 iOS 잠금 화면 위젯 추가",
+          "en": "Adds Trip D-day widgets for the Home Screen, plus Lock Screen widgets on iOS",
+          "ja": "ホーム画面に旅行のD-dayウィジェットを追加（iOSはロック画面にも対応）",
+          "zh-CN": "新增适用于主屏幕的旅行 D-day 小组件，iOS 还支持锁定屏幕小组件",
+          "zh-TW": "新增適用於主畫面的旅行 D-day 小工具，iOS 還支援鎖定畫面小工具",
+          "fr": "Ajout de widgets D-day du voyage pour l’écran d’accueil, et pour l’écran verrouillé sur iOS",
+          "de": "Fügt Reise-D-Day-Widgets für den Homescreen hinzu, unter iOS auch für den Sperrbildschirm",
+          "es": "Añade widgets de D-day del viaje para la pantalla de inicio y, en iOS, también para la pantalla de bloqueo"
+        },
+        {
+          "ko": "나만 볼 수 있는 지출 기록 추가",
+          "en": "Adds private expenses that only you can see",
+          "ja": "自分のみ表示される支出を追加",
+          "zh-CN": "新增仅自己可见的支出",
+          "zh-TW": "新增僅自己可見的支出",
+          "fr": "Ajout de dépenses personnelles visibles uniquement par vous",
+          "de": "Fügt private Ausgaben hinzu, die nur du sehen kannst",
+          "es": "Añade gastos privados que solo tú puedes ver"
+        },
+        {
+          "ko": "일정 복사·붙여넣기와 임시보관함 AI 편집 지원",
+          "en": "Supports copying and pasting itinerary items and AI editing for Saved items",
+          "ja": "予定のコピー＆貼り付けと、保存済みスポットのAI編集に対応",
+          "zh-CN": "支持复制和粘贴行程，并可使用 AI 编辑暂存地点",
+          "zh-TW": "支援複製與貼上行程，並可使用 AI 編輯暫存地點",
+          "fr": "Copier-coller des éléments de l’itinéraire et modification des lieux temporaires avec l’IA",
+          "de": "Unterstützt das Kopieren und Einfügen von Einträgen sowie die KI-Bearbeitung gespeicherter Orte",
+          "es": "Permite copiar y pegar elementos del itinerario y editar con IA los lugares guardados"
+        },
+        {
+          "ko": "지난 여행을 모아보는 여행 아카이브 추가",
+          "en": "Adds a Trip archive for looking back on past trips",
+          "ja": "過去の旅行を振り返れる旅行アーカイブを追加",
+          "zh-CN": "新增旅行档案，轻松回顾过去的旅行",
+          "zh-TW": "新增旅行檔案，輕鬆回顧過去的旅行",
+          "fr": "Ajout des archives de voyage pour revoir vos voyages passés",
+          "de": "Fügt ein Reisearchiv hinzu, um auf vergangene Reisen zurückzublicken",
+          "es": "Añade el archivo de viajes para revivir tus viajes pasados"
+        }
+      ]
+    },
+    {
+      "version": "3.12.0",
+      "date": "2026.10.03",
+      "items": [
+        {
+          "ko": "Android Live Updates 기능 추가",
+          "en": "Adds Android Live Updates"
+        },
+        {
+          "ko": "Google 지도에서 공유한 장소를 여행 임시보관함에 저장하는 기능 추가",
+          "en": "Adds a way to save places shared from Google Maps to a trip’s Saved Items"
+        },
+        {
+          "ko": "일정의 이동 수단에 맞는 Google 지도 경로 안내 지원",
+          "en": "Adds Google Maps directions matched to the travel mode in your itinerary"
+        }
+      ]
+    },
+    {
+      "version": "3.11.0",
+      "date": "2026.09.25",
+      "items": [
+        {
+          "ko": "AI 여행 일정 수정 지원",
+          "en": "Supports AI itinerary editing"
+        },
+        {
+          "ko": "출발·일정·경비·여행 추억 알림 추가",
+          "en": "Adds notifications for departures, daily plans, expenses, and travel memories"
+        }
+      ]
+    },
+    {
+      "version": "3.10.0",
+      "date": "2026.09.17",
+      "items": [
+        {
+          "ko": "3D 지구본 기반 여행 통계 추가",
+          "en": "Adds 3D globe trip statistics"
+        },
+        {
+          "ko": "다른 앱에서 여행 가져오기 지원",
+          "en": "Supports importing trips from another app"
+        },
+        {
+          "ko": "지출내역 CSV 파일 가져오기 지원",
+          "en": "Adds support for importing expense CSV files"
+        }
+      ]
+    },
+    {
+      "version": "3.9.0",
+      "date": "2026.09.09",
+      "items": [
+        {
+          "ko": "여행 지도 탐색 개선",
+          "en": "Improves trip map exploration"
+        },
+        {
+          "ko": "화면 대비 조절 지원",
+          "en": "Adds contrast controls"
+        },
+        {
+          "ko": "메모 복사 추가",
+          "en": "Adds memo copying"
+        }
+      ]
+    },
+    {
+      "version": "3.8.0",
+      "date": "2026.08.27",
+      "items": [
+        {
+          "ko": "내 여행 통계 기능 추가",
+          "en": "Adds My Trip Stats to view travel records and insights"
+        },
+        {
+          "ko": "AI 여행 일정 생성을 위한 크레딧 충전 및 보상 시스템 도입",
+          "en": "Introduces a credit and reward system for AI trip generation"
+        },
+        {
+          "ko": "장소 카테고리 및 일자별 지도 경로 그라데이션과 마커 색상 시각화 개선",
+          "en": "Enhances map visualization with category-based route gradients and date-specific marker colors"
+        }
+      ]
+    },
+    {
+      "version": "3.7.0",
+      "date": "2026.08.21",
+      "items": [
+        {
+          "ko": "일본어, 중국어, 독일어, 프랑스어, 스페인어 다국어 지원 추가",
+          "en": "Adds support for Japanese, Chinese, German, French, and Spanish languages"
+        },
+        {
+          "ko": "글자 및 화면 크기 조절 설정 기능 추가",
+          "en": "Adds font size and display scaling customization settings"
+        }
+      ]
+    },
+    {
+      "version": "3.6.0",
+      "date": "2026.08.17",
+      "items": [
+        {
+          "ko": "여행 공동경비 관리 및 정산 연동 기능 추가",
+          "en": "Adds shared fund management and expense settlement integration"
+        },
+        {
+          "ko": "가계부 내역 및 정산 화면 사용성 개선",
+          "en": "Improves expense entry workflows, currency settings, and settlement screens"
+        },
+        {
+          "ko": "여행 일정 텍스트 공유 개선",
+          "en": "Improves trip itinerary text sharing"
+        }
+      ]
+    },
+    {
+      "version": "3.5.0",
+      "date": "2026.07.30",
+      "items": [
+        {
+          "ko": "여행 전 장소를 모아 일정에 추가하는 ‘임시보관함’ 추가",
+          "en": "Adds Saved Items for collecting places before adding them to an itinerary"
+        },
+        {
+          "ko": "여행, 일정 항목 상세 및 편집 화면 개편",
+          "en": "Redesigns trip, itinerary item details and editing"
+        },
+        {
+          "ko": "큰 화면용 지출·임시보관함 2단 화면 지원",
+          "en": "Supports two-pane Expenses and Saved Items on larger screens"
+        }
+      ]
+    },
+    {
+      "version": "3.4.0",
+      "date": "2026.07.23",
+      "items": [
+        {
+          "ko": "지출 관리 기능 추가",
+          "en": "Added expense management"
+        },
+        {
+          "ko": "다중 통화 및 환율 설정 지원",
+          "en": "Added multi-currency and exchange-rate settings"
+        },
+        {
+          "ko": "여행 공동 편집 및 초대 관리 강화",
+          "en": "Improved trip collaboration and invitations"
+        },
+        {
+          "ko": "iOS 실시간 현황에서 해당 여행 장소로 바로 이동 가능",
+          "en": "Open the relevant trip spot directly from an iOS Live Activities"
+        },
+        {
+          "ko": "실시간 일정 표시 설정 추가",
+          "en": "Choose which trip spot to display in Glance spot"
+        }
+      ]
+    },
+    {
+      "version": "3.3.0",
+      "date": "2026.07.12",
+      "items": [
+        {
+          "ko": "지도에서 직접 새로운 여행 장소를 생성하고 추가하는 기능 도입",
+          "en": "Added feature to create and add new trip spots directly from the map"
+        },
+        {
+          "ko": "실시간 장소 표시 설정 기능 추가",
+          "en": "Added Glance spot display settings"
+        }
+      ]
+    },
+    {
+      "version": "3.2.0",
+      "date": "2026.07.07",
+      "items": [
+        {
+          "ko": "여행 및 장소 화면 UI/UX 개편",
+          "en": "Redesigned UI/UX for Trip and Spot screens"
+        },
+        {
+          "ko": "통화 선택 화면 검색 기능 도입 및 지원 통화 종류 확대",
+          "en": "Introduced search functionality in the currency selection dialog and expanded supported currencies"
+        },
+        {
+          "ko": "여행 목록 화면에서 활성화된 여행의 D-Day 표시 및 큰 이미지 레이아웃 지원",
+          "en": "Supported D-Day display and large image layouts for active trips on the Trips screen"
+        },
+        {
+          "ko": "여행 화면 내 현재 날짜로 즉시 이동하는 '오늘로' 버튼 및 플로팅 탐색 버튼 추가",
+          "en": "Added a \"To Today\" button and floating navigation buttons for quick date navigation on the Trip screen"
+        },
+        {
+          "ko": "장소 화면 내 지도 카드 접기/펼치기 기능 및 장소 이미지 카드 확장/축소 기능 추가",
+          "en": "Added collapsible map functionality and image card expand/collapse features on the Spot screen"
+        }
+      ]
+    },
+    {
+      "version": "3.1.0",
+      "date": "2026.07.05",
+      "items": [
+        {
+          "ko": "여행 초대 링크 공유 기능 추가",
+          "en": "Added the ability to share trip invitation links"
+        },
+        {
+          "ko": "Somewhere Pro 구독 개편",
+          "en": "Redesigned the Somewhere Pro subscription"
+        },
+        {
+          "ko": "iOS Somewhere Pro 사용자에게 잠금 화면 및 Dynamic Island Live Activities 제공",
+          "en": "Lock Screen and Dynamic Island Live Activities now available for iOS Somewhere Pro users"
+        }
+      ]
+    },
+    {
+      "version": "3.0.0",
+      "date": "2026.06.16",
+      "items": [
+        {
+          "ko": "iOS 출시",
+          "en": "Now available on iOS",
+          "ja": "iOS版をリリース",
+          "zh-CN": "推出 iOS 版",
+          "zh-TW": "推出 iOS 版",
+          "fr": "Disponible sur iOS",
+          "de": "Jetzt auch für iOS",
+          "es": "Disponible en iOS"
+        }
+      ]
+    },
+    {
+      "version": "2.4.0",
+      "date": "2026.06.05",
+      "items": [
+        {
+          "ko": "게스트 모드 추가",
+          "en": "Add guest mode"
+        }
+      ]
+    },
+    {
+      "version": "2.3.0",
+      "date": "2026.01.26",
+      "items": [
+        {
+          "ko": "현재 여행 미리보기 기능 업데이트",
+          "en": "Update Current trip feature (Glance spot)"
+        },
+        {
+          "ko": "여행 정보 텍스트로 공유하기 추가",
+          "en": "Add share trip information as text"
+        }
+      ]
+    },
+    {
+      "version": "2.2.0",
+      "date": "2026.01.21",
+      "items": [
+        {
+          "ko": "여행 화면에 장소 타입 필터 기능 추가",
+          "en": "Spot type filter feature added on trip screen"
+        }
+      ]
+    },
+    {
+      "version": "2.1.0",
+      "date": "2025.10.25",
+      "items": [
+        {
+          "ko": "메인 화면 여행 필터, 정렬 기능 추가",
+          "en": "Add trips filter, sort feature on main screen"
+        },
+        {
+          "ko": "TalkBack 접근성 일부 개선",
+          "en": "Improve TalkBack accessibility"
+        }
+      ]
+    },
+    {
+      "version": "2.0.0",
+      "date": "2025.09.10",
+      "items": [
+        {
+          "ko": "UI/UX 개선",
+          "en": "Improve UI/UX"
+        }
+      ]
+    },
+    {
+      "version": "1.12.0",
+      "date": "2025.09.01",
+      "items": [
+        {
+          "ko": "UI/UX 개선",
+          "en": "Improve UI/UX"
+        },
+        {
+          "ko": "여행 생성 AI 개선",
+          "en": "Improve trip generation AI"
+        }
+      ]
+    },
+    {
+      "version": "1.11.0",
+      "date": "2025.08.16",
+      "items": [
+        {
+          "ko": "UI/UX 개선",
+          "en": "Improve UI/UX"
+        },
+        {
+          "ko": "여행 공유 기능 추가",
+          "en": "Add share trip feature"
+        }
+      ]
+    },
+    {
+      "version": "1.10.0",
+      "date": "2024.11.08",
+      "items": [
+        {
+          "ko": "Somewhere Pro 구독제 추가",
+          "en": "Add Somewhere Pro subscription"
+        },
+        {
+          "ko": "UI/UX 개선",
+          "en": "Improve UI/UX"
+        },
+        {
+          "ko": "접근성 향상",
+          "en": "Improve accessibility"
+        }
+      ]
+    },
+    {
+      "version": "1.9.0",
+      "date": "2024.10.22",
+      "items": [
+        {
+          "ko": "여행 생성 AI 기능 추가",
+          "en": "Create trip AI"
+        }
+      ]
+    },
+    {
+      "version": "1.8.0",
+      "date": "2024.09.06",
+      "items": [
+        {
+          "ko": "위치 설정 화면에서 다른 날짜 위치 표시 기능 추가",
+          "en": "Add show other date’s location marker feature at set location screen"
+        },
+        {
+          "ko": "QR 코드로 친구 추가 기능 추가",
+          "en": "Add add friend with QR code feature"
+        },
+        {
+          "ko": "UI/UX 개선",
+          "en": "Improve UI/UX"
+        }
+      ]
+    },
+    {
+      "version": "1.7.0",
+      "date": "2024.07.25",
+      "items": [
+        {
+          "ko": "UI/UX 개선",
+          "en": "improve UI/UX"
+        }
+      ]
+    },
+    {
+      "version": "1.6.0",
+      "date": "2024.03.08",
+      "items": [
+        {
+          "ko": "Apple로 로그인 기능 추가",
+          "en": "Add Sign in with Apple"
+        },
+        {
+          "ko": "프로필 수정 기능 추가",
+          "en": "Add edit profile feature"
+        },
+        {
+          "ko": "현재 여행 보기 기능 추가 (Glance)",
+          "en": "Add Current trip feature (Glance spot)"
+        }
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2023.10.22",
+      "items": [
+        {
+          "ko": "Somewhere 첫 출시",
+          "en": "The first release of Somewhere"
+        }
+      ]
+    }
+  ]
+}
