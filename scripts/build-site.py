@@ -21,7 +21,7 @@ LEGAL_ROUTES = {lang: {"privacy.html": "/privacy", "terms.html": "/terms"} for l
 # Hand-written feature pages: features/<slug>/<lang>.html holds the localized <title>, description
 # and <main>, wrapped in features/_shell.html and served at feature_path(slug, lang).
 # Each date is the page's last content change and becomes its sitemap lastmod.
-FEATURE_PAGES = {"expense": "2026-10-21"}
+FEATURE_PAGES = {"expense": "2026-10-21", "map": "2026-10-21", "together": "2026-10-21", "ai": "2026-10-21"}
 FEATURE_LANGUAGES = ["ko", "en", "ja", "zh-CN", "zh-TW", "fr", "de", "es"]
 
 
@@ -256,7 +256,8 @@ def feature_page(slug, lang, data):
         return " ".join(text(node.render()).split())
 
     nodes = list(Document(main).elements())
-    eyebrow = next(plain(n) for n in nodes if n.attrs.get("class") == "feature-hero__eyebrow")
+    eyebrow = next((plain(n) for n in nodes if n.attrs.get("class") == "feature-hero__eyebrow"), None)
+    assert eyebrow, f"Needs a feature-hero__eyebrow for the breadcrumb: {slug}/{lang}"
     faq = []
     for node in nodes:
         if node.attrs.get("class") == "feature-faq":
