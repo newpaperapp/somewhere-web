@@ -180,8 +180,8 @@ def landing(source, lang, data):
             attrs.pop("selected", None)
             if attrs.get("value") == lang:
                 attrs["selected"] = None
-        if "data-i18n-src-ko" in attrs:
-            attrs["src"] = attrs["data-i18n-src-ko" if lang == "ko" else "data-i18n-src-en"]
+        if "data-i18n-src" in attrs:
+            attrs["src"] = attrs["data-i18n-src"].replace("{lang}", lang.lower())
         if node.tag == "title":
             node.children = [html.escape(title)]
         if node.tag == "meta":
@@ -199,7 +199,7 @@ def landing(source, lang, data):
         if node.tag == "script" and attrs.get("type") == "application/ld+json":
             node.children = [json.dumps(schema, ensure_ascii=False, indent=2).replace("<", "\\u003c")]
         # Assets and utility links resolve correctly at every language URL.
-        for attribute in ["href", "src", "data-i18n-src-ko", "data-i18n-src-en"]:
+        for attribute in ["href", "src", "data-i18n-src"]:
             value = attrs.get(attribute, "")
             if value in {"privacy.html", "terms.html"}:
                 attrs[attribute] = LEGAL_ROUTES[lang][value]
@@ -268,8 +268,11 @@ def validate(output, data):
         for node in nodes:
             if node.tag == "script" and node.attrs.get("type") == "application/ld+json":
                 json.loads("".join(node.children))
-            for attribute in ["href", "src", "data-i18n-src-ko", "data-i18n-src-en"]:
-                value = node.attrs.get(attribute, "")
+            values = [node.attrs.get("href", ""), node.attrs.get("src", "")]
+            # Every language's screenshot must exist for the runtime language switch.
+            values += [node.attrs["data-i18n-src"].replace("{lang}", l.lower())
+                       for l in data["languages"] if "data-i18n-src" in node.attrs]
+            for value in values:
                 parts = urlsplit(value)
                 if not parts.path or parts.scheme or parts.netloc:
                     continue
@@ -307,9 +310,7 @@ def main():
         url = html.escape(data["config"][key], quote=True)
         content = re.sub(r'(data-store="' + store + r'" href=")[^"]*', lambda match: match[1] + url, content)
     download.write_text(content)
-    for source in (output / "assets/img/screens").glob("*.png"):
-        assert source.with_suffix(".webp").exists(), f"Run optimize-assets.py for {source.name}"
-        source.unlink()
+    assert not list(output.rglob("assets/img/screens/*.png")), "Screenshot PNGs belong in store-screenshots/web"
     # The unchanged invitation page still loads the original font. Landing and
     # legal pages use subsets, so retaining this file does not add to their load.
     assert (output / "assets/css/fonts.css").exists(), "Run optimize-assets.py first"

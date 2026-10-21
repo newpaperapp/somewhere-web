@@ -40,3 +40,6 @@ build/
 #
 /font/
 todo.md
+
+# Screenshot source PNGs live in store-screenshots/web; only WebP is committed
+assets/img/screens/*.png

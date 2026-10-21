@@ -1137,17 +1137,14 @@ function applyLang(requestedLang) {
     if (value !== "") el.setAttribute("content", value);
   });
 
-  // Screenshot artwork currently exists in Korean and English only. Use the
-  // English artwork for every supported language without a matching asset.
-  const imageLang = lang === "ko" ? "ko" : "en";
-  document
-    .querySelectorAll("[data-i18n-src-ko][data-i18n-src-en]")
-    .forEach((el) => {
-      const src =
-        el.getAttribute(`data-i18n-src-${imageLang}`) ||
-        el.getAttribute("data-i18n-src-en");
-      if (src) el.setAttribute("src", src);
-    });
+  // Screenshot artwork exists for every supported language; file names use the
+  // lowercase language code (e.g. zh-cn).
+  document.querySelectorAll("[data-i18n-src]").forEach((el) => {
+    el.setAttribute(
+      "src",
+      el.getAttribute("data-i18n-src").replace("{lang}", lang.toLowerCase())
+    );
+  });
 
   document.querySelectorAll("[data-action='change-lang']").forEach((select) => {
     select.value = lang;
