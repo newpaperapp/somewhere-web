@@ -62,6 +62,7 @@ const I18N = {
     "feature.expense.desc":
       "여행의 소비 내역을 기록하고, 정산 기능으로 친구에게 얼마를 보낼지 손쉽게 확인하세요",
     "feature.expense.alt": "여행 소비 지출 내역 및 정산 화면",
+    "feature.more": "자세히 알아보기",
     "feature.together.kicker": "협업",
     "feature.together.title": "함께 만드는 여행",
     "feature.together.desc":
@@ -191,6 +192,7 @@ const I18N = {
     "feature.expense.desc":
       "Record your travel spending and easily calculate settlement amounts to send to friends",
     "feature.expense.alt": "Travel expense details and settlement screen",
+    "feature.more": "Learn more",
     "feature.together.kicker": "Together",
     "feature.together.title": "Plan trips together",
     "feature.together.desc":
@@ -320,6 +322,7 @@ const I18N = {
     "feature.expense.desc":
       "旅行中の支出を記録し、友だちに送る金額を精算機能で簡単に確認できます",
     "feature.expense.alt": "旅行の支出明細と精算画面",
+    "feature.more": "詳しく見る",
     "feature.together.kicker": "共同作業",
     "feature.together.title": "みんなで作る旅",
     "feature.together.desc":
@@ -443,6 +446,7 @@ const I18N = {
     "feature.expense.title": "支出记录与结算",
     "feature.expense.desc": "记录旅行支出，轻松计算需要发给朋友的结算金额",
     "feature.expense.alt": "旅行支出明细与结算界面",
+    "feature.more": "了解更多",
     "feature.together.kicker": "协作",
     "feature.together.title": "一起规划旅行",
     "feature.together.desc": "邀请朋友分享想法，一起准备旅行",
@@ -564,6 +568,7 @@ const I18N = {
     "feature.expense.title": "支出記錄與結算",
     "feature.expense.desc": "記錄旅程支出，輕鬆計算需要傳給朋友的結算金額",
     "feature.expense.alt": "旅程支出明細與結算畫面",
+    "feature.more": "了解更多",
     "feature.together.kicker": "協作",
     "feature.together.title": "一起規劃旅程",
     "feature.together.desc": "邀請朋友分享想法，一起準備旅程",
@@ -689,6 +694,7 @@ const I18N = {
     "feature.expense.desc":
       "Enregistrez vos dépenses de voyage et calculez facilement les montants à envoyer à vos amis",
     "feature.expense.alt": "Écran des dépenses et du partage des frais",
+    "feature.more": "En savoir plus",
     "feature.together.kicker": "Ensemble",
     "feature.together.title": "Planifiez vos voyages ensemble",
     "feature.together.desc":
@@ -819,6 +825,7 @@ const I18N = {
     "feature.expense.desc":
       "Erfassen Sie Ihre Reiseausgaben und berechnen Sie einfach, wie viel Sie an Freunde senden müssen",
     "feature.expense.alt": "Ausgaben- und Abrechnungsansicht einer Reise",
+    "feature.more": "Mehr erfahren",
     "feature.together.kicker": "Gemeinsam",
     "feature.together.title": "Reisen gemeinsam planen",
     "feature.together.desc":
@@ -948,6 +955,7 @@ const I18N = {
     "feature.expense.desc":
       "Registra tus gastos de viaje y calcula fácilmente cuánto enviar a tus amigos",
     "feature.expense.alt": "Pantalla de gastos y reparto de un viaje",
+    "feature.more": "Más información",
     "feature.together.kicker": "Juntos",
     "feature.together.title": "Planifiquen viajes juntos",
     "feature.together.desc":
