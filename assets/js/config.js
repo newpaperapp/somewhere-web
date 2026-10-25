@@ -8,7 +8,7 @@ window.SOMEWHERE = {
     "https://play.google.com/store/apps/details?id=com.newpaperapp.somewhere",
 
   // App Store
-  APP_STORE_URL: "https://apps.apple.com/app/id6780403625",
+  APP_STORE_URL: "https://apps.apple.com/app/apple-store/id6780403625?pt=129019852&ct=web&mt=8",
 
   CONTACT_EMAIL: "contact@npsomewhere.com",
   DEVELOPER: "Sejong Lee",
