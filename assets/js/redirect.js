@@ -14,9 +14,12 @@
     /iPad|iPhone|iPod/.test(ua) ||
     (/Macintosh/.test(ua) && "ontouchend" in document);
 
+  // QR codes link to /download?src=qr so scans are tracked as a separate campaign.
+  const isQR = new URLSearchParams(window.location.search).get("src") === "qr";
+
   let target = null;
-  if (isAndroid) target = cfg.PLAY_STORE_URL;
-  else if (isIOS) target = cfg.APP_STORE_URL;
+  if (isAndroid) target = isQR ? cfg.PLAY_STORE_QR_URL : cfg.PLAY_STORE_URL;
+  else if (isIOS) target = isQR ? cfg.APP_STORE_QR_URL : cfg.APP_STORE_URL;
 
   if (target) {
     document.documentElement.classList.add("redirect--auto");
