@@ -18,8 +18,8 @@
   const isQR = new URLSearchParams(window.location.search).get("src") === "qr";
 
   let target = null;
-  if (isAndroid) target = isQR ? cfg.PLAY_STORE_QR_URL : cfg.PLAY_STORE_URL;
-  else if (isIOS) target = isQR ? cfg.APP_STORE_QR_URL : cfg.APP_STORE_URL;
+  if (isAndroid) target = isQR ? cfg.PLAY_STORE_QR_URL : cfg.PLAY_STORE_REDIRECT_URL;
+  else if (isIOS) target = isQR ? cfg.APP_STORE_QR_URL : cfg.APP_STORE_REDIRECT_URL;
 
   if (target) {
     document.documentElement.classList.add("redirect--auto");
