@@ -1,0 +1,153 @@
+/* Notices list (/notices/) and notice pages (/notices/<id>/). */
+.notice-main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 20px 100px;
+}
+.notice-top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.notice-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--on-surface-variant);
+}
+/* The list puts its title in this row, with the subtitle just below. */
+.notice-top-nav--title {
+  margin-bottom: 8px;
+}
+.notice-back:hover {
+  color: var(--primary);
+}
+.notice-back .material-icons-round {
+  font-size: 20px;
+}
+.notice-page-title {
+  padding-left: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 auto 0 0;
+  color: var(--on-surface);
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+.notice-subtitle {
+  padding-left: 20px;
+  margin: 0 0 32px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+/* body keeps Korean words whole; Japanese and Chinese have no spaces, so they wrap normally. */
+.notice-main :lang(ja),
+.notice-main :lang(zh) {
+  word-break: normal;
+}
+
+/* ---- List ---------------------------------------------------------------- */
+.notice-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--surface-container);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.notice-list li + li {
+  border-top: 1px solid var(--outline-variant);
+}
+.notice-item {
+  display: block;
+  padding: 18px 20px;
+  color: inherit;
+}
+.notice-item:hover {
+  background: var(--surface-container-low);
+}
+.notice-item:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+.notice-item__title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--on-surface);
+}
+.notice-item__date,
+.notice-detail__date {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--on-surface-variant);
+  font-variant-numeric: tabular-nums;
+}
+.notice-status {
+  padding: 32px 0;
+  text-align: center;
+  font-size: 15px;
+  color: var(--on-surface-variant);
+}
+
+/* ---- Notice page --------------------------------------------------------- */
+.notice-detail {
+  background: var(--surface-container);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow-sm);
+  padding: 24px 20px;
+}
+.notice-detail__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--on-surface);
+  letter-spacing: -0.02em;
+}
+.notice-detail__date {
+  margin: 8px 0 0;
+}
+.notice-detail__body {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--outline-variant);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--on-surface);
+  overflow-wrap: anywhere;
+}
+.notice-detail__body p {
+  margin: 0;
+}
+.notice-detail__body p + p,
+.notice-detail__body ul + p,
+.notice-detail__body p + ul {
+  margin-top: 12px;
+}
+.notice-detail__body ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.notice-detail__body li + li {
+  margin-top: 6px;
+}
+.notice-detail__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: var(--primary);
+}
+.notice-detail__link .material-icons-round {
+  font-size: 18px;
+}

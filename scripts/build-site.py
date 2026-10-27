@@ -387,12 +387,20 @@ def feature_page(slug, lang, data):
         "privacy": LEGAL_ROUTES[lang]["privacy.html"], "terms": LEGAL_ROUTES[lang]["terms.html"],
         "footer_privacy": html.escape(translate("footer.privacy")),
         "footer_terms": html.escape(translate("footer.terms")),
+        "footer_notices": html.escape(translate("footer.notices")),
         "footer_business": html.escape(translate("footer.business")),
         "footer_business_info": translate("footer.businessInfo"),
         "footer_legal": html.escape(translate("footer.legal")),
     }
     shell = re.sub(r"<!--.*?-->\n", "", (ROOT / "features/_shell.html").read_text(), count=1, flags=re.S)
     return re.sub(r"\{\{(\w+)\}\}", lambda match: values[match[1]], shell)
+
+
+def fill_placeholder(page, marker, content):
+    """Replace the one build placeholder comment in a page copied to dist/."""
+    source = page.read_text()
+    assert source.count(marker) == 1, f"{page.relative_to(page.parents[1])} needs exactly one {marker}"
+    page.write_text(source.replace(marker, content))
 
 
 def whats_new(output, data):
@@ -418,13 +426,97 @@ def whats_new(output, data):
             f'<ul class="news-card__items">{items}</ul></section>')
     if not cards:
         cards.append(f'<p class="news-status" data-i18n="whatsNew.empty">{html.escape(ko["whatsNew.empty"])}</p>')
-    page = output / "whats-new/index.html"
-    content = page.read_text()
-    placeholder = "<!-- whats-new:releases -->"
-    assert content.count(placeholder) == 1, "whats-new/index.html needs exactly one releases placeholder"
-    page.write_text(content.replace(placeholder, "".join(cards)))
+    fill_placeholder(output / "whats-new/index.html", "<!-- whats-new:releases -->", "".join(cards))
     dates = [release["date"] for release in releases if release["date"].count(".") == 2]
     return dates[0].replace(".", "-") if dates else None
+
+
+def notice_body(blocks):
+    """A string is a paragraph and a list of strings is a bulleted list."""
+    return "".join(
+        "<ul>" + "".join(f"<li>{html.escape(item)}</li>" for item in block) + "</ul>"
+        if isinstance(block, list) else f"<p>{html.escape(block)}</p>"
+        for block in blocks)
+
+
+def notices(output, data):
+    """Render notices/notices.json into the list page and one page per notice at /notices/<id>/.
+
+    Both come from the frame in notices/_shell.html. Each notice is rendered in each of its
+    languages so crawlers and no-JS readers get it; Korean (or English) is visible and the page
+    script shows the reader's language, falling back to English. Returns the (url, YYYY-MM-DD)
+    sitemap entries of the list and notices.
+    """
+    entries = json.loads((ROOT / "notices/notices.json").read_text())["notices"]
+    assert len({notice["id"] for notice in entries}) == len(entries), "notices.json ids must be unique"
+    dates = [notice["date"] for notice in entries]
+    assert dates == sorted(dates, reverse=True), "notices.json must list notices newest first"
+    ko = data["translations"]["ko"]
+    shell = re.sub(r"<!--.*?-->\n", "", (output / "notices/_shell.html").read_text(), count=1, flags=re.S)
+    (output / "notices/_shell.html").unlink()
+
+    def write(path, lang, values):
+        values |= {"lang": lang, "locale": LOCALES[lang], "url": ORIGIN + path}
+        page = output / path.lstrip("/") / "index.html"
+        page.parent.mkdir(parents=True, exist_ok=True)
+        page.write_text(re.sub(r"\{\{(\w+)\}\}", lambda match: values[match[1]], shell))
+
+    items, sitemap = [], []
+    for notice in entries:
+        nid, link = notice["id"], notice.get("link")
+        assert re.fullmatch(r"[a-z0-9-]+", nid), f"Notice id must be a URL path segment: {nid}"
+        assert re.fullmatch(r"\d{4}\.\d{2}\.\d{2}", notice["date"]), f"Notice date must be YYYY.MM.DD: {nid}"
+        langs = set(notice["title"])
+        assert "en" in langs and langs <= set(data["languages"]), f"Notice needs English and site languages only: {nid}"
+        assert set(notice["body"]) == langs and (not link or set(link["label"]) == langs), \
+            f"Notice title, body and link label need the same languages: {nid}"
+        # validate_notices() checks that the target exists once every page is built.
+        assert not link or (link["href"].startswith("/") and not link["href"].startswith("//")), \
+            f"Notice link must be a site path starting with /: {nid}"
+        shown = "ko" if "ko" in langs else "en"
+        ordered = [lang for lang in data["languages"] if lang in langs]
+
+        def variants(tag, cls, render):
+            return "".join(f'<{tag}{cls} lang="{lang}" data-lang="{lang}"{"" if lang == shown else " hidden"}>'
+                           f'{render(lang)}</{tag}>' for lang in ordered)
+
+        path = f"/notices/{nid}/"
+        date = html.escape(notice["date"])
+        items.append(
+            f'<li data-notice><a class="notice-item" href="{path}" data-notices-link>'
+            + variants("span", ' class="notice-item__title"', lambda lang: html.escape(notice["title"][lang]))
+            + f'<span class="notice-item__date">{date}</span></a></li>')
+        body = variants("div", "", lambda lang: notice_body(notice["body"][lang]) + (
+            f'<a class="notice-detail__link" href="{html.escape(link["href"], quote=True)}">'
+            f'{html.escape(link["label"][lang])}'
+            '<span class="material-icons-round" aria-hidden="true">chevron_right</span></a>' if link else ""))
+        article = (
+            '<article class="notice-detail" data-notice>'
+            + '<h1 class="notice-detail__title">'
+            + variants("span", "", lambda lang: html.escape(notice["title"][lang])) + "</h1>"
+            + f'<time class="notice-detail__date" datetime="{notice["date"].replace(".", "-")}">{date}</time>'
+            + f'<div class="notice-detail__body">{body}</div></article>')
+        # The first paragraph describes the notice; a body of lists only falls back to the title.
+        summary = next((block for block in notice["body"][shown] if isinstance(block, str)), notice["title"][shown])
+        write(path, shown, {
+            "title": html.escape(notice["title"][shown]), "og_type": "article", "locale_alternate": "",
+            "description": html.escape(summary if len(summary) <= 160 else summary[:159] + "…", quote=True),
+            "nav_class": "", "main": article,
+            "nav": ('<a class="notice-back" href="/notices/" data-notices-link>'
+                    '<span class="material-icons-round" aria-hidden="true">arrow_back</span>'
+                    f'<span data-i18n="notices.back">{html.escape(ko["notices.back"])}</span></a>')})
+        sitemap.append((ORIGIN + path, notice["date"].replace(".", "-")))
+    listing = (f'<ul class="notice-list">{"".join(items)}</ul>' if items else
+               f'<p class="notice-status" data-i18n="notices.empty">{html.escape(ko["notices.empty"])}</p>')
+    write("/notices/", "ko", {
+        "title": html.escape(ko["notices.title"]), "og_type": "website",
+        "locale_alternate": '\n    <meta property="og:locale:alternate" content="en_US" />',
+        "description": html.escape(f'{ko["notices.subtitle"]} / {data["translations"]["en"]["notices.subtitle"]}', quote=True),
+        "nav_class": " notice-top-nav--title",
+        "nav": f'<h1 class="notice-page-title" data-i18n="notices.title">{html.escape(ko["notices.title"])}</h1>',
+        "main": f'<p class="notice-subtitle" data-i18n="notices.subtitle">{html.escape(ko["notices.subtitle"])}</p>\n      {listing}'})
+    # The list changes whenever a notice is added, so it follows the newest notice date.
+    return ([(ORIGIN + "/notices/", sitemap[0][1])] if sitemap else []) + sitemap
 
 
 def validate(output, data):
@@ -465,8 +557,23 @@ def validate(output, data):
         assert (ROOT / name).read_bytes() == (output / name).read_bytes(), f"Changed protected entry point: {name}"
     assert not list(output.rglob("*.md"))
     validate_features(output)
+    validate_notices(output)
     validate_resources(output)
     print("Validated language metadata, reciprocal hreflang, JSON-LD, all HTML/CSS resources and protected entry points")
+
+
+def served(output, href):
+    """Whether a site path resolves; GitHub Pages serves /name from name.html or name/index.html."""
+    path = urlsplit(href).path.lstrip("/")
+    return any(candidate.is_file() for candidate in [
+        output / path, output / path / "index.html", output / (path + ".html")])
+
+
+def validate_notices(output):
+    for page in (output / "notices").glob("*/index.html"):
+        for node in Document(page.read_text()).elements():
+            if node.tag == "a" and node.attrs.get("class") == "notice-detail__link":
+                assert served(output, node.attrs["href"]), f"Broken link in notice {page.parent.name}: {node.attrs['href']}"
 
 
 def validate_features(output):
@@ -488,11 +595,7 @@ def validate_features(output):
                     json.loads("".join(node.children))
                 href = node.attrs.get("href", "") if node.tag == "a" else ""
                 if href.startswith("/") and not href.startswith("//"):
-                    path = urlsplit(href).path.lstrip("/")
-                    # GitHub Pages serves /name from name.html or name/index.html.
-                    assert any(candidate.is_file() for candidate in [
-                        output / path, output / path / "index.html", output / (path + ".html")
-                    ]), f"Broken link in {slug}/{lang}: {href}"
+                    assert served(output, href), f"Broken link in {slug}/{lang}: {href}"
 
 
 def main():
@@ -503,12 +606,13 @@ def main():
     output.mkdir()
     # Explicit public entry points prevent accidental publication of local docs,
     # repository internals, optimizer tools or agent configuration.
-    for name in ["assets", ".well-known", "join", "privacy", "terms", "whats-new", "ja", "eu", "us"]:
+    for name in ["assets", ".well-known", "join", "privacy", "terms", "whats-new", "notices", "ja", "eu", "us"]:
         shutil.copytree(ROOT / name, output / name, ignore=shutil.ignore_patterns("*.md", "__pycache__", "optimized-assets.json"))
     for source in ROOT.iterdir():
         if source.is_file() and (source.suffix == ".html" or source.name in {"CNAME", ".nojekyll", "robots.txt", "app-ads.txt"}):
             shutil.copy2(source, output / source.name)
     whats_new_lastmod = whats_new(output, data)
+    notice_entries = notices(output, data)
     download = output / "download.html"
     content = download.read_text()
     for store, key in [("ios", "APP_STORE_URL"), ("android", "PLAY_STORE_URL")]:
@@ -546,6 +650,7 @@ def main():
     # Changes with every published release, so it follows the newest release date.
     if whats_new_lastmod:
         entries += [(ORIGIN + "/whats-new/", whats_new_lastmod)]
+    entries += notice_entries
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += "".join(f"  <url><loc>{url}</loc><lastmod>{date}</lastmod></url>\n" for url, date in entries) + "</urlset>\n"
     (output / "sitemap.xml").write_text(sitemap)

@@ -1,0 +1,238 @@
+{
+  "notices": [
+    {
+      "id": "2026-10-terms-update",
+      "date": "2026.10.27",
+      "title": {
+        "ko": "서비스 이용약관 개정 안내 (2026년 11월 30일 시행)",
+        "en": "Updates to the Terms of Service for Korea, effective November 30, 2026",
+        "ja": "利用規約改定のお知らせ（韓国、2026年11月30日施行）",
+        "zh-CN": "韩国服务条款修订通知（2026年11月30日生效）",
+        "zh-TW": "韓國服務條款修訂通知（2026年11月30日生效）",
+        "fr": "Modification des Conditions d’utilisation pour la Corée, en vigueur le 30 novembre 2026",
+        "de": "Änderung der Nutzungsbedingungen für Korea, gültig ab 30. November 2026",
+        "es": "Cambios en los Términos del servicio para Corea, vigentes desde el 30 de noviembre de 2026"
+      },
+      "body": {
+        "ko": [
+          "Somewhere 서비스 이용약관(대한민국)이 2026년 11월 30일부터 개정돼요. 이용자에게 불리할 수 있는 다음 변경이 포함되어 있어 30일 전에 미리 알려드려요.",
+          [
+            "콘텐츠 이용 범위에 전송 추가, 개인을 식별할 수 없는 통계 활용 허용",
+            "회사의 고의·과실이 없는 콘텐츠 손실은 회사 책임에서 제외",
+            "정산 금액·환율은 참고 값이며 실제 정산은 이용자 책임",
+            "서비스 전체 종료 가능(30일 전 공지, 종료 후 콘텐츠 삭제)",
+            "긴급한 경우 사전 통지 없이 콘텐츠 삭제·공유 제한 가능",
+            "이용자의 위반으로 생긴 회사 손해 배상과 제3자 청구에 대한 회사 면책 의무 신설(제19조의2)",
+            "전체 이용자 대상 통지를 7일 이상 서비스 내 공지로 대신(본인 거래에 중대한 사항은 개별 통지)"
+          ],
+          "그 밖에 AI 업체명 표기를 정리하고, 새 기능(지출·정산, Google 지도 장소 저장)과 Crashlytics 진단 정보 안내를 반영해요",
+          "동의하지 않으시면 적용일 전까지 탈퇴할 수 있고, 적용일 이후 계속 이용하시면 동의한 것으로 봐요(법령상 명시적 동의가 필요한 사항 제외)"
+        ],
+        "en": [
+          "The Somewhere Terms of Service for Korea change on November 30, 2026. We're letting you know 30 days ahead because the update includes these changes that may be unfavorable to users.",
+          [
+            "Content use now includes transmitting content, and anonymized statistics may be used",
+            "We're not liable for content loss unless caused by our intent or negligence",
+            "Settlement amounts and exchange rates are for reference, and actual settlement is up to users",
+            "We may end the entire Service (with 30 days' notice; content is deleted afterward)",
+            "In urgent cases, we may delete content or restrict sharing before notifying you",
+            "You must compensate us for damage caused by your violations and hold us harmless from related third-party claims (new Article 19-2)",
+            "Notices to all users may be posted in the Service for at least 7 days instead of sent individually (except matters that materially affect your own transactions)"
+          ],
+          "The update also stops naming AI providers in the Terms and reflects new features (expenses and settlement, saving Google Maps places) and Crashlytics crash diagnostics",
+          "If you don't agree, you can delete your account before the effective date; if you keep using the Service after it, you'll be deemed to accept the update (except where the law requires your explicit consent)"
+        ],
+        "ja": [
+          "韓国向けのSomewhere利用規約が2026年11月30日に改定されます。利用者に不利となる可能性のある以下の変更が含まれるため、30日前にお知らせします。",
+          [
+            "コンテンツの利用範囲に送信を追加し、個人を識別できない統計の利用を許可",
+            "当社の故意・過失によらないコンテンツの損失は当社の責任の対象外",
+            "精算金額・為替レートは参考値であり、実際の精算は利用者の責任",
+            "サービス全体の終了が可能（30日前に告知、終了後にコンテンツを削除）",
+            "緊急の場合、事前通知なしにコンテンツの削除・共有制限が可能",
+            "利用者の違反により当社に生じた損害の賠償と、第三者からの請求に対する当社の免責義務を新設（第19条の2）",
+            "全利用者への通知を7日以上のサービス内告知で代替可能（本人の取引に重大な影響がある事項は個別に通知）"
+          ],
+          "このほか、AI事業者名の表記を整理し、新機能（支出・精算、Googleマップの場所の保存）とCrashlyticsの診断情報に関する説明を反映します",
+          "同意されない場合は施行日までに退会でき、施行日以降もサービスを利用された場合は改定に同意したものとみなします（法令上、明示的な同意が必要な事項を除く）"
+        ],
+        "zh-CN": [
+          "Somewhere 韩国服务条款将于2026年11月30日修订。由于本次修订包含以下可能对用户不利的变更，我们提前30天通知您。",
+          [
+            "内容使用范围新增“传输”，并允许使用无法识别个人身份的统计信息",
+            "非因本公司故意或过失造成的内容丢失，本公司不承担责任",
+            "结算金额和汇率仅供参考，实际结算由用户自行负责",
+            "可终止全部服务（提前30天通知，终止后删除内容）",
+            "紧急情况下，可不经事先通知删除内容或限制分享",
+            "新增用户因违规给本公司造成损失时的赔偿责任，以及就第三方索赔使本公司免责的义务（第19条之2）",
+            "面向全体用户的通知可通过在服务内公告7天以上代替个别通知（对本人交易有重大影响的事项将个别通知）"
+          ],
+          "此外，还整理了 AI 服务商名称的表述，并补充了新功能（支出与结算、保存 Google 地图地点）及 Crashlytics 诊断信息的说明",
+          "如不同意，可在生效日前注销账号；生效日后继续使用服务即视为同意本次修订（法律要求明确同意的事项除外）"
+        ],
+        "zh-TW": [
+          "Somewhere 韓國服務條款將於2026年11月30日修訂。由於本次修訂包含以下可能對使用者不利的變更，我們提前30天通知您。",
+          [
+            "內容使用範圍新增「傳輸」，並允許使用無法識別個人身分的統計資訊",
+            "非因本公司故意或過失造成的內容遺失，本公司不負責任",
+            "結算金額與匯率僅供參考，實際結算由使用者自行負責",
+            "可終止全部服務（提前30天通知，終止後刪除內容）",
+            "緊急情況下，可不經事先通知刪除內容或限制分享",
+            "新增使用者因違規對本公司造成損害時的賠償責任，以及就第三方求償使本公司免責的義務（第19條之2）",
+            "對全體使用者的通知可透過在服務內公告7天以上代替個別通知（對本人交易有重大影響的事項將個別通知）"
+          ],
+          "此外，也整理了 AI 服務商名稱的標示，並補充新功能（支出與結算、儲存 Google 地圖地點）及 Crashlytics 診斷資訊的說明",
+          "如不同意，可於生效日前刪除帳號；生效日後繼續使用服務即視為同意本次修訂（法律要求明確同意的事項除外）"
+        ],
+        "fr": [
+          "Les Conditions d’utilisation de Somewhere pour la Corée changent le 30 novembre 2026. Nous vous prévenons 30 jours à l’avance, car cette mise à jour comprend les changements suivants, qui peuvent être défavorables aux utilisateurs.",
+          [
+            "L’utilisation des contenus inclut désormais leur transmission, et des statistiques anonymisées peuvent être utilisées",
+            "Nous ne sommes pas responsables de la perte de contenus, sauf faute intentionnelle ou négligence de notre part",
+            "Les montants de règlement et les taux de change sont indicatifs, et le règlement effectif relève de la responsabilité des utilisateurs",
+            "Nous pouvons mettre fin à l’ensemble du Service (avec un préavis de 30 jours, puis suppression des contenus)",
+            "En cas d’urgence, nous pouvons supprimer des contenus ou restreindre leur partage avant de vous en informer",
+            "Vous devez nous indemniser des dommages causés par vos manquements et nous garantir contre les réclamations de tiers qui en découlent (nouvel article 19-2)",
+            "Les notifications adressées à tous les utilisateurs peuvent être publiées dans le Service pendant au moins 7 jours au lieu d’être envoyées individuellement (sauf pour ce qui affecte de manière importante vos propres transactions)"
+          ],
+          "Cette mise à jour cesse aussi de nommer les fournisseurs d’IA dans les Conditions et intègre les nouvelles fonctionnalités (dépenses et règlement, enregistrement de lieux Google Maps) ainsi que les diagnostics de plantage Crashlytics",
+          "Si vous n’êtes pas d’accord, vous pouvez supprimer votre compte avant la date d’entrée en vigueur. Si vous continuez à utiliser le Service après cette date, cela vaudra acceptation de la mise à jour, sauf lorsque la loi exige votre consentement explicite."
+        ],
+        "de": [
+          "Die Nutzungsbedingungen von Somewhere für Korea ändern sich am 30. November 2026. Wir informieren dich 30 Tage im Voraus, da die Aktualisierung die folgenden Änderungen enthält, die für Nutzer nachteilig sein können.",
+          [
+            "Die Nutzung von Inhalten umfasst jetzt auch deren Übermittlung, und anonymisierte Statistiken dürfen genutzt werden",
+            "Für den Verlust von Inhalten haften wir nur bei Vorsatz oder Fahrlässigkeit unsererseits",
+            "Abrechnungsbeträge und Wechselkurse dienen nur zur Orientierung, und die tatsächliche Abrechnung liegt in der Verantwortung der Nutzer",
+            "Wir können den gesamten Dienst einstellen (mit 30 Tagen Vorankündigung, danach werden die Inhalte gelöscht)",
+            "In dringenden Fällen können wir Inhalte löschen oder das Teilen einschränken, bevor wir dich benachrichtigen",
+            "Du musst uns Schäden aus deinen Verstößen ersetzen und uns von daraus entstehenden Ansprüchen Dritter freistellen (neuer Artikel 19-2)",
+            "Mitteilungen an alle Nutzer können statt einzeln durch Veröffentlichung im Dienst für mindestens 7 Tage erfolgen (außer bei Angelegenheiten, die deine eigenen Transaktionen wesentlich betreffen)"
+          ],
+          "Außerdem werden KI-Anbieter in den Bedingungen nicht mehr namentlich genannt, und neue Funktionen (Ausgaben und Abrechnung, Speichern von Orten aus Google Maps) sowie Crashlytics-Absturzdiagnosen werden berücksichtigt",
+          "Wenn du nicht einverstanden bist, kannst du dein Konto vor dem Inkrafttreten löschen. Nutzt du den Dienst danach weiter, gilt dies als Zustimmung zur Aktualisierung, außer wenn das Gesetz deine ausdrückliche Zustimmung verlangt."
+        ],
+        "es": [
+          "Los Términos del servicio de Somewhere para Corea cambian el 30 de noviembre de 2026. Te avisamos con 30 días de antelación porque la actualización incluye los siguientes cambios, que pueden ser desfavorables para los usuarios.",
+          [
+            "El uso de contenidos ahora incluye su transmisión, y se pueden usar estadísticas anonimizadas",
+            "No somos responsables de la pérdida de contenidos, salvo por dolo o negligencia nuestra",
+            "Los importes de liquidación y los tipos de cambio son orientativos, y la liquidación real es responsabilidad de los usuarios",
+            "Podemos dar por finalizado todo el Servicio (con 30 días de aviso; después se eliminan los contenidos)",
+            "En casos urgentes, podemos eliminar contenidos o restringir su uso compartido antes de avisarte",
+            "Debes indemnizarnos por los daños causados por tus incumplimientos y mantenernos indemnes frente a las reclamaciones de terceros derivadas de ellos (nuevo artículo 19-2)",
+            "Los avisos a todos los usuarios pueden publicarse en el Servicio durante al menos 7 días en lugar de enviarse individualmente (salvo los asuntos que afecten de forma importante a tus propias transacciones)"
+          ],
+          "La actualización también deja de nombrar a los proveedores de IA en los Términos e incorpora las nuevas funciones (gastos y liquidación, guardar lugares de Google Maps) y los diagnósticos de fallos de Crashlytics",
+          "Si no estás de acuerdo, puedes eliminar tu cuenta antes de la fecha de entrada en vigor. Si sigues usando el Servicio después, se considerará que aceptas la actualización, salvo cuando la ley exija tu consentimiento explícito."
+        ]
+      },
+      "link": {
+        "href": "/terms.html?version=2026-11-30",
+        "label": {
+          "ko": "개정 약관 보기",
+          "en": "View the updated Terms",
+          "ja": "改定後の利用規約を見る",
+          "zh-CN": "查看修订后的服务条款",
+          "zh-TW": "查看修訂後的服務條款",
+          "fr": "Voir les Conditions mises à jour",
+          "de": "Aktualisierte Nutzungsbedingungen ansehen",
+          "es": "Ver los Términos actualizados"
+        }
+      }
+    },
+    {
+      "id": "2026-10-privacy-update",
+      "date": "2026.10.27",
+      "title": {
+        "ko": "개인정보처리방침 개정 안내 (2026년 10월 28일 시행)",
+        "en": "Updates to the Privacy Policy, effective October 28, 2026",
+        "ja": "プライバシーポリシー改定のお知らせ（2026年10月28日施行）",
+        "zh-CN": "隐私政策修订通知（2026年10月28日生效）",
+        "zh-TW": "隱私權政策修訂通知（2026年10月28日生效）",
+        "fr": "Mise à jour de la Politique de confidentialité, en vigueur le 28 octobre 2026",
+        "de": "Aktualisierung der Datenschutzerklärung, gültig ab 28. Oktober 2026",
+        "es": "Actualización de la Política de privacidad, vigente desde el 28 de octubre de 2026"
+      },
+      "body": {
+        "ko": [
+          "Somewhere 개인정보처리방침이 2026년 10월 28일부터 개정된 내용으로 적용돼요. 대한민국, 미국, EU, 일본 개인정보처리방침에 같은 내용이 반영돼요. 주요 변경 내용은 다음과 같아요.",
+          [
+            "Android 로그인 오류 보고에 미리 정해진 로그인 단계 기록이 최대 50개까지 포함될 수 있다는 내용 추가",
+            "앱 비정상 종료 원인을 파악하기 위한 Firebase Crashlytics(Google LLC) 진단 정보 처리 내용 추가",
+            "Crashlytics 진단 정보는 계정 ID나 이메일을 사용자 식별자로 쓰지 않으며 90일 동안 보관"
+          ]
+        ],
+        "en": [
+          "We're updating the Somewhere Privacy Policy, effective October 28, 2026. The same changes apply to the privacy notices for Korea, the United States, the EU and Japan. Here are the main changes.",
+          [
+            "Discloses that Android sign-in error reports may include up to 50 predefined sign-in step records",
+            "Adds crash diagnostics processed by Firebase Crashlytics (Google LLC) to help us find the causes of app crashes",
+            "Crashlytics diagnostics don't use your account ID or email as a user identifier and are kept for 90 days"
+          ]
+        ],
+        "ja": [
+          "Somewhereのプライバシーポリシーを改定し、2026年10月28日から適用します。韓国、米国、EU、日本のプライバシーポリシーに同じ内容が反映されます。主な変更点は次のとおりです。",
+          [
+            "Androidのログインエラー報告に、あらかじめ定めたログイン手順の記録が最大50件含まれる場合があることを追記",
+            "アプリのクラッシュ原因を把握するための、Firebase Crashlytics（Google LLC）による診断情報の処理を追加",
+            "Crashlyticsの診断情報では、アカウントIDやメールアドレスを利用者の識別子として使用せず、90日間保管"
+          ]
+        ],
+        "zh-CN": [
+          "Somewhere 隐私政策已修订，自2026年10月28日起适用。韩国、美国、欧盟和日本的隐私政策均反映了相同内容。主要变更如下。",
+          [
+            "说明 Android 登录错误报告中可能包含最多50条预先设定的登录步骤记录",
+            "新增通过 Firebase Crashlytics（Google LLC）处理诊断信息的内容，用于查找应用崩溃原因",
+            "Crashlytics 诊断信息不会将账号 ID 或电子邮件用作用户标识，并保存90天"
+          ]
+        ],
+        "zh-TW": [
+          "Somewhere 隱私權政策已修訂，自2026年10月28日起適用。韓國、美國、歐盟及日本的隱私權政策皆反映相同內容。主要變更如下。",
+          [
+            "說明 Android 登入錯誤報告中可能包含最多50筆預先設定的登入步驟紀錄",
+            "新增透過 Firebase Crashlytics（Google LLC）處理診斷資訊的內容，用於找出 App 當機原因",
+            "Crashlytics 診斷資訊不會將帳號 ID 或電子郵件用作使用者識別碼，並保存90天"
+          ]
+        ],
+        "fr": [
+          "Nous mettons à jour la Politique de confidentialité de Somewhere, en vigueur le 28 octobre 2026. Les mêmes changements s’appliquent aux politiques de confidentialité pour la Corée, les États-Unis, l’UE et le Japon. Voici les principaux changements.",
+          [
+            "Précise que les rapports d’erreur de connexion sur Android peuvent inclure jusqu’à 50 étapes de connexion prédéfinies",
+            "Ajoute les diagnostics de plantage traités par Firebase Crashlytics (Google LLC) pour nous aider à identifier les causes des plantages de l’app",
+            "Les diagnostics Crashlytics n’utilisent ni votre identifiant de compte ni votre e-mail comme identifiant utilisateur et sont conservés 90 jours"
+          ]
+        ],
+        "de": [
+          "Wir aktualisieren die Datenschutzerklärung von Somewhere mit Wirkung zum 28. Oktober 2026. Die gleichen Änderungen gelten für die Datenschutzhinweise für Korea, die USA, die EU und Japan. Das sind die wichtigsten Änderungen.",
+          [
+            "Weist darauf hin, dass Android-Fehlerberichte zur Anmeldung bis zu 50 vordefinierte Anmeldeschritte enthalten können",
+            "Ergänzt Absturzdiagnosen, die Firebase Crashlytics (Google LLC) verarbeitet, damit wir die Ursachen von App-Abstürzen finden können",
+            "Crashlytics-Diagnosen verwenden weder deine Konto-ID noch deine E-Mail-Adresse als Nutzerkennung und werden 90 Tage lang gespeichert"
+          ]
+        ],
+        "es": [
+          "Actualizamos la Política de privacidad de Somewhere, vigente desde el 28 de octubre de 2026. Los mismos cambios se aplican a los avisos de privacidad para Corea, Estados Unidos, la UE y Japón. Estos son los principales cambios.",
+          [
+            "Indica que los informes de errores de inicio de sesión en Android pueden incluir hasta 50 registros de pasos de inicio de sesión predefinidos",
+            "Añade los diagnósticos de fallos procesados por Firebase Crashlytics (Google LLC) para ayudarnos a encontrar las causas de los cierres inesperados de la app",
+            "Los diagnósticos de Crashlytics no usan tu ID de cuenta ni tu correo electrónico como identificador de usuario y se conservan durante 90 días"
+          ]
+        ]
+      },
+      "link": {
+        "href": "/privacy",
+        "label": {
+          "ko": "개인정보처리방침 보기",
+          "en": "View the Privacy Policy",
+          "ja": "プライバシーポリシーを見る",
+          "zh-CN": "查看隐私政策",
+          "zh-TW": "查看隱私權政策",
+          "fr": "Voir la Politique de confidentialité",
+          "de": "Datenschutzerklärung ansehen",
+          "es": "Ver la Política de privacidad"
+        }
+      }
+    }
+  ]
+}

@@ -52,16 +52,19 @@
         margin: 0 auto;
         padding: 24px 20px 100px;
       }
+      /* The title shares this row with the language picker; the subtitle sits just below. */
       .news-top-nav {
         display: flex;
-        justify-content: flex-end;
-        margin-bottom: 24px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
       }
       .news-title {
         padding-left: 20px;
         font-size: 26px;
         font-weight: 700;
-        margin: 0 0 8px;
+        margin: 0;
         color: var(--on-surface);
         letter-spacing: -0.02em;
         line-height: 1.35;
@@ -139,6 +142,7 @@
   <body>
     <main class="news-main">
       <div class="news-top-nav">
+        <h1 class="news-title" data-i18n="whatsNew.title">새로운 기능</h1>
         <label class="language-picker">
           <span class="material-icons-round language-picker__icon" aria-hidden="true">language</span>
           <span class="language-picker__value" data-language-value aria-hidden="true">한국어</span>
@@ -156,7 +160,6 @@
         </label>
       </div>
 
-      <h1 class="news-title" data-i18n="whatsNew.title">새로운 기능</h1>
       <p class="news-subtitle" data-i18n="whatsNew.subtitle">Somewhere에 새로 추가된 기능을 소개해요</p>
 
       <!-- Cards are rendered from releases.json by scripts/build-site.py. -->
@@ -178,6 +181,7 @@
         </div>
 
         <div class="footer__links">
+          <a href="/notices/" data-i18n="footer.notices">공지사항</a>
           <a href="/privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
           <a href="/terms.html" data-i18n="footer.terms">서비스 이용약관</a>
           <span class="footer__meta">© 2026 Somewhere</span>
@@ -203,22 +207,11 @@
       </p>
     </footer>
 
-    <script src="/assets/js/i18n.js?v=20261020-whats-new"></script>
+    <script src="/assets/js/i18n.js?v=20261027-notices"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/app-lang.js?v=20261027-notices"></script>
     <script>
       (function () {
-        // The app passes its language as ?lang=. Android reports Chinese as a bare "zh",
-        // so the browser's own Chinese variant decides between Simplified and Traditional.
-        function requestedLang() {
-          const param = new URLSearchParams(window.location.search).get("lang");
-          if (!param) return null;
-          if (param.toLowerCase() === "zh") {
-            const browserZh = (navigator.languages || []).find((lang) => /^zh/i.test(lang));
-            if (browserZh) return browserZh;
-          }
-          return param;
-        }
-
         function showLang(lang) {
           document.querySelectorAll("[data-news-item]").forEach((li) => {
             const texts = JSON.parse(li.getAttribute("data-news-item"));
@@ -227,22 +220,11 @@
           document.title = `${window.SomewhereI18N.get("whatsNew.title", lang)} — Somewhere`;
         }
 
-        // Registered after main.js, so the ?lang= language replaces its stored-preference pick.
-        // applyLang() saves the language for the whole site; restore the saved value so a link
-        // from the app does not change the language of the site's other pages.
+        // Registered after main.js, so the app's ?lang= replaces its stored-preference pick.
         document.addEventListener("DOMContentLoaded", function () {
           if (!window.SomewhereI18N) return;
           window.addEventListener("somewhere:langchange", (event) => showLang(event.detail));
-          const lang = requestedLang();
-          if (lang) {
-            let saved = null;
-            try { saved = localStorage.getItem("somewhere-lang"); } catch (_) {}
-            window.SomewhereI18N.applyLang(lang);
-            try {
-              if (saved === null) localStorage.removeItem("somewhere-lang");
-              else localStorage.setItem("somewhere-lang", saved);
-            } catch (_) {}
-          }
+          window.applyAppLang();
           showLang(window.__lang || "en");
         });
       })();
