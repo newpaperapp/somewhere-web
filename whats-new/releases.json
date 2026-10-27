@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "version": "4.1.0",
+      "date": "2026.10.27",
+      "items": [
+        {
+          "ko": "지난 여행을 사진으로 돌아보는 여행 아카이브 포토 스토리 추가",
+          "en": "Adds photo stories to the Trip archive for reliving past trips",
+          "ja": "旅行アーカイブに過去の旅行を振り返れるフォトストーリーを追加",
+          "zh-CN": "旅行档案新增照片故事，重温过去的旅行",
+          "zh-TW": "旅行回顧新增相片故事，重溫過去的旅行",
+          "fr": "Ajout de stories photo dans les archives de voyage pour revivre vos voyages passés",
+          "de": "Fügt Foto-Storys im Reisearchiv hinzu, um vergangene Reisen noch einmal zu erleben",
+          "es": "Añade historias de fotos al archivo de viajes para revivir tus viajes pasados"
+        },
+        {
+          "ko": "Somewhere Pro에 지출 내역 CSV 내보내기와 사진 저장 한도 확대 추가",
+          "en": "Adds expense CSV export and more photos per trip to Somewhere Pro",
+          "ja": "Somewhere Proに支出履歴のCSVエクスポートと写真の保存枚数拡大を追加",
+          "zh-CN": "Somewhere Pro 新增支出明细 CSV 导出，并可保存更多照片",
+          "zh-TW": "Somewhere Pro 新增支出明細 CSV 匯出，並可儲存更多相片",
+          "fr": "Ajout de l’export CSV des dépenses et de plus de photos avec Somewhere Pro",
+          "de": "Fügt Somewhere Pro den CSV-Export von Ausgaben und mehr Fotos pro Reise hinzu",
+          "es": "Añade a Somewhere Pro la exportación de gastos en CSV y más fotos por viaje"
+        }
+      ]
+    },
+    {
       "version": "4.0.0",
       "date": "2026.10.22",
       "items": [
