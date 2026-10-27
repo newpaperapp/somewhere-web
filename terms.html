@@ -99,7 +99,7 @@
           <!-- effective date (left) + past-terms date picker (right) -->
           <div class="legal__head">
             <p class="updated muted">
-              <span data-eff-label>시행일</span>: <span data-eff-date>2026년 9월 28일</span>
+              <span data-eff-label>시행일</span>: <span data-eff-date>2026년 11월 3일</span>
             </p>
             <div class="legal__versions">
               <label class="legal__versions-label" for="terms-version" data-versions-label>지난 서비스 이용약관</label>
@@ -200,9 +200,10 @@
               <li>여행 일정의 생성·저장 및 관리</li>
               <li>지도 기반 장소 표시 및 이동 동선 확인</li>
               <li>친구 초대를 통한 여행 공유 및 협업</li>
-              <li>OpenAI Responses API 등 외부 AI 서비스를 활용한 여행 생성, 대화·일정 편집 제안 및 이용자 선택에 따른 적용</li>
+              <li>외부 AI 서비스를 활용한 여행 생성, 대화·일정 편집 제안 및 이용자 선택에 따른 적용</li>
               <li>이용자가 제공한 트리플 공유 링크를 통한 일정·지출·사용자 첨부 이미지 가져오기</li>
-              <li>장소별 예산 입력 및 총 예산 확인</li>
+              <li>이용자가 공유한 Google 지도 장소 링크를 통한 장소 저장</li>
+              <li>여행 지출 기록, 공동경비 관리, 여행 친구 간 정산 및 지출 통계 확인</li>
               <li>여행 및 장소 이미지 저장·관리와 여행 정보의 외부 공유</li>
               <li>기타 회사가 정하는 서비스</li>
             </ul>
@@ -349,7 +350,7 @@
             <ul>
               <li>회사는 관련 법령에 따라 이용자의 개인정보를 보호하며, 개인정보의 처리에 관한 사항은 별도의 <a href="privacy.html">개인정보처리방침</a>에 따릅니다.</li>
               <li>회사는 서비스 화면 또는 웹사이트를 통해 개인정보처리방침을 이용자가 확인할 수 있도록 게시합니다.</li>
-              <li>회사는 Sentry 프로젝트가 설정된 경우 로그인 및 여행 동기화, 경비·공동비, 구독, AI, 삭제, 초대·공유, 이미지 처리, 가져오기, 로컬 저장소 과정에서 발생해 보고 대상으로 정한 오류의 진단정보를 Sentry로 전송할 수 있습니다. 처리 항목, 보유기간, 수탁자 및 국외 이전에 관한 자세한 내용은 개인정보처리방침에 따릅니다.</li>
+              <li>회사는 Sentry 프로젝트가 설정된 경우 로그인 및 여행 동기화, 경비·공동비, 구독, AI, 삭제, 초대·공유, 이미지 처리, 가져오기, 로컬 저장소 과정에서 발생해 보고 대상으로 정한 오류의 진단정보를 Sentry로 전송할 수 있습니다. 또한 앱이 비정상 종료되면 원인 파악과 안정성 개선을 위해 비정상 종료 진단정보를 Firebase Crashlytics로 전송합니다. 처리 항목, 보유기간, 수탁자 및 국외 이전에 관한 자세한 내용은 개인정보처리방침에 따릅니다.</li>
               <li>회사는 현재 마케팅 목적의 광고성 정보를 발송하지 않으며, 향후 발송이 필요한 경우 관련 법령에 따라 이용자의 사전 동의를 받습니다.</li>
             </ul>
 
@@ -357,8 +358,8 @@
 
             <h3>제22조 (서비스 정보의 한계)</h3>
             <ul>
-              <li>서비스가 제공하는 지도, 장소 정보, 이동 동선, 예산, AI가 생성한 여행 정보 등은 이용자의 편의를 위한 참고 자료이며, 회사는 그 정확성·완전성·적합성을 보증하지 않습니다.</li>
-              <li>이용자는 실제 여행 시 해당 정보의 정확성을 직접 확인하여야 하며, 정보를 신뢰하여 이루어진 의사결정 및 그 결과에 대한 책임은 이용자에게 있습니다.</li>
+              <li>서비스가 제공하는 지도, 장소 정보, 이동 동선, 예산, AI가 생성한 여행 정보 등은 이용자의 편의를 위한 참고 자료이며, 회사는 관련 법령이 허용하는 범위에서 그 정확성·완전성·적합성을 보증하지 않습니다.</li>
+              <li>이용자는 실제 여행 시 해당 정보의 정확성을 직접 확인하여야 하며, 회사의 고의 또는 과실이 없는 범위에서 정보를 신뢰하여 이루어진 의사결정 및 그 결과에 대한 책임을 부담합니다. 다만 회사의 고의 또는 과실에 따른 책임과 관련 법령상 제한할 수 없는 이용자의 권리는 제한하지 않습니다.</li>
             </ul>
 
             <h3>제23조 (면책)</h3>
@@ -399,7 +400,7 @@
             </ul>
 
             <h2>부칙</h2>
-            <p>이 약관의 시행일은 2026년 9월 28일이에요. 기존 이용자에게 변경된 약관을 적용할 때에는 제3조의 사전 고지 기간과 필요한 동의 절차가 완료된 이후부터 적용해요.</p>
+            <p>이 약관의 시행일은 2026년 11월 3일이에요. 기존 이용자에게 변경된 약관을 적용할 때에는 제3조의 사전 고지 기간과 필요한 동의 절차가 완료된 이후부터 적용해요.</p>
           </div>
 
 <div class="policy" data-lang="en" hidden>
@@ -490,9 +491,10 @@
               <li>Creating, saving, and managing trips</li>
               <li>Map-based place markers and route viewing</li>
               <li>Sharing and collaborating on trips through friend invitations</li>
-              <li>AI trip generation, conversations, and itinerary-edit proposals using external services such as the OpenAI Responses API, applied at your choice</li>
+              <li>AI trip generation, conversations, and itinerary-edit proposals using external AI services, applied at your choice</li>
               <li>Importing itineraries, expenses, and user attachments from Triple share links you provide</li>
-              <li>Place-level budgets and total budget overview</li>
+              <li>Saving places from Google Maps place links you share</li>
+              <li>Recording trip expenses, managing shared funds, settling up with tripmates, and viewing spending statistics</li>
               <li>Storing and managing trip/place images and externally sharing trip information</li>
               <li>Other services determined by the Company</li>
             </ul>
@@ -639,7 +641,7 @@
             <ul>
               <li>The Company protects users' personal information in accordance with applicable law, and matters concerning the processing of personal information are governed by a separate <a href="privacy.html">Privacy Policy</a>.</li>
               <li>The Company makes the Privacy Policy available through the Service screen or website so users can review it.</li>
-              <li>When a Sentry project is configured, diagnostic reports may be sent to Sentry for selected sign-in and operation failures involving trip sync, expenses/shared funds, subscriptions, AI, deletion, invitations/sharing, image storage, imports, and local storage. The Privacy Policy describes the information processed, retention periods, processors, and international transfers.</li>
+              <li>When a Sentry project is configured, diagnostic reports may be sent to Sentry for selected sign-in and operation failures involving trip sync, expenses/shared funds, subscriptions, AI, deletion, invitations/sharing, image storage, imports, and local storage. When the app crashes, crash diagnostics are also sent to Firebase Crashlytics to find the cause and improve stability. The Privacy Policy describes the information processed, retention periods, processors, and international transfers.</li>
               <li>The Company does not currently send marketing or promotional messages, and will obtain users' prior consent in accordance with applicable law if it becomes necessary to do so in the future.</li>
             </ul>
 
@@ -647,8 +649,8 @@
 
             <h3>Article 22 (Limits of Service Information)</h3>
             <ul>
-              <li>Maps, place information, routes, budgets, AI-generated trip information, and similar materials provided by the Service are for the user's reference, and the Company does not guarantee their accuracy, completeness, or suitability.</li>
-              <li>Users must verify the accuracy of such information themselves when actually traveling, and are responsible for decisions made in reliance on the information and their results.</li>
+              <li>Maps, place information, routes, budgets, AI-generated trip information, and similar materials provided by the Service are for the user's reference, and, to the extent permitted by applicable law, the Company does not guarantee their accuracy, completeness, or suitability.</li>
+              <li>Users must verify the accuracy of such information themselves when actually traveling and are responsible for decisions made in reliance on the information and their results only to the extent the Company has no intent or negligence. Nothing in this Article limits the Company's liability that cannot be limited under applicable law or the user's rights under applicable law.</li>
             </ul>
 
             <h3>Article 23 (Disclaimer)</h3>
@@ -689,7 +691,7 @@
             </ul>
 
             <h2>Addendum</h2>
-            <p>These Terms are effective as of September 28, 2026. Amendments apply to existing users only after the advance-notice period and any required consent process under Article 3 have been completed.</p>
+            <p>These Terms are effective as of November 3, 2026. Amendments apply to existing users only after the advance-notice period and any required consent process under Article 3 have been completed.</p>
           </div>
           </div>
           <noscript>
@@ -744,6 +746,6 @@
     <script src="assets/js/i18n.js?v=20260928-korea-legal-titles"></script>
     <script src="assets/js/main.js?v=20260909-i18n"></script>
     <script src="assets/js/legal-doc.js"></script>
-    <script src="assets/js/terms.js?v=20260928-legal"></script>
+    <script src="assets/js/terms.js?v=20261103-legal"></script>
   </body>
 </html>

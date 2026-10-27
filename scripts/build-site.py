@@ -450,12 +450,13 @@ def main():
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
     entries = [(ORIGIN + home_path(lang), "2026-10-27") for lang in data["languages"]]
-    entries += [(ORIGIN + "/" + page, "2026-10-16") for page in [
+    entries += [(ORIGIN + "/" + page, "2026-10-28") for page in [
         "privacy.html", "ja/privacy.html", "us/privacy.html", "eu/privacy.html",
         "eu/fr/privacy.html", "eu/de/privacy.html", "eu/es/privacy.html",
     ]]
+    entries += [(ORIGIN + "/terms.html", "2026-11-03")]
     entries += [(ORIGIN + "/" + page, "2026-09-28") for page in [
-        "terms.html", "ja/terms.html", "ja/commercial-transactions.html",
+        "ja/terms.html", "ja/commercial-transactions.html",
         "us/terms.html", "eu/terms.html", "eu/fr/terms.html", "eu/de/terms.html", "eu/es/terms.html",
     ]]
     entries += [(ORIGIN + feature_path(slug, lang), date)
