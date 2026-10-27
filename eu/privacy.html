@@ -16,7 +16,7 @@
     <link rel="alternate" hreflang="es" href="https://npsomewhere.com/eu/es/privacy.html" />
     <link rel="icon" type="image/svg+xml" href="../assets/img/app-icon.svg" />
     <link rel="stylesheet" href="../assets/css/fonts.css" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260928-legal-crosslink-style" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20261027-legal-notice" />
   </head>
   <body>
     <header class="nav">
@@ -41,10 +41,13 @@
           </div>
           <h1>EU Privacy Policy</h1>
           <div class="legal__head">
-            <p class="updated muted">Effective date: October 28, 2026</p>
+            <p class="updated muted"><span data-eff-label>Effective date</span>: <span data-eff-date>October 28, 2026</span></p><div class="legal__versions" hidden><label class="legal__versions-label" for="legal-version" data-versions-label>Version</label><span class="legal__select-wrap"><select id="legal-version" class="legal__select" aria-label="Select document version"></select></span></div>
           </div>
 
-          <article class="policy">
+          <div class="legal__loading muted" data-legal-loading hidden>Loading document.</div>
+          <div data-legal-content data-legal-embedded="2026-10-28">
+<!-- legal-body:start -->
+<article class="policy">
             <p>This Privacy Policy explains how NP Somewhere processes personal data when you use the Somewhere travel-planning app and its official website in the European Union. We process personal data under the GDPR and applicable national privacy and electronic-communications laws.</p>
 
             <h2>1. Who controls your data</h2>
@@ -69,7 +72,7 @@
               <li>Support data (optional): email address, message and attachments submitted through Google Forms or similar forms, or Instagram profile, direct messages and comments if you contact us there.</li>
               <li>Location data (optional): your current device location if you grant the operating-system permission. We use it to show your position on a map and do not store the current position in our Firebase database. A place you save to a trip may include its name, address and coordinates.</li>
               <li>Automatically collected data: device type and details, operating system, app version, city-level location, IP address, access time and usage logs, error/diagnostic data, advertising identifiers (ADID/IDFA), app-screen and feature events, and analytics information associated with Google Signals settings.</li>
-            <li>Selected Sentry error diagnostics (only when a project DSN is configured and a sign-in error or selected operation failure is reported): authentication provider for sign-in errors; feature, operation name, error stage, and diagnostic code for selected operation failures; exception type and sanitized stack trace; app version/platform and operating-system/device diagnostics. Exception messages are replaced with generic text. Reports exclude account IDs, email addresses, trip/expense content, AI prompts, URLs/tokens, request/response bodies or headers, and breadcrumbs. Sentry may automatically associate the connection IP address with a report; whether it stores IP addresses depends on the project's privacy settings. We use reports to diagnose sign-in and selected operation failures and improve service reliability.</li>
+            <li>Selected Sentry error diagnostics (only when a project DSN is configured and a sign-in error or selected operation failure is reported): authentication provider for sign-in errors; feature, operation name, error stage, and diagnostic code for selected operation failures; exception type and sanitized stack trace; app version/platform and operating-system/device diagnostics. Exception messages are replaced with generic text. Reports exclude account IDs, email addresses, trip/expense content, AI prompts, URLs/tokens, request/response bodies or headers, and navigation breadcrumbs. Android sign-in error reports may include up to 50 predefined sign-in step records, such as a sign-in request starting or being cancelled, with predefined diagnostic values. Sentry may automatically associate the connection IP address with a report; whether it stores IP addresses depends on the project's privacy settings. We use reports to diagnose sign-in and selected operation failures and improve service reliability.</li>
             <li>Firebase Crashlytics crash diagnostics (when the app crashes): crash stack trace, Crashlytics installation UUID and Firebase installation ID, device state such as device model, operating system and app version, diagnostic logs the app recorded just before the crash (such as feature area and error type), and recent usage events recorded in Google Analytics. Account IDs and email addresses are not sent to Crashlytics as user identifiers, and diagnostic logs do not include AI inputs, notes or expense details. Some error logs may include document IDs or file paths, and an export file path may include a trip title. We use crash reports to find the cause of crashes and improve app stability.</li></ul>
             <p>We also receive purchase and subscription status from app marketplaces or RevenueCat, and may receive content from a public share page when you ask us to import it. If required account information is not provided, you may not be able to sign in or use account-based features. AI, current-location and personalized-ad features are optional; refusing them does not prevent use of core trip-planning features.</p>
             <p>We do not ask you to provide special-category data such as health, biometric or political information. Free-text notes, messages, receipts or images could contain information of this kind, so please do not include it unless it is necessary. Contact us if you want us to remove information you submitted.</p>
@@ -146,9 +149,11 @@
             <p>Our website does not use our own advertising-tracking cookies or behavioral-ad scripts. It may store language and theme preferences in local storage; you can remove these using your browser’s site-data controls. In the app, analytics and advertising SDKs may use device identifiers and similar technologies. Where prior consent is required, we request it and provide a way to change your choice through the app’s advertising-privacy options and your device settings.</p>
 
             <h2>12. Changes and applicable rules</h2>
-            <p>This Privacy Policy takes effect on October 28, 2026. This revision adds the information processed through Firebase Crashlytics for app crash diagnostics, its legal basis and its 90-day retention period. We will post the effective date and material changes here or in the Service, notify you of changes that materially affect your rights, and obtain consent where required.</p>
+            <p>This Privacy Policy takes effect on October 28, 2026. This revision adds the information processed through Firebase Crashlytics for app crash diagnostics, its legal basis and its 90-day retention period, and discloses the sign-in step records that Android Sentry sign-in error reports may include. We will post the effective date and material changes here or in the Service, notify you of changes that materially affect your rights, and obtain consent where required.</p>
             <p>Applicable rules: <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng/" target="_blank" rel="noopener">General Data Protection Regulation (GDPR)</a>. Korea adequacy information: <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en" target="_blank" rel="noopener">European Commission adequacy decisions</a>.</p>
           </article>
+<!-- legal-body:end -->
+          </div>
         </div>
       </div>
     </main>
@@ -187,5 +192,7 @@
     <script src="/assets/js/legal-region.js?v=20260928-bilingual-option-names"></script>
     <script src="/assets/js/i18n.js?v=20260928-legal-footer"></script>
     <script src="/assets/js/main.js?v=20260928-legal-footer"></script>
+    <script src="/assets/js/legal-doc.js?v=20261027-legal-versions"></script>
+    <script src="/assets/js/regional-legal.js?v=20261027-legal-versions"></script>
   </body>
 </html>

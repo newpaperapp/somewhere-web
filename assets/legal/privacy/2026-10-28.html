@@ -32,7 +32,7 @@
               <li>문의·제보(선택): Google Forms 등에 제출한 이메일·문의 내용·첨부 이미지·파일 또는 Instagram 프로필·DM·댓글 내용</li>
               <li>위치정보(선택): 기기 위치 권한을 허용한 경우 지도에 표시하는 현재 위치</li>
               <li>자동 수집 정보: 기기 종류·OS·앱 버전·세부 기기 정보, 도시 수준 위치, IP 주소, 접속 일시·이용 기록, 오류·진단 정보, 광고 식별자(ADID/IDFA), 앱 화면·기능 이용 통계 및 Google Signals 기반 분석 정보</li>
-              <li>Sentry 오류 진단(프로젝트 DSN이 설정된 경우 로그인 오류 또는 일부 기능의 진단 대상 오류가 보고될 때): 로그인 오류의 인증 제공자, 일부 기능 오류의 기능 구분·작업명·오류 단계·진단 코드, 오류 유형·정제된 스택 추적, 앱 버전·플랫폼·운영체제/기기 진단정보. 오류 메시지는 일반 문구로 바꾸며 계정 ID·이메일·여행·경비 내용·AI 입력·URL·토큰·앱 요청/응답 본문·헤더·탐색 기록은 보고서에 넣지 않아요. 오류 보고에 연결 IP 주소가 자동으로 포함될 수 있으며, Sentry의 IP 저장 여부는 프로젝트 개인정보 설정에 따라 달라요. 로그인과 일부 기능의 오류 해결 및 서비스 안정성 개선에 이용해요.</li>
+              <li>Sentry 오류 진단(프로젝트 DSN이 설정된 경우 로그인 오류 또는 일부 기능의 진단 대상 오류가 보고될 때): 로그인 오류의 인증 제공자, 일부 기능 오류의 기능 구분·작업명·오류 단계·진단 코드, 오류 유형·정제된 스택 추적, 앱 버전·플랫폼·운영체제/기기 진단정보. 오류 메시지는 일반 문구로 바꾸며 계정 ID·이메일·여행·경비 내용·AI 입력·URL·토큰·앱 요청/응답 본문·헤더·탐색 기록은 보고서에 넣지 않아요. 다만 Android 로그인 오류 보고에는 로그인 요청 시작·취소 등 미리 정한 로그인 단계 기록과 진단 값(최대 50개)이 포함될 수 있어요. 오류 보고에 연결 IP 주소가 자동으로 포함될 수 있으며, Sentry의 IP 저장 여부는 프로젝트 개인정보 설정에 따라 달라요. 로그인과 일부 기능의 오류 해결 및 서비스 안정성 개선에 이용해요.</li>
               <li>Firebase Crashlytics 비정상 종료 진단(앱이 비정상 종료될 때): 비정상 종료 스택 추적, Crashlytics 설치 UUID·Firebase 설치 ID, 기기 모델·운영체제·앱 버전 등 기기 상태 정보, 종료 직전 앱이 남긴 진단 로그(기능 구분·오류 유형 등)와 Google Analytics에 기록된 최근 이용 이벤트. 계정 ID·이메일은 Crashlytics 사용자 식별자로 전송하지 않으며, 진단 로그에는 AI 입력·메모·지출 내용을 넣지 않아요. 다만 일부 오류 로그에는 문서 ID나 파일 경로가 포함될 수 있고, 내보내기 파일 경로에는 여행 제목이 포함될 수 있어요. 비정상 종료 원인 파악과 앱 안정성 개선에 이용해요.</li>
             </ul>
             <p>
@@ -369,7 +369,7 @@
 
             <h2>제15조 - 개인정보 처리방침의 변경</h2>
             <p>
-              이 개인정보처리방침은 2026년 10월 28일부터 적용돼요. 2026년 10월 28일 개정에서는 앱 비정상 종료 진단에 이용하는 Firebase Crashlytics의 처리 항목·보유기간을 추가하고, Google LLC의 위탁 업무와 국외 이전 항목에 반영했어요. 변경 시 시행일·주요 변경사항을 본 페이지 또는 서비스 내에서 안내하고, 권리에 중대한 영향을
+              이 개인정보처리방침은 2026년 10월 28일부터 적용돼요. 2026년 10월 28일 개정에서는 앱 비정상 종료 진단에 이용하는 Firebase Crashlytics의 처리 항목·보유기간을 추가하고, Google LLC의 위탁 업무와 국외 이전 항목에 반영했어요. 또한 Android 로그인 오류 보고에 포함될 수 있는 Sentry 로그인 단계 기록을 명시했어요. 변경 시 시행일·주요 변경사항을 본 페이지 또는 서비스 내에서 안내하고, 권리에 중대한 영향을
               미치는 변경은 개정 전 또는 개정 즉시 알리며 별도 동의가 필요한 경우 동의를 받아요. 이전 방침은 위 「지난 개인정보처리방침」에서 확인할 수 있어요.
             </p>
 
@@ -411,7 +411,7 @@
               <li>Optional support: email, inquiry content, images/files submitted through Google Forms, or Instagram profile/DM/comment content</li>
               <li>Optional location: current position displayed on the map when device location permission is granted</li>
               <li>Automatically collected: device type/OS/app version/granular device details, city-level location, IP address, access/usage logs, diagnostics, advertising identifiers (ADID/IDFA), screen/feature statistics, and Google Signals analytics information</li>
-              <li>Selected Sentry error diagnostics (only when a project DSN is configured and a sign-in error or selected operation failure is reported): authentication provider for sign-in errors; feature, operation name, error stage, and diagnostic code for selected operation failures; exception type and sanitized stack trace; app version/platform and operating-system/device diagnostics. Exception messages are replaced with generic text. Reports exclude account IDs, email addresses, trip/expense content, AI prompts, URLs/tokens, request/response bodies or headers, and breadcrumbs. Sentry may automatically associate the connection IP address with a report; whether it stores IP addresses depends on the project's privacy settings. We use reports to diagnose sign-in and selected operation failures and improve service reliability.</li>
+              <li>Selected Sentry error diagnostics (only when a project DSN is configured and a sign-in error or selected operation failure is reported): authentication provider for sign-in errors; feature, operation name, error stage, and diagnostic code for selected operation failures; exception type and sanitized stack trace; app version/platform and operating-system/device diagnostics. Exception messages are replaced with generic text. Reports exclude account IDs, email addresses, trip/expense content, AI prompts, URLs/tokens, request/response bodies or headers, and navigation breadcrumbs. Android sign-in error reports may include up to 50 predefined sign-in step records, such as a sign-in request starting or being cancelled, with predefined diagnostic values. Sentry may automatically associate the connection IP address with a report; whether it stores IP addresses depends on the project's privacy settings. We use reports to diagnose sign-in and selected operation failures and improve service reliability.</li>
               <li>Firebase Crashlytics crash diagnostics (when the app crashes): crash stack trace, Crashlytics installation UUID and Firebase installation ID, device state such as device model, operating system, and app version, diagnostic logs the app recorded just before the crash (such as feature area and error type), and recent usage events recorded in Google Analytics. Account IDs and email addresses are not sent to Crashlytics as user identifiers, and diagnostic logs do not include AI inputs, notes or expense details. Some error logs may include document IDs or file paths, and an export file path may include a trip title. We use crash reports to find the cause of crashes and improve app stability.</li>
             </ul>
             <p>
@@ -813,7 +813,8 @@
               This Privacy Policy is effective October 28, 2026. The October 28, 2026 revision adds
               the information processed and the retention period for Firebase Crashlytics, which we
               use to diagnose app crashes, and reflects it in Google LLC’s processing tasks and
-              international transfer items. We announce the effective date
+              international transfer items. It also discloses the Sentry sign-in step records that
+              Android sign-in error reports may include. We announce the effective date
               and material changes on this page or in the Service, notify changes that significantly
               affect your rights before or at amendment, and obtain separate consent where required.
               Earlier policies remain available in the Previous policy selector.

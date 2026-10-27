@@ -6,11 +6,14 @@ metadata never enter the deployment artifact. Output is the ignored dist/ tree.
 """
 import html
 import json
+import os
 import re
 import shutil
+from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit
+from zoneinfo import ZoneInfo
 
 from site_common import ROOT, ORIGIN, catalog, home_path
 
@@ -23,10 +26,93 @@ LEGAL_ROUTES = {lang: {"privacy.html": "/privacy", "terms.html": "/terms"} for l
 # Each date is the page's last content change and becomes its sitemap lastmod.
 FEATURE_PAGES = {"expense": "2026-10-27", "map": "2026-10-21", "together": "2026-10-21", "ai": "2026-10-21"}
 FEATURE_LANGUAGES = ["ko", "en", "ja", "zh-CN", "zh-TW", "fr", "de", "es"]
+# Legal shells: page -> (fragment folder, page language, script listing its versions).
+# Each fragment's file name is its effective date. The build embeds the version in
+# force on the build day in Korea, and a daily scheduled deploy keeps it current.
+LEGAL_DOCUMENTS = {
+    "privacy.html": ("assets/legal/privacy", "ko", "assets/js/privacy.js"),
+    "terms.html": ("assets/legal/terms", "ko", "assets/js/terms.js"),
+    **{f"{page}/{doc}.html": (f"assets/legal/{key}/{doc}", key.split("/")[1], "assets/js/regional-legal.js")
+       for key, page in {"us/en": "us", "eu/en": "eu", "eu/fr": "eu/fr", "eu/de": "eu/de",
+                         "eu/es": "eu/es", "jp/ja": "ja"}.items()
+       for doc in ["privacy", "terms"]},
+}
+LEGAL_MONTHS = {
+    "en": ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+           "October", "November", "December"],
+    "fr": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
+           "octobre", "novembre", "décembre"],
+    "de": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September",
+           "Oktober", "November", "Dezember"],
+    "es": ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre",
+           "octubre", "noviembre", "diciembre"],
+}
+LEGAL_BODY = re.compile(r"(<!-- legal-body:start -->\n).*?(\n<!-- legal-body:end -->)", re.S)
 
 
 def feature_path(slug, lang):
     return home_path(lang) + "features/" + slug + "/"
+
+
+def build_day():
+    """Today in Korea, or SITE_BUILD_DATE (YYYY-MM-DD) to preview a future switch."""
+    return os.environ.get("SITE_BUILD_DATE") or datetime.now(ZoneInfo("Asia/Seoul")).date().isoformat()
+
+
+def legal_versions(folder):
+    """Effective dates of a document's fragments, newest first."""
+    return sorted((p.stem for p in (ROOT / folder).glob("*.html")
+                   if re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.stem)), reverse=True)
+
+
+def legal_date(day, lang):
+    """Same wording as legal-doc.js labels, for pages read without JavaScript."""
+    year, month, date = (int(part) for part in day.split("-"))
+    if lang == "ko":
+        return f"{year}년 {month}월 {date}일"
+    if lang == "ja":
+        return f"{year}年{month}月{date}日"
+    name = LEGAL_MONTHS[lang][month - 1]
+    return {"fr": f"{'1er' if date == 1 else date} {name} {year}", "de": f"{date}. {name} {year}",
+            "es": f"{date} de {name} de {year}"}.get(lang, f"{name} {date}, {year}")
+
+
+def validate_legal():
+    """Version lists match the fragment files, and sources embed their newest fragment."""
+    normalize = lambda value: re.sub(r"\s+", " ", value).strip()
+    regional = {}
+    for key, ids in re.findall(r'"(\w+/\w+/\w+)": \[([^\]]*)\]', (ROOT / "assets/js/regional-legal.js").read_text()):
+        regional[key] = re.findall(r'"([\d-]+)"', ids)
+    for page, (folder, _, script) in LEGAL_DOCUMENTS.items():
+        files = legal_versions(folder)
+        if script.endswith("regional-legal.js"):
+            listed = regional.get(folder.removeprefix("assets/legal/"), [])
+        else:
+            listed = re.findall(re.escape(folder) + r"/([\d-]+)\.html", (ROOT / script).read_text())
+        assert sorted(listed, reverse=True) == files, f"{script} must list every fragment in {folder}"
+        source = (ROOT / page).read_text()
+        body = LEGAL_BODY.search(source)
+        assert body, f"Missing legal body markers in {page}"
+        newest = (ROOT / folder / f"{files[0]}.html").read_text()
+        assert normalize(body.group(0)[len(body[1]):-len(body[2])]) == normalize(newest), \
+            f"{page} must embed {folder}/{files[0]}.html"
+        assert f'data-legal-embedded="{files[0]}"' in source, f"{page} must mark {files[0]} as embedded"
+
+
+def embed_legal(output, day):
+    """Puts the version in force on `day` into each built legal shell; returns page -> its date."""
+    in_force = {}
+    for page, (folder, lang, _) in LEGAL_DOCUMENTS.items():
+        current = next(v for v in legal_versions(folder) if v <= day)
+        fragment = (ROOT / folder / f"{current}.html").read_text().rstrip("\n")
+        target = output / page
+        content = LEGAL_BODY.sub(lambda match: match[1] + fragment + match[2], target.read_text())
+        content = re.sub(r'data-legal-embedded="[^"]*"', f'data-legal-embedded="{current}"', content)
+        content = re.sub(r"(<span data-eff-date>)[^<]*(</span>)",
+                         lambda match: match[1] + legal_date(current, lang) + match[2], content)
+        target.write_text(content)
+        in_force[page] = current
+    return in_force
 
 
 class Element:
@@ -447,18 +533,14 @@ def main():
             target = output / feature_path(slug, lang).lstrip("/") / "index.html"
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(feature_page(slug, lang, data))
+    validate_legal()
+    in_force = embed_legal(output, build_day())
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
     entries = [(ORIGIN + home_path(lang), "2026-10-27") for lang in data["languages"]]
-    entries += [(ORIGIN + "/" + page, "2026-10-28") for page in [
-        "privacy.html", "ja/privacy.html", "us/privacy.html", "eu/privacy.html",
-        "eu/fr/privacy.html", "eu/de/privacy.html", "eu/es/privacy.html",
-    ]]
-    entries += [(ORIGIN + "/terms.html", "2026-11-03")]
-    entries += [(ORIGIN + "/" + page, "2026-09-28") for page in [
-        "ja/terms.html", "ja/commercial-transactions.html",
-        "us/terms.html", "eu/terms.html", "eu/fr/terms.html", "eu/de/terms.html", "eu/es/terms.html",
-    ]]
+    # Legal pages change content on the effective date of their version in force.
+    entries += [(ORIGIN + "/" + page, date) for page, date in in_force.items()]
+    entries += [(ORIGIN + "/ja/commercial-transactions.html", "2026-09-28")]
     entries += [(ORIGIN + feature_path(slug, lang), date)
                 for slug, date in FEATURE_PAGES.items() for lang in FEATURE_LANGUAGES]
     # Changes with every published release, so it follows the newest release date.

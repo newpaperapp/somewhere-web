@@ -16,7 +16,7 @@
     <link rel="alternate" hreflang="es" href="https://npsomewhere.com/eu/es/terms.html" />
     <link rel="icon" type="image/svg+xml" href="../assets/img/app-icon.svg" />
     <link rel="stylesheet" href="../assets/css/fonts.css" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260928-legal-crosslink-style" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20261027-legal-notice" />
   </head>
   <body>
     <header class="nav">
@@ -41,10 +41,13 @@
           </div>
           <h1>EU Terms of Service</h1>
           <div class="legal__head">
-            <p class="updated muted">Effective date: September 28, 2026</p>
+            <p class="updated muted"><span data-eff-label>Effective date</span>: <span data-eff-date>September 28, 2026</span></p><div class="legal__versions" hidden><label class="legal__versions-label" for="legal-version" data-versions-label>Version</label><span class="legal__select-wrap"><select id="legal-version" class="legal__select" aria-label="Select document version"></select></span></div>
           </div>
 
-          <article class="policy">
+          <div class="legal__loading muted" data-legal-loading hidden>Loading document.</div>
+          <div data-legal-content data-legal-embedded="2026-09-28">
+<!-- legal-body:start -->
+<article class="policy">
             <p>These Terms govern your use of the Somewhere travel-planning app and related services. They are between you and NP, trading as NP Somewhere (“we”, “us”, or the “Company”). If you are a consumer in the EU, mandatory consumer rights in your country of residence apply in addition to these Terms.</p>
 
             <h2>1. Trader information and contact</h2>
@@ -130,6 +133,8 @@
             <h2>Final provision</h2>
             <p>These Terms take effect on September 28, 2026. Changes apply to existing users only after the notice period and any consent required by law.</p>
           </article>
+<!-- legal-body:end -->
+          </div>
         </div>
       </div>
     </main>
@@ -168,5 +173,7 @@
     <script src="/assets/js/legal-region.js?v=20260928-bilingual-option-names"></script>
     <script src="/assets/js/i18n.js?v=20260928-legal-footer"></script>
     <script src="/assets/js/main.js?v=20260928-legal-footer"></script>
+    <script src="/assets/js/legal-doc.js?v=20261027-legal-versions"></script>
+    <script src="/assets/js/regional-legal.js?v=20261027-legal-versions"></script>
   </body>
 </html>

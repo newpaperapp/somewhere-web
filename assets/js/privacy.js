@@ -1,6 +1,7 @@
 /* ============================================================
    Somewhere - privacy page versions
    Each date is stored in assets/legal/privacy/YYYY-MM-DD.html.
+   The id is the effective date; legal-doc.js picks the current version from it.
    ============================================================ */
 (function () {
   if (!window.SomewhereLegalDoc) return;
@@ -8,8 +9,8 @@
   window.SomewhereLegalDoc.init({
     selectId: "policy-version",
     labels: {
-      ko: { eff: "시행일", versions: "지난 개인정보처리방침", current: " (현재)" },
-      en: { eff: "Effective", versions: "Previous policy", current: " (current)" },
+      ko: { eff: "시행일", upcomingNotice: "{date}부터 개정된 개인정보처리방침이 적용돼요" },
+      en: { eff: "Effective", upcomingNotice: "A revised Privacy Policy takes effect on {date}" },
     },
     versions: [
       {
@@ -18,7 +19,6 @@
         en: "October 28, 2026",
         path: "assets/legal/privacy/2026-10-28.html",
         langs: ["ko", "en"],
-        current: true,
       },
       {
         id: "2026-10-16",

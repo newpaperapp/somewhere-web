@@ -1448,6 +1448,47 @@ a {
   border-color: var(--primary);
 }
 
+.legal__versions[hidden],
+.legal .legal__upcoming[hidden] {
+  display: none;
+}
+
+/* notice for a version whose effective date has not arrived yet */
+.legal .legal__upcoming {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  /* pull left by the padding and border so the text lines up with the document text */
+  margin: 0 0 14px -17px;
+  padding: 12px 16px;
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--r-chip);
+  background-color: var(--surface-container);
+}
+
+.legal__upcoming-action {
+  font: inherit;
+  font-weight: 600;
+  color: var(--primary);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.legal__upcoming-action:hover {
+  text-decoration: underline;
+}
+
+/* the phone gutter is 20px, so keep the card off the screen edge */
+@media (max-width: 520px) {
+  .legal .legal__upcoming {
+    margin-left: -13px;
+    padding: 12px;
+  }
+}
+
 /* Static bilingual legal and invitation text. New languages fall back to the
    English body, so Korean is hidden whenever the current language is not ko. */
 html:not([lang="ko"]) .lang-ko,

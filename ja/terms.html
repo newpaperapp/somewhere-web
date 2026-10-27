@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://npsomewhere.com/ja/terms.html" />
     <link rel="icon" type="image/svg+xml" href="../assets/img/app-icon.svg" />
     <link rel="stylesheet" href="../assets/css/fonts.css" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260928-legal-crosslink-style" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20261027-legal-notice" />
   </head>
   <body>
     <header class="nav">
@@ -37,10 +37,13 @@
           </div>
           <h1>日本向け利用規約</h1>
           <div class="legal__head">
-            <p class="updated muted">施行日：2026年9月28日</p>
+            <p class="updated muted"><span data-eff-label>施行日</span>：<span data-eff-date>2026年9月28日</span></p><div class="legal__versions" hidden><label class="legal__versions-label" for="legal-version" data-versions-label>版</label><span class="legal__select-wrap"><select id="legal-version" class="legal__select" aria-label="版を選択"></select></span></div>
           </div>
 
-          <article class="policy">
+          <div class="legal__loading muted" data-legal-loading hidden>文書を読み込んでいます。</div>
+          <div data-legal-content data-legal-embedded="2026-09-28">
+<!-- legal-body:start -->
+<article class="policy">
             <p>この利用規約（以下「本規約」といいます）は、NP Somewhere（以下「当社」といいます）が提供する旅行計画アプリ「Somewhere」（以下「本サービス」といいます）の利用条件を定めます。本サービスを利用する前に本規約をお読みください。</p>
 
             <h2>事業者情報</h2>
@@ -122,6 +125,8 @@
             <h2>附則</h2>
             <p>本規約は2026年9月28日から施行します。既存利用者への変更規約の適用は、本条第1条に定める事前通知および必要な同意手続が完了した後とします。</p>
           </article>
+<!-- legal-body:end -->
+          </div>
         </div>
       </div>
     </main>
@@ -161,5 +166,7 @@
     <script src="/assets/js/legal-region.js?v=20260928-bilingual-option-names"></script>
     <script src="/assets/js/i18n.js?v=20260928-legal-footer"></script>
     <script src="/assets/js/main.js?v=20260928-legal-footer"></script>
+    <script src="/assets/js/legal-doc.js?v=20261027-legal-versions"></script>
+    <script src="/assets/js/regional-legal.js?v=20261027-legal-versions"></script>
   </body>
 </html>

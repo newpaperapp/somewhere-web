@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://npsomewhere.com/ja/privacy.html" />
     <link rel="icon" type="image/svg+xml" href="../assets/img/app-icon.svg" />
     <link rel="stylesheet" href="../assets/css/fonts.css" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260928-legal-crosslink-style" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20261027-legal-notice" />
   </head>
   <body>
     <header class="nav">
@@ -37,10 +37,13 @@
           </div>
           <h1>日本向けプライバシーポリシー</h1>
           <div class="legal__head">
-            <p class="updated muted">制定・施行日：2026年10月28日</p>
+            <p class="updated muted"><span data-eff-label>制定・施行日</span>：<span data-eff-date>2026年10月28日</span></p><div class="legal__versions" hidden><label class="legal__versions-label" for="legal-version" data-versions-label>版</label><span class="legal__select-wrap"><select id="legal-version" class="legal__select" aria-label="版を選択"></select></span></div>
           </div>
 
-          <article class="policy">
+          <div class="legal__loading muted" data-legal-loading hidden>文書を読み込んでいます。</div>
+          <div data-legal-content data-legal-embedded="2026-10-28">
+<!-- legal-body:start -->
+<article class="policy">
             <p>NP Somewhere（以下「当社」といいます）は、旅行計画アプリ「Somewhere」（以下「本サービス」といいます）および公式ウェブサイトで取り扱う個人情報について、個人情報の保護に関する法律（以下「個人情報保護法」といいます）その他適用される法令に従い、本ポリシーを定めます。</p>
 
             <h2>1. 事業者情報・お問い合わせ先</h2>
@@ -64,7 +67,7 @@
               <li>お問い合わせ情報（任意。Google Forms等に入力したメールアドレス、本文、添付ファイル、またはInstagramのプロフィール・DM・コメント）：お問い合わせ、障害・不具合への対応</li>
               <li>位置情報（任意。端末の位置情報利用を許可した場合の現在地）：地図上で現在地を表示する機能の提供。現在地は当社のFirebaseデータベースに保存しません。</li>
               <li>自動取得情報（端末の種類・OS・アプリ版・詳細な端末情報、都市レベルの位置、IPアドレス、アクセス日時・利用履歴、エラー・診断情報、広告識別子、画面・機能の利用統計、Google Signalsに基づく分析情報）：サービスの運営・改善、障害・セキュリティ対応、広告の表示・効果測定</li>
-            <li>Sentryのエラー診断（プロジェクトDSNが設定され、ログインエラーまたは一部機能の対象エラーが報告された場合）：ログインエラーの認証プロバイダー、対象エラーの機能・処理名・エラー段階・診断コード、例外の種類・サニタイズ済みスタックトレース、アプリ版・プラットフォーム・OS／端末の診断情報。例外メッセージは一般的な文言に置き換えます。アカウントID・メールアドレス・旅行／支出内容・AI入力・URL／トークン・アプリ要求／応答の本文・ヘッダー・操作履歴は報告に含めません。接続元IPアドレスが報告に自動的に関連付けられる場合があり、Sentryでの保存有無はプロジェクトのプライバシー設定によります。ログインおよび対象機能のエラー解決とサービスの安定性向上に利用します。</li>
+            <li>Sentryのエラー診断（プロジェクトDSNが設定され、ログインエラーまたは一部機能の対象エラーが報告された場合）：ログインエラーの認証プロバイダー、対象エラーの機能・処理名・エラー段階・診断コード、例外の種類・サニタイズ済みスタックトレース、アプリ版・プラットフォーム・OS／端末の診断情報。例外メッセージは一般的な文言に置き換えます。アカウントID・メールアドレス・旅行／支出内容・AI入力・URL／トークン・アプリ要求／応答の本文・ヘッダー・操作履歴は報告に含めません。ただし、Androidのログインエラー報告には、ログイン要求の開始・キャンセル等のあらかじめ定めたログイン段階の記録と診断値（最大50件）が含まれる場合があります。接続元IPアドレスが報告に自動的に関連付けられる場合があり、Sentryでの保存有無はプロジェクトのプライバシー設定によります。ログインおよび対象機能のエラー解決とサービスの安定性向上に利用します。</li>
             <li>Firebase Crashlyticsのクラッシュ診断（アプリが異常終了した場合）：クラッシュのスタックトレース、CrashlyticsインストールUUID・FirebaseインストールID、端末モデル・OS・アプリ版などの端末状態、終了直前にアプリが記録した診断ログ（機能区分・エラーの種類等）およびGoogle Analyticsに記録された直近の利用イベント。アカウントID・メールアドレスはCrashlyticsのユーザー識別子として送信せず、診断ログにはAI入力・メモ・支出内容を含めません。ただし、一部のエラーログには文書ID・ファイルパスが含まれ、エクスポートファイルのパスには旅行のタイトルが含まれる場合があります。クラッシュの原因把握とアプリの安定性向上に利用します。</li></ul>
             <p>GoogleまたはAppleのログインを選択した場合、各提供者から認証IDや利用者が許可したプロフィール情報を受け取ります。Tripleの取込機能では利用者が指定した共有ページから情報を取得します。アプリストアやRevenueCatから購入・サブスクリプションの状態を受け取る場合があります。</p>
 
@@ -142,10 +145,12 @@
             </ul>
 
             <h2>11. 本ポリシーの変更</h2>
-            <p>本ポリシーは2026年10月28日から適用します。今回の改定では、アプリのクラッシュ診断に利用するFirebase Crashlyticsで取り扱う情報と保存期間（90日）を追加しました。法令またはサービスの変更に応じて改定する場合は、このページまたはサービス内で改定日と主な内容をお知らせします。個人情報の新たな利用目的を追加する場合は、必要な通知・同意等を行います。</p>
+            <p>本ポリシーは2026年10月28日から適用します。今回の改定では、アプリのクラッシュ診断に利用するFirebase Crashlyticsで取り扱う情報と保存期間（90日）を追加し、AndroidのSentryログインエラー報告に含まれる場合があるログイン段階の記録を明記しました。法令またはサービスの変更に応じて改定する場合は、このページまたはサービス内で改定日と主な内容をお知らせします。個人情報の新たな利用目的を追加する場合は、必要な通知・同意等を行います。</p>
             <p>個人情報保護法の2026年改正法は2026年7月に公布され、一部を除き政令で定める日に施行される予定です。各規定の施行状況を確認し、必要に応じて本ポリシーを更新します。</p>
             <p>適用法令・ガイドライン：<a href="https://www.ppc.go.jp/en/legal/" target="_blank" rel="noopener">日本の個人情報保護委員会「法令・ガイドライン」</a>、<a href="https://www.ppc.go.jp/personalinfo/legal/guidelines_offshore/" target="_blank" rel="noopener">外国にある第三者への提供に関するガイドライン</a>、<a href="https://www.ppc.go.jp/news/press/2026/260717/" target="_blank" rel="noopener">2026年改正法の公布について</a></p>
           </article>
+<!-- legal-body:end -->
+          </div>
         </div>
       </div>
     </main>
@@ -185,5 +190,7 @@
     <script src="/assets/js/legal-region.js?v=20260928-bilingual-option-names"></script>
     <script src="/assets/js/i18n.js?v=20260928-legal-footer"></script>
     <script src="/assets/js/main.js?v=20260928-legal-footer"></script>
+    <script src="/assets/js/legal-doc.js?v=20261027-legal-versions"></script>
+    <script src="/assets/js/regional-legal.js?v=20261027-legal-versions"></script>
   </body>
 </html>

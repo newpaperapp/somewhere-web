@@ -1,6 +1,7 @@
 /* ============================================================
    Somewhere - terms page versions
    Each date is stored in assets/legal/terms/YYYY-MM-DD.html.
+   The id is the effective date; legal-doc.js picks the current version from it.
    ============================================================ */
 (function () {
   if (!window.SomewhereLegalDoc) return;
@@ -8,17 +9,16 @@
   window.SomewhereLegalDoc.init({
     selectId: "terms-version",
     labels: {
-      ko: { eff: "시행일", versions: "지난 서비스 이용약관", current: " (현재)" },
-      en: { eff: "Effective", versions: "Previous terms", current: " (current)" },
+      ko: { eff: "시행일", upcomingNotice: "{date}부터 개정된 이용약관이 적용돼요" },
+      en: { eff: "Effective", upcomingNotice: "Revised Terms of Service take effect on {date}" },
     },
     versions: [
       {
-        id: "2026-11-03",
-        ko: "2026년 11월 3일",
-        en: "November 3, 2026",
-        path: "assets/legal/terms/2026-11-03.html",
+        id: "2026-11-30",
+        ko: "2026년 11월 30일",
+        en: "November 30, 2026",
+        path: "assets/legal/terms/2026-11-30.html",
         langs: ["ko", "en"],
-        current: true,
       },
       {
         id: "2026-09-28",

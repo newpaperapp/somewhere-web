@@ -9,6 +9,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Rebuilds daily at 00:05 in Korea so legal pages embed the version in force
+  # on its effective date and the sitemap follows it.
+  schedule:
+    - cron: "5 15 * * *"
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read

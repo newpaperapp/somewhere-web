@@ -16,15 +16,18 @@
     <link rel="alternate" hreflang="es" href="https://npsomewhere.com/eu/es/privacy.html" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/app-icon.svg" />
     <link rel="stylesheet" href="/assets/css/fonts.css" />
-    <link rel="stylesheet" href="/assets/css/style.css?v=20260928-legal-crosslink-style" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=20261027-legal-notice" />
   </head>
   <body>
     <header class="nav"><div class="container nav__inner"><a class="brand" href="/fr/" aria-label="Accueil Somewhere"><img class="logo" src="/assets/img/app-icon.svg" alt="" /><span>Somewhere</span></a><nav class="nav__actions" aria-label="Documents juridiques"><a class="nav__link" href="privacy.html">Confidentialité</a><a class="nav__link" href="terms.html">Conditions</a></nav></div></header>
     <main class="legal"><div class="container"><div class="legal__wrap">
       <div class="legal__top-row"><a class="back-link" href="/fr/">← Home</a><a class="legal__crosslink" href="terms.html">Conditions d’utilisation UE</a></div>
       <h1>Politique de confidentialité UE</h1>
-      <div class="legal__head"><p class="updated muted">Date d’effet : 28 octobre 2026</p></div>
-      <article class="policy">
+      <div class="legal__head"><p class="updated muted"><span data-eff-label>Date d’effet</span> : <span data-eff-date>28 octobre 2026</span></p><div class="legal__versions" hidden><label class="legal__versions-label" for="legal-version" data-versions-label>Version</label><span class="legal__select-wrap"><select id="legal-version" class="legal__select" aria-label="Choisir la version"></select></span></div></div>
+      <div class="legal__loading muted" data-legal-loading hidden>Chargement du document.</div>
+      <div data-legal-content data-legal-embedded="2026-10-28">
+<!-- legal-body:start -->
+<article class="policy">
         <p>La présente politique de confidentialité explique comment NP Somewhere traite les données à caractère personnel lorsque vous utilisez l’application de planification de voyages Somewhere et son site officiel dans l’Union européenne. Le traitement respecte le RGPD ainsi que les règles nationales applicables en matière de vie privée et de communications électroniques.</p>
 
         <h2>1. Responsable du traitement</h2>
@@ -49,7 +52,7 @@
           <li>Assistance facultative : e-mail, message et pièces jointes envoyés par formulaire, ou profil, messages et commentaires Instagram si vous nous contactez par ce moyen.</li>
           <li>Localisation facultative : position actuelle si vous accordez l’autorisation du système. Elle sert à l’affichage sur la carte et n’est pas enregistrée comme position actuelle dans notre base Firebase.</li>
           <li>Données automatiques : appareil, système, version, localisation au niveau de la ville, adresse IP, horaires et journaux d’utilisation, diagnostics, identifiants publicitaires, événements d’écran et données d’analyse.</li>
-        <li>Diagnostics d’erreurs Sentry (uniquement si le DSN du projet est configuré et qu’une erreur de connexion ou un échec de fonctionnement sélectionné est signalé) : fournisseur d’authentification pour les erreurs de connexion ; fonctionnalité, nom de l’opération, étape de l’erreur et code de diagnostic pour les échecs sélectionnés ; type d’exception et trace de pile assainie ; version/plateforme de l’application et diagnostics système/terminal. Nous remplaçons les messages d’exception par un texte générique. Les rapports excluent les identifiants de compte, adresses e-mail, contenus de voyage/dépenses, requêtes IA, URL/jetons, corps ou en-têtes de requête/réponse et fils d’Ariane. L’adresse IP de connexion peut être associée automatiquement au rapport ; son stockage par Sentry dépend des paramètres de confidentialité du projet. Ces rapports servent à diagnostiquer les erreurs de connexion et certains échecs de fonctionnement et à améliorer la fiabilité du Service.</li><li>Diagnostics de plantage Firebase Crashlytics (lorsque l’application plante) : trace de pile du plantage, UUID d’installation Crashlytics et identifiant d’installation Firebase, état de l’appareil comme le modèle, le système d’exploitation et la version de l’application, journaux de diagnostic enregistrés par l’application juste avant le plantage (domaine fonctionnel, type d’erreur, etc.) et événements d’utilisation récents enregistrés dans Google Analytics. Les identifiants de compte et adresses e-mail ne sont pas transmis à Crashlytics comme identifiants d’utilisateur, et les journaux de diagnostic n’incluent ni requêtes IA, ni notes, ni détails de dépenses. Certains journaux d’erreurs peuvent contenir des identifiants de documents ou des chemins de fichiers, et le chemin d’un fichier exporté peut contenir le titre d’un voyage. Ces rapports servent à trouver la cause des plantages et à améliorer la stabilité de l’application.</li></ul>
+        <li>Diagnostics d’erreurs Sentry (uniquement si le DSN du projet est configuré et qu’une erreur de connexion ou un échec de fonctionnement sélectionné est signalé) : fournisseur d’authentification pour les erreurs de connexion ; fonctionnalité, nom de l’opération, étape de l’erreur et code de diagnostic pour les échecs sélectionnés ; type d’exception et trace de pile assainie ; version/plateforme de l’application et diagnostics système/terminal. Nous remplaçons les messages d’exception par un texte générique. Les rapports excluent les identifiants de compte, adresses e-mail, contenus de voyage/dépenses, requêtes IA, URL/jetons, corps ou en-têtes de requête/réponse et fils d’Ariane de navigation. Sur Android, les rapports d’erreur de connexion peuvent inclure jusqu’à 50 étapes de connexion prédéfinies, comme le début ou l’annulation d’une demande de connexion, avec des valeurs de diagnostic prédéfinies. L’adresse IP de connexion peut être associée automatiquement au rapport ; son stockage par Sentry dépend des paramètres de confidentialité du projet. Ces rapports servent à diagnostiquer les erreurs de connexion et certains échecs de fonctionnement et à améliorer la fiabilité du Service.</li><li>Diagnostics de plantage Firebase Crashlytics (lorsque l’application plante) : trace de pile du plantage, UUID d’installation Crashlytics et identifiant d’installation Firebase, état de l’appareil comme le modèle, le système d’exploitation et la version de l’application, journaux de diagnostic enregistrés par l’application juste avant le plantage (domaine fonctionnel, type d’erreur, etc.) et événements d’utilisation récents enregistrés dans Google Analytics. Les identifiants de compte et adresses e-mail ne sont pas transmis à Crashlytics comme identifiants d’utilisateur, et les journaux de diagnostic n’incluent ni requêtes IA, ni notes, ni détails de dépenses. Certains journaux d’erreurs peuvent contenir des identifiants de documents ou des chemins de fichiers, et le chemin d’un fichier exporté peut contenir le titre d’un voyage. Ces rapports servent à trouver la cause des plantages et à améliorer la stabilité de l’application.</li></ul>
         <p>Ces données proviennent de vous, de votre appareil, des personnes participant au voyage, des fournisseurs de connexion, des boutiques d’applications, de RevenueCat et des pages partagées que vous nous demandez d’importer. Les fonctions d’IA, de localisation actuelle et de publicité personnalisée sont facultatives. Nous ne demandons pas de données sensibles ; évitez d’en placer dans les notes, messages, reçus ou images.</p>
 
         <h2>3. Finalités et bases juridiques</h2>
@@ -98,8 +101,10 @@
         <p>Le site n’utilise pas nos propres cookies publicitaires ni scripts de ciblage comportemental. La langue et le thème peuvent être conservés dans le stockage local du navigateur. Dans l’application, les SDK d’analyse et de publicité peuvent utiliser des identifiants et technologies similaires avec consentement préalable lorsque celui-ci est requis.</p>
 
         <h2>12. Modifications</h2>
-        <p>La présente politique de confidentialité prend effet le 28 octobre 2026. Cette révision ajoute les données traitées par Firebase Crashlytics pour le diagnostic des plantages de l’application, leur base juridique et leur durée de conservation de 90 jours. Nous publierons la date et les modifications substantielles sur cette page ou dans le Service, informerons les utilisateurs des changements affectant sensiblement leurs droits et demanderons un consentement lorsqu’il est requis. Texte applicable : <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra" target="_blank" rel="noopener">Règlement général sur la protection des données</a>.</p>
+        <p>La présente politique de confidentialité prend effet le 28 octobre 2026. Cette révision ajoute les données traitées par Firebase Crashlytics pour le diagnostic des plantages de l’application, leur base juridique et leur durée de conservation de 90 jours, et précise les étapes de connexion que peuvent contenir les rapports Sentry d’erreur de connexion sur Android. Nous publierons la date et les modifications substantielles sur cette page ou dans le Service, informerons les utilisateurs des changements affectant sensiblement leurs droits et demanderons un consentement lorsqu’il est requis. Texte applicable : <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra" target="_blank" rel="noopener">Règlement général sur la protection des données</a>.</p>
       </article>
+<!-- legal-body:end -->
+      </div>
     </div></div></main>
         <footer class="footer">
       <div class="container footer__inner">
@@ -135,5 +140,7 @@
     <script src="/assets/js/legal-region.js?v=20260928-bilingual-option-names"></script>
     <script src="/assets/js/i18n.js?v=20260928-legal-footer"></script>
     <script src="/assets/js/main.js?v=20260928-legal-footer"></script>
+    <script src="/assets/js/legal-doc.js?v=20261027-legal-versions"></script>
+    <script src="/assets/js/regional-legal.js?v=20261027-legal-versions"></script>
   </body>
 </html>
