@@ -21,7 +21,7 @@ LEGAL_ROUTES = {lang: {"privacy.html": "/privacy", "terms.html": "/terms"} for l
 # Hand-written feature pages: features/<slug>/<lang>.html holds the localized <title>, description
 # and <main>, wrapped in features/_shell.html and served at feature_path(slug, lang).
 # Each date is the page's last content change and becomes its sitemap lastmod.
-FEATURE_PAGES = {"expense": "2026-10-21", "map": "2026-10-21", "together": "2026-10-21", "ai": "2026-10-21"}
+FEATURE_PAGES = {"expense": "2026-10-27", "map": "2026-10-21", "together": "2026-10-21", "ai": "2026-10-21"}
 FEATURE_LANGUAGES = ["ko", "en", "ja", "zh-CN", "zh-TW", "fr", "de", "es"]
 
 
@@ -449,7 +449,7 @@ def main():
             target.write_text(feature_page(slug, lang, data))
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
-    entries = [(ORIGIN + home_path(lang), "2026-09-26") for lang in data["languages"]]
+    entries = [(ORIGIN + home_path(lang), "2026-10-27") for lang in data["languages"]]
     entries += [(ORIGIN + "/" + page, "2026-10-16") for page in [
         "privacy.html", "ja/privacy.html", "us/privacy.html", "eu/privacy.html",
         "eu/fr/privacy.html", "eu/de/privacy.html", "eu/es/privacy.html",
