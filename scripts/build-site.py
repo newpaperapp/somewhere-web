@@ -561,8 +561,9 @@ def validate(output, data):
     assert not list(output.rglob("*.md"))
     validate_features(output)
     validate_notices(output)
+    validate_sitemap(output)
     validate_resources(output)
-    print("Validated language metadata, reciprocal hreflang, JSON-LD, all HTML/CSS resources and protected entry points")
+    print("Validated language metadata, reciprocal hreflang, JSON-LD, sitemap URLs, all HTML/CSS resources and protected entry points")
 
 
 def served(output, href):
@@ -570,6 +571,12 @@ def served(output, href):
     path = urlsplit(href).path.lstrip("/")
     return any(candidate.is_file() for candidate in [
         output / path, output / path / "index.html", output / (path + ".html")])
+
+
+def validate_sitemap(output):
+    """Every sitemap URL is a page the deployment serves."""
+    for url in re.findall(r"<loc>([^<]*)</loc>", (output / "sitemap.xml").read_text()):
+        assert url.startswith(ORIGIN + "/") and served(output, url[len(ORIGIN):]), f"Sitemap URL is not served: {url}"
 
 
 def validate_notices(output):
