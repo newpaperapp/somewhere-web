@@ -388,6 +388,7 @@ def feature_page(slug, lang, data):
         "footer_privacy": html.escape(translate("footer.privacy")),
         "footer_terms": html.escape(translate("footer.terms")),
         "footer_notices": html.escape(translate("footer.notices")),
+        "footer_whats_new": html.escape(translate("whatsNew.title")),
         "footer_business": html.escape(translate("footer.business")),
         "footer_business_info": translate("footer.businessInfo"),
         "footer_legal": html.escape(translate("footer.legal")),
@@ -489,7 +490,8 @@ def notices(output, data):
         body = variants("div", "", lambda lang: notice_body(notice["body"][lang]) + (
             f'<a class="notice-detail__link" href="{html.escape(link["href"], quote=True)}">'
             f'{html.escape(link["label"][lang])}'
-            '<span class="material-icons-round" aria-hidden="true">chevron_right</span></a>' if link else ""))
+            '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">'
+            '<path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z" /></svg></a>' if link else ""))
         article = (
             '<article class="notice-detail" data-notice>'
             + '<h1 class="notice-detail__title">'
@@ -503,7 +505,8 @@ def notices(output, data):
             "description": html.escape(summary if len(summary) <= 160 else summary[:159] + "…", quote=True),
             "nav_class": "", "main": article,
             "nav": ('<a class="notice-back" href="/notices/" data-notices-link>'
-                    '<span class="material-icons-round" aria-hidden="true">arrow_back</span>'
+                    '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">'
+                    '<path d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /></svg>'
                     f'<span data-i18n="notices.back">{html.escape(ko["notices.back"])}</span></a>')})
         sitemap.append((ORIGIN + path, notice["date"].replace(".", "-")))
     listing = (f'<ul class="notice-list">{"".join(items)}</ul>' if items else
@@ -645,6 +648,8 @@ def main():
     # Legal pages change content on the effective date of their version in force.
     entries += [(ORIGIN + "/" + page, date) for page, date in in_force.items()]
     entries += [(ORIGIN + "/ja/commercial-transactions.html", "2026-09-28")]
+    # Import guides are listed at their canonical extensionless URLs.
+    entries += [(ORIGIN + "/import-place", "2026-10-02"), (ORIGIN + "/import-trip", "2026-10-02")]
     entries += [(ORIGIN + feature_path(slug, lang), date)
                 for slug, date in FEATURE_PAGES.items() for lang in FEATURE_LANGUAGES]
     # Changes with every published release, so it follows the newest release date.

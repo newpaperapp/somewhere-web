@@ -84,6 +84,7 @@ const I18N = {
     "support.platform": "Android, iOS, iPadOS, macOS 및 visionOS 지원",
     "support.language":
       "한국어, 영어, 일본어, 중국어(간체·번체), 스페인어, 프랑스어, 독일어 지원",
+    "support.ai": "AI 여행 일정 만들기",
 
     "a11y.eyebrow": "접근성",
     "a11y.title": "접근성",
@@ -219,6 +220,7 @@ const I18N = {
     "support.platform": "Android, iOS, iPadOS, macOS and visionOS support",
     "support.language":
       "Supports Korean, English, Japanese, Chinese (Simplified & Traditional), Spanish, French, German",
+    "support.ai": "AI trip planner",
 
     "a11y.eyebrow": "Accessibility",
     "a11y.title": "Accessibility",
@@ -355,6 +357,7 @@ const I18N = {
     "support.platform": "Android、iOS、iPadOS、macOS、visionOSに対応",
     "support.language":
       "韓国語、英語、日本語、中国語（簡体字・繁体字）、スペイン語、フランス語、ドイツ語に対応",
+    "support.ai": "AIで旅行プラン作成",
 
     "a11y.eyebrow": "アクセシビリティ",
     "a11y.title": "アクセシビリティ",
@@ -483,6 +486,7 @@ const I18N = {
     "support.platform": "支持 Android、iOS、iPadOS、macOS 和 visionOS",
     "support.language":
       "支持韩语、英语、日语、简体中文、繁体中文、西班牙语、法语和德语",
+    "support.ai": "AI 旅行规划",
 
     "a11y.eyebrow": "无障碍",
     "a11y.title": "无障碍",
@@ -610,6 +614,7 @@ const I18N = {
     "support.platform": "支援 Android、iOS、iPadOS、macOS 和 visionOS",
     "support.language":
       "支援韓語、英語、日語、簡體中文、繁體中文、西班牙語、法語和德語",
+    "support.ai": "AI 旅行規劃",
 
     "a11y.eyebrow": "無障礙功能",
     "a11y.title": "無障礙功能",
@@ -743,6 +748,7 @@ const I18N = {
     "support.platform": "Compatible avec Android, iOS, iPadOS, macOS et visionOS",
     "support.language":
       "Disponible en coréen, anglais, japonais, chinois simplifié, chinois traditionnel, espagnol, français et allemand",
+    "support.ai": "Planificateur de voyage IA",
 
     "a11y.eyebrow": "Accessibilité",
     "a11y.title": "Accessibilité",
@@ -879,6 +885,7 @@ const I18N = {
     "support.platform": "Unterstützung für Android, iOS, iPadOS, macOS und visionOS",
     "support.language":
       "Unterstützt Koreanisch, Englisch, Japanisch, vereinfachtes und traditionelles Chinesisch, Spanisch, Französisch und Deutsch",
+    "support.ai": "KI-Reiseplaner",
 
     "a11y.eyebrow": "Barrierefreiheit",
     "a11y.title": "Barrierefreiheit",
@@ -1015,6 +1022,7 @@ const I18N = {
     "support.platform": "Compatible con Android, iOS, iPadOS, macOS y visionOS",
     "support.language":
       "Disponible en coreano, inglés, japonés, chino simplificado, chino tradicional, español, francés y alemán",
+    "support.ai": "Planificador de viajes con IA",
 
     "a11y.eyebrow": "Accesibilidad",
     "a11y.title": "Accesibilidad",

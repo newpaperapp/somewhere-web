@@ -27,8 +27,8 @@
 .notice-back:hover {
   color: var(--primary);
 }
-.notice-back .material-icons-round {
-  font-size: 20px;
+.notice-back svg {
+  flex: none;
 }
 .notice-page-title {
   padding-left: 20px;
@@ -148,6 +148,6 @@
   font-weight: 600;
   color: var(--primary);
 }
-.notice-detail__link .material-icons-round {
-  font-size: 18px;
+.notice-detail__link svg {
+  flex: none;
 }
