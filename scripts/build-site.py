@@ -24,7 +24,7 @@ LEGAL_ROUTES = {lang: {"privacy.html": "/privacy", "terms.html": "/terms"} for l
 # Hand-written feature pages: features/<slug>/<lang>.html holds the localized <title>, description
 # and <main>, wrapped in features/_shell.html and served at feature_path(slug, lang).
 # Each date is the page's last content change and becomes its sitemap lastmod.
-FEATURE_PAGES = {"expense": "2026-10-27", "map": "2026-10-21", "together": "2026-10-21", "ai": "2026-10-21"}
+FEATURE_PAGES = {"expense": "2026-10-29", "map": "2026-10-29", "together": "2026-10-21", "ai": "2026-10-21"}
 FEATURE_LANGUAGES = ["ko", "en", "ja", "zh-CN", "zh-TW", "fr", "de", "es"]
 # Legal shells: page -> (fragment folder, page language, script listing its versions).
 # Each fragment's file name is its effective date. The build embeds the version in
@@ -225,6 +225,15 @@ def validate_resources(output):
         check_css(source, source.read_text())
 
 
+def store_listings(config):
+    """Store pages without campaign parameters, so search engines tie the app to its listings."""
+    apple = re.search(r"/id(\d+)", config["APP_STORE_URL"])
+    play = re.search(r"[?&]id=([\w.]+)", config["PLAY_STORE_URL"])
+    assert apple and play, "Store URLs must carry the app ids"
+    return ["https://apps.apple.com/app/id" + apple[1],
+            "https://play.google.com/store/apps/details?id=" + play[1]]
+
+
 def landing(source, lang, data):
     document = Document(source)
     dictionary = data["translations"][lang]
@@ -235,7 +244,8 @@ def landing(source, lang, data):
         return dictionary.get(key, english.get(key))
 
     url = ORIGIN + home_path(lang)
-    title = "Somewhere — " + translate("hero.title.2")
+    # The search title names the main features; the visible h1 keeps the short hero.title.2.
+    title = "Somewhere — " + translate("seo.title")
     description = text(translate("hero.lead"))
     schema = {
         "@context": "https://schema.org", "@graph": [
@@ -250,7 +260,8 @@ def landing(source, lang, data):
              "operatingSystem": "iOS, Android", "applicationCategory": "TravelApplication", "url": ORIGIN + "/",
              "description": description, "publisher": {"@id": ORIGIN + "/#organization"},
              "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
-             "downloadUrl": [data["config"]["APP_STORE_URL"], data["config"]["PLAY_STORE_URL"]]}
+             "downloadUrl": [data["config"]["APP_STORE_URL"], data["config"]["PLAY_STORE_URL"]],
+             "sameAs": store_listings(data["config"])}
         ]}
     head = None
     for node in document.elements():
@@ -651,7 +662,7 @@ def main():
     in_force = embed_legal(output, build_day())
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
-    entries = [(ORIGIN + home_path(lang), "2026-10-27") for lang in data["languages"]]
+    entries = [(ORIGIN + home_path(lang), "2026-10-29") for lang in data["languages"]]
     # Legal pages change content on the effective date of their version in force.
     entries += [(ORIGIN + "/" + page, date) for page, date in in_force.items()]
     entries += [(ORIGIN + "/ja/commercial-transactions.html", "2026-09-28")]

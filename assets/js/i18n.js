@@ -40,6 +40,7 @@ const I18N = {
     "hero.eyebrow": "Somewhere 여행 계획 앱",
     "hero.title.1": "Somewhere",
     "hero.title.2": "여행 계획 앱",
+    "seo.title": "여행 일정·동선 지도·경비 정산 앱",
     "hero.lead":
       "나만의 여행 계획을 손쉽게 세워보세요. 여행 계획부터 지도 동선 확인, 소비 내역 기록 및 정산까지 여행 준비에 필요한 흐름을 한 곳에 모아드려요.",
     "hero.note": "App Store · Google Play 무료 다운로드",
@@ -66,7 +67,9 @@ const I18N = {
     "feature.expense.desc":
       "여행의 소비 내역을 기록하고, 정산 기능으로 친구에게 얼마를 보낼지 손쉽게 확인하세요",
     "feature.expense.alt": "여행 소비 지출 내역 및 정산 화면",
-    "feature.more": "자세히 알아보기",
+    "feature.more.map": "여행 동선 지도 알아보기",
+    "feature.more.expense": "여행 경비 정산 알아보기",
+    "feature.more.together": "친구와 일정 공유 알아보기",
     "feature.together.kicker": "협업",
     "feature.together.title": "함께 만드는 여행",
     "feature.together.desc":
@@ -175,6 +178,7 @@ const I18N = {
     "hero.eyebrow": "Somewhere Trip Planner App",
     "hero.title.1": "Somewhere",
     "hero.title.2": "Trip Planner App",
+    "seo.title": "Trip Planner with Route Maps & Expense Splitting",
     "hero.lead":
       "Build your own trip without the busywork. Somewhere brings trip planning, route maps, and expense tracking & settlement into one planning flow.",
     "hero.note": "Free on the App Store and Google Play",
@@ -202,7 +206,9 @@ const I18N = {
     "feature.expense.desc":
       "Record your travel spending and easily calculate settlement amounts to send to friends",
     "feature.expense.alt": "Travel expense details and settlement screen",
-    "feature.more": "Learn more",
+    "feature.more.map": "Explore trip route maps",
+    "feature.more.expense": "Explore expense splitting",
+    "feature.more.together": "Explore planning with friends",
     "feature.together.kicker": "Together",
     "feature.together.title": "Plan trips together",
     "feature.together.desc":
@@ -313,6 +319,7 @@ const I18N = {
     "hero.eyebrow": "Somewhere 旅行計画アプリ",
     "hero.title.1": "Somewhere",
     "hero.title.2": "旅行計画アプリ",
+    "seo.title": "旅行計画・ルートマップ・割り勘精算アプリ",
     "hero.lead":
       "面倒な作業なしで、自分だけの旅行を計画できます。Somewhereは、旅行計画からルートマップ、支出の記録と精算まで、旅の準備に必要な流れをひとつにまとめます。",
     "hero.note": "App Store・Google Playで無料ダウンロード",
@@ -339,7 +346,9 @@ const I18N = {
     "feature.expense.desc":
       "旅行中の支出を記録し、友だちに送る金額を精算機能で簡単に確認できます",
     "feature.expense.alt": "旅行の支出明細と精算画面",
-    "feature.more": "詳しく見る",
+    "feature.more.map": "ルートマップを詳しく見る",
+    "feature.more.expense": "割り勘・精算を詳しく見る",
+    "feature.more.together": "友達との予定共有を詳しく見る",
     "feature.together.kicker": "共同作業",
     "feature.together.title": "みんなで作る旅",
     "feature.together.desc":
@@ -447,6 +456,7 @@ const I18N = {
     "hero.eyebrow": "Somewhere 旅行规划应用",
     "hero.title.1": "Somewhere",
     "hero.title.2": "旅行规划应用",
+    "seo.title": "旅行行程规划·路线地图·AA分账应用",
     "hero.lead":
       "轻松制定专属旅行计划。Somewhere 将行程规划、路线地图、消费记录与结算整合在一个流程中。",
     "hero.note": "App Store · Google Play 免费下载",
@@ -470,7 +480,9 @@ const I18N = {
     "feature.expense.title": "支出记录与结算",
     "feature.expense.desc": "记录旅行支出，轻松计算需要发给朋友的结算金额",
     "feature.expense.alt": "旅行支出明细与结算界面",
-    "feature.more": "了解更多",
+    "feature.more.map": "了解路线地图",
+    "feature.more.expense": "了解旅行分账",
+    "feature.more.together": "了解共享行程",
     "feature.together.kicker": "协作",
     "feature.together.title": "一起规划旅行",
     "feature.together.desc": "邀请朋友分享想法，一起准备旅行",
@@ -575,6 +587,7 @@ const I18N = {
     "hero.eyebrow": "Somewhere 旅行規劃應用程式",
     "hero.title.1": "Somewhere",
     "hero.title.2": "旅行規劃應用程式",
+    "seo.title": "旅行行程規劃·路線地圖·分帳 App",
     "hero.lead":
       "輕鬆規劃專屬旅程。Somewhere 將行程規劃、路線地圖、消費記錄與結算整合在一個流程中。",
     "hero.note": "App Store · Google Play 免費下載",
@@ -598,7 +611,9 @@ const I18N = {
     "feature.expense.title": "支出記錄與結算",
     "feature.expense.desc": "記錄旅程支出，輕鬆計算需要傳給朋友的結算金額",
     "feature.expense.alt": "旅程支出明細與結算畫面",
-    "feature.more": "了解更多",
+    "feature.more.map": "了解路線地圖",
+    "feature.more.expense": "了解旅行分帳",
+    "feature.more.together": "了解共享行程",
     "feature.together.kicker": "協作",
     "feature.together.title": "一起規劃旅程",
     "feature.together.desc": "邀請朋友分享想法，一起準備旅程",
@@ -703,6 +718,7 @@ const I18N = {
     "hero.eyebrow": "Application de voyage Somewhere",
     "hero.title.1": "Somewhere",
     "hero.title.2": "Application de voyage",
+    "seo.title": "Planificateur de voyage : itinéraires et dépenses",
     "hero.lead":
       "Créez facilement votre propre voyage. Somewhere réunit la planification, les itinéraires sur carte et le suivi des dépenses avec le partage des frais dans un seul parcours.",
     "hero.note": "Téléchargement gratuit sur l’App Store et Google Play",
@@ -730,7 +746,9 @@ const I18N = {
     "feature.expense.desc":
       "Enregistrez vos dépenses de voyage et calculez facilement les montants à envoyer à vos amis",
     "feature.expense.alt": "Écran des dépenses et du partage des frais",
-    "feature.more": "En savoir plus",
+    "feature.more.map": "Découvrir la carte d’itinéraire",
+    "feature.more.expense": "Découvrir le partage des dépenses",
+    "feature.more.together": "Découvrir la planification entre amis",
     "feature.together.kicker": "Ensemble",
     "feature.together.title": "Planifiez vos voyages ensemble",
     "feature.together.desc":
@@ -840,6 +858,7 @@ const I18N = {
     "hero.eyebrow": "Somewhere Reiseplaner-App",
     "hero.title.1": "Somewhere",
     "hero.title.2": "Reiseplaner-App",
+    "seo.title": "Reiseplaner-App mit Routenkarte & Kostenteilung",
     "hero.lead":
       "Planen Sie Ihre eigene Reise ganz unkompliziert. Somewhere vereint Reiseplanung, Routen auf der Karte sowie Ausgabenaufzeichnung und Abrechnung in einem Ablauf.",
     "hero.note": "Kostenlos im App Store und bei Google Play",
@@ -867,7 +886,9 @@ const I18N = {
     "feature.expense.desc":
       "Erfassen Sie Ihre Reiseausgaben und berechnen Sie einfach, wie viel Sie an Freunde senden müssen",
     "feature.expense.alt": "Ausgaben- und Abrechnungsansicht einer Reise",
-    "feature.more": "Mehr erfahren",
+    "feature.more.map": "Mehr zur Routenkarte",
+    "feature.more.expense": "Mehr zur Kostenabrechnung",
+    "feature.more.together": "Mehr zur gemeinsamen Planung",
     "feature.together.kicker": "Gemeinsam",
     "feature.together.title": "Reisen gemeinsam planen",
     "feature.together.desc":
@@ -977,6 +998,7 @@ const I18N = {
     "hero.eyebrow": "Aplicación de viajes Somewhere",
     "hero.title.1": "Somewhere",
     "hero.title.2": "Aplicación de viajes",
+    "seo.title": "Planificador de viajes con mapa de rutas y gastos",
     "hero.lead":
       "Crea tu propio viaje sin complicaciones. Somewhere reúne la planificación, las rutas en el mapa y el registro y reparto de gastos en un solo flujo.",
     "hero.note": "Descarga gratis en App Store y Google Play",
@@ -1004,7 +1026,9 @@ const I18N = {
     "feature.expense.desc":
       "Registra tus gastos de viaje y calcula fácilmente cuánto enviar a tus amigos",
     "feature.expense.alt": "Pantalla de gastos y reparto de un viaje",
-    "feature.more": "Más información",
+    "feature.more.map": "Descubre el mapa de rutas",
+    "feature.more.expense": "Descubre cómo dividir gastos",
+    "feature.more.together": "Descubre la planificación en grupo",
     "feature.together.kicker": "Juntos",
     "feature.together.title": "Planifiquen viajes juntos",
     "feature.together.desc":
@@ -1156,7 +1180,7 @@ function updateDocumentTitle(lang) {
     return;
   }
   if (document.documentElement.hasAttribute("data-page-lang") || path.endsWith("/index.html") || path === "/") {
-    document.title = `Somewhere — ${getString("hero.title.2", lang)}`;
+    document.title = `Somewhere — ${getString("seo.title", lang)}`;
   }
 }
 
