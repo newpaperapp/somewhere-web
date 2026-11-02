@@ -419,9 +419,19 @@ def whats_new(output, data):
     """Render whats-new/releases.json into the page so crawlers and no-JS readers get the cards.
 
     Korean is the default text; each note carries every translation for the page script.
-    Returns the newest release date (YYYY-MM-DD) for the sitemap.
+    A release dated after the build day in Korea stays out of the page and the published JSON
+    until the daily scheduled deploy on its date. Returns the newest release date (YYYY-MM-DD)
+    for the sitemap.
     """
+    today = build_day()
     releases = json.loads((ROOT / "whats-new/releases.json").read_text())["releases"]
+    for release in releases:
+        # Dates compare as text, so a missing zero would publish on the wrong day.
+        assert re.fullmatch(r"\d{4}\.\d{2}\.\d{2}", release["date"]), \
+            f"whats-new/releases.json v{release['version']} date must be YYYY.MM.DD: {release['date']}"
+    releases = [release for release in releases if release["date"].replace(".", "-") <= today]
+    (output / "whats-new/releases.json").write_text(
+        json.dumps({"releases": releases}, ensure_ascii=False, indent=2) + "\n")
     ko = data["translations"]["ko"]
     cards = []
     for index, release in enumerate(releases):
@@ -439,8 +449,7 @@ def whats_new(output, data):
     if not cards:
         cards.append(f'<p class="news-status" data-i18n="whatsNew.empty">{html.escape(ko["whatsNew.empty"])}</p>')
     fill_placeholder(output / "whats-new/index.html", "<!-- whats-new:releases -->", "".join(cards))
-    dates = [release["date"] for release in releases if release["date"].count(".") == 2]
-    return dates[0].replace(".", "-") if dates else None
+    return releases[0]["date"].replace(".", "-") if releases else None
 
 
 def notice_body(blocks):
