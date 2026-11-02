@@ -3,146 +3,146 @@
     {
       "source": "1-apple-de-trips.png",
       "output": "assets/img/screens/1-apple-de-trips.webp",
-      "before": 1633549,
-      "after": 212972
+      "before": 1631754,
+      "after": 212238
     },
     {
       "source": "1-apple-en-trips.png",
       "output": "assets/img/screens/1-apple-en-trips.webp",
-      "before": 1627930,
-      "after": 208424
+      "before": 1626028,
+      "after": 208334
     },
     {
       "source": "1-apple-es-trips.png",
       "output": "assets/img/screens/1-apple-es-trips.webp",
-      "before": 1636645,
-      "after": 212322
+      "before": 1635048,
+      "after": 212224
     },
     {
       "source": "1-apple-fr-trips.png",
       "output": "assets/img/screens/1-apple-fr-trips.webp",
-      "before": 1640497,
-      "after": 214322
+      "before": 1639029,
+      "after": 214030
     },
     {
       "source": "1-apple-ja-trips.png",
       "output": "assets/img/screens/1-apple-ja-trips.webp",
-      "before": 1634747,
-      "after": 213014
+      "before": 1630377,
+      "after": 211550
     },
     {
       "source": "1-apple-ko-trips.png",
       "output": "assets/img/screens/1-apple-ko-trips.webp",
-      "before": 1628904,
-      "after": 209996
+      "before": 1627017,
+      "after": 209816
     },
     {
       "source": "1-apple-zh-cn-trips.png",
       "output": "assets/img/screens/1-apple-zh-cn-trips.webp",
-      "before": 1637243,
-      "after": 213614
+      "before": 1633378,
+      "after": 211736
     },
     {
       "source": "1-apple-zh-tw-trips.png",
       "output": "assets/img/screens/1-apple-zh-tw-trips.webp",
-      "before": 1637837,
-      "after": 213738
+      "before": 1634711,
+      "after": 213114
     },
     {
       "source": "2-android-de-tripmap.png",
       "output": "assets/img/screens/2-android-de-tripmap.webp",
-      "before": 557809,
-      "after": 124476
+      "before": 551021,
+      "after": 122358
     },
     {
       "source": "2-android-en-tripmap.png",
       "output": "assets/img/screens/2-android-en-tripmap.webp",
-      "before": 560123,
-      "after": 124634
+      "before": 552997,
+      "after": 122522
     },
     {
       "source": "2-android-es-tripmap.png",
       "output": "assets/img/screens/2-android-es-tripmap.webp",
-      "before": 559455,
-      "after": 124486
+      "before": 551961,
+      "after": 122416
     },
     {
       "source": "2-android-fr-tripmap.png",
       "output": "assets/img/screens/2-android-fr-tripmap.webp",
-      "before": 550674,
-      "after": 122548
+      "before": 549049,
+      "after": 121814
     },
     {
       "source": "2-android-ja-tripmap.png",
       "output": "assets/img/screens/2-android-ja-tripmap.webp",
-      "before": 551216,
-      "after": 123094
+      "before": 542813,
+      "after": 120856
     },
     {
       "source": "2-android-ko-tripmap.png",
       "output": "assets/img/screens/2-android-ko-tripmap.webp",
-      "before": 517330,
-      "after": 114830
+      "before": 513804,
+      "after": 114004
     },
     {
       "source": "2-android-zh-cn-tripmap.png",
       "output": "assets/img/screens/2-android-zh-cn-tripmap.webp",
-      "before": 565000,
-      "after": 126340
+      "before": 555813,
+      "after": 124178
     },
     {
       "source": "2-android-zh-tw-tripmap.png",
       "output": "assets/img/screens/2-android-zh-tw-tripmap.webp",
-      "before": 561867,
-      "after": 125956
+      "before": 558809,
+      "after": 125290
     },
     {
       "source": "3-apple-de-tablet-tripmap.png",
       "output": "assets/img/screens/3-apple-de-tablet-tripmap.webp",
-      "before": 854613,
-      "after": 174550
+      "before": 855234,
+      "after": 175012
     },
     {
       "source": "3-apple-en-tablet-tripmap.png",
       "output": "assets/img/screens/3-apple-en-tablet-tripmap.webp",
-      "before": 856120,
-      "after": 174788
+      "before": 856936,
+      "after": 175182
     },
     {
       "source": "3-apple-es-tablet-tripmap.png",
       "output": "assets/img/screens/3-apple-es-tablet-tripmap.webp",
-      "before": 854074,
-      "after": 174492
+      "before": 854524,
+      "after": 174808
     },
     {
       "source": "3-apple-fr-tablet-tripmap.png",
       "output": "assets/img/screens/3-apple-fr-tablet-tripmap.webp",
-      "before": 851810,
-      "after": 174036
+      "before": 852329,
+      "after": 174686
     },
     {
       "source": "3-apple-ja-tablet-tripmap.png",
       "output": "assets/img/screens/3-apple-ja-tablet-tripmap.webp",
-      "before": 847131,
-      "after": 173014
+      "before": 846071,
+      "after": 172912
     },
     {
       "source": "3-apple-ko-tablet-tripmap.png",
       "output": "assets/img/screens/3-apple-ko-tablet-tripmap.webp",
-      "before": 783238,
-      "after": 160586
+      "before": 782660,
+      "after": 160760
     },
     {
       "source": "3-apple-zh-cn-tablet-tripmap.png",
       "output": "assets/img/screens/3-apple-zh-cn-tablet-tripmap.webp",
-      "before": 858334,
-      "after": 175276
+      "before": 857286,
+      "after": 175596
     },
     {
       "source": "3-apple-zh-tw-tablet-tripmap.png",
       "output": "assets/img/screens/3-apple-zh-tw-tablet-tripmap.webp",
-      "before": 860445,
-      "after": 176318
+      "before": 859718,
+      "after": 176502
     },
     {
       "source": "4-apple-de-live-activities-dynamic-island.png",
@@ -243,146 +243,146 @@
     {
       "source": "6-apple-de-expense.png",
       "output": "assets/img/screens/6-apple-de-expense.webp",
-      "before": 446604,
-      "after": 108180
+      "before": 449633,
+      "after": 108926
     },
     {
       "source": "6-apple-en-expense.png",
       "output": "assets/img/screens/6-apple-en-expense.webp",
-      "before": 445551,
-      "after": 107832
+      "before": 445874,
+      "after": 108324
     },
     {
       "source": "6-apple-es-expense.png",
       "output": "assets/img/screens/6-apple-es-expense.webp",
-      "before": 452821,
-      "after": 111436
+      "before": 444255,
+      "after": 106500
     },
     {
       "source": "6-apple-fr-expense.png",
       "output": "assets/img/screens/6-apple-fr-expense.webp",
-      "before": 458308,
-      "after": 113472
+      "before": 447611,
+      "after": 107924
     },
     {
       "source": "6-apple-ja-expense.png",
       "output": "assets/img/screens/6-apple-ja-expense.webp",
-      "before": 435832,
-      "after": 103370
+      "before": 435452,
+      "after": 103462
     },
     {
       "source": "6-apple-ko-expense.png",
       "output": "assets/img/screens/6-apple-ko-expense.webp",
-      "before": 408691,
-      "after": 96496
+      "before": 408406,
+      "after": 96878
     },
     {
       "source": "6-apple-zh-cn-expense.png",
       "output": "assets/img/screens/6-apple-zh-cn-expense.webp",
-      "before": 425751,
-      "after": 100008
+      "before": 428005,
+      "after": 101540
     },
     {
       "source": "6-apple-zh-tw-expense.png",
       "output": "assets/img/screens/6-apple-zh-tw-expense.webp",
-      "before": 427971,
-      "after": 101180
+      "before": 429240,
+      "after": 102182
     },
     {
       "source": "7-apple-de-tripmates.png",
       "output": "assets/img/screens/7-apple-de-tripmates.webp",
-      "before": 423897,
-      "after": 79162
+      "before": 426774,
+      "after": 80194
     },
     {
       "source": "7-apple-en-tripmates.png",
       "output": "assets/img/screens/7-apple-en-tripmates.webp",
-      "before": 412614,
-      "after": 74950
+      "before": 412124,
+      "after": 74686
     },
     {
       "source": "7-apple-es-tripmates.png",
       "output": "assets/img/screens/7-apple-es-tripmates.webp",
-      "before": 426363,
-      "after": 80058
+      "before": 426524,
+      "after": 80492
     },
     {
       "source": "7-apple-fr-tripmates.png",
       "output": "assets/img/screens/7-apple-fr-tripmates.webp",
-      "before": 427763,
-      "after": 80518
+      "before": 426816,
+      "after": 80500
     },
     {
       "source": "7-apple-ja-tripmates.png",
       "output": "assets/img/screens/7-apple-ja-tripmates.webp",
-      "before": 414518,
-      "after": 76842
+      "before": 422685,
+      "after": 78516
     },
     {
       "source": "7-apple-ko-tripmates.png",
       "output": "assets/img/screens/7-apple-ko-tripmates.webp",
-      "before": 402568,
-      "after": 71106
+      "before": 402704,
+      "after": 71236
     },
     {
       "source": "7-apple-zh-cn-tripmates.png",
       "output": "assets/img/screens/7-apple-zh-cn-tripmates.webp",
-      "before": 420122,
-      "after": 77958
+      "before": 417413,
+      "after": 77648
     },
     {
       "source": "7-apple-zh-tw-tripmates.png",
       "output": "assets/img/screens/7-apple-zh-tw-tripmates.webp",
-      "before": 421345,
-      "after": 78212
+      "before": 418763,
+      "after": 77214
     },
     {
       "source": "8-android-de-foldable-trip.png",
       "output": "assets/img/screens/8-android-de-foldable-trip.webp",
-      "before": 761809,
-      "after": 166098
+      "before": 766374,
+      "after": 167744
     },
     {
       "source": "8-android-en-foldable-trip.png",
       "output": "assets/img/screens/8-android-en-foldable-trip.webp",
-      "before": 735932,
-      "after": 155292
+      "before": 735260,
+      "after": 155752
     },
     {
       "source": "8-android-es-foldable-trip.png",
       "output": "assets/img/screens/8-android-es-foldable-trip.webp",
-      "before": 748514,
-      "after": 160734
+      "before": 748023,
+      "after": 160654
     },
     {
       "source": "8-android-fr-foldable-trip.png",
       "output": "assets/img/screens/8-android-fr-foldable-trip.webp",
-      "before": 759317,
-      "after": 165298
+      "before": 759420,
+      "after": 165338
     },
     {
       "source": "8-android-ja-foldable-trip.png",
       "output": "assets/img/screens/8-android-ja-foldable-trip.webp",
-      "before": 746825,
-      "after": 159254
+      "before": 740470,
+      "after": 156962
     },
     {
       "source": "8-android-ko-foldable-trip.png",
       "output": "assets/img/screens/8-android-ko-foldable-trip.webp",
-      "before": 701871,
-      "after": 146512
+      "before": 701297,
+      "after": 146480
     },
     {
       "source": "8-android-zh-cn-foldable-trip.png",
       "output": "assets/img/screens/8-android-zh-cn-foldable-trip.webp",
-      "before": 738488,
-      "after": 157162
+      "before": 730038,
+      "after": 154180
     },
     {
       "source": "8-android-zh-tw-foldable-trip.png",
       "output": "assets/img/screens/8-android-zh-tw-foldable-trip.webp",
-      "before": 743471,
-      "after": 159498
+      "before": 734946,
+      "after": 156496
     }
   ],
   "font": {
