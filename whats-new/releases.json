@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "version": "4.2.0",
+      "date": "2026.11.03",
+      "items": [
+        {
+          "ko": "내 여행 통계에 여행으로 얻는 배지 추가",
+          "en": "Adds badges to My trip stats that you earn from your trips",
+          "ja": "マイ旅行統計に旅行で獲得できるバッジを追加",
+          "zh-CN": "我的旅行统计新增徽章，旅行即可获得",
+          "zh-TW": "我的旅行統計新增徽章，旅行即可獲得",
+          "fr": "Ajout de badges dans Mes statistiques de voyage, à gagner au fil de vos voyages",
+          "de": "Fügt Abzeichen in Meine Reisestatistiken hinzu, die du mit deinen Reisen verdienst",
+          "es": "Añade insignias en Mis estadísticas de viaje que ganas con tus viajes"
+        },
+        {
+          "ko": "일정 자동 펼치기 설정과 새로운 휠 시간 선택기 추가",
+          "en": "Adds Auto-expand items and a new wheel time picker",
+          "ja": "予定の自動展開設定と新しいホイール式の時刻選択を追加",
+          "zh-CN": "新增自动展开行程设置和全新的滚轮时间选择器",
+          "zh-TW": "新增自動展開行程設定與全新的滾輪時間選擇器",
+          "fr": "Ajout de Développer les étapes automatiquement et d’un nouveau sélecteur d’heure à molette",
+          "de": "Fügt Einträge automatisch ausklappen und eine neue Uhrzeitauswahl mit Rädern hinzu",
+          "es": "Añade Expandir elementos automáticamente y un nuevo selector de hora con rueda"
+        }
+      ]
+    },
+    {
       "version": "4.1.0",
       "date": "2026.10.27",
       "items": [
