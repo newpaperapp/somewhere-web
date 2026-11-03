@@ -37,9 +37,9 @@ const I18N = {
     "store.qr": "QR 코드로 이동",
     "theme.toggle": "테마 전환",
 
-    "hero.eyebrow": "Somewhere 여행 계획 앱",
+    "hero.eyebrow": "Somewhere AI 여행 계획 앱",
     "hero.title.1": "Somewhere",
-    "hero.title.2": "여행 계획 앱",
+    "hero.title.2": "AI 여행 계획 앱",
     "seo.title": "여행 일정·동선 지도·경비 정산 앱",
     "hero.lead":
       "나만의 여행 계획을 손쉽게 세워보세요. 여행 계획부터 지도 동선 확인, 소비 내역 기록 및 정산까지 여행 준비에 필요한 흐름을 한 곳에 모아드려요.",
@@ -175,9 +175,9 @@ const I18N = {
     "store.qr": "Go to QR code",
     "theme.toggle": "Toggle theme",
 
-    "hero.eyebrow": "Somewhere Trip Planner App",
+    "hero.eyebrow": "Somewhere AI Trip Planner App",
     "hero.title.1": "Somewhere",
-    "hero.title.2": "Trip Planner App",
+    "hero.title.2": "AI Trip Planner App",
     "seo.title": "Trip Planner with Route Maps & Expense Splitting",
     "hero.lead":
       "Build your own trip without the busywork. Somewhere brings trip planning, route maps, and expense tracking & settlement into one planning flow.",
@@ -316,9 +316,9 @@ const I18N = {
     "store.qr": "QRコードへ移動",
     "theme.toggle": "テーマを切り替え",
 
-    "hero.eyebrow": "Somewhere 旅行計画アプリ",
+    "hero.eyebrow": "Somewhere AI旅行計画アプリ",
     "hero.title.1": "Somewhere",
-    "hero.title.2": "旅行計画アプリ",
+    "hero.title.2": "AI旅行計画アプリ",
     "seo.title": "旅行計画・ルートマップ・割り勘精算アプリ",
     "hero.lead":
       "面倒な作業なしで、自分だけの旅行を計画できます。Somewhereは、旅行計画からルートマップ、支出の記録と精算まで、旅の準備に必要な流れをひとつにまとめます。",
@@ -453,9 +453,9 @@ const I18N = {
     "store.qr": "前往二维码",
     "theme.toggle": "切换主题",
 
-    "hero.eyebrow": "Somewhere 旅行规划应用",
+    "hero.eyebrow": "Somewhere AI旅行规划应用",
     "hero.title.1": "Somewhere",
-    "hero.title.2": "旅行规划应用",
+    "hero.title.2": "AI旅行规划应用",
     "seo.title": "旅行行程规划·路线地图·AA分账应用",
     "hero.lead":
       "轻松制定专属旅行计划。Somewhere 将行程规划、路线地图、消费记录与结算整合在一个流程中。",
@@ -584,9 +584,9 @@ const I18N = {
     "store.qr": "前往QR碼",
     "theme.toggle": "切換主題",
 
-    "hero.eyebrow": "Somewhere 旅行規劃應用程式",
+    "hero.eyebrow": "Somewhere AI旅行規劃應用程式",
     "hero.title.1": "Somewhere",
-    "hero.title.2": "旅行規劃應用程式",
+    "hero.title.2": "AI旅行規劃應用程式",
     "seo.title": "旅行行程規劃·路線地圖·分帳 App",
     "hero.lead":
       "輕鬆規劃專屬旅程。Somewhere 將行程規劃、路線地圖、消費記錄與結算整合在一個流程中。",
@@ -715,9 +715,9 @@ const I18N = {
     "store.qr": "Accéder au code QR",
     "theme.toggle": "Changer de thème",
 
-    "hero.eyebrow": "Application de voyage Somewhere",
+    "hero.eyebrow": "Application de voyage IA Somewhere",
     "hero.title.1": "Somewhere",
-    "hero.title.2": "Application de voyage",
+    "hero.title.2": "Application de voyage IA",
     "seo.title": "Planificateur de voyage : itinéraires et dépenses",
     "hero.lead":
       "Créez facilement votre propre voyage. Somewhere réunit la planification, les itinéraires sur carte et le suivi des dépenses avec le partage des frais dans un seul parcours.",
@@ -855,9 +855,9 @@ const I18N = {
     "store.qr": "Zum QR-Code springen",
     "theme.toggle": "Darstellung wechseln",
 
-    "hero.eyebrow": "Somewhere Reiseplaner-App",
+    "hero.eyebrow": "Somewhere KI-Reiseplaner-App",
     "hero.title.1": "Somewhere",
-    "hero.title.2": "Reiseplaner-App",
+    "hero.title.2": "KI-Reiseplaner-App",
     "seo.title": "Reiseplaner-App mit Routenkarte & Kostenteilung",
     "hero.lead":
       "Planen Sie Ihre eigene Reise ganz unkompliziert. Somewhere vereint Reiseplanung, Routen auf der Karte sowie Ausgabenaufzeichnung und Abrechnung in einem Ablauf.",
@@ -995,9 +995,9 @@ const I18N = {
     "store.qr": "Ir al código QR",
     "theme.toggle": "Cambiar tema",
 
-    "hero.eyebrow": "Aplicación de viajes Somewhere",
+    "hero.eyebrow": "Aplicación de viajes con IA Somewhere",
     "hero.title.1": "Somewhere",
-    "hero.title.2": "Aplicación de viajes",
+    "hero.title.2": "Aplicación de viajes con IA",
     "seo.title": "Planificador de viajes con mapa de rutas y gastos",
     "hero.lead":
       "Crea tu propio viaje sin complicaciones. Somewhere reúne la planificación, las rutas en el mapa y el registro y reparto de gastos en un solo flujo.",
