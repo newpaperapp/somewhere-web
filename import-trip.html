@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>트리플 여행, 지출 내역 Somewhere로 가져오기 — Somewhere</title>
+    <meta name="robots" content="noindex" />
+    <title>트리플 가져오기 종료 안내 — Somewhere</title>
     <meta
       name="description"
-      content="트리플 여행 일정과 지출 내역을 Somewhere로 간편하게 가져오는 방법 안내 / Learn how to easily import Triple trip itineraries and expense records into Somewhere"
+      content="트리플이 NOL로 통합되면서 트리플 여행과 지출 내역 가져오기를 더 이상 지원하지 않아요 / Importing Triple trips and expense records is no longer supported"
     />
     <meta name="theme-color" content="#f5f5f5" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -22,10 +23,10 @@
     <meta property="og:site_name" content="Somewhere" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://npsomewhere.com/import-trip" />
-    <meta property="og:title" content="트리플 여행, 지출 내역 Somewhere로 가져오기 — Somewhere" />
+    <meta property="og:title" content="트리플 가져오기 종료 안내 — Somewhere" />
     <meta
       property="og:description"
-      content="트리플 여행 일정과 지출 내역을 Somewhere로 간편하게 가져오는 방법 안내 / Learn how to easily import Triple trip itineraries and expense records into Somewhere"
+      content="트리플이 NOL로 통합되면서 트리플 여행과 지출 내역 가져오기를 더 이상 지원하지 않아요 / Importing Triple trips and expense records is no longer supported"
     />
     <meta property="og:image" content="https://npsomewhere.com/assets/img/og-image.jpg" />
     <meta property="og:locale" content="ko_KR" />
@@ -33,10 +34,10 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="트리플 여행, 지출 내역 Somewhere로 가져오기 — Somewhere" />
+    <meta name="twitter:title" content="트리플 가져오기 종료 안내 — Somewhere" />
     <meta
       name="twitter:description"
-      content="트리플 여행 일정과 지출 내역을 Somewhere로 간편하게 가져오는 방법 안내 / Learn how to easily import Triple trip itineraries and expense records into Somewhere"
+      content="트리플이 NOL로 통합되면서 트리플 여행과 지출 내역 가져오기를 더 이상 지원하지 않아요 / Importing Triple trips and expense records is no longer supported"
     />
     <meta name="twitter:image" content="https://npsomewhere.com/assets/img/og-image.jpg" />
 
@@ -89,49 +90,11 @@
         line-height: 1.35;
         word-break: keep-all;
       }
-      .guide-intro-notice {
-        margin: 0 0 40px;
-        padding-left: 20px;
+      .guide-body p {
+        margin: 0 0 16px;
         font-size: 15px;
         line-height: 1.6;
         color: var(--on-surface);
-        word-break: keep-all;
-      }
-      .guide-intro-notice li + li {
-        margin-top: 6px;
-      }
-      .guide-section {
-        margin-top: 92px;
-      }
-      .guide-section:first-of-type {
-        margin-top: 0;
-      }
-      .guide-section-title {
-        font-size: 20px;
-        font-weight: 700;
-        margin: 0 0 20px;
-        padding-left: 16px;
-        color: var(--on-surface);
-        letter-spacing: -0.01em;
-        line-height: 1.4;
-      }
-      .guide-images {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-      }
-      .guide-images img {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        display: block;
-      }
-      .guide-tip {
-        margin: 14px 0 0;
-        padding-left: 16px;
-        font-size: 14px;
-        line-height: 1.6;
-        color: var(--on-surface-variant);
         word-break: keep-all;
       }
     </style>
@@ -140,8 +103,8 @@
     <main class="guide-main">
       <div class="guide-top-nav">
         <h1 class="guide-title">
-          <span class="lang-ko">트리플 여행, 지출 내역<br />Somewhere로 가져오기</span>
-          <span class="lang-en">Import Triple Trips &amp; Expenses<br />to Somewhere</span>
+          <span class="lang-ko">트리플 가져오기 종료 안내</span>
+          <span class="lang-en">Triple Import Has Ended</span>
         </h1>
         <label class="language-picker">
           <svg class="language-picker__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" /></svg>
@@ -154,106 +117,16 @@
         </label>
       </div>
 
-      <ul class="guide-intro-notice">
-        <li>
-          <span class="lang-ko">각 여행마다 [여행]과 [지출 내역]을 하나씩 가져와야 해요</span>
-          <span class="lang-en">For each trip, import the trip and expense records separately</span>
-        </li>
-        <li>
-          <span class="lang-ko">[여행]을 먼저 가져오고 [지출 내역]을 그다음에 가져와야 해요</span>
-          <span class="lang-en">Import the trip first, then import the expense records</span>
-        </li>
-      </ul>
-
-      <section class="guide-section">
-        <h2 class="guide-section-title">
-          <span class="lang-ko">여행 가져오기</span>
-          <span class="lang-en">Import Trip</span>
-        </h2>
-        <div class="guide-images">
-          <img
-            src="assets/img/guide/triple/import-trip-1.png"
-            alt="트리플 여행 화면 상단 공유 아이콘 선택"
-            data-alt-ko="트리플 여행 화면 상단 공유 아이콘 선택"
-            data-alt-en="Tap the share icon at the top of the Triple trip screen"
-            width="1180"
-            height="438"
-          />
-          <img
-            src="assets/img/guide/triple/import-trip-2.png"
-            alt="일정 링크 공유하기 (보기전용) 선택"
-            data-alt-ko="일정 링크 공유하기 (보기전용) 선택"
-            data-alt-en="Select 'Share itinerary link (View-only)'"
-            width="1180"
-            height="566"
-          />
-          <img
-            src="assets/img/guide/triple/import-trip-3.png"
-            alt="더보기 선택"
-            data-alt-ko="더보기 선택"
-            data-alt-en="Select 'More'"
-            width="1180"
-            height="652"
-          />
-          <img
-            src="assets/img/guide/triple/import-trip-4.png"
-            alt="공유 시트에서 Somewhere 앱 선택"
-            data-alt-ko="공유 시트에서 Somewhere 앱 선택"
-            data-alt-en="Select Somewhere in the share sheet"
-            width="1188"
-            height="1145"
-          />
-        </div>
-        <p class="guide-tip">
-          <span class="lang-ko">안보일 경우 맨 오른쪽에 있는 ‘더 보기’ 선택 후 ’Somewhere 앱’ 선택</span>
-          <span class="lang-en">If you don't see it, tap 'More' on the far right and select Somewhere</span>
+      <div class="guide-body">
+        <p>
+          <span class="lang-ko">트리플이 NOL로 통합되면서 트리플 여행과 지출 내역 가져오기를 더 이상 지원하지 않아요.</span>
+          <span class="lang-en">Triple has merged into NOL, so importing Triple trips and expense records is no longer supported.</span>
         </p>
-      </section>
-
-      <section class="guide-section">
-        <h2 class="guide-section-title">
-          <span class="lang-ko">지출 내역 가져오기</span>
-          <span class="lang-en">Import Expense Records</span>
-        </h2>
-        <div class="guide-images">
-          <img
-            src="assets/img/guide/triple/import-expense-1.png"
-            alt="가계부 선택"
-            data-alt-ko="가계부 선택"
-            data-alt-en="Select 'Expenses'"
-            width="1180"
-            height="710"
-          />
-          <img
-            src="assets/img/guide/triple/import-expense-2.png"
-            alt="가계부 메뉴 선택"
-            data-alt-ko="가계부 메뉴 선택"
-            data-alt-en="Select expense menu"
-            width="1180"
-            height="394"
-          />
-          <img
-            src="assets/img/guide/triple/import-expense-3.png"
-            alt="가계부 내보내기 (CSV) 선택"
-            data-alt-ko="가계부 내보내기 (CSV) 선택"
-            data-alt-en="Select 'Export expenses (CSV)'"
-            width="1180"
-            height="604"
-          />
-          <img
-            src="assets/img/guide/triple/import-expense-4.png"
-            alt="공유 시트에서 Somewhere 앱 선택"
-            data-alt-ko="공유 시트에서 Somewhere 앱 선택"
-            data-alt-en="Select Somewhere in the share sheet"
-            width="1188"
-            height="1145"
-          />
-        </div>
-        <p class="guide-tip">
-          <span class="lang-ko">안보일 경우 맨 오른쪽에 있는 ‘더 보기’ 선택 후 ’Somewhere 앱’ 선택</span>
-          <span class="lang-en">If you don't see it, tap 'More' on the far right and select Somewhere</span>
+        <p>
+          <span class="lang-ko">이미 가져온 여행과 지출 내역은 Somewhere에 그대로 남아 있어요. 그동안 이용해 주셔서 감사드려요.</span>
+          <span class="lang-en">Trips and expenses you've already imported stay in Somewhere. Thank you for using this feature.</span>
         </p>
-      </section>
+      </div>
     </main>
 
     <!-- ===== Footer ===== -->
@@ -315,13 +188,9 @@
             label.textContent = isKo ? "한국어" : "English";
           }
 
-          document.querySelectorAll("img[data-alt-ko][data-alt-en]").forEach((img) => {
-            img.setAttribute("alt", img.getAttribute(`data-alt-${altLang}`));
-          });
-
           document.title = isKo
-            ? "트리플 여행, 지출 내역 Somewhere로 가져오기 — Somewhere"
-            : "Import Triple Trips and Expenses to Somewhere — Somewhere";
+            ? "트리플 가져오기 종료 안내 — Somewhere"
+            : "Triple Import Has Ended — Somewhere";
         }
 
         document.addEventListener("DOMContentLoaded", function () {
