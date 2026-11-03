@@ -96,7 +96,7 @@
           <!-- effective date (left) + past-policy date picker (right) -->
           <div class="legal__head">
             <p class="updated muted">
-              <span data-eff-label>시행일</span>: <span data-eff-date>2026년 10월 28일</span>
+              <span data-eff-label>시행일</span>: <span data-eff-date>2026년 12월 5일</span>
             </p>
             <div class="legal__versions">
               <label class="legal__versions-label" for="policy-version" data-versions-label>버전</label>
@@ -109,7 +109,7 @@
           <div class="legal__loading muted" data-legal-loading>
             <span class="lang-ko">문서를 불러오는 중입니다.</span><span class="lang-en">Loading document.</span>
           </div>
-          <div data-legal-content data-legal-embedded="2026-10-28">
+          <div data-legal-content data-legal-embedded="2026-12-05">
 <!-- legal-body:start -->
 <div class="policy" data-lang="ko">
             <p>
@@ -127,7 +127,6 @@
               <li>회원 가입·계정 관리, 본인 확인, 친구 확인 및 서비스 부정이용 방지</li>
               <li>여행 일정·장소·메모·이미지·지출·정산 정보의 생성·저장·공유 및 협업</li>
               <li>AI 여행 생성, AI 대화·일정 편집, Google Places API를 통한 장소 검색·검증</li>
-              <li>이용자가 요청한 트리플 공유 일정·지출·첨부 이미지 가져오기</li>
               <li>Somewhere Pro 구매·복원·구독 관리, AI 크레딧 지급·차감 및 광고 보상 검증</li>
               <li>서비스 이용 통계 분석, 서비스 개선, 고객 문의·버그 제보·장애·보안 대응</li>
               <li>이용자의 지역·광고 동의·기기 설정에 따른 광고 제공 및 성과 측정</li>
@@ -138,7 +137,6 @@
               <li>계정·프로필: 이메일, Firebase UID 또는 게스트 ID, 이름·닉네임, 프로필 이미지, 로그인 제공자 및 제공자 식별자</li>
               <li>서비스 콘텐츠: 여행 제목·날짜·도시·국가, 장소 이름·주소·ID·좌표, 메모, 동행자·취향, 여행·장소 이미지, 친구 초대·공유 정보, 지출 금액·통화·결제수단·결제자·정산 대상 및 영수증·첨부 이미지</li>
               <li>AI 여행 생성·대화·일정 편집: 입력 메시지, 최근 대화 내용, 여행지·날짜·인원·취향·예산·언어, 현재 편집 중인 여행의 제목·날짜·장소·좌표·메모, AI 답변·일정 수정 제안 및 요청·처리 기록</li>
-              <li>트리플 가져오기: 이용자가 제출한 공유 링크에서 추출한 여행 코드, 언어, 원본 일정·장소·메모·지출·사용자 첨부 이미지, 원본 콘텐츠 해시, 가져오기 상태·결과·오류 기록. 원본 공유 URL 전체는 저장하지 않아요.</li>
               <li>구독·크레딧·광고 보상: RevenueCat 앱 사용자 ID, 구독 상품·스토어·구매·복원·만료·갱신 상태, 구독 관리 URL, 거래·영수증 검증 정보, 크레딧 잔액·주간 기준·지급·차감·광고 보상 내역, 보상 거래 ID·광고 네트워크·광고 단위·처리 시각. 카드번호 등 원 결제정보는 앱 마켓 또는 결제사업자가 처리해요.</li>
               <li>부정이용 방지: UID, 정규화한 이메일의 해시, 가입 보너스 지급·청구 기록, 탈퇴 시각·사유 및 만료 정보</li>
               <li>앱·기기 보안 검증: Firebase App Check 토큰과 Google Play Integrity 또는 Apple App Attest/DeviceCheck의 증명 자료. 앱·기기의 무결성을 확인하고 무단 접근·부정이용을 방지하기 위해 처리해요.</li>
@@ -149,8 +147,7 @@
               <li>Firebase Crashlytics 비정상 종료 진단(앱이 비정상 종료될 때): 비정상 종료 스택 추적, Crashlytics 설치 UUID·Firebase 설치 ID, 기기 모델·운영체제·앱 버전 등 기기 상태 정보, 종료 직전 앱이 남긴 진단 로그(기능 구분·오류 유형 등)와 Google Analytics에 기록된 최근 이용 이벤트. 계정 ID·이메일은 Crashlytics 사용자 식별자로 전송하지 않으며, 진단 로그에는 AI 입력·메모·지출 내용을 넣지 않아요. 다만 일부 오류 로그에는 문서 ID나 파일 경로가 포함될 수 있고, 내보내기 파일 경로에는 여행 제목이 포함될 수 있어요. 비정상 종료 원인 파악과 앱 안정성 개선에 이용해요.</li>
             </ul>
             <p>
-              이용자가 직접 입력·업로드하거나 서비스 이용 중 자동으로 생성되는 정보를 수집해요. 트리플 가져오기는 이용자가 제출한 외부 공유 페이지에서 정보를 읽고,
-              대상 이미지의 사본을 회사의 저장소에 보관해요.
+              이용자가 직접 입력·업로드하거나 서비스 이용 중 자동으로 생성되는 정보를 수집해요.
             </p>
             <p>
               AI 대화·일정 편집에서는 입력 메시지와 최근 대화, 현재 편집 중인 여행·날짜·장소의 제목·좌표·메모 등을 Anthropic에 전송하고, Anthropic이 요청을 처리하지 못하면 같은 정보를 OpenAI에 전송해요. AI 여행 생성 요청도 같은 순서로 전송해요. 편집 요청에 동행자
@@ -195,7 +192,7 @@
 
             <h3>미국 법령상 개인정보 범주</h3>
             <p>
-              위 항목은 미국 법령상 다음 범주에 해당할 수 있어요. 이용자·기기·로그인 및 결제 사업자·이용자가 제출한 외부 공유 페이지에서 정보를 받고,
+              위 항목은 미국 법령상 다음 범주에 해당할 수 있어요. 이용자, 기기, 로그인 및 결제 사업자로부터 정보를 받고,
               제1조의 목적에 사용해요. 범주별 보유기간은 제3조, 제공 대상·목적은 제4조부터 제7조를 확인해 주세요.
             </p>
             <ul>
@@ -221,7 +218,6 @@
               <li>AI 여행 생성 요청 기록(해시된 사용자 식별자·요청 지문·처리 정보): 생성 또는 실패 시점부터 30일</li>
               <li>AI 여행 생성 상태: 계정 삭제 시까지</li>
               <li>AI 대화·일정 편집 요청 및 결과(해시된 식별자·요청 지문·응답·수정 제안·처리 상태): 각 요청의 처리·완료·실패 시점부터 24시간. 기기에서 진행 중인 대화는 해당 대화가 초기화되거나 앱 데이터가 삭제될 때까지 보관될 수 있어요.</li>
-              <li>트리플 가져오기 작업 기록: 작업 생성·최종 처리 시점부터 30일. 가져온 일정·지출·이미지는 일반 여행 데이터와 동일하게 보관해요.</li>
               <li>가입 보너스 중복 수령 방지 기록(UID·이메일 해시·지급/청구 시각): 기록 생성부터 90일. 계정 삭제 시 갱신한 기록은 탈퇴 시점부터 90일 보관해요.</li>
               <li>탈퇴 제한 기록(UID·탈퇴 시각): 탈퇴 시점부터 90일</li>
               <li>광고 보상 검증 기록(UID·거래 ID·광고 네트워크/단위·지급 결과·처리 시각): 보상 처리일부터 90일. 중복 지급·부정이용 검증을 위해 탈퇴 후에도 해당 기간 내에 보관할 수 있어요.</li>
@@ -482,7 +478,7 @@
 
             <h2>제15조 - 개인정보 처리방침의 변경</h2>
             <p>
-              이 개인정보처리방침은 2026년 10월 28일부터 적용돼요. 2026년 10월 28일 개정에서는 앱 비정상 종료 진단에 이용하는 Firebase Crashlytics의 처리 항목·보유기간을 추가하고, Google LLC의 위탁 업무와 국외 이전 항목에 반영했어요. 또한 Android 로그인 오류 보고에 포함될 수 있는 Sentry 로그인 단계 기록을 명시했어요. 변경 시 시행일·주요 변경사항을 본 페이지 또는 서비스 내에서 안내하고, 권리에 중대한 영향을
+              이 개인정보처리방침은 2026년 12월 5일부터 적용돼요. 2026년 12월 5일 개정에서는 트리플 가져오기 기능 종료에 따라 가져오기의 처리 목적·처리 항목·수집 경로와 작업 기록 보유기간을 삭제했어요. 변경 시 시행일·주요 변경사항을 본 페이지 또는 서비스 내에서 안내하고, 권리에 중대한 영향을
               미치는 변경은 개정 전 또는 개정 즉시 알리며 별도 동의가 필요한 경우 동의를 받아요. 이전 방침은 위 「지난 개인정보처리방침」에서 확인할 수 있어요.
             </p>
 
@@ -506,7 +502,6 @@
               <li>Registration, account management, identity and friend verification, and prevention of misuse</li>
               <li>Creating, saving, sharing, and collaborating on trips, places, notes, images, expenses, and settlements</li>
               <li>AI trip generation, AI conversations and itinerary editing, and place search and verification through Google Places API</li>
-              <li>Importing Triple shared itineraries, expenses, and user attachments at your request</li>
               <li>Somewhere Pro purchases, restoration, and subscription management; AI credit awards, deductions, and ad-reward verification</li>
               <li>Usage analytics, Service improvement, customer support, bug reports, and reliability and security response</li>
               <li>Serving and measuring ads according to your region, advertising consent, and device settings</li>
@@ -517,7 +512,6 @@
               <li>Account/profile: email, Firebase UID or guest ID, name/nickname, profile image, sign-in provider, and provider identifier</li>
               <li>Service content: trip titles, dates, cities/countries, place names/addresses/IDs/coordinates, notes, companions/preferences, trip/place images, invitations/sharing, expense amounts/currencies/payment methods/payers/settlement participants, and receipts/attachments</li>
               <li>AI generation/conversations/itinerary editing: messages, recent conversation, destination/dates/party size/preferences/budget/language, titles/dates/places/coordinates/notes in the current trip draft, AI replies/edit proposals, and request/processing records</li>
-              <li>Triple imports: trip code extracted from your shared link, language, source itinerary/places/notes/expenses/user attachments, source-content hash, and import status/results/errors. We do not persist the full source share URL.</li>
               <li>Subscriptions/credits/ad rewards: RevenueCat app user ID, product/store/purchase/restoration/expiration/renewal status, management URL, transaction/receipt verification data, credit balance/week/awards/deductions/ad rewards, reward transaction ID/network/ad unit/processing time. Raw payment details such as card numbers are handled by the app marketplace or payment provider.</li>
               <li>Misuse prevention: UID, hash of normalized email, sign-up bonus awards/claims, and account-deletion time/reason/expiry</li>
               <li>App/device security verification: Firebase App Check tokens and attestation material from Google Play Integrity or Apple App Attest/DeviceCheck. These help verify app/device integrity and prevent unauthorized access and misuse.</li>
@@ -528,9 +522,7 @@
               <li>Firebase Crashlytics crash diagnostics (when the app crashes): crash stack trace, Crashlytics installation UUID and Firebase installation ID, device state such as device model, operating system, and app version, diagnostic logs the app recorded just before the crash (such as feature area and error type), and recent usage events recorded in Google Analytics. Account IDs and email addresses are not sent to Crashlytics as user identifiers, and diagnostic logs do not include AI inputs, notes or expense details. Some error logs may include document IDs or file paths, and an export file path may include a trip title. We use crash reports to find the cause of crashes and improve app stability.</li>
             </ul>
             <p>
-              Information is provided directly by you or generated during use. A Triple import reads
-              the external shared page you submit and stores copies of eligible images in our
-              storage.
+              Information is provided directly by you or generated during use.
             </p>
             <p>
               AI conversations and itinerary editing send your message, recent conversation, and
@@ -593,7 +585,7 @@
             <h3>Categories of personal information under US laws</h3>
             <p>
               The information above may fall into the categories below. Sources include you, your device,
-              sign-in/payment providers, and external shared pages you submit. We use it for the purposes
+              and sign-in/payment providers. We use it for the purposes
               in Section 1. See Section 3 for category-specific retention and Sections 4–7 for recipients
               and disclosure purposes.
             </p>
@@ -624,7 +616,6 @@
               <li>AI trip-generation request records (hashed user identifier, request fingerprint, processing information): 30 days after completion or failure</li>
               <li>AI trip-generation state: until account deletion</li>
               <li>AI conversation/edit request records and results (hashed identifiers, input fingerprint, replies/edit proposals, processing state): 24 hours from the respective processing/completion/failure time. An ongoing on-device conversation may remain until the conversation is reset or app data is cleared.</li>
-              <li>Triple import job records: 30 days from creation/final processing. Imported itineraries, expenses, and images follow the ordinary trip-data period.</li>
               <li>Sign-up bonus duplicate-claim records (UID, email hash, award/claim time): 90 days from creation; records renewed at account deletion are retained for 90 days after deletion</li>
               <li>Account-deletion restriction records (UID, deletion time): 90 days after account deletion</li>
               <li>Ad-reward verification records (UID, transaction ID, network/unit, award result, processing time): 90 days from reward processing, including after account deletion within that period to prevent duplicate or fraudulent rewards</li>
@@ -923,11 +914,9 @@
 
             <h2>15. Changes to This Policy</h2>
             <p>
-              This Privacy Policy is effective October 28, 2026. The October 28, 2026 revision adds
-              the information processed and the retention period for Firebase Crashlytics, which we
-              use to diagnose app crashes, and reflects it in Google LLC’s processing tasks and
-              international transfer items. It also discloses the Sentry sign-in step records that
-              Android sign-in error reports may include. We announce the effective date
+              This Privacy Policy is effective December 5, 2026. The December 5, 2026 revision removes
+              the Triple import purpose, processed information, source, and job-record retention
+              period because the Triple import feature has ended. We announce the effective date
               and material changes on this page or in the Service, notify changes that significantly
               affect your rights before or at amendment, and obtain separate consent where required.
               Earlier policies remain available in the Previous policy selector.
