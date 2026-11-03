@@ -465,9 +465,12 @@ def notices(output, data):
 
     Both come from the frame in notices/_shell.html. Each notice is rendered in each of its
     languages so crawlers and no-JS readers get it; Korean (or English) is visible and the page
-    script shows the reader's language, falling back to English. Returns the (url, YYYY-MM-DD)
-    sitemap entries of the list and notices.
+    script shows the reader's language, falling back to English. A notice dated after the build
+    day in Korea is validated but stays out of the pages, the sitemap and the published JSON until
+    the daily scheduled deploy on its date. Returns the (url, YYYY-MM-DD) sitemap entries of the
+    list and notices.
     """
+    today = build_day()
     entries = json.loads((ROOT / "notices/notices.json").read_text())["notices"]
     assert len({notice["id"] for notice in entries}) == len(entries), "notices.json ids must be unique"
     dates = [notice["date"] for notice in entries]
@@ -482,7 +485,7 @@ def notices(output, data):
         page.parent.mkdir(parents=True, exist_ok=True)
         page.write_text(re.sub(r"\{\{(\w+)\}\}", lambda match: values[match[1]], shell))
 
-    items, sitemap = [], []
+    items, sitemap, published = [], [], []
     for notice in entries:
         nid, link = notice["id"], notice.get("link")
         assert re.fullmatch(r"[a-z0-9-]+", nid), f"Notice id must be a URL path segment: {nid}"
@@ -494,6 +497,9 @@ def notices(output, data):
         # validate_notices() checks that the target exists once every page is built.
         assert not link or (link["href"].startswith("/") and not link["href"].startswith("//")), \
             f"Notice link must be a site path starting with /: {nid}"
+        if notice["date"].replace(".", "-") > today:
+            continue
+        published.append(notice)
         shown = "ko" if "ko" in langs else "en"
         ordered = [lang for lang in data["languages"] if lang in langs]
 
@@ -529,6 +535,8 @@ def notices(output, data):
                     '<path d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /></svg>'
                     f'<span data-i18n="notices.back">{html.escape(ko["notices.back"])}</span></a>')})
         sitemap.append((ORIGIN + path, notice["date"].replace(".", "-")))
+    (output / "notices/notices.json").write_text(
+        json.dumps({"notices": published}, ensure_ascii=False, indent=2) + "\n")
     listing = (f'<ul class="notice-list">{"".join(items)}</ul>' if items else
                f'<p class="notice-status" data-i18n="notices.empty">{html.escape(ko["notices.empty"])}</p>')
     write("/notices/", "ko", {
@@ -600,10 +608,11 @@ def validate_sitemap(output):
 
 
 def validate_notices(output):
-    for page in (output / "notices").glob("*/index.html"):
-        for node in Document(page.read_text()).elements():
-            if node.tag == "a" and node.attrs.get("class") == "notice-detail__link":
-                assert served(output, node.attrs["href"]), f"Broken link in notice {page.parent.name}: {node.attrs['href']}"
+    # Checks every notice in the source, including ones dated after today, so a broken link
+    # fails the pull request build instead of the scheduled deploy on the notice's date.
+    for notice in json.loads((ROOT / "notices/notices.json").read_text())["notices"]:
+        link = notice.get("link")
+        assert not link or served(output, link["href"]), f"Broken link in notice {notice['id']}: {link['href']}"
 
 
 def validate_features(output):
