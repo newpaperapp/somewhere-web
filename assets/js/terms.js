@@ -14,6 +14,13 @@
     },
     versions: [
       {
+        id: "2026-12-05",
+        ko: "2026년 12월 5일",
+        en: "December 5, 2026",
+        path: "assets/legal/terms/2026-12-05.html",
+        langs: ["ko", "en"],
+      },
+      {
         id: "2026-11-30",
         ko: "2026년 11월 30일",
         en: "November 30, 2026",

@@ -1,6 +1,98 @@
 {
   "notices": [
     {
+      "id": "2026-11-legal-update-triple",
+      "date": "2026.11.27",
+      "title": {
+        "ko": "서비스 이용약관·개인정보처리방침 개정 안내 (2026년 12월 5일 시행)",
+        "en": "Updates to the Terms of Service and Privacy Policy, effective December 5, 2026",
+        "ja": "利用規約・プライバシーポリシー改定のお知らせ（2026年12月5日施行）",
+        "zh-CN": "服务条款和隐私政策修订通知（2026年12月5日生效）",
+        "zh-TW": "服務條款與隱私權政策修訂通知（2026年12月5日生效）",
+        "fr": "Modification des Conditions d’utilisation et de la Politique de confidentialité, en vigueur le 5 décembre 2026",
+        "de": "Änderung der Nutzungsbedingungen und der Datenschutzhinweise, gültig ab 5. Dezember 2026",
+        "es": "Cambios en los Términos del servicio y la Política de privacidad, vigentes desde el 5 de diciembre de 2026"
+      },
+      "body": {
+        "ko": [
+          "Somewhere 서비스 이용약관과 개인정보처리방침이 2026년 12월 5일부터 개정돼요. 트리플 가져오기 기능이 종료되어 관련 내용을 삭제해요.",
+          [
+            "서비스 이용약관: 제공 서비스와 외부 콘텐츠 가져오기 조항에서 트리플 가져오기 삭제",
+            "개인정보처리방침: 트리플 가져오기의 처리 목적·처리 항목·수집 경로와 작업 기록 보유기간 삭제"
+          ],
+          "대한민국 이용약관의 2026년 11월 30일 개정 내용은 그대로 유지되고, 이번 개정에서는 트리플 가져오기 관련 내용만 빠져요",
+          "이미 가져온 여행과 지출 내역은 그대로 남아 있어요. 이번 개정으로 새로 수집하는 정보는 없어요.",
+          "동의하지 않으시면 적용일 전까지 탈퇴할 수 있고, 적용일 이후 계속 이용하시면 동의한 것으로 봐요(법령상 명시적 동의가 필요한 사항 제외)"
+        ],
+        "en": [
+          "The Somewhere Terms of Service and Privacy Policy change on December 5, 2026. Because the Triple import feature has ended, we're removing the related content.",
+          [
+            "Terms of Service: Triple import is removed from the description of the Service and the import terms",
+            "Privacy Policy: the Triple import purpose, processed information, source and job-record retention period are removed"
+          ],
+          "The November 30, 2026 changes to the Terms of Service for Korea stay in place; this update only removes the Triple import content",
+          "Trips and expenses you've already imported stay in Somewhere. This update doesn't add any information we collect.",
+          "If you don't agree, you can delete your account before the effective date; if you keep using the Service after it, you'll be deemed to accept the update (except where the law requires your explicit consent)"
+        ],
+        "ja": [
+          "Somewhereの利用規約とプライバシーポリシーを2026年12月5日に改定します。Triple取込機能の終了に伴い、関連する内容を削除します。",
+          [
+            "利用規約：本サービスの内容と取込に関する規定からTriple取込を削除",
+            "プライバシーポリシー：Triple取込の利用目的・取り扱う情報・取得元・処理記録の保存期間を削除"
+          ],
+          "取込済みの旅行と支出はそのまま残ります。今回の改定で新たに取得する情報はありません。",
+          "同意されない場合は施行日までに退会でき、施行日以降もサービスを利用された場合は改定に同意したものとみなします（法令上、明示的な同意が必要な事項を除く）"
+        ],
+        "zh-CN": [
+          "Somewhere 服务条款和隐私政策将于2026年12月5日修订。由于 Triple 导入功能已停止，我们将删除相关内容。",
+          [
+            "服务条款：从服务说明和导入相关条款中删除 Triple 导入",
+            "隐私政策：删除 Triple 导入的处理目的、处理的信息、来源及任务记录保存期限"
+          ],
+          "韩国服务条款于2026年11月30日生效的修订内容保持不变，本次修订仅删除 Triple 导入相关内容",
+          "已导入的行程和支出将继续保留。本次修订不会新增收集任何信息。",
+          "如不同意，可在生效日前注销账号；生效日后继续使用服务即视为同意本次修订（法律要求明确同意的事项除外）"
+        ],
+        "zh-TW": [
+          "Somewhere 服務條款與隱私權政策將於2026年12月5日修訂。由於 Triple 匯入功能已停止，我們將刪除相關內容。",
+          [
+            "服務條款：從服務說明與匯入相關條款中刪除 Triple 匯入",
+            "隱私權政策：刪除 Triple 匯入的處理目的、處理的資訊、來源及工作記錄保存期限"
+          ],
+          "韓國服務條款於2026年11月30日生效的修訂內容維持不變，本次修訂僅刪除 Triple 匯入相關內容",
+          "已匯入的行程與支出會繼續保留。本次修訂不會新增蒐集任何資訊。",
+          "如不同意，可於生效日前刪除帳號；生效日後繼續使用服務即視為同意本次修訂（法律要求明確同意的事項除外）"
+        ],
+        "fr": [
+          "Les Conditions d’utilisation et la Politique de confidentialité de Somewhere changent le 5 décembre 2026. La fonction d’import Triple ayant pris fin, nous supprimons les contenus qui s’y rapportent.",
+          [
+            "Conditions d’utilisation : l’import Triple est retiré de la description du Service et des règles d’import",
+            "Politique de confidentialité : la finalité, les données traitées, la provenance et la durée de conservation des tâches d’import Triple sont supprimées"
+          ],
+          "Les voyages et dépenses déjà importés restent dans Somewhere. Cette modification n’ajoute aucune donnée collectée.",
+          "Si vous n’êtes pas d’accord, vous pouvez supprimer votre compte avant la date d’entrée en vigueur. Si vous continuez à utiliser le Service après cette date, cela vaudra acceptation de la mise à jour, sauf lorsque la loi exige votre consentement explicite."
+        ],
+        "de": [
+          "Die Nutzungsbedingungen und Datenschutzhinweise von Somewhere ändern sich am 5. Dezember 2026. Da die Triple-Importfunktion eingestellt wurde, entfernen wir die zugehörigen Inhalte.",
+          [
+            "Nutzungsbedingungen: Der Triple-Import wird aus der Dienstbeschreibung und den Importregeln entfernt",
+            "Datenschutzhinweise: Zweck, verarbeitete Daten, Herkunft und Speicherdauer der Triple-Importjobs werden entfernt"
+          ],
+          "Bereits importierte Reisen und Ausgaben bleiben in Somewhere erhalten. Mit dieser Änderung erheben wir keine neuen Daten.",
+          "Wenn du nicht einverstanden bist, kannst du dein Konto vor dem Inkrafttreten löschen. Nutzt du den Dienst danach weiter, gilt dies als Zustimmung zur Aktualisierung, außer wenn das Gesetz deine ausdrückliche Zustimmung verlangt."
+        ],
+        "es": [
+          "Los Términos del servicio y la Política de privacidad de Somewhere cambian el 5 de diciembre de 2026. Como la función de importación de Triple ha finalizado, eliminamos el contenido relacionado.",
+          [
+            "Términos del servicio: se elimina la importación de Triple de la descripción del Servicio y de las reglas de importación",
+            "Política de privacidad: se eliminan la finalidad, los datos tratados, el origen y el plazo de conservación de los trabajos de importación de Triple"
+          ],
+          "Los viajes y gastos que ya importaste siguen en Somewhere. Este cambio no añade ningún dato que recopilemos.",
+          "Si no estás de acuerdo, puedes eliminar tu cuenta antes de la fecha de entrada en vigor. Si sigues usando el Servicio después, se considerará que aceptas la actualización, salvo cuando la ley exija tu consentimiento explícito."
+        ]
+      }
+    },
+    {
       "id": "2026-11-triple-import-end",
       "date": "2026.11.03",
       "title": {
