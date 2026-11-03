@@ -1,6 +1,24 @@
 {
   "notices": [
     {
+      "id": "2026-11-triple-import-end",
+      "date": "2026.11.03",
+      "title": {
+        "ko": "트리플 여행·지출 가져오기 종료 안내",
+        "en": "Triple trip and expense import has ended"
+      },
+      "body": {
+        "ko": [
+          "트리플이 NOL로 통합되면서 트리플 여행과 지출 내역 가져오기를 더 이상 지원하지 않아요.",
+          "이미 가져온 여행과 지출 내역은 Somewhere에 그대로 남아 있어요. 그동안 이용해 주셔서 감사드려요."
+        ],
+        "en": [
+          "Triple has merged into NOL, so importing Triple trips and expense records is no longer supported.",
+          "Trips and expenses you've already imported stay in Somewhere. Thank you for using this feature."
+        ]
+      }
+    },
+    {
       "id": "2026-10-terms-update",
       "date": "2026.10.27",
       "title": {
