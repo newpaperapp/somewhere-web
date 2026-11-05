@@ -1,6 +1,22 @@
 {
   "releases": [
     {
+      "version": "4.3.0",
+      "date": "2026.11.05",
+      "items": [
+        {
+          "ko": "다음 여행 계획을 돕는 새 여행 제안 알림 추가",
+          "en": "Adds New trip suggestions to help you plan your next trip",
+          "ja": "次の旅行の計画に役立つ新しい旅行の提案を追加",
+          "zh-CN": "新增新旅行建议，帮你规划下一次旅行",
+          "zh-TW": "新增新旅行建議，協助你規劃下一趟旅行",
+          "fr": "Ajout des Suggestions de nouveaux voyages pour vous aider à planifier votre prochain voyage",
+          "de": "Fügt Vorschläge für neue Reisen hinzu, die dir bei der Planung deiner nächsten Reise helfen",
+          "es": "Añade Sugerencias de nuevos viajes para ayudarte a planificar tu próximo viaje"
+        }
+      ]
+    },
+    {
       "version": "4.2.0",
       "date": "2026.11.03",
       "items": [
