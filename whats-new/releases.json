@@ -1,6 +1,22 @@
 {
   "releases": [
     {
+      "version": "4.4.0",
+      "date": "2026.11.08",
+      "items": [
+        {
+          "ko": "AI 여행 생성 개선",
+          "en": "Improves AI trip creation",
+          "ja": "AIでの旅行作成を改善",
+          "zh-CN": "改进 AI 创建旅行",
+          "zh-TW": "改善 AI 建立旅行",
+          "fr": "Amélioration de la création de voyages avec l’IA",
+          "de": "Verbesserte Reiseerstellung mit KI",
+          "es": "Mejoras en la creación de viajes con IA"
+        }
+      ]
+    },
+    {
       "version": "4.3.0",
       "date": "2026.11.05",
       "items": [
