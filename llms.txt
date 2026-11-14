@@ -1,0 +1,32 @@
+# Somewhere
+
+> Somewhere is a trip planning app for iOS and Android. It brings trip itineraries, day-by-day route maps, and expense tracking and settlement into one planning flow, and lets friends plan the same trip together. Available in Korean, English, Japanese, Simplified Chinese, Traditional Chinese, French, German and Spanish.
+
+Somewhere (여행 계획 앱 "Somewhere", developed by NP) is not a booking service. It is a planner: users build an itinerary, see each day's route on a map, record trip spending, and share the trip with companions.
+
+## Features
+
+- [AI itinerary](https://npsomewhere.com/en/features/ai/): Pick a destination, dates, companions and trip type, and AI builds a day-by-day itinerary that can be refined by chatting with AI.
+- [Route map](https://npsomewhere.com/en/features/map/): Places added to the itinerary are connected on the map in visiting order for each day. Includes place search, importing places from Google Maps and directions.
+- [Expense splitting](https://npsomewhere.com/en/features/expense/): Log trip expenses in 50 currencies, manage a shared fund, see spending by category, and get a summary of who owes whom.
+- [Plan together](https://npsomewhere.com/en/features/together/): Invite friends by link or QR code to edit the same itinerary, map and expenses, with per-friend permissions, across Android and iPhone.
+
+## Korean pages
+
+- [홈](https://npsomewhere.com/): 여행 일정, 지도 동선, 경비 정산을 한 곳에서 하는 여행 계획 앱
+- [AI 여행 일정](https://npsomewhere.com/features/ai/)
+- [여행 동선 지도](https://npsomewhere.com/features/map/)
+- [여행 경비 정산](https://npsomewhere.com/features/expense/)
+- [친구와 함께 여행 계획](https://npsomewhere.com/features/together/)
+
+## Download
+
+- [App Store](https://apps.apple.com/app/id6780403625)
+- [Google Play](https://play.google.com/store/apps/details?id=com.newpaperapp.somewhere)
+
+## Optional
+
+- [What's new](https://npsomewhere.com/whats-new/): Release notes for each app version
+- [Notices](https://npsomewhere.com/notices/)
+- [Privacy policy](https://npsomewhere.com/privacy.html)
+- [Terms of service](https://npsomewhere.com/terms.html)

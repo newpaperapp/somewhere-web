@@ -648,7 +648,7 @@ def main():
     for name in ["assets", ".well-known", "join", "privacy", "terms", "whats-new", "notices", "ja", "eu", "us"]:
         shutil.copytree(ROOT / name, output / name, ignore=shutil.ignore_patterns("*.md", "__pycache__", "optimized-assets.json"))
     for source in ROOT.iterdir():
-        if source.is_file() and (source.suffix == ".html" or source.name in {"CNAME", ".nojekyll", "robots.txt", "app-ads.txt"}):
+        if source.is_file() and (source.suffix == ".html" or source.name in {"CNAME", ".nojekyll", "robots.txt", "app-ads.txt", "llms.txt"}):
             shutil.copy2(source, output / source.name)
     whats_new_lastmod = whats_new(output, data)
     notice_entries = notices(output, data)
