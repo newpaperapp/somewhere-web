@@ -1,6 +1,52 @@
 {
   "releases": [
     {
+      "version": "4.5.0",
+      "date": "2026.11.14",
+      "items": [
+        {
+          "ko": "여행 준비물 목록 추가",
+          "en": "Adds a packing list to your trips",
+          "ja": "旅行の持ち物リストを追加",
+          "zh-CN": "新增旅行物品清单",
+          "zh-TW": "新增旅行物品清單",
+          "fr": "Ajout d’une liste d’affaires à emporter pour vos voyages",
+          "de": "Neue Packliste für deine Reisen",
+          "es": "Añade una lista de equipaje a tus viajes"
+        },
+        {
+          "ko": "여행 날짜 카드에 날씨 표시와 온도·거리 단위 설정 추가",
+          "en": "Shows the weather on trip date cards and adds temperature and distance unit settings",
+          "ja": "旅行の日付カードに天気を表示し、温度・距離の単位設定を追加",
+          "zh-CN": "旅行日期卡片显示天气，并新增温度和距离单位设置",
+          "zh-TW": "旅行日期卡片顯示天氣，並新增溫度與距離單位設定",
+          "fr": "Affichage de la météo sur les cartes de dates du voyage et ajout des réglages d’unités de température et de distance",
+          "de": "Wetter auf den Reisetag-Karten und neue Einstellungen für Temperatur- und Entfernungseinheiten",
+          "es": "Muestra el tiempo en las tarjetas de fechas del viaje y añade ajustes de unidades de temperatura y distancia"
+        },
+        {
+          "ko": "여행 복제 기능 추가",
+          "en": "Adds trip duplication",
+          "ja": "旅行の複製機能を追加",
+          "zh-CN": "新增复制旅行功能",
+          "zh-TW": "新增複製旅行功能",
+          "fr": "Ajout de la duplication de voyages",
+          "de": "Reisen lassen sich jetzt duplizieren",
+          "es": "Añade la opción de duplicar viajes"
+        },
+        {
+          "ko": "지출 기록을 밀어서 삭제하는 기능 추가",
+          "en": "Adds swipe to delete for expense records",
+          "ja": "支出記録をスワイプで削除する機能を追加",
+          "zh-CN": "支出记录支持滑动删除",
+          "zh-TW": "支出紀錄支援滑動刪除",
+          "fr": "Ajout du balayage pour supprimer des dépenses",
+          "de": "Ausgaben lassen sich jetzt per Wischen löschen",
+          "es": "Añade deslizar para eliminar registros de gastos"
+        }
+      ]
+    },
+    {
       "version": "4.4.0",
       "date": "2026.11.08",
       "items": [
