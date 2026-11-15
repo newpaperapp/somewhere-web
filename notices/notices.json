@@ -15,79 +15,87 @@
       },
       "body": {
         "ko": [
-          "Somewhere 서비스 이용약관과 개인정보처리방침이 2026년 12월 5일부터 개정돼요. 트리플 가져오기 기능이 종료되어 관련 내용을 삭제해요.",
+          "Somewhere 서비스 이용약관과 개인정보처리방침이 2026년 12월 5일부터 개정돼요. 트리플 가져오기 기능이 종료되어 관련 내용을 삭제하고, 날씨와 실시간 현황 기능의 개인정보 처리 내용을 추가해요.",
           [
             "서비스 이용약관: 제공 서비스와 외부 콘텐츠 가져오기 조항에서 트리플 가져오기 삭제",
-            "개인정보처리방침: 트리플 가져오기의 처리 목적·처리 항목·수집 경로와 작업 기록 보유기간 삭제"
+            "개인정보처리방침: 트리플 가져오기의 처리 목적·처리 항목·수집 경로와 작업 기록 보유기간 삭제",
+            "개인정보처리방침: 날씨 표시(Apple WeatherKit)와 iOS 실시간 현황 업데이트(Apple APNs·Google Cloud Tasks)의 처리 항목·위탁·국외 이전·보유기간 추가"
           ],
           "대한민국 이용약관의 2026년 11월 30일 개정 내용은 그대로 유지되고, 이번 개정에서는 트리플 가져오기 관련 내용만 빠져요",
-          "이미 가져온 여행과 지출 내역은 그대로 남아 있어요. 이번 개정으로 새로 수집하는 정보는 없어요.",
+          "이미 가져온 여행과 지출 내역은 그대로 남아 있어요. 날씨 표시에는 약 1km 단위로 반올림한 여행 장소 좌표만 쓰고 계정 정보는 보내지 않아요.",
           "동의하지 않으시면 적용일 전까지 탈퇴할 수 있고, 적용일 이후 계속 이용하시면 동의한 것으로 봐요(법령상 명시적 동의가 필요한 사항 제외)"
         ],
         "en": [
-          "The Somewhere Terms of Service and Privacy Policy change on December 5, 2026. Because the Triple import feature has ended, we're removing the related content.",
+          "The Somewhere Terms of Service and Privacy Policy change on December 5, 2026. Because the Triple import feature has ended, we're removing the related content, and we're adding how we handle information for weather and Live Activities.",
           [
             "Terms of Service: Triple import is removed from the description of the Service and the import terms",
-            "Privacy Policy: the Triple import purpose, processed information, source and job-record retention period are removed"
+            "Privacy Policy: the Triple import purpose, processed information, source and job-record retention period are removed",
+            "Privacy Policy: the processed information, processors, international transfers and retention for weather display (Apple WeatherKit) and iOS Live Activity updates (Apple APNs and Google Cloud Tasks) are added"
           ],
           "The November 30, 2026 changes to the Terms of Service for Korea stay in place; this update only removes the Triple import content",
-          "Trips and expenses you've already imported stay in Somewhere. This update doesn't add any information we collect.",
+          "Trips and expenses you've already imported stay in Somewhere. Weather uses only trip place coordinates rounded to about 1 km, without your account information.",
           "If you don't agree, you can delete your account before the effective date; if you keep using the Service after it, you'll be deemed to accept the update (except where the law requires your explicit consent)"
         ],
         "ja": [
-          "Somewhereの利用規約とプライバシーポリシーを2026年12月5日に改定します。Triple取込機能の終了に伴い、関連する内容を削除します。",
+          "Somewhereの利用規約とプライバシーポリシーを2026年12月5日に改定します。Triple取込機能の終了に伴い関連する内容を削除し、天気とライブアクティビティ機能の情報の取り扱いを追加します。",
           [
             "利用規約：本サービスの内容と取込に関する規定からTriple取込を削除",
-            "プライバシーポリシー：Triple取込の利用目的・取り扱う情報・取得元・処理記録の保存期間を削除"
+            "プライバシーポリシー：Triple取込の利用目的・取り扱う情報・取得元・処理記録の保存期間を削除",
+            "プライバシーポリシー：天気表示（Apple WeatherKit）とiOSのライブアクティビティ更新（Apple APNs、Google Cloud Tasks）の取り扱う情報・委託先・外国への移転・保存期間を追加"
           ],
-          "取込済みの旅行と支出はそのまま残ります。今回の改定で新たに取得する情報はありません。",
+          "取込済みの旅行と支出はそのまま残ります。天気表示には約1km単位に丸めた旅行の場所の座標のみを使い、アカウント情報は送信しません。",
           "同意されない場合は施行日までに退会でき、施行日以降もサービスを利用された場合は改定に同意したものとみなします（法令上、明示的な同意が必要な事項を除く）"
         ],
         "zh-CN": [
-          "Somewhere 服务条款和隐私政策将于2026年12月5日修订。由于 Triple 导入功能已停止，我们将删除相关内容。",
+          "Somewhere 服务条款和隐私政策将于2026年12月5日修订。由于 Triple 导入功能已停止，我们将删除相关内容，并新增天气和实时活动功能的信息处理说明。",
           [
             "服务条款：从服务说明和导入相关条款中删除 Triple 导入",
-            "隐私政策：删除 Triple 导入的处理目的、处理的信息、来源及任务记录保存期限"
+            "隐私政策：删除 Triple 导入的处理目的、处理的信息、来源及任务记录保存期限",
+            "隐私政策：新增天气显示（Apple WeatherKit）和 iOS 实时活动更新（Apple APNs、Google Cloud Tasks）的处理信息、受托方、跨境传输及保存期限"
           ],
           "韩国服务条款于2026年11月30日生效的修订内容保持不变，本次修订仅删除 Triple 导入相关内容",
-          "已导入的行程和支出将继续保留。本次修订不会新增收集任何信息。",
+          "已导入的行程和支出将继续保留。天气显示仅使用约1公里精度的行程地点坐标，不会发送账号信息。",
           "如不同意，可在生效日前注销账号；生效日后继续使用服务即视为同意本次修订（法律要求明确同意的事项除外）"
         ],
         "zh-TW": [
-          "Somewhere 服務條款與隱私權政策將於2026年12月5日修訂。由於 Triple 匯入功能已停止，我們將刪除相關內容。",
+          "Somewhere 服務條款與隱私權政策將於2026年12月5日修訂。由於 Triple 匯入功能已停止，我們將刪除相關內容，並新增天氣與即時動態功能的資訊處理說明。",
           [
             "服務條款：從服務說明與匯入相關條款中刪除 Triple 匯入",
-            "隱私權政策：刪除 Triple 匯入的處理目的、處理的資訊、來源及工作記錄保存期限"
+            "隱私權政策：刪除 Triple 匯入的處理目的、處理的資訊、來源及工作記錄保存期限",
+            "隱私權政策：新增天氣顯示（Apple WeatherKit）與 iOS 即時動態更新（Apple APNs、Google Cloud Tasks）的處理資訊、受託者、跨境傳輸及保存期限"
           ],
           "韓國服務條款於2026年11月30日生效的修訂內容維持不變，本次修訂僅刪除 Triple 匯入相關內容",
-          "已匯入的行程與支出會繼續保留。本次修訂不會新增蒐集任何資訊。",
+          "已匯入的行程與支出會繼續保留。天氣顯示僅使用約1公里精度的行程地點座標，不會傳送帳號資訊。",
           "如不同意，可於生效日前刪除帳號；生效日後繼續使用服務即視為同意本次修訂（法律要求明確同意的事項除外）"
         ],
         "fr": [
-          "Les Conditions d’utilisation et la Politique de confidentialité de Somewhere changent le 5 décembre 2026. La fonction d’import Triple ayant pris fin, nous supprimons les contenus qui s’y rapportent.",
+          "Les Conditions d’utilisation et la Politique de confidentialité de Somewhere changent le 5 décembre 2026. La fonction d’import Triple ayant pris fin, nous supprimons les contenus qui s’y rapportent et ajoutons le traitement des données pour la météo et les activités en direct.",
           [
             "Conditions d’utilisation : l’import Triple est retiré de la description du Service et des règles d’import",
-            "Politique de confidentialité : la finalité, les données traitées, la provenance et la durée de conservation des tâches d’import Triple sont supprimées"
+            "Politique de confidentialité : la finalité, les données traitées, la provenance et la durée de conservation des tâches d’import Triple sont supprimées",
+            "Politique de confidentialité : les données traitées, les sous-traitants, les transferts internationaux et les durées de conservation pour l’affichage de la météo (Apple WeatherKit) et les mises à jour des activités en direct sur iOS (Apple APNs et Google Cloud Tasks) sont ajoutés"
           ],
-          "Les voyages et dépenses déjà importés restent dans Somewhere. Cette modification n’ajoute aucune donnée collectée.",
+          "Les voyages et dépenses déjà importés restent dans Somewhere. La météo utilise uniquement les coordonnées des lieux du voyage arrondies à environ 1 km, sans les informations de votre compte.",
           "Si vous n’êtes pas d’accord, vous pouvez supprimer votre compte avant la date d’entrée en vigueur. Si vous continuez à utiliser le Service après cette date, cela vaudra acceptation de la mise à jour, sauf lorsque la loi exige votre consentement explicite."
         ],
         "de": [
-          "Die Nutzungsbedingungen und Datenschutzhinweise von Somewhere ändern sich am 5. Dezember 2026. Da die Triple-Importfunktion eingestellt wurde, entfernen wir die zugehörigen Inhalte.",
+          "Die Nutzungsbedingungen und Datenschutzhinweise von Somewhere ändern sich am 5. Dezember 2026. Da die Triple-Importfunktion eingestellt wurde, entfernen wir die zugehörigen Inhalte und ergänzen, wie wir Daten für Wetter und Live-Aktivitäten verarbeiten.",
           [
             "Nutzungsbedingungen: Der Triple-Import wird aus der Dienstbeschreibung und den Importregeln entfernt",
-            "Datenschutzhinweise: Zweck, verarbeitete Daten, Herkunft und Speicherdauer der Triple-Importjobs werden entfernt"
+            "Datenschutzhinweise: Zweck, verarbeitete Daten, Herkunft und Speicherdauer der Triple-Importjobs werden entfernt",
+            "Datenschutzhinweise: Verarbeitete Daten, Auftragsverarbeiter, Übermittlungen in Drittländer und Speicherdauer für die Wetteranzeige (Apple WeatherKit) und Updates für Live-Aktivitäten unter iOS (Apple APNs und Google Cloud Tasks) werden ergänzt"
           ],
-          "Bereits importierte Reisen und Ausgaben bleiben in Somewhere erhalten. Mit dieser Änderung erheben wir keine neuen Daten.",
+          "Bereits importierte Reisen und Ausgaben bleiben in Somewhere erhalten. Für das Wetter verwenden wir nur auf etwa 1 km gerundete Koordinaten der Reiseorte, ohne deine Kontodaten.",
           "Wenn du nicht einverstanden bist, kannst du dein Konto vor dem Inkrafttreten löschen. Nutzt du den Dienst danach weiter, gilt dies als Zustimmung zur Aktualisierung, außer wenn das Gesetz deine ausdrückliche Zustimmung verlangt."
         ],
         "es": [
-          "Los Términos del servicio y la Política de privacidad de Somewhere cambian el 5 de diciembre de 2026. Como la función de importación de Triple ha finalizado, eliminamos el contenido relacionado.",
+          "Los Términos del servicio y la Política de privacidad de Somewhere cambian el 5 de diciembre de 2026. Como la función de importación de Triple ha finalizado, eliminamos el contenido relacionado y añadimos cómo tratamos los datos del tiempo y de las actividades en directo.",
           [
             "Términos del servicio: se elimina la importación de Triple de la descripción del Servicio y de las reglas de importación",
-            "Política de privacidad: se eliminan la finalidad, los datos tratados, el origen y el plazo de conservación de los trabajos de importación de Triple"
+            "Política de privacidad: se eliminan la finalidad, los datos tratados, el origen y el plazo de conservación de los trabajos de importación de Triple",
+            "Política de privacidad: se añaden los datos tratados, los encargados, las transferencias internacionales y los plazos de conservación de la visualización del tiempo (Apple WeatherKit) y de las actualizaciones de actividades en directo en iOS (Apple APNs y Google Cloud Tasks)"
           ],
-          "Los viajes y gastos que ya importaste siguen en Somewhere. Este cambio no añade ningún dato que recopilemos.",
+          "Los viajes y gastos que ya importaste siguen en Somewhere. El tiempo solo usa las coordenadas de los lugares del viaje redondeadas a unos 1 km, sin los datos de tu cuenta.",
           "Si no estás de acuerdo, puedes eliminar tu cuenta antes de la fecha de entrada en vigor. Si sigues usando el Servicio después, se considerará que aceptas la actualización, salvo cuando la ley exija tu consentimiento explícito."
         ]
       }
