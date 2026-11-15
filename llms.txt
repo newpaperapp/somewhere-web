@@ -10,6 +10,7 @@ Somewhere (여행 계획 앱 "Somewhere", developed by NP) is not a booking serv
 - [Route map](https://npsomewhere.com/en/features/map/): Places added to the itinerary are connected on the map in visiting order for each day. Includes place search, importing places from Google Maps and directions.
 - [Expense splitting](https://npsomewhere.com/en/features/expense/): Log trip expenses in 50 currencies, manage a shared fund, see spending by category, and get a summary of who owes whom.
 - [Plan together](https://npsomewhere.com/en/features/together/): Invite friends by link or QR code to edit the same itinerary, map and expenses, with per-friend permissions, across Android and iPhone.
+- Packing list, weather and trip duplication: Each trip has a packing list where common essentials can be picked and added at once, trip date cards show the weather forecast for upcoming dates, and a trip can be duplicated to plan a similar one.
 
 ## Korean pages
 

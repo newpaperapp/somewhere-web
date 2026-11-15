@@ -88,6 +88,9 @@ const I18N = {
     "support.language":
       "한국어, 영어, 일본어, 중국어(간체·번체), 스페인어, 프랑스어, 독일어 지원",
     "support.ai": "AI 여행 일정 만들기",
+    "support.supplies": "자주 챙기는 준비물을 골라 한 번에 추가하는 준비물 목록",
+    "support.weather": "다가오는 여행 날짜의 날씨 예보",
+    "support.duplicate": "여행 복제로 비슷한 일정 바로 만들기",
 
     "a11y.eyebrow": "접근성",
     "a11y.title": "접근성",
@@ -227,6 +230,9 @@ const I18N = {
     "support.language":
       "Supports Korean, English, Japanese, Chinese (Simplified & Traditional), Spanish, French, German",
     "support.ai": "AI trip planner",
+    "support.supplies": "Packing lists where you pick common essentials and add them at once",
+    "support.weather": "Weather forecasts for upcoming trip dates",
+    "support.duplicate": "Duplicate a trip to plan a similar one",
 
     "a11y.eyebrow": "Accessibility",
     "a11y.title": "Accessibility",
@@ -367,6 +373,9 @@ const I18N = {
     "support.language":
       "韓国語、英語、日本語、中国語（簡体字・繁体字）、スペイン語、フランス語、ドイツ語に対応",
     "support.ai": "AIで旅行プラン作成",
+    "support.supplies": "定番アイテムを選んでまとめて追加できる持ち物リスト",
+    "support.weather": "近づいた旅行日の天気予報",
+    "support.duplicate": "旅行を複製して似た旅程をすぐ作成",
 
     "a11y.eyebrow": "アクセシビリティ",
     "a11y.title": "アクセシビリティ",
@@ -499,6 +508,9 @@ const I18N = {
     "support.language":
       "支持韩语、英语、日语、简体中文、繁体中文、西班牙语、法语和德语",
     "support.ai": "AI 旅行规划",
+    "support.supplies": "可挑选常用物品一次添加的旅行物品清单",
+    "support.weather": "即将到来的旅行日期天气预报",
+    "support.duplicate": "复制旅行，快速规划类似行程",
 
     "a11y.eyebrow": "无障碍",
     "a11y.title": "无障碍",
@@ -630,6 +642,9 @@ const I18N = {
     "support.language":
       "支援韓語、英語、日語、簡體中文、繁體中文、西班牙語、法語和德語",
     "support.ai": "AI 旅行規劃",
+    "support.supplies": "可挑選常用物品一次加入的旅行物品清單",
+    "support.weather": "即將到來的旅行日期天氣預報",
+    "support.duplicate": "複製旅行，快速規劃類似行程",
 
     "a11y.eyebrow": "無障礙功能",
     "a11y.title": "無障礙功能",
@@ -767,6 +782,9 @@ const I18N = {
     "support.language":
       "Disponible en coréen, anglais, japonais, chinois simplifié, chinois traditionnel, espagnol, français et allemand",
     "support.ai": "Planificateur de voyage IA",
+    "support.supplies": "Listes d’affaires où choisir les essentiels courants et les ajouter en une fois",
+    "support.weather": "Prévisions météo pour les prochains jours de voyage",
+    "support.duplicate": "Dupliquez un voyage pour en préparer un similaire",
 
     "a11y.eyebrow": "Accessibilité",
     "a11y.title": "Accessibilité",
@@ -907,6 +925,9 @@ const I18N = {
     "support.language":
       "Unterstützt Koreanisch, Englisch, Japanisch, vereinfachtes und traditionelles Chinesisch, Spanisch, Französisch und Deutsch",
     "support.ai": "KI-Reiseplaner",
+    "support.supplies": "Packlisten, in denen du gängige Basics auswählst und auf einmal hinzufügst",
+    "support.weather": "Wettervorhersage für bevorstehende Reisetage",
+    "support.duplicate": "Reisen duplizieren und ähnliche Pläne schnell erstellen",
 
     "a11y.eyebrow": "Barrierefreiheit",
     "a11y.title": "Barrierefreiheit",
@@ -1047,6 +1068,9 @@ const I18N = {
     "support.language":
       "Disponible en coreano, inglés, japonés, chino simplificado, chino tradicional, español, francés y alemán",
     "support.ai": "Planificador de viajes con IA",
+    "support.supplies": "Listas de equipaje donde eliges básicos habituales y los añades de una vez",
+    "support.weather": "Previsión del tiempo para los próximos días del viaje",
+    "support.duplicate": "Duplica un viaje para planear uno parecido",
 
     "a11y.eyebrow": "Accesibilidad",
     "a11y.title": "Accesibilidad",
