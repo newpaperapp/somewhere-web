@@ -70,6 +70,8 @@ const I18N = {
     "feature.more.map": "여행 동선 지도 알아보기",
     "feature.more.expense": "여행 경비 정산 알아보기",
     "feature.more.together": "친구와 일정 공유 알아보기",
+    "feature.more.packing": "여행 준비물 체크리스트 알아보기",
+    "feature.more.vouchers": "바우처·티켓 보관 알아보기",
     "feature.together.kicker": "협업",
     "feature.together.title": "함께 만드는 여행",
     "feature.together.desc":
@@ -80,6 +82,14 @@ const I18N = {
     "feature.large.desc":
       "폴더블, 태블릿 등 큰 화면에서도 편리하게 이용해보세요",
     "feature.large.alt": "폴더블에서 보는 Somewhere 여행 일정 화면",
+    "feature.supplies.kicker": "준비물",
+    "feature.supplies.title": "함께 챙기는 준비물",
+    "feature.supplies.desc": "공동 준비물과 개인 준비물을 나눠 체크하고, 자주 챙기는 항목은 골라서 한 번에 추가하세요",
+    "feature.supplies.alt": "공동 준비물 체크리스트 화면",
+    "feature.voucher.kicker": "바우처·티켓",
+    "feature.voucher.title": "바우처·티켓 보관",
+    "feature.voucher.desc": "항공권과 숙소 바우처를 사진이나 PDF로 올리면 AI가 예약 정보를 채워주고, 필요할 때 바로 꺼내 볼 수 있어요",
+    "feature.voucher.alt": "항공권 상세 화면",
 
     "support.eyebrow": "지원 기능",
     "support.title": "다양한 기능",
@@ -88,7 +98,6 @@ const I18N = {
     "support.language":
       "한국어, 영어, 일본어, 중국어(간체·번체), 스페인어, 프랑스어, 독일어 지원",
     "support.ai": "AI 여행 일정 만들기",
-    "support.supplies": "자주 챙기는 준비물을 골라 한 번에 추가하는 준비물 목록",
     "support.weather": "다가오는 여행 날짜의 날씨 예보",
     "support.duplicate": "여행 복제로 비슷한 일정 바로 만들기",
 
@@ -105,7 +114,7 @@ const I18N = {
     "pro.credits": "매주 무료 크레딧 제공",
     "pro.friends": "친구 초대 수 증가",
     "pro.liveActivities": "지원되는 기기에서 실시간 현황(iOS)과 실시간 정보 · Now bar(Android) 사용",
-    "pro.moreStorage": "더 많은 여행 · 장소 · 사진 저장",
+    "pro.moreStorage": "더 많은 여행 · 장소 · 사진 · 바우처·티켓 저장",
     "pro.expenseImages": "지출 내역과 공동경비에 사진 추가",
     "pro.expenseCsv": "지출 내역 CSV 내보내기",
 
@@ -212,6 +221,8 @@ const I18N = {
     "feature.more.map": "Explore trip route maps",
     "feature.more.expense": "Explore expense splitting",
     "feature.more.together": "Explore planning with friends",
+    "feature.more.packing": "Explore packing lists",
+    "feature.more.vouchers": "Explore vouchers & tickets",
     "feature.together.kicker": "Together",
     "feature.together.title": "Plan trips together",
     "feature.together.desc":
@@ -222,6 +233,14 @@ const I18N = {
     "feature.large.desc":
       "Use Somewhere comfortably on foldables, tablets, and other large screens",
     "feature.large.alt": "Somewhere itinerary screen on a foldable device",
+    "feature.supplies.kicker": "Packing",
+    "feature.supplies.title": "Pack together",
+    "feature.supplies.desc": "Check off shared and personal items separately, and add common essentials all at once",
+    "feature.supplies.alt": "Shared packing checklist screen",
+    "feature.voucher.kicker": "Vouchers",
+    "feature.voucher.title": "Vouchers & tickets",
+    "feature.voucher.desc": "Add flight tickets and stay vouchers as photos or PDFs, let AI fill in the booking details, and pull them up when you need them",
+    "feature.voucher.alt": "Flight ticket detail screen",
 
     "support.eyebrow": "Included",
     "support.title": "Various features",
@@ -230,7 +249,6 @@ const I18N = {
     "support.language":
       "Supports Korean, English, Japanese, Chinese (Simplified & Traditional), Spanish, French, German",
     "support.ai": "AI trip planner",
-    "support.supplies": "Packing lists where you pick common essentials and add them at once",
     "support.weather": "Weather forecasts for upcoming trip dates",
     "support.duplicate": "Duplicate a trip to plan a similar one",
 
@@ -248,7 +266,7 @@ const I18N = {
     "pro.friends": "Increased friend invite limit",
     "pro.liveActivities":
       "Live Activities (iOS) and Live Updates · Now bar (Android) on supported devices",
-    "pro.moreStorage": "Save more trips, places, and photos",
+    "pro.moreStorage": "Save more trips, places, photos, and vouchers & tickets",
     "pro.expenseImages":
       "Add photos to expenses and shared fund contributions",
     "pro.expenseCsv": "Export expenses as CSV",
@@ -355,6 +373,8 @@ const I18N = {
     "feature.more.map": "ルートマップを詳しく見る",
     "feature.more.expense": "割り勘・精算を詳しく見る",
     "feature.more.together": "友達との予定共有を詳しく見る",
+    "feature.more.packing": "持ち物リストを詳しく見る",
+    "feature.more.vouchers": "バウチャー・チケットを詳しく見る",
     "feature.together.kicker": "共同作業",
     "feature.together.title": "みんなで作る旅",
     "feature.together.desc":
@@ -365,6 +385,14 @@ const I18N = {
     "feature.large.desc":
       "折りたたみスマートフォンやタブレットなど、大きな画面でも快適に使えます",
     "feature.large.alt": "折りたたみスマートフォンで見るSomewhereの旅行日程画面",
+    "feature.supplies.kicker": "持ち物",
+    "feature.supplies.title": "みんなで準備する持ち物",
+    "feature.supplies.desc": "共有と自分用の持ち物を分けてチェックし、定番アイテムはまとめて追加しましょう",
+    "feature.supplies.alt": "共有の持ち物チェックリスト画面",
+    "feature.voucher.kicker": "チケット",
+    "feature.voucher.title": "バウチャー・チケット",
+    "feature.voucher.desc": "航空券や宿泊バウチャーを写真やPDFで追加するとAIが予約情報を入力し、必要なときにすぐ確認できます",
+    "feature.voucher.alt": "航空券の詳細画面",
 
     "support.eyebrow": "対応機能",
     "support.title": "さまざまな機能",
@@ -373,7 +401,6 @@ const I18N = {
     "support.language":
       "韓国語、英語、日本語、中国語（簡体字・繁体字）、スペイン語、フランス語、ドイツ語に対応",
     "support.ai": "AIで旅行プラン作成",
-    "support.supplies": "定番アイテムを選んでまとめて追加できる持ち物リスト",
     "support.weather": "近づいた旅行日の天気予報",
     "support.duplicate": "旅行を複製して似た旅程をすぐ作成",
 
@@ -391,7 +418,7 @@ const I18N = {
     "pro.friends": "友だち招待数を拡大",
     "pro.liveActivities":
       "対応する端末でライブアクティビティ（iOS）とリアルタイム情報 · Now bar（Android）を利用",
-    "pro.moreStorage": "より多くの旅行・場所・写真を保存",
+    "pro.moreStorage": "より多くの旅行・場所・写真、バウチャー・チケットを保存",
     "pro.expenseImages": "支出記録と共同経費に写真を追加",
     "pro.expenseCsv": "支出をCSVでエクスポート",
 
@@ -492,6 +519,8 @@ const I18N = {
     "feature.more.map": "了解路线地图",
     "feature.more.expense": "了解旅行分账",
     "feature.more.together": "了解共享行程",
+    "feature.more.packing": "了解旅行行李清单",
+    "feature.more.vouchers": "了解凭证与票券",
     "feature.together.kicker": "协作",
     "feature.together.title": "一起规划旅行",
     "feature.together.desc": "邀请朋友分享想法，一起准备旅行",
@@ -500,6 +529,14 @@ const I18N = {
     "feature.large.title": "为大屏幕优化的界面",
     "feature.large.desc": "在折叠屏、平板电脑等大屏幕上也能舒适使用",
     "feature.large.alt": "折叠屏上的 Somewhere 旅行日程界面",
+    "feature.supplies.kicker": "行李清单",
+    "feature.supplies.title": "一起准备行李",
+    "feature.supplies.desc": "分开勾选共享和个人行李清单里的物品，常用物品可一次添加",
+    "feature.supplies.alt": "共享行李清单界面",
+    "feature.voucher.kicker": "票券",
+    "feature.voucher.title": "凭证与票券",
+    "feature.voucher.desc": "以照片或 PDF 添加机票和住宿凭证，AI 帮你填写预订信息，需要时随时查看",
+    "feature.voucher.alt": "机票详情界面",
 
     "support.eyebrow": "支持功能",
     "support.title": "丰富的功能",
@@ -508,7 +545,6 @@ const I18N = {
     "support.language":
       "支持韩语、英语、日语、简体中文、繁体中文、西班牙语、法语和德语",
     "support.ai": "AI 旅行规划",
-    "support.supplies": "可挑选常用物品一次添加的旅行物品清单",
     "support.weather": "即将到来的旅行日期天气预报",
     "support.duplicate": "复制旅行，快速规划类似行程",
 
@@ -525,7 +561,7 @@ const I18N = {
     "pro.credits": "每周提供免费积分",
     "pro.friends": "增加好友邀请数量",
     "pro.liveActivities": "在受支持的设备上使用实时活动（iOS）和实时信息 · Now bar（Android）",
-    "pro.moreStorage": "保存更多旅行、地点和照片",
+    "pro.moreStorage": "保存更多旅行、地点、照片、凭证与票券",
     "pro.expenseImages": "可在支出和共同基金中添加照片",
     "pro.expenseCsv": "可将支出导出为 CSV 文件",
 
@@ -626,6 +662,8 @@ const I18N = {
     "feature.more.map": "了解路線地圖",
     "feature.more.expense": "了解旅行分帳",
     "feature.more.together": "了解共享行程",
+    "feature.more.packing": "了解旅行行李清單",
+    "feature.more.vouchers": "了解憑證與票券",
     "feature.together.kicker": "協作",
     "feature.together.title": "一起規劃旅程",
     "feature.together.desc": "邀請朋友分享想法，一起準備旅程",
@@ -634,6 +672,14 @@ const I18N = {
     "feature.large.title": "為大螢幕最佳化的介面",
     "feature.large.desc": "在摺疊螢幕、平板電腦等大螢幕上也能舒適使用",
     "feature.large.alt": "摺疊螢幕上的 Somewhere 旅程行程畫面",
+    "feature.supplies.kicker": "行李清單",
+    "feature.supplies.title": "一起準備行李",
+    "feature.supplies.desc": "分開勾選共享與個人行李清單裡的物品，常用物品可一次加入",
+    "feature.supplies.alt": "共享行李清單畫面",
+    "feature.voucher.kicker": "票券",
+    "feature.voucher.title": "憑證與票券",
+    "feature.voucher.desc": "以相片或 PDF 新增機票與住宿憑證，AI 幫你填寫預訂資訊，需要時隨時查看",
+    "feature.voucher.alt": "機票詳情畫面",
 
     "support.eyebrow": "支援功能",
     "support.title": "豐富的功能",
@@ -642,7 +688,6 @@ const I18N = {
     "support.language":
       "支援韓語、英語、日語、簡體中文、繁體中文、西班牙語、法語和德語",
     "support.ai": "AI 旅行規劃",
-    "support.supplies": "可挑選常用物品一次加入的旅行物品清單",
     "support.weather": "即將到來的旅行日期天氣預報",
     "support.duplicate": "複製旅行，快速規劃類似行程",
 
@@ -659,7 +704,7 @@ const I18N = {
     "pro.credits": "每週提供免費點數",
     "pro.friends": "增加好友邀請數量",
     "pro.liveActivities": "在受支援的裝置上使用即時動態（iOS）和即時資訊 · Now bar（Android）",
-    "pro.moreStorage": "儲存更多旅程、地點和相片",
+    "pro.moreStorage": "儲存更多旅程、地點、相片、憑證與票券",
     "pro.expenseImages": "可在支出和共同基金中新增相片",
     "pro.expenseCsv": "可將支出匯出為 CSV 檔案",
 
@@ -764,6 +809,8 @@ const I18N = {
     "feature.more.map": "Découvrir la carte d’itinéraire",
     "feature.more.expense": "Découvrir le partage des dépenses",
     "feature.more.together": "Découvrir la planification entre amis",
+    "feature.more.packing": "Découvrir les listes de bagages",
+    "feature.more.vouchers": "Découvrir les réservations et billets",
     "feature.together.kicker": "Ensemble",
     "feature.together.title": "Planifiez vos voyages ensemble",
     "feature.together.desc":
@@ -774,6 +821,14 @@ const I18N = {
     "feature.large.desc":
       "Utilisez Somewhere confortablement sur les appareils pliables, les tablettes et autres grands écrans",
     "feature.large.alt": "Écran d’itinéraire Somewhere sur un appareil pliable",
+    "feature.supplies.kicker": "Bagages",
+    "feature.supplies.title": "Préparer ses bagages ensemble",
+    "feature.supplies.desc": "Cochez les affaires de la liste partagée et de la liste personnelle, et ajoutez les essentiels courants en une fois",
+    "feature.supplies.alt": "Écran de la liste de bagages partagée",
+    "feature.voucher.kicker": "Billets",
+    "feature.voucher.title": "Réservations et billets",
+    "feature.voucher.desc": "Ajoutez billets d’avion et réservations d’hébergement en photo ou en PDF, laissez l’IA remplir les détails et retrouvez-les quand vous en avez besoin",
+    "feature.voucher.alt": "Écran de détail d’un billet d’avion",
 
     "support.eyebrow": "Inclus",
     "support.title": "De nombreuses fonctionnalités",
@@ -782,7 +837,6 @@ const I18N = {
     "support.language":
       "Disponible en coréen, anglais, japonais, chinois simplifié, chinois traditionnel, espagnol, français et allemand",
     "support.ai": "Planificateur de voyage IA",
-    "support.supplies": "Listes d’affaires où choisir les essentiels courants et les ajouter en une fois",
     "support.weather": "Prévisions météo pour les prochains jours de voyage",
     "support.duplicate": "Dupliquez un voyage pour en préparer un similaire",
 
@@ -801,7 +855,7 @@ const I18N = {
     "pro.friends": "Limite d’invitations d’amis augmentée",
     "pro.liveActivities":
       "Activités en direct (iOS) et Mises à jour en direct · Now bar (Android) sur les appareils compatibles",
-    "pro.moreStorage": "Enregistrez plus de voyages, de lieux et de photos",
+    "pro.moreStorage": "Enregistrez plus de voyages, de lieux, de photos, de réservations et de billets",
     "pro.expenseImages":
       "Ajoutez des photos aux dépenses et à la cagnotte",
     "pro.expenseCsv": "Exportez vos dépenses au format CSV",
@@ -907,6 +961,8 @@ const I18N = {
     "feature.more.map": "Mehr zur Routenkarte",
     "feature.more.expense": "Mehr zur Kostenabrechnung",
     "feature.more.together": "Mehr zur gemeinsamen Planung",
+    "feature.more.packing": "Mehr zur Packliste",
+    "feature.more.vouchers": "Mehr zu Buchungen & Tickets",
     "feature.together.kicker": "Gemeinsam",
     "feature.together.title": "Reisen gemeinsam planen",
     "feature.together.desc":
@@ -917,6 +973,14 @@ const I18N = {
     "feature.large.desc":
       "Nutzen Sie Somewhere bequem auf faltbaren Geräten, Tablets und anderen großen Bildschirmen",
     "feature.large.alt": "Somewhere-Reiseplan auf einem faltbaren Gerät",
+    "feature.supplies.kicker": "Packliste",
+    "feature.supplies.title": "Gemeinsam packen",
+    "feature.supplies.desc": "Haken Sie gemeinsame und persönliche Sachen getrennt ab und fügen Sie gängige Basics auf einmal hinzu",
+    "feature.supplies.alt": "Gemeinsame Packliste einer Reise",
+    "feature.voucher.kicker": "Tickets",
+    "feature.voucher.title": "Buchungen & Tickets",
+    "feature.voucher.desc": "Fügen Sie Flugtickets und Unterkunftsbuchungen als Foto oder PDF hinzu, lassen Sie die KI die Details ausfüllen und rufen Sie sie jederzeit ab",
+    "feature.voucher.alt": "Detailansicht eines Flugtickets",
 
     "support.eyebrow": "Enthalten",
     "support.title": "Viele Funktionen",
@@ -925,7 +989,6 @@ const I18N = {
     "support.language":
       "Unterstützt Koreanisch, Englisch, Japanisch, vereinfachtes und traditionelles Chinesisch, Spanisch, Französisch und Deutsch",
     "support.ai": "KI-Reiseplaner",
-    "support.supplies": "Packlisten, in denen du gängige Basics auswählst und auf einmal hinzufügst",
     "support.weather": "Wettervorhersage für bevorstehende Reisetage",
     "support.duplicate": "Reisen duplizieren und ähnliche Pläne schnell erstellen",
 
@@ -944,7 +1007,7 @@ const I18N = {
     "pro.friends": "Höhere Grenze für Freundeseinladungen",
     "pro.liveActivities":
       "Live-Aktivitäten (iOS) und Live-Updates · Now bar (Android) auf unterstützten Geräten",
-    "pro.moreStorage": "Mehr Reisen, Orte und Fotos speichern",
+    "pro.moreStorage": "Mehr Reisen, Orte, Fotos, Buchungen & Tickets speichern",
     "pro.expenseImages":
       "Fotos zu Ausgaben und Gemeinschaftskassen hinzufügen",
     "pro.expenseCsv": "Ausgaben als CSV-Datei exportieren",
@@ -1050,6 +1113,8 @@ const I18N = {
     "feature.more.map": "Descubre el mapa de rutas",
     "feature.more.expense": "Descubre cómo dividir gastos",
     "feature.more.together": "Descubre la planificación en grupo",
+    "feature.more.packing": "Descubre las listas de equipaje",
+    "feature.more.vouchers": "Descubre las reservas y billetes",
     "feature.together.kicker": "Juntos",
     "feature.together.title": "Planifiquen viajes juntos",
     "feature.together.desc":
@@ -1060,6 +1125,14 @@ const I18N = {
     "feature.large.desc":
       "Usa Somewhere cómodamente en dispositivos plegables, tabletas y otras pantallas grandes",
     "feature.large.alt": "Pantalla de itinerario de Somewhere en un dispositivo plegable",
+    "feature.supplies.kicker": "Equipaje",
+    "feature.supplies.title": "Preparar el equipaje juntos",
+    "feature.supplies.desc": "Marca por separado lo compartido y lo personal, y añade lo esencial de una vez",
+    "feature.supplies.alt": "Pantalla de la lista de equipaje compartida",
+    "feature.voucher.kicker": "Billetes",
+    "feature.voucher.title": "Reservas y billetes",
+    "feature.voucher.desc": "Añade billetes de avión y reservas de alojamiento como foto o PDF, deja que la IA rellene los datos y consúltalos cuando los necesites",
+    "feature.voucher.alt": "Pantalla de detalle de un billete de avión",
 
     "support.eyebrow": "Incluye",
     "support.title": "Muchas funciones",
@@ -1068,7 +1141,6 @@ const I18N = {
     "support.language":
       "Disponible en coreano, inglés, japonés, chino simplificado, chino tradicional, español, francés y alemán",
     "support.ai": "Planificador de viajes con IA",
-    "support.supplies": "Listas de equipaje donde eliges básicos habituales y los añades de una vez",
     "support.weather": "Previsión del tiempo para los próximos días del viaje",
     "support.duplicate": "Duplica un viaje para planear uno parecido",
 
@@ -1087,7 +1159,7 @@ const I18N = {
     "pro.friends": "Más invitaciones de amigos",
     "pro.liveActivities":
       "Actividades en directo (iOS) y Actualizaciones en vivo · Now bar (Android) en dispositivos compatibles",
-    "pro.moreStorage": "Guarda más viajes, lugares y fotos",
+    "pro.moreStorage": "Guarda más viajes, lugares, fotos, reservas y billetes",
     "pro.expenseImages": "Añade fotos a gastos y fondos comunes",
     "pro.expenseCsv": "Exporta los gastos en formato CSV",
 
