@@ -24,7 +24,8 @@ LEGAL_ROUTES = {lang: {"privacy.html": "/privacy", "terms.html": "/terms"} for l
 # Hand-written feature pages: features/<slug>/<lang>.html holds the localized <title>, description
 # and <main>, wrapped in features/_shell.html and served at feature_path(slug, lang).
 # Each date is the page's last content change and becomes its sitemap lastmod.
-FEATURE_PAGES = {"expense": "2026-11-03", "map": "2026-11-03", "together": "2026-11-03", "ai": "2026-11-03"}
+FEATURE_PAGES = {"expense": "2026-11-22", "map": "2026-11-22", "together": "2026-11-22", "ai": "2026-11-22",
+                 "packing": "2026-11-22", "vouchers": "2026-11-22"}
 FEATURE_LANGUAGES = ["ko", "en", "ja", "zh-CN", "zh-TW", "fr", "de", "es"]
 # Legal shells: page -> (fragment folder, page language, script listing its versions).
 # Each fragment's file name is its effective date. The build embeds the version in
@@ -680,7 +681,7 @@ def main():
     in_force = embed_legal(output, build_day())
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
-    entries = [(ORIGIN + home_path(lang), "2026-10-29") for lang in data["languages"]]
+    entries = [(ORIGIN + home_path(lang), "2026-11-22") for lang in data["languages"]]
     # Legal pages change content on the effective date of their version in force.
     entries += [(ORIGIN + "/" + page, date) for page, date in in_force.items()]
     entries += [(ORIGIN + "/ja/commercial-transactions.html", "2026-09-28")]

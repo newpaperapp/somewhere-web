@@ -10,7 +10,9 @@ Somewhere (여행 계획 앱 "Somewhere", developed by NP) is not a booking serv
 - [Route map](https://npsomewhere.com/en/features/map/): Places added to the itinerary are connected on the map in visiting order for each day. Includes place search, importing places from Google Maps and directions.
 - [Expense splitting](https://npsomewhere.com/en/features/expense/): Log trip expenses in 50 currencies, manage a shared fund, see spending by category, and get a summary of who owes whom.
 - [Plan together](https://npsomewhere.com/en/features/together/): Invite friends by link or QR code to edit the same itinerary, map and expenses, with per-friend permissions, across Android and iPhone.
-- Packing list, weather and trip duplication: Each trip has a packing list where common essentials can be picked and added at once, trip date cards show the weather forecast for upcoming dates, and a trip can be duplicated to plan a similar one.
+- [Packing list](https://npsomewhere.com/en/features/packing/): Each trip has a shared packing list and a private one for each trip mate, where common essentials can be picked and added at once.
+- Weather and trip duplication: Trip date cards show the weather forecast for upcoming dates, and a trip can be duplicated to plan a similar one.
+- [Vouchers & tickets](https://npsomewhere.com/en/features/vouchers/): Flight tickets, stay vouchers and other bookings can be saved with photos or PDFs, linked to places and expenses, and opened offline.
 
 ## Korean pages
 
@@ -19,6 +21,8 @@ Somewhere (여행 계획 앱 "Somewhere", developed by NP) is not a booking serv
 - [여행 동선 지도](https://npsomewhere.com/features/map/)
 - [여행 경비 정산](https://npsomewhere.com/features/expense/)
 - [친구와 함께 여행 계획](https://npsomewhere.com/features/together/)
+- [여행 준비물 체크리스트](https://npsomewhere.com/features/packing/)
+- [바우처·티켓 보관](https://npsomewhere.com/features/vouchers/)
 
 ## Download
 
