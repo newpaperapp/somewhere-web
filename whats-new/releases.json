@@ -1,6 +1,52 @@
 {
   "releases": [
     {
+      "version": "4.6.0",
+      "date": "2026.11.22",
+      "items": [
+        {
+          "ko": "사진·PDF 첨부와 일정·지출 연결을 지원하는 바우처·티켓 추가",
+          "en": "Adds Vouchers & tickets with photo and PDF attachments, linked to your itinerary and expenses",
+          "ja": "写真やPDFの添付、予定や支出とのリンクに対応したバウチャー・チケットを追加",
+          "zh-CN": "新增凭证与票券，支持添加照片和 PDF，并可关联行程与支出",
+          "zh-TW": "新增憑證與票券，支援附加相片與 PDF，並可關聯行程與支出",
+          "fr": "Ajout de Réservations et billets avec photos et PDF, liés à votre programme et à vos dépenses",
+          "de": "Neue Buchungen & Tickets mit Fotos und PDFs sowie Verknüpfungen zu Reiseplan und Ausgaben",
+          "es": "Añade Reservas y billetes con fotos y PDF, vinculados a tu itinerario y tus gastos"
+        },
+        {
+          "ko": "티켓 사진이나 PDF를 읽어 정보를 입력하는 AI 자동 채우기 추가",
+          "en": "Adds Fill with AI to extract ticket details from a photo or PDF",
+          "ja": "チケットの写真やPDFを読み取って入力できるAI自動入力を追加",
+          "zh-CN": "新增用 AI 自动填写功能，从票券照片或 PDF 读取并填入信息",
+          "zh-TW": "新增用 AI 自動填寫功能，從票券相片或 PDF 讀取並填入資訊",
+          "fr": "Ajout du remplissage par IA à partir d’une photo ou d’un PDF de billet",
+          "de": "Ticketangaben werden per KI aus einem Foto oder PDF ausgelesen und automatisch ausgefüllt",
+          "es": "Añade Rellenar con IA para leer los datos de un billete desde una foto o un PDF"
+        },
+        {
+          "ko": "준비물 목록 구분선 추가",
+          "en": "Adds dividers to the packing list",
+          "ja": "持ち物リストに区切り線を追加",
+          "zh-CN": "行李清单新增分隔线",
+          "zh-TW": "行李清單新增分隔線",
+          "fr": "Ajout de séparateurs dans la liste de bagages",
+          "de": "Neue Trennlinien in der Packliste",
+          "es": "Añade separadores en la lista de equipaje"
+        },
+        {
+          "ko": "지출 기록을 밀어서 삭제하는 기능 추가",
+          "en": "Adds swipe to delete for expense records",
+          "ja": "支出記録をスワイプで削除する機能を追加",
+          "zh-CN": "支出记录支持滑动删除",
+          "zh-TW": "支出紀錄支援滑動刪除",
+          "fr": "Ajout du balayage pour supprimer des dépenses",
+          "de": "Ausgaben lassen sich jetzt per Wischen löschen",
+          "es": "Añade deslizar para eliminar registros de gastos"
+        }
+      ]
+    },
+    {
       "version": "4.5.0",
       "date": "2026.11.14",
       "items": [
@@ -33,16 +79,6 @@
           "fr": "Ajout de la duplication de voyages",
           "de": "Reisen lassen sich jetzt duplizieren",
           "es": "Añade la opción de duplicar viajes"
-        },
-        {
-          "ko": "지출 기록을 밀어서 삭제하는 기능 추가",
-          "en": "Adds swipe to delete for expense records",
-          "ja": "支出記録をスワイプで削除する機能を追加",
-          "zh-CN": "支出记录支持滑动删除",
-          "zh-TW": "支出紀錄支援滑動刪除",
-          "fr": "Ajout du balayage pour supprimer des dépenses",
-          "de": "Ausgaben lassen sich jetzt per Wischen löschen",
-          "es": "Añade deslizar para eliminar registros de gastos"
         }
       ]
     },
