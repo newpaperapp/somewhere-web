@@ -1,6 +1,42 @@
 {
   "releases": [
     {
+      "version": "4.7.0",
+      "date": "2026.11.23",
+      "items": [
+        {
+          "ko": "영수증이나 결제 사진을 읽어 입력하는 지출 AI 자동 채우기 추가",
+          "en": "Adds Fill with AI for expenses to read a receipt or payment photo",
+          "ja": "レシートや支払い画面の写真を読み取って入力できる支出のAI自動入力を追加",
+          "zh-CN": "新增支出用 AI 自动填写功能，可读取收据或付款照片并填入信息",
+          "zh-TW": "新增支出用 AI 自動填寫功能，可讀取收據或付款照片並填入資訊",
+          "fr": "Ajout du remplissage par IA pour les dépenses à partir d’une photo de reçu ou de paiement",
+          "de": "Liest Beleg- oder Zahlungsfotos per KI aus und füllt Ausgaben automatisch aus",
+          "es": "Añade Rellenar con IA para gastos a partir de una foto de recibo o pago"
+        },
+        {
+          "ko": "지출 항목별 입력 및 지출·공동경비 메모 지원",
+          "en": "Supports itemized entry and notes for expenses and shared fund contributions",
+          "ja": "支出の品目ごとの入力と、支出・共同経費へのメモに対応",
+          "zh-CN": "支持按项目输入支出，并为支出与共同经费添加备注",
+          "zh-TW": "支援按項目輸入支出，並為支出與公費新增備註",
+          "fr": "Prise en charge de la saisie par article et des mémos pour les dépenses et les apports à la cagnotte commune",
+          "de": "Unterstützt die Eingabe nach Posten sowie Notizen für Ausgaben und Einzahlungen in die Gemeinschaftskasse",
+          "es": "Permite introducir gastos por artículo y añadir notas a gastos y aportaciones al fondo común"
+        },
+        {
+          "ko": "바우처·티켓에 순서 직접 바꾸기를 지원하는 카드 보기 추가",
+          "en": "Adds a card view with custom reordering to Vouchers & tickets",
+          "ja": "バウチャー・チケットに並び替え可能なカード表示を追加",
+          "zh-CN": "为凭证与票券新增支持自定义排序的卡片视图",
+          "zh-TW": "為憑證與票券新增支援自訂排序的卡片檢視",
+          "fr": "Ajout d’une vue en cartes avec réorganisation libre dans Réservations et billets",
+          "de": "Fügt in Buchungen & Tickets eine Kartenansicht mit eigener Sortierung hinzu",
+          "es": "Añade una vista de tarjetas con orden personalizado en Reservas y billetes"
+        }
+      ]
+    },
+    {
       "version": "4.6.0",
       "date": "2026.11.22",
       "items": [
