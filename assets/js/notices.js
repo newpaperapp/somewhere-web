@@ -17,7 +17,7 @@
       });
     }
     const title = document.querySelector("h1 [data-lang]:not([hidden])");
-    document.title = `${title ? title.textContent : window.SomewhereI18N.get("notices.title", lang)} — Somewhere`;
+    document.title = `${title ? title.textContent : window.SomewhereI18N.get("notices.title", lang)} — SOMEWHERE`;
   }
 
   document.addEventListener("DOMContentLoaded", function () {

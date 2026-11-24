@@ -15,7 +15,7 @@
       },
       "body": {
         "ko": [
-          "Somewhere 서비스 이용약관과 개인정보처리방침이 2026년 12월 5일부터 개정돼요. 트리플 가져오기 기능이 종료되어 관련 내용을 삭제하고, 날씨와 실시간 현황 기능의 개인정보 처리 내용과 새로 나온 바우처·티켓 기능 내용을 추가해요.",
+          "SOMEWHERE 서비스 이용약관과 개인정보처리방침이 2026년 12월 5일부터 개정돼요. 트리플 가져오기 기능이 종료되어 관련 내용을 삭제하고, 날씨와 실시간 현황 기능의 개인정보 처리 내용과 새로 나온 바우처·티켓 기능 내용을 추가해요.",
           [
             "서비스 이용약관: 제공 서비스와 외부 콘텐츠 가져오기 조항에서 트리플 가져오기 삭제",
             "개인정보처리방침: 트리플 가져오기의 처리 목적·처리 항목·수집 경로와 작업 기록 보유기간 삭제",
@@ -28,7 +28,7 @@
           "동의하지 않으시면 적용일 전까지 탈퇴할 수 있고, 적용일 이후 계속 이용하시면 동의한 것으로 봐요(법령상 명시적 동의가 필요한 사항 제외)"
         ],
         "en": [
-          "The Somewhere Terms of Service and Privacy Policy change on December 5, 2026. Because the Triple import feature has ended, we're removing the related content, and we're adding how we handle information for weather, Live Activities and the new vouchers & tickets feature.",
+          "The SOMEWHERE Terms of Service and Privacy Policy change on December 5, 2026. Because the Triple import feature has ended, we're removing the related content, and we're adding how we handle information for weather, Live Activities and the new vouchers & tickets feature.",
           [
             "Terms of Service: Triple import is removed from the description of the Service and the import terms",
             "Privacy Policy: the Triple import purpose, processed information, source and job-record retention period are removed",
@@ -37,11 +37,11 @@
             "Privacy Policy: the purposes, processed information, processors, international transfers and retention for vouchers & tickets and AI ticket fill (Anthropic and OpenAI) are added"
           ],
           "The November 30, 2026 changes to the Terms of Service for Korea stay in place; this update removes the Triple import content and adds the vouchers & tickets content",
-          "Trips and expenses you've already imported stay in Somewhere. Weather uses only trip place coordinates rounded to about 1 km, without your account information. Photos and PDFs you use for AI ticket fill aren't kept separately for AI processing; they're kept only as attachments of tickets you save.",
+          "Trips and expenses you've already imported stay in SOMEWHERE. Weather uses only trip place coordinates rounded to about 1 km, without your account information. Photos and PDFs you use for AI ticket fill aren't kept separately for AI processing; they're kept only as attachments of tickets you save.",
           "If you don't agree, you can delete your account before the effective date; if you keep using the Service after it, you'll be deemed to accept the update (except where the law requires your explicit consent)"
         ],
         "ja": [
-          "Somewhereの利用規約とプライバシーポリシーを2026年12月5日に改定します。Triple取込機能の終了に伴い関連する内容を削除し、天気とライブアクティビティ機能、新しいバウチャー・チケット機能の情報の取り扱いを追加します。",
+          "SOMEWHEREの利用規約とプライバシーポリシーを2026年12月5日に改定します。Triple取込機能の終了に伴い関連する内容を削除し、天気とライブアクティビティ機能、新しいバウチャー・チケット機能の情報の取り扱いを追加します。",
           [
             "利用規約：本サービスの内容と取込に関する規定からTriple取込を削除",
             "プライバシーポリシー：Triple取込の利用目的・取り扱う情報・取得元・処理記録の保存期間を削除",
@@ -53,7 +53,7 @@
           "同意されない場合は施行日までに退会でき、施行日以降もサービスを利用された場合は改定に同意したものとみなします（法令上、明示的な同意が必要な事項を除く）"
         ],
         "zh-CN": [
-          "Somewhere 服务条款和隐私政策将于2026年12月5日修订。由于 Triple 导入功能已停止，我们将删除相关内容，并新增天气、实时活动和全新凭证与票券功能的信息处理说明。",
+          "SOMEWHERE 服务条款和隐私政策将于2026年12月5日修订。由于 Triple 导入功能已停止，我们将删除相关内容，并新增天气、实时活动和全新凭证与票券功能的信息处理说明。",
           [
             "服务条款：从服务说明和导入相关条款中删除 Triple 导入",
             "隐私政策：删除 Triple 导入的处理目的、处理的信息、来源及任务记录保存期限",
@@ -66,7 +66,7 @@
           "如不同意，可在生效日前注销账号；生效日后继续使用服务即视为同意本次修订（法律要求明确同意的事项除外）"
         ],
         "zh-TW": [
-          "Somewhere 服務條款與隱私權政策將於2026年12月5日修訂。由於 Triple 匯入功能已停止，我們將刪除相關內容，並新增天氣、即時動態與全新憑證與票券功能的資訊處理說明。",
+          "SOMEWHERE 服務條款與隱私權政策將於2026年12月5日修訂。由於 Triple 匯入功能已停止，我們將刪除相關內容，並新增天氣、即時動態與全新憑證與票券功能的資訊處理說明。",
           [
             "服務條款：從服務說明與匯入相關條款中刪除 Triple 匯入",
             "隱私權政策：刪除 Triple 匯入的處理目的、處理的資訊、來源及工作記錄保存期限",
@@ -79,7 +79,7 @@
           "如不同意，可於生效日前刪除帳號；生效日後繼續使用服務即視為同意本次修訂（法律要求明確同意的事項除外）"
         ],
         "fr": [
-          "Les Conditions d’utilisation et la Politique de confidentialité de Somewhere changent le 5 décembre 2026. La fonction d’import Triple ayant pris fin, nous supprimons les contenus qui s’y rapportent et ajoutons le traitement des données pour la météo, les activités en direct et la nouvelle fonction Réservations et billets.",
+          "Les Conditions d’utilisation et la Politique de confidentialité de SOMEWHERE changent le 5 décembre 2026. La fonction d’import Triple ayant pris fin, nous supprimons les contenus qui s’y rapportent et ajoutons le traitement des données pour la météo, les activités en direct et la nouvelle fonction Réservations et billets.",
           [
             "Conditions d’utilisation : l’import Triple est retiré de la description du Service et des règles d’import",
             "Politique de confidentialité : la finalité, les données traitées, la provenance et la durée de conservation des tâches d’import Triple sont supprimées",
@@ -87,11 +87,11 @@
             "Conditions d’utilisation : Réservations et billets et le remplissage des billets avec l’IA sont ajoutés à la description du Service, et un remplissage réussi avec l’IA coûte 3 crédits",
             "Politique de confidentialité : les finalités, les données traitées, les sous-traitants, les transferts internationaux et les durées de conservation pour Réservations et billets et le remplissage avec l’IA (Anthropic et OpenAI) sont ajoutés"
           ],
-          "Les voyages et dépenses déjà importés restent dans Somewhere. La météo utilise uniquement les coordonnées des lieux du voyage arrondies à environ 1 km, sans les informations de votre compte. Les photos et PDF utilisés pour le remplissage avec l’IA ne sont pas conservés séparément pour le traitement par IA ; ils ne sont conservés qu’en pièces jointes des billets que vous enregistrez.",
+          "Les voyages et dépenses déjà importés restent dans SOMEWHERE. La météo utilise uniquement les coordonnées des lieux du voyage arrondies à environ 1 km, sans les informations de votre compte. Les photos et PDF utilisés pour le remplissage avec l’IA ne sont pas conservés séparément pour le traitement par IA ; ils ne sont conservés qu’en pièces jointes des billets que vous enregistrez.",
           "Si vous n’êtes pas d’accord, vous pouvez supprimer votre compte avant la date d’entrée en vigueur. Si vous continuez à utiliser le Service après cette date, cela vaudra acceptation de la mise à jour, sauf lorsque la loi exige votre consentement explicite."
         ],
         "de": [
-          "Die Nutzungsbedingungen und Datenschutzhinweise von Somewhere ändern sich am 5. Dezember 2026. Da die Triple-Importfunktion eingestellt wurde, entfernen wir die zugehörigen Inhalte und ergänzen, wie wir Daten für Wetter, Live-Aktivitäten und die neue Funktion Buchungen & Tickets verarbeiten.",
+          "Die Nutzungsbedingungen und Datenschutzhinweise von SOMEWHERE ändern sich am 5. Dezember 2026. Da die Triple-Importfunktion eingestellt wurde, entfernen wir die zugehörigen Inhalte und ergänzen, wie wir Daten für Wetter, Live-Aktivitäten und die neue Funktion Buchungen & Tickets verarbeiten.",
           [
             "Nutzungsbedingungen: Der Triple-Import wird aus der Dienstbeschreibung und den Importregeln entfernt",
             "Datenschutzhinweise: Zweck, verarbeitete Daten, Herkunft und Speicherdauer der Triple-Importjobs werden entfernt",
@@ -99,11 +99,11 @@
             "Nutzungsbedingungen: Buchungen & Tickets und das Ausfüllen von Tickets mit KI werden in die Dienstbeschreibung aufgenommen, und ein erfolgreiches Ausfüllen mit KI kostet 3 Credits",
             "Datenschutzhinweise: Zwecke, verarbeitete Daten, Auftragsverarbeiter, Übermittlungen in Drittländer und Speicherdauer für Buchungen & Tickets und das Ausfüllen mit KI (Anthropic und OpenAI) werden ergänzt"
           ],
-          "Bereits importierte Reisen und Ausgaben bleiben in Somewhere erhalten. Für das Wetter verwenden wir nur auf etwa 1 km gerundete Koordinaten der Reiseorte, ohne deine Kontodaten. Fotos und PDFs, die du zum Ausfüllen mit KI verwendest, werden für die KI-Verarbeitung nicht gesondert gespeichert, sondern nur als Anhänge von Tickets, die du speicherst.",
+          "Bereits importierte Reisen und Ausgaben bleiben in SOMEWHERE erhalten. Für das Wetter verwenden wir nur auf etwa 1 km gerundete Koordinaten der Reiseorte, ohne deine Kontodaten. Fotos und PDFs, die du zum Ausfüllen mit KI verwendest, werden für die KI-Verarbeitung nicht gesondert gespeichert, sondern nur als Anhänge von Tickets, die du speicherst.",
           "Wenn du nicht einverstanden bist, kannst du dein Konto vor dem Inkrafttreten löschen. Nutzt du den Dienst danach weiter, gilt dies als Zustimmung zur Aktualisierung, außer wenn das Gesetz deine ausdrückliche Zustimmung verlangt."
         ],
         "es": [
-          "Los Términos del servicio y la Política de privacidad de Somewhere cambian el 5 de diciembre de 2026. Como la función de importación de Triple ha finalizado, eliminamos el contenido relacionado y añadimos cómo tratamos los datos del tiempo, de las actividades en directo y de la nueva función Reservas y billetes.",
+          "Los Términos del servicio y la Política de privacidad de SOMEWHERE cambian el 5 de diciembre de 2026. Como la función de importación de Triple ha finalizado, eliminamos el contenido relacionado y añadimos cómo tratamos los datos del tiempo, de las actividades en directo y de la nueva función Reservas y billetes.",
           [
             "Términos del servicio: se elimina la importación de Triple de la descripción del Servicio y de las reglas de importación",
             "Política de privacidad: se eliminan la finalidad, los datos tratados, el origen y el plazo de conservación de los trabajos de importación de Triple",
@@ -111,7 +111,7 @@
             "Términos del servicio: se añaden Reservas y billetes y el rellenado de billetes con IA a la descripción del Servicio, y un rellenado correcto con IA cuesta 3 créditos",
             "Política de privacidad: se añaden las finalidades, los datos tratados, los encargados, las transferencias internacionales y los plazos de conservación de Reservas y billetes y del rellenado con IA (Anthropic y OpenAI)"
           ],
-          "Los viajes y gastos que ya importaste siguen en Somewhere. El tiempo solo usa las coordenadas de los lugares del viaje redondeadas a unos 1 km, sin los datos de tu cuenta. Las fotos y los PDF que usas para rellenar con IA no se guardan por separado para el procesamiento con IA; solo se conservan como adjuntos de los billetes que guardas.",
+          "Los viajes y gastos que ya importaste siguen en SOMEWHERE. El tiempo solo usa las coordenadas de los lugares del viaje redondeadas a unos 1 km, sin los datos de tu cuenta. Las fotos y los PDF que usas para rellenar con IA no se guardan por separado para el procesamiento con IA; solo se conservan como adjuntos de los billetes que guardas.",
           "Si no estás de acuerdo, puedes eliminar tu cuenta antes de la fecha de entrada en vigor. Si sigues usando el Servicio después, se considerará que aceptas la actualización, salvo cuando la ley exija tu consentimiento explícito."
         ]
       }
@@ -126,11 +126,11 @@
       "body": {
         "ko": [
           "트리플이 NOL로 통합되면서 트리플 여행과 지출 내역 가져오기를 더 이상 지원하지 않아요.",
-          "이미 가져온 여행과 지출 내역은 Somewhere에 그대로 남아 있어요. 그동안 이용해 주셔서 감사드려요."
+          "이미 가져온 여행과 지출 내역은 SOMEWHERE에 그대로 남아 있어요. 그동안 이용해 주셔서 감사드려요."
         ],
         "en": [
           "Triple has merged into NOL, so importing Triple trips and expense records is no longer supported.",
-          "Trips and expenses you've already imported stay in Somewhere. Thank you for using this feature."
+          "Trips and expenses you've already imported stay in SOMEWHERE. Thank you for using this feature."
         ]
       }
     },
@@ -149,7 +149,7 @@
       },
       "body": {
         "ko": [
-          "Somewhere 서비스 이용약관(대한민국)이 2026년 11월 30일부터 개정돼요. 이용자에게 불리할 수 있는 다음 변경이 포함되어 있어 30일 전에 미리 알려드려요.",
+          "SOMEWHERE 서비스 이용약관(대한민국)이 2026년 11월 30일부터 개정돼요. 이용자에게 불리할 수 있는 다음 변경이 포함되어 있어 30일 전에 미리 알려드려요.",
           [
             "콘텐츠 이용 범위에 전송 추가, 개인을 식별할 수 없는 통계 활용 허용",
             "회사의 고의·과실이 없는 콘텐츠 손실은 회사 책임에서 제외",
@@ -163,7 +163,7 @@
           "동의하지 않으시면 적용일 전까지 탈퇴할 수 있고, 적용일 이후 계속 이용하시면 동의한 것으로 봐요(법령상 명시적 동의가 필요한 사항 제외)"
         ],
         "en": [
-          "The Somewhere Terms of Service for Korea change on November 30, 2026. We're letting you know 30 days ahead because the update includes these changes that may be unfavorable to users.",
+          "The SOMEWHERE Terms of Service for Korea change on November 30, 2026. We're letting you know 30 days ahead because the update includes these changes that may be unfavorable to users.",
           [
             "Content use now includes transmitting content, and anonymized statistics may be used",
             "We're not liable for content loss unless caused by our intent or negligence",
@@ -177,7 +177,7 @@
           "If you don't agree, you can delete your account before the effective date; if you keep using the Service after it, you'll be deemed to accept the update (except where the law requires your explicit consent)"
         ],
         "ja": [
-          "韓国向けのSomewhere利用規約が2026年11月30日に改定されます。利用者に不利となる可能性のある以下の変更が含まれるため、30日前にお知らせします。",
+          "韓国向けのSOMEWHERE利用規約が2026年11月30日に改定されます。利用者に不利となる可能性のある以下の変更が含まれるため、30日前にお知らせします。",
           [
             "コンテンツの利用範囲に送信を追加し、個人を識別できない統計の利用を許可",
             "当社の故意・過失によらないコンテンツの損失は当社の責任の対象外",
@@ -191,7 +191,7 @@
           "同意されない場合は施行日までに退会でき、施行日以降もサービスを利用された場合は改定に同意したものとみなします（法令上、明示的な同意が必要な事項を除く）"
         ],
         "zh-CN": [
-          "Somewhere 韩国服务条款将于2026年11月30日修订。由于本次修订包含以下可能对用户不利的变更，我们提前30天通知您。",
+          "SOMEWHERE 韩国服务条款将于2026年11月30日修订。由于本次修订包含以下可能对用户不利的变更，我们提前30天通知您。",
           [
             "内容使用范围新增“传输”，并允许使用无法识别个人身份的统计信息",
             "非因本公司故意或过失造成的内容丢失，本公司不承担责任",
@@ -205,7 +205,7 @@
           "如不同意，可在生效日前注销账号；生效日后继续使用服务即视为同意本次修订（法律要求明确同意的事项除外）"
         ],
         "zh-TW": [
-          "Somewhere 韓國服務條款將於2026年11月30日修訂。由於本次修訂包含以下可能對使用者不利的變更，我們提前30天通知您。",
+          "SOMEWHERE 韓國服務條款將於2026年11月30日修訂。由於本次修訂包含以下可能對使用者不利的變更，我們提前30天通知您。",
           [
             "內容使用範圍新增「傳輸」，並允許使用無法識別個人身分的統計資訊",
             "非因本公司故意或過失造成的內容遺失，本公司不負責任",
@@ -219,7 +219,7 @@
           "如不同意，可於生效日前刪除帳號；生效日後繼續使用服務即視為同意本次修訂（法律要求明確同意的事項除外）"
         ],
         "fr": [
-          "Les Conditions d’utilisation de Somewhere pour la Corée changent le 30 novembre 2026. Nous vous prévenons 30 jours à l’avance, car cette mise à jour comprend les changements suivants, qui peuvent être défavorables aux utilisateurs.",
+          "Les Conditions d’utilisation de SOMEWHERE pour la Corée changent le 30 novembre 2026. Nous vous prévenons 30 jours à l’avance, car cette mise à jour comprend les changements suivants, qui peuvent être défavorables aux utilisateurs.",
           [
             "L’utilisation des contenus inclut désormais leur transmission, et des statistiques anonymisées peuvent être utilisées",
             "Nous ne sommes pas responsables de la perte de contenus, sauf faute intentionnelle ou négligence de notre part",
@@ -233,7 +233,7 @@
           "Si vous n’êtes pas d’accord, vous pouvez supprimer votre compte avant la date d’entrée en vigueur. Si vous continuez à utiliser le Service après cette date, cela vaudra acceptation de la mise à jour, sauf lorsque la loi exige votre consentement explicite."
         ],
         "de": [
-          "Die Nutzungsbedingungen von Somewhere für Korea ändern sich am 30. November 2026. Wir informieren dich 30 Tage im Voraus, da die Aktualisierung die folgenden Änderungen enthält, die für Nutzer nachteilig sein können.",
+          "Die Nutzungsbedingungen von SOMEWHERE für Korea ändern sich am 30. November 2026. Wir informieren dich 30 Tage im Voraus, da die Aktualisierung die folgenden Änderungen enthält, die für Nutzer nachteilig sein können.",
           [
             "Die Nutzung von Inhalten umfasst jetzt auch deren Übermittlung, und anonymisierte Statistiken dürfen genutzt werden",
             "Für den Verlust von Inhalten haften wir nur bei Vorsatz oder Fahrlässigkeit unsererseits",
@@ -247,7 +247,7 @@
           "Wenn du nicht einverstanden bist, kannst du dein Konto vor dem Inkrafttreten löschen. Nutzt du den Dienst danach weiter, gilt dies als Zustimmung zur Aktualisierung, außer wenn das Gesetz deine ausdrückliche Zustimmung verlangt."
         ],
         "es": [
-          "Los Términos del servicio de Somewhere para Corea cambian el 30 de noviembre de 2026. Te avisamos con 30 días de antelación porque la actualización incluye los siguientes cambios, que pueden ser desfavorables para los usuarios.",
+          "Los Términos del servicio de SOMEWHERE para Corea cambian el 30 de noviembre de 2026. Te avisamos con 30 días de antelación porque la actualización incluye los siguientes cambios, que pueden ser desfavorables para los usuarios.",
           [
             "El uso de contenidos ahora incluye su transmisión, y se pueden usar estadísticas anonimizadas",
             "No somos responsables de la pérdida de contenidos, salvo por dolo o negligencia nuestra",
@@ -290,7 +290,7 @@
       },
       "body": {
         "ko": [
-          "Somewhere 개인정보처리방침이 2026년 10월 28일부터 개정된 내용으로 적용돼요. 대한민국, 미국, EU, 일본 개인정보처리방침에 같은 내용이 반영돼요. 주요 변경 내용은 다음과 같아요.",
+          "SOMEWHERE 개인정보처리방침이 2026년 10월 28일부터 개정된 내용으로 적용돼요. 대한민국, 미국, EU, 일본 개인정보처리방침에 같은 내용이 반영돼요. 주요 변경 내용은 다음과 같아요.",
           [
             "Android 로그인 오류 보고에 미리 정해진 로그인 단계 기록이 최대 50개까지 포함될 수 있다는 내용 추가",
             "앱 비정상 종료 원인을 파악하기 위한 Firebase Crashlytics(Google LLC) 진단 정보 처리 내용 추가",
@@ -298,7 +298,7 @@
           ]
         ],
         "en": [
-          "We're updating the Somewhere Privacy Policy, effective October 28, 2026. The same changes apply to the privacy notices for Korea, the United States, the EU and Japan. Here are the main changes.",
+          "We're updating the SOMEWHERE Privacy Policy, effective October 28, 2026. The same changes apply to the privacy notices for Korea, the United States, the EU and Japan. Here are the main changes.",
           [
             "Discloses that Android sign-in error reports may include up to 50 predefined sign-in step records",
             "Adds crash diagnostics processed by Firebase Crashlytics (Google LLC) to help us find the causes of app crashes",
@@ -306,7 +306,7 @@
           ]
         ],
         "ja": [
-          "Somewhereのプライバシーポリシーを改定し、2026年10月28日から適用します。韓国、米国、EU、日本のプライバシーポリシーに同じ内容が反映されます。主な変更点は次のとおりです。",
+          "SOMEWHEREのプライバシーポリシーを改定し、2026年10月28日から適用します。韓国、米国、EU、日本のプライバシーポリシーに同じ内容が反映されます。主な変更点は次のとおりです。",
           [
             "Androidのログインエラー報告に、あらかじめ定めたログイン手順の記録が最大50件含まれる場合があることを追記",
             "アプリのクラッシュ原因を把握するための、Firebase Crashlytics（Google LLC）による診断情報の処理を追加",
@@ -314,7 +314,7 @@
           ]
         ],
         "zh-CN": [
-          "Somewhere 隐私政策已修订，自2026年10月28日起适用。韩国、美国、欧盟和日本的隐私政策均反映了相同内容。主要变更如下。",
+          "SOMEWHERE 隐私政策已修订，自2026年10月28日起适用。韩国、美国、欧盟和日本的隐私政策均反映了相同内容。主要变更如下。",
           [
             "说明 Android 登录错误报告中可能包含最多50条预先设定的登录步骤记录",
             "新增通过 Firebase Crashlytics（Google LLC）处理诊断信息的内容，用于查找应用崩溃原因",
@@ -322,7 +322,7 @@
           ]
         ],
         "zh-TW": [
-          "Somewhere 隱私權政策已修訂，自2026年10月28日起適用。韓國、美國、歐盟及日本的隱私權政策皆反映相同內容。主要變更如下。",
+          "SOMEWHERE 隱私權政策已修訂，自2026年10月28日起適用。韓國、美國、歐盟及日本的隱私權政策皆反映相同內容。主要變更如下。",
           [
             "說明 Android 登入錯誤報告中可能包含最多50筆預先設定的登入步驟紀錄",
             "新增透過 Firebase Crashlytics（Google LLC）處理診斷資訊的內容，用於找出 App 當機原因",
@@ -330,7 +330,7 @@
           ]
         ],
         "fr": [
-          "Nous mettons à jour la Politique de confidentialité de Somewhere, en vigueur le 28 octobre 2026. Les mêmes changements s’appliquent aux politiques de confidentialité pour la Corée, les États-Unis, l’UE et le Japon. Voici les principaux changements.",
+          "Nous mettons à jour la Politique de confidentialité de SOMEWHERE, en vigueur le 28 octobre 2026. Les mêmes changements s’appliquent aux politiques de confidentialité pour la Corée, les États-Unis, l’UE et le Japon. Voici les principaux changements.",
           [
             "Précise que les rapports d’erreur de connexion sur Android peuvent inclure jusqu’à 50 étapes de connexion prédéfinies",
             "Ajoute les diagnostics de plantage traités par Firebase Crashlytics (Google LLC) pour nous aider à identifier les causes des plantages de l’app",
@@ -338,7 +338,7 @@
           ]
         ],
         "de": [
-          "Wir aktualisieren die Datenschutzerklärung von Somewhere mit Wirkung zum 28. Oktober 2026. Die gleichen Änderungen gelten für die Datenschutzhinweise für Korea, die USA, die EU und Japan. Das sind die wichtigsten Änderungen.",
+          "Wir aktualisieren die Datenschutzerklärung von SOMEWHERE mit Wirkung zum 28. Oktober 2026. Die gleichen Änderungen gelten für die Datenschutzhinweise für Korea, die USA, die EU und Japan. Das sind die wichtigsten Änderungen.",
           [
             "Weist darauf hin, dass Android-Fehlerberichte zur Anmeldung bis zu 50 vordefinierte Anmeldeschritte enthalten können",
             "Ergänzt Absturzdiagnosen, die Firebase Crashlytics (Google LLC) verarbeitet, damit wir die Ursachen von App-Abstürzen finden können",
@@ -346,7 +346,7 @@
           ]
         ],
         "es": [
-          "Actualizamos la Política de privacidad de Somewhere, vigente desde el 28 de octubre de 2026. Los mismos cambios se aplican a los avisos de privacidad para Corea, Estados Unidos, la UE y Japón. Estos son los principales cambios.",
+          "Actualizamos la Política de privacidad de SOMEWHERE, vigente desde el 28 de octubre de 2026. Los mismos cambios se aplican a los avisos de privacidad para Corea, Estados Unidos, la UE y Japón. Estos son los principales cambios.",
           [
             "Indica que los informes de errores de inicio de sesión en Android pueden incluir hasta 50 registros de pasos de inicio de sesión predefinidos",
             "Añade los diagnósticos de fallos procesados por Firebase Crashlytics (Google LLC) para ayudarnos a encontrar las causas de los cierres inesperados de la app",

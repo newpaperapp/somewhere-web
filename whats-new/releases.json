@@ -191,14 +191,14 @@
           "es": "Añade historias de fotos al archivo de viajes para revivir tus viajes pasados"
         },
         {
-          "ko": "Somewhere Pro에 지출 내역 CSV 내보내기와 사진 저장 한도 확대 추가",
-          "en": "Adds expense CSV export and more photos per trip to Somewhere Pro",
-          "ja": "Somewhere Proに支出履歴のCSVエクスポートと写真の保存枚数拡大を追加",
-          "zh-CN": "Somewhere Pro 新增支出明细 CSV 导出，并可保存更多照片",
-          "zh-TW": "Somewhere Pro 新增支出明細 CSV 匯出，並可儲存更多相片",
-          "fr": "Ajout de l’export CSV des dépenses et de plus de photos avec Somewhere Pro",
-          "de": "Fügt Somewhere Pro den CSV-Export von Ausgaben und mehr Fotos pro Reise hinzu",
-          "es": "Añade a Somewhere Pro la exportación de gastos en CSV y más fotos por viaje"
+          "ko": "SOMEWHERE PRO에 지출 내역 CSV 내보내기와 사진 저장 한도 확대 추가",
+          "en": "Adds expense CSV export and more photos per trip to SOMEWHERE PRO",
+          "ja": "SOMEWHERE PROに支出履歴のCSVエクスポートと写真の保存枚数拡大を追加",
+          "zh-CN": "SOMEWHERE PRO 新增支出明细 CSV 导出，并可保存更多照片",
+          "zh-TW": "SOMEWHERE PRO 新增支出明細 CSV 匯出，並可儲存更多相片",
+          "fr": "Ajout de l’export CSV des dépenses et de plus de photos avec SOMEWHERE PRO",
+          "de": "Fügt SOMEWHERE PRO den CSV-Export von Ausgaben und mehr Fotos pro Reise hinzu",
+          "es": "Añade a SOMEWHERE PRO la exportación de gastos en CSV y más fotos por viaje"
         }
       ]
     },
@@ -459,12 +459,12 @@
           "en": "Added the ability to share trip invitation links"
         },
         {
-          "ko": "Somewhere Pro 구독 개편",
-          "en": "Redesigned the Somewhere Pro subscription"
+          "ko": "SOMEWHERE PRO 구독 개편",
+          "en": "Redesigned the SOMEWHERE PRO subscription"
         },
         {
-          "ko": "iOS Somewhere Pro 사용자에게 잠금 화면 및 Dynamic Island Live Activities 제공",
-          "en": "Lock Screen and Dynamic Island Live Activities now available for iOS Somewhere Pro users"
+          "ko": "iOS SOMEWHERE PRO 사용자에게 잠금 화면 및 Dynamic Island Live Activities 제공",
+          "en": "Lock Screen and Dynamic Island Live Activities now available for iOS SOMEWHERE PRO users"
         }
       ]
     },
@@ -575,8 +575,8 @@
       "date": "2024.11.08",
       "items": [
         {
-          "ko": "Somewhere Pro 구독제 추가",
-          "en": "Add Somewhere Pro subscription"
+          "ko": "SOMEWHERE PRO 구독제 추가",
+          "en": "Add SOMEWHERE PRO subscription"
         },
         {
           "ko": "UI/UX 개선",
@@ -649,8 +649,8 @@
       "date": "2023.10.22",
       "items": [
         {
-          "ko": "Somewhere 첫 출시",
-          "en": "The first release of Somewhere"
+          "ko": "SOMEWHERE 첫 출시",
+          "en": "The first release of SOMEWHERE"
         }
       ]
     }
