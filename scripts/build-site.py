@@ -591,8 +591,15 @@ def validate(output, data):
     validate_features(output)
     validate_notices(output)
     validate_sitemap(output)
+    validate_llms(output)
     validate_resources(output)
-    print("Validated language metadata, reciprocal hreflang, JSON-LD, sitemap URLs, all HTML/CSS resources and protected entry points")
+    print("Validated language metadata, reciprocal hreflang, JSON-LD, sitemap URLs, llms.txt links, all HTML/CSS resources and protected entry points")
+
+
+def validate_llms(output):
+    """Every site URL listed in dist/llms.txt resolves to a served page."""
+    for url in re.findall(r"\((" + re.escape(ORIGIN) + r"/[^)]*)\)", (output / "llms.txt").read_text()):
+        assert served(output, url[len(ORIGIN):]), f"llms.txt URL is not served: {url}"
 
 
 def served(output, href):
@@ -697,14 +704,16 @@ def main():
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += "".join(f"  <url><loc>{url}</loc><lastmod>{date}</lastmod></url>\n" for url, date in entries) + "</urlset>\n"
     (output / "sitemap.xml").write_text(sitemap)
-    llms = "# SOMEWHERE\n\n> A travel planning app for schedules, route maps, shared trips, expenses and settlement.\n\n"
-    llms += "The app is free to download. Optional SOMEWHERE PRO subscriptions provide additional features; free download does not mean every feature is free.\n\n## Official product pages\n\n"
-    llms += "".join(f"- [{lang}]({ORIGIN + home_path(lang)}): {text(data['translations'][lang]['hero.title.2'])}\n" for lang in data["languages"])
-    llms += "\n## Feature pages\n\n" + "".join(
+    localized_index = "## Official product pages\n\n"
+    localized_index += "".join(f"- [{lang}]({ORIGIN + home_path(lang)}): {text(data['translations'][lang]['hero.title.2'])}\n" for lang in data["languages"])
+    localized_index += "\n## Localized feature pages\n\n" + "".join(
         f"- [{lang}]({ORIGIN + feature_path(slug, lang)}): "
         f"{text(re.search(r'<title>(.*?)</title>', (ROOT / 'features' / slug / f'{lang}.html').read_text(), re.S)[1])}\n"
         for slug in FEATURE_PAGES for lang in FEATURE_LANGUAGES)
-    llms += f"\n## Downloads and policies\n\n- [App Store]({data['config']['APP_STORE_URL']})\n- [Google Play]({data['config']['PLAY_STORE_URL']})\n- [Privacy policy (Korea, Korean/English)](https://npsomewhere.com/privacy.html)\n- [Terms of service (Korea, Korean/English)](https://npsomewhere.com/terms.html)\n- [Privacy policy (Japan)](https://npsomewhere.com/ja/privacy.html)\n- [Terms of service (Japan)](https://npsomewhere.com/ja/terms.html)\n- [Specified Commercial Transactions Act disclosure (Japan)](https://npsomewhere.com/ja/commercial-transactions.html)\n- [U.S. Privacy Notice](https://npsomewhere.com/us/privacy.html)\n- [U.S. Terms of Service](https://npsomewhere.com/us/terms.html)\n- [EU Privacy Notice (English)](https://npsomewhere.com/eu/privacy.html)\n- [EU Terms of Service (English)](https://npsomewhere.com/eu/terms.html)\n- [EU Privacy Notice (French)](https://npsomewhere.com/eu/fr/privacy.html)\n- [EU Privacy Notice (German)](https://npsomewhere.com/eu/de/privacy.html)\n- [EU Privacy Notice (Spanish)](https://npsomewhere.com/eu/es/privacy.html)\n"
+    llms_base = (ROOT / "llms.txt").read_text()
+    marker = "\n## Optional\n"
+    assert marker in llms_base, "llms.txt must contain an Optional section"
+    llms = llms_base.replace(marker, "\n" + localized_index + marker, 1)
     (output / "llms.txt").write_text(llms)
     validate(output, data)
     print(f"Built {len(data['languages'])} static landing languages and {len(entries)} sitemap URLs in dist/")
