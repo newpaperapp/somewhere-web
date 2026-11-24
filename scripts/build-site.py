@@ -24,8 +24,8 @@ LEGAL_ROUTES = {lang: {"privacy.html": "/privacy", "terms.html": "/terms"} for l
 # Hand-written feature pages: features/<slug>/<lang>.html holds the localized <title>, description
 # and <main>, wrapped in features/_shell.html and served at feature_path(slug, lang).
 # Each date is the page's last content change and becomes its sitemap lastmod.
-FEATURE_PAGES = {"expense": "2026-11-22", "map": "2026-11-22", "together": "2026-11-22", "ai": "2026-11-22",
-                 "packing": "2026-11-22", "vouchers": "2026-11-22"}
+FEATURE_PAGES = {"expense": "2026-11-24", "map": "2026-11-22", "together": "2026-11-22", "ai": "2026-11-24",
+                 "packing": "2026-11-22", "vouchers": "2026-11-24"}
 FEATURE_LANGUAGES = ["ko", "en", "ja", "zh-CN", "zh-TW", "fr", "de", "es"]
 # Legal shells: page -> (fragment folder, page language, script listing its versions).
 # Each fragment's file name is its effective date. The build embeds the version in
