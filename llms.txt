@@ -2,7 +2,7 @@
 
 > SOMEWHERE is a trip planning app for iOS and Android. It brings trip itineraries, day-by-day route maps, and expense tracking and settlement into one planning flow, and lets friends plan the same trip together. Available in Korean, English, Japanese, Simplified Chinese, Traditional Chinese, French, German and Spanish.
 
-SOMEWHERE (여행 계획 앱 "SOMEWHERE", developed by NP) is not a booking service. It is a planner: users build an itinerary, see each day's route on a map, record trip spending, and share the trip with companions.
+SOMEWHERE (여행 계획 앱 "SOMEWHERE", developed by NP) is not a booking service. It is a planner: users build an itinerary, see each day's route on a map, record trip spending, and share the trip with companions. The app is free to download; optional SOMEWHERE PRO subscriptions provide additional features, so free download does not mean every feature is free.
 
 ## Features
 
@@ -14,24 +14,25 @@ SOMEWHERE (여행 계획 앱 "SOMEWHERE", developed by NP) is not a booking serv
 - Weather and trip duplication: Trip date cards show the weather forecast for upcoming dates, and a trip can be duplicated to plan a similar one.
 - [Vouchers & tickets](https://npsomewhere.com/en/features/vouchers/): Flight tickets, stay vouchers and other bookings can be saved with photos or PDFs, viewed as reorderable cards or grouped by day, linked to places and expenses, and opened offline.
 
-## Korean pages
-
-- [홈](https://npsomewhere.com/): 여행 일정, 지도 동선, 경비 정산을 한 곳에서 하는 여행 계획 앱
-- [AI 여행 일정](https://npsomewhere.com/features/ai/)
-- [여행 동선 지도](https://npsomewhere.com/features/map/)
-- [여행 경비 정산](https://npsomewhere.com/features/expense/)
-- [친구와 함께 여행 계획](https://npsomewhere.com/features/together/)
-- [여행 준비물 체크리스트](https://npsomewhere.com/features/packing/)
-- [바우처·티켓 보관](https://npsomewhere.com/features/vouchers/)
-
-## Download
+## Downloads and updates
 
 - [App Store](https://apps.apple.com/app/id6780403625)
 - [Google Play](https://play.google.com/store/apps/details?id=com.newpaperapp.somewhere)
+- [What's new](https://npsomewhere.com/whats-new/): Release notes for each app version
+- [Notices](https://npsomewhere.com/notices/): Service announcements and policy updates
+- [Import places from Google Maps](https://npsomewhere.com/import-place): Guide to saving shared Google Maps places into a trip
 
 ## Optional
 
-- [What's new](https://npsomewhere.com/whats-new/): Release notes for each app version
-- [Notices](https://npsomewhere.com/notices/)
-- [Privacy policy](https://npsomewhere.com/privacy.html)
-- [Terms of service](https://npsomewhere.com/terms.html)
+- [Privacy policy (Korea, Korean/English)](https://npsomewhere.com/privacy.html)
+- [Terms of service (Korea, Korean/English)](https://npsomewhere.com/terms.html)
+- [Privacy policy (Japan)](https://npsomewhere.com/ja/privacy.html)
+- [Terms of service (Japan)](https://npsomewhere.com/ja/terms.html)
+- [Specified Commercial Transactions Act disclosure (Japan)](https://npsomewhere.com/ja/commercial-transactions.html)
+- [U.S. Privacy Notice](https://npsomewhere.com/us/privacy.html)
+- [U.S. Terms of Service](https://npsomewhere.com/us/terms.html)
+- [EU Privacy Notice (English)](https://npsomewhere.com/eu/privacy.html)
+- [EU Terms of Service (English)](https://npsomewhere.com/eu/terms.html)
+- [EU Privacy Notice (French)](https://npsomewhere.com/eu/fr/privacy.html)
+- [EU Privacy Notice (German)](https://npsomewhere.com/eu/de/privacy.html)
+- [EU Privacy Notice (Spanish)](https://npsomewhere.com/eu/es/privacy.html)
