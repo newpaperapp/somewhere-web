@@ -1,8 +1,8 @@
-# Somewhere
+# SOMEWHERE
 
-> Somewhere is a trip planning app for iOS and Android. It brings trip itineraries, day-by-day route maps, and expense tracking and settlement into one planning flow, and lets friends plan the same trip together. Available in Korean, English, Japanese, Simplified Chinese, Traditional Chinese, French, German and Spanish.
+> SOMEWHERE is a trip planning app for iOS and Android. It brings trip itineraries, day-by-day route maps, and expense tracking and settlement into one planning flow, and lets friends plan the same trip together. Available in Korean, English, Japanese, Simplified Chinese, Traditional Chinese, French, German and Spanish.
 
-Somewhere (여행 계획 앱 "Somewhere", developed by NP) is not a booking service. It is a planner: users build an itinerary, see each day's route on a map, record trip spending, and share the trip with companions.
+SOMEWHERE (여행 계획 앱 "SOMEWHERE", developed by NP) is not a booking service. It is a planner: users build an itinerary, see each day's route on a map, record trip spending, and share the trip with companions.
 
 ## Features
 

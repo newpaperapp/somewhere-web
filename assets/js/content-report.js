@@ -2,7 +2,7 @@
   const translations = {
     en: {
       title: "Report illegal content",
-      intro: "Use this form to prepare a structured notice. Submitting opens your email app with the information addressed to Somewhere; review and send the email to complete the report.",
+      intro: "Use this form to prepare a structured notice. Submitting opens your email app with the information addressed to SOMEWHERE; review and send the email to complete the report.",
       name: "Your name",
       email: "Your email address",
       location: "Exact location of the content",
@@ -16,7 +16,7 @@
     },
     fr: {
       title: "Signaler un contenu illicite",
-      intro: "Ce formulaire prépare un signalement structuré. Son envoi ouvre votre application de messagerie avec les informations adressées à Somewhere ; vérifiez puis envoyez l’e-mail pour terminer le signalement.",
+      intro: "Ce formulaire prépare un signalement structuré. Son envoi ouvre votre application de messagerie avec les informations adressées à SOMEWHERE ; vérifiez puis envoyez l’e-mail pour terminer le signalement.",
       name: "Votre nom",
       email: "Votre adresse e-mail",
       location: "Emplacement exact du contenu",
@@ -30,7 +30,7 @@
     },
     de: {
       title: "Rechtswidrige Inhalte melden",
-      intro: "Dieses Formular bereitet eine strukturierte Meldung vor. Beim Absenden öffnet sich Ihre E-Mail-App mit den an Somewhere adressierten Angaben. Prüfen und senden Sie die E-Mail, um die Meldung abzuschließen.",
+      intro: "Dieses Formular bereitet eine strukturierte Meldung vor. Beim Absenden öffnet sich Ihre E-Mail-App mit den an SOMEWHERE adressierten Angaben. Prüfen und senden Sie die E-Mail, um die Meldung abzuschließen.",
       name: "Ihr Name",
       email: "Ihre E-Mail-Adresse",
       location: "Genaue Fundstelle des Inhalts",
@@ -44,7 +44,7 @@
     },
     es: {
       title: "Denunciar contenido ilegal",
-      intro: "Este formulario prepara una denuncia estructurada. Al enviarlo se abre su aplicación de correo con la información dirigida a Somewhere; revísela y envíe el correo para completar la denuncia.",
+      intro: "Este formulario prepara una denuncia estructurada. Al enviarlo se abre su aplicación de correo con la información dirigida a SOMEWHERE; revísela y envíe el correo para completar la denuncia.",
       name: "Su nombre",
       email: "Su correo electrónico",
       location: "Ubicación exacta del contenido",
@@ -70,7 +70,7 @@
     }
     const copy = translations[language];
     document.documentElement.lang = language;
-    document.title = `Somewhere — ${copy.title}`;
+    document.title = `SOMEWHERE — ${copy.title}`;
     document.querySelectorAll("[data-report-i18n]").forEach((element) => {
       const value = copy[element.dataset.reportI18n];
       if (value) element.textContent = value;
@@ -96,7 +96,7 @@
         "",
         "Good-faith declaration: Confirmed",
       ].join("\n");
-      const subject = "Illegal content notice — Somewhere";
+      const subject = "Illegal content notice — SOMEWHERE";
       window.location.href = `mailto:contact@npsomewhere.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }

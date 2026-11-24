@@ -1,5 +1,5 @@
 /* ============================================================
-   Somewhere — i18n
+   SOMEWHERE — i18n
    - Auto-detects browser language and persists the selected language.
    - Applies text to any element with [data-i18n] (and common attr variants).
    - Legal documents intentionally remain Korean / English only.
@@ -13,11 +13,11 @@ const I18N = {
     "lang.name": "한국어",
     "lang.select": "언어 선택",
     "whatsNew.title": "새로운 기능",
-    "whatsNew.subtitle": "Somewhere에 새로 추가된 기능을 소개해요",
+    "whatsNew.subtitle": "SOMEWHERE에 새로 추가된 기능을 소개해요",
     "whatsNew.latest": "최신",
     "whatsNew.empty": "아직 소개할 새로운 기능이 없어요",
     "notices.title": "공지사항",
-    "notices.subtitle": "Somewhere의 중요한 소식과 안내를 전해드려요",
+    "notices.subtitle": "SOMEWHERE의 중요한 소식과 안내를 전해드려요",
     "notices.empty": "아직 등록된 공지사항이 없어요",
     "notices.back": "공지사항 목록",
     "lang.option.ko": "한국어",
@@ -37,30 +37,30 @@ const I18N = {
     "store.qr": "QR 코드로 이동",
     "theme.toggle": "테마 전환",
 
-    "hero.eyebrow": "Somewhere AI 여행 계획 앱",
-    "hero.title.1": "Somewhere",
+    "hero.eyebrow": "SOMEWHERE AI 여행 계획 앱",
+    "hero.title.1": "SOMEWHERE",
     "hero.title.2": "AI 여행 계획 앱",
     "seo.title": "여행 일정·동선 지도·경비 정산 앱",
     "hero.lead":
       "나만의 여행 계획을 손쉽게 세워보세요. 여행 계획부터 지도 동선 확인, 소비 내역 기록 및 정산까지 여행 준비에 필요한 흐름을 한 곳에 모아드려요.",
     "hero.note": "App Store · Google Play 무료 다운로드",
-    "hero.screen.trips": "Somewhere 여행 목록 화면",
-    "hero.screen.map": "Somewhere 지도 동선 화면",
-    "hero.screens": "Somewhere 앱 스크린샷",
+    "hero.screen.trips": "SOMEWHERE 여행 목록 화면",
+    "hero.screen.map": "SOMEWHERE 지도 동선 화면",
+    "hero.screens": "SOMEWHERE 앱 스크린샷",
 
     "feature.map.kicker": "지도",
     "feature.map.title": "지도로 확인하는 여행 동선",
     "feature.map.desc":
       "가고 싶은 장소를 지도에 표시하고, 이동 동선을 한눈에 확인하세요",
-    "feature.map.alt": "태블릿에서 보는 Somewhere 여행 지도 화면",
+    "feature.map.alt": "태블릿에서 보는 SOMEWHERE 여행 지도 화면",
     "feature.live.dynamic.title": "실시간 현황",
     "feature.live.dynamic.desc":
-      "홈 화면의 Dynamic Island에서 현재 여행 현황을 확인하세요 (Somewhere Pro에서 이용 가능)",
+      "홈 화면의 Dynamic Island에서 현재 여행 현황을 확인하세요 (SOMEWHERE PRO에서 이용 가능)",
     "feature.live.dynamic.alt":
       "홈 화면의 Dynamic Island에서 확인하는 현재 여행 현황",
     "feature.live.lock.title": "실시간 현황",
     "feature.live.lock.desc":
-      "잠금 화면에서 현재 여행 현황을 한눈에 확인하세요 (Somewhere Pro에서 이용 가능)",
+      "잠금 화면에서 현재 여행 현황을 한눈에 확인하세요 (SOMEWHERE PRO에서 이용 가능)",
     "feature.live.lock.alt": "잠금 화면 하단에서 확인하는 현재 여행 현황",
     "feature.expense.kicker": "지출",
     "feature.expense.title": "지출 내역과 정산",
@@ -81,7 +81,7 @@ const I18N = {
     "feature.large.title": "대화면 최적화 UI",
     "feature.large.desc":
       "폴더블, 태블릿 등 큰 화면에서도 편리하게 이용해보세요",
-    "feature.large.alt": "폴더블에서 보는 Somewhere 여행 일정 화면",
+    "feature.large.alt": "폴더블에서 보는 SOMEWHERE 여행 일정 화면",
     "feature.supplies.kicker": "준비물",
     "feature.supplies.title": "함께 챙기는 준비물",
     "feature.supplies.desc": "공동 준비물과 개인 준비물을 나눠 체크하고, 자주 챙기는 항목은 골라서 한 번에 추가하세요",
@@ -109,7 +109,7 @@ const I18N = {
     "a11y.screenReader": "스크린 리더 (TalkBack, VoiceOver) 지원",
 
     "pro.eyebrow": "구독",
-    "pro.title": "Somewhere Pro 구독제",
+    "pro.title": "SOMEWHERE PRO 구독제",
     "pro.ads": "광고 제거",
     "pro.credits": "매주 무료 크레딧 제공",
     "pro.friends": "친구 초대 수 증가",
@@ -119,7 +119,7 @@ const I18N = {
     "pro.expenseCsv": "지출 내역 CSV 내보내기",
 
     "cta.title": "지금 여행을 시작하세요",
-    "cta.sub": "지금 Somewhere를 다운로드하고 첫 여행을 만들어 보세요",
+    "cta.sub": "지금 SOMEWHERE를 다운로드하고 첫 여행을 만들어 보세요",
     "cta.qr": "카메라로 스캔해서 다운로드",
 
     "footer.developer": "개발자",
@@ -137,17 +137,17 @@ const I18N = {
 
     "redirect.auto.title": "스토어로 이동 중…",
     "redirect.auto.sub": "잠시만 기다려 주세요",
-    "redirect.manual.title": "Somewhere 다운로드",
+    "redirect.manual.title": "SOMEWHERE 다운로드",
     "redirect.manual.sub": "사용 중인 기기의 스토어를 선택하세요",
     "redirect.home": "홈으로",
 
     "join.documentTitle": "여행 초대",
     "join.title": "여행 초대를 받았어요",
     "join.description":
-      "Somewhere 앱이 설치되어 있다면 아래 버튼을 눌러 여행 정보를 확인하고 참가할 수 있어요.",
+      "SOMEWHERE 앱이 설치되어 있다면 아래 버튼을 눌러 여행 정보를 확인하고 참가할 수 있어요.",
     "join.open": "앱에서 열기",
     "join.download": "앱 다운로드",
-    "join.home": "Somewhere 홈으로",
+    "join.home": "SOMEWHERE 홈으로",
     "error.notFound": "페이지를 찾을 수 없어요",
     "error.home": "홈으로",
     "legal.redirect.title": "개인정보처리방침으로 이동 중이에요",
@@ -163,11 +163,11 @@ const I18N = {
     "lang.name": "English",
     "lang.select": "Select language",
     "whatsNew.title": "What's new",
-    "whatsNew.subtitle": "See what's new in Somewhere",
+    "whatsNew.subtitle": "See what's new in SOMEWHERE",
     "whatsNew.latest": "Latest",
     "whatsNew.empty": "No new features to show yet",
     "notices.title": "Notices",
-    "notices.subtitle": "Important news and updates about Somewhere",
+    "notices.subtitle": "Important news and updates about SOMEWHERE",
     "notices.empty": "No notices yet",
     "notices.back": "All notices",
     "lang.option.ko": "한국어",
@@ -187,30 +187,30 @@ const I18N = {
     "store.qr": "Go to QR code",
     "theme.toggle": "Toggle theme",
 
-    "hero.eyebrow": "Somewhere AI Trip Planner App",
-    "hero.title.1": "Somewhere",
+    "hero.eyebrow": "SOMEWHERE AI Trip Planner App",
+    "hero.title.1": "SOMEWHERE",
     "hero.title.2": "AI Trip Planner App",
     "seo.title": "Trip Planner with Route Maps & Expense Splitting",
     "hero.lead":
-      "Build your own trip without the busywork. Somewhere brings trip planning, route maps, and expense tracking & settlement into one planning flow.",
+      "Build your own trip without the busywork. SOMEWHERE brings trip planning, route maps, and expense tracking & settlement into one planning flow.",
     "hero.note": "Free on the App Store and Google Play",
-    "hero.screen.trips": "Somewhere trips screen",
-    "hero.screen.map": "Somewhere route map screen",
-    "hero.screens": "Somewhere app screenshots",
+    "hero.screen.trips": "SOMEWHERE trips screen",
+    "hero.screen.map": "SOMEWHERE route map screen",
+    "hero.screens": "SOMEWHERE app screenshots",
 
     "feature.map.kicker": "Map",
     "feature.map.title": "Travel routes on a map",
     "feature.map.desc":
       "Mark the places you want to visit and see your travel route at a glance",
-    "feature.map.alt": "Somewhere trip map on a tablet",
+    "feature.map.alt": "SOMEWHERE trip map on a tablet",
     "feature.live.dynamic.title": "Live Activities",
     "feature.live.dynamic.desc":
-      "See your current trip status in the Dynamic Island from your Home Screen (Available on Somewhere Pro)",
+      "See your current trip status in the Dynamic Island from your Home Screen (Available on SOMEWHERE PRO)",
     "feature.live.dynamic.alt":
       "Current trip status in the Dynamic Island on the Home Screen",
     "feature.live.lock.title": "Live Activities",
     "feature.live.lock.desc":
-      "View your current trip status at a glance on your Lock Screen (Available on Somewhere Pro)",
+      "View your current trip status at a glance on your Lock Screen (Available on SOMEWHERE PRO)",
     "feature.live.lock.alt":
       "Current trip status at the bottom of the Lock Screen",
     "feature.expense.kicker": "Expense",
@@ -231,8 +231,8 @@ const I18N = {
     "feature.large.kicker": "Large screens",
     "feature.large.title": "Optimized for bigger displays",
     "feature.large.desc":
-      "Use Somewhere comfortably on foldables, tablets, and other large screens",
-    "feature.large.alt": "Somewhere itinerary screen on a foldable device",
+      "Use SOMEWHERE comfortably on foldables, tablets, and other large screens",
+    "feature.large.alt": "SOMEWHERE itinerary screen on a foldable device",
     "feature.supplies.kicker": "Packing",
     "feature.supplies.title": "Pack together",
     "feature.supplies.desc": "Check off shared and personal items separately, and add common essentials all at once",
@@ -260,7 +260,7 @@ const I18N = {
     "a11y.screenReader": "Screen reader (TalkBack, VoiceOver) support",
 
     "pro.eyebrow": "Subscription",
-    "pro.title": "Somewhere Pro",
+    "pro.title": "SOMEWHERE PRO",
     "pro.ads": "Remove ads",
     "pro.credits": "Free credits provided weekly",
     "pro.friends": "Increased friend invite limit",
@@ -272,7 +272,7 @@ const I18N = {
     "pro.expenseCsv": "Export expenses as CSV",
 
     "cta.title": "Start your journey today",
-    "cta.sub": "Download Somewhere and create your first trip",
+    "cta.sub": "Download SOMEWHERE and create your first trip",
     "cta.qr": "Scan to download",
 
     "footer.developer": "Developer",
@@ -290,17 +290,17 @@ const I18N = {
 
     "redirect.auto.title": "Taking you to the store…",
     "redirect.auto.sub": "Please wait a moment",
-    "redirect.manual.title": "Download Somewhere",
+    "redirect.manual.title": "Download SOMEWHERE",
     "redirect.manual.sub": "Choose the store for your device",
     "redirect.home": "Home",
 
     "join.documentTitle": "Trip Invitation",
     "join.title": "You've been invited",
     "join.description":
-      "If Somewhere is installed, use the button below to review and join the trip in the app.",
+      "If SOMEWHERE is installed, use the button below to review and join the trip in the app.",
     "join.open": "Open in App",
     "join.download": "Download App",
-    "join.home": "Go to Somewhere Home",
+    "join.home": "Go to SOMEWHERE Home",
     "error.notFound": "Page not found",
     "error.home": "Home",
     "legal.redirect.title": "Taking you to the Privacy Policy",
@@ -316,11 +316,11 @@ const I18N = {
     "lang.name": "日本語",
     "lang.select": "言語を選択",
     "whatsNew.title": "新機能",
-    "whatsNew.subtitle": "Somewhereに追加された新しい機能をご紹介します",
+    "whatsNew.subtitle": "SOMEWHEREに追加された新しい機能をご紹介します",
     "whatsNew.latest": "最新",
     "whatsNew.empty": "まだご紹介する新機能はありません",
     "notices.title": "お知らせ",
-    "notices.subtitle": "Somewhereからの大切なお知らせをお届けします",
+    "notices.subtitle": "SOMEWHEREからの大切なお知らせをお届けします",
     "notices.empty": "まだお知らせはありません",
     "notices.back": "お知らせ一覧",
     "lang.option.ko": "한국어",
@@ -340,30 +340,30 @@ const I18N = {
     "store.qr": "QRコードへ移動",
     "theme.toggle": "テーマを切り替え",
 
-    "hero.eyebrow": "Somewhere AI旅行計画アプリ",
-    "hero.title.1": "Somewhere",
+    "hero.eyebrow": "SOMEWHERE AI旅行計画アプリ",
+    "hero.title.1": "SOMEWHERE",
     "hero.title.2": "AI旅行計画アプリ",
     "seo.title": "旅行計画・ルートマップ・割り勘精算アプリ",
     "hero.lead":
-      "面倒な作業なしで、自分だけの旅行を計画できます。Somewhereは、旅行計画からルートマップ、支出の記録と精算まで、旅の準備に必要な流れをひとつにまとめます。",
+      "面倒な作業なしで、自分だけの旅行を計画できます。SOMEWHEREは、旅行計画からルートマップ、支出の記録と精算まで、旅の準備に必要な流れをひとつにまとめます。",
     "hero.note": "App Store・Google Playで無料ダウンロード",
-    "hero.screen.trips": "Somewhereの旅行一覧画面",
-    "hero.screen.map": "Somewhereのルートマップ画面",
-    "hero.screens": "Somewhereのアプリ画面",
+    "hero.screen.trips": "SOMEWHEREの旅行一覧画面",
+    "hero.screen.map": "SOMEWHEREのルートマップ画面",
+    "hero.screens": "SOMEWHEREのアプリ画面",
 
     "feature.map.kicker": "地図",
     "feature.map.title": "地図で見る旅行ルート",
     "feature.map.desc":
       "行きたい場所を地図に登録して、移動ルートをひと目で確認できます",
-    "feature.map.alt": "タブレットで見るSomewhereの旅行マップ",
+    "feature.map.alt": "タブレットで見るSOMEWHEREの旅行マップ",
     "feature.live.dynamic.title": "リアルタイム情報",
     "feature.live.dynamic.desc":
-      "ホーム画面のDynamic Islandで現在の旅行状況を確認できます（Somewhere Proで利用可能）",
+      "ホーム画面のDynamic Islandで現在の旅行状況を確認できます（SOMEWHERE PROで利用可能）",
     "feature.live.dynamic.alt":
       "ホーム画面のDynamic Islandに表示された現在の旅行状況",
     "feature.live.lock.title": "リアルタイム情報",
     "feature.live.lock.desc":
-      "ロック画面で現在の旅行状況をひと目で確認できます（Somewhere Proで利用可能）",
+      "ロック画面で現在の旅行状況をひと目で確認できます（SOMEWHERE PROで利用可能）",
     "feature.live.lock.alt": "ロック画面下部に表示された現在の旅行状況",
     "feature.expense.kicker": "支出",
     "feature.expense.title": "支出と精算",
@@ -384,7 +384,7 @@ const I18N = {
     "feature.large.title": "大画面に最適化されたUI",
     "feature.large.desc":
       "折りたたみスマートフォンやタブレットなど、大きな画面でも快適に使えます",
-    "feature.large.alt": "折りたたみスマートフォンで見るSomewhereの旅行日程画面",
+    "feature.large.alt": "折りたたみスマートフォンで見るSOMEWHEREの旅行日程画面",
     "feature.supplies.kicker": "持ち物",
     "feature.supplies.title": "みんなで準備する持ち物",
     "feature.supplies.desc": "共有と自分用の持ち物を分けてチェックし、定番アイテムはまとめて追加しましょう",
@@ -412,7 +412,7 @@ const I18N = {
     "a11y.screenReader": "スクリーンリーダー（TalkBack、VoiceOver）に対応",
 
     "pro.eyebrow": "サブスクリプション",
-    "pro.title": "Somewhere Pro",
+    "pro.title": "SOMEWHERE PRO",
     "pro.ads": "広告を削除",
     "pro.credits": "毎週無料クレジットを提供",
     "pro.friends": "友だち招待数を拡大",
@@ -423,7 +423,7 @@ const I18N = {
     "pro.expenseCsv": "支出をCSVでエクスポート",
 
     "cta.title": "今日から旅を始めよう",
-    "cta.sub": "Somewhereをダウンロードして、最初の旅行を作りましょう",
+    "cta.sub": "SOMEWHEREをダウンロードして、最初の旅行を作りましょう",
     "cta.qr": "カメラでスキャンしてダウンロード",
 
     "footer.developer": "開発者",
@@ -441,17 +441,17 @@ const I18N = {
 
     "redirect.auto.title": "ストアへ移動しています…",
     "redirect.auto.sub": "しばらくお待ちください",
-    "redirect.manual.title": "Somewhereをダウンロード",
+    "redirect.manual.title": "SOMEWHEREをダウンロード",
     "redirect.manual.sub": "お使いのデバイスのストアを選択してください",
     "redirect.home": "ホームへ",
 
     "join.documentTitle": "旅行への招待",
     "join.title": "旅行に招待されました",
     "join.description":
-      "Somewhereがインストールされている場合は、下のボタンから旅行情報を確認して参加できます。",
+      "SOMEWHEREがインストールされている場合は、下のボタンから旅行情報を確認して参加できます。",
     "join.open": "アプリで開く",
     "join.download": "アプリをダウンロード",
-    "join.home": "Somewhereホームへ",
+    "join.home": "SOMEWHEREホームへ",
     "error.notFound": "ページが見つかりません",
     "error.home": "ホームへ",
     "legal.redirect.title": "プライバシーポリシーへ移動しています",
@@ -465,11 +465,11 @@ const I18N = {
     "lang.name": "简体中文",
     "lang.select": "选择语言",
     "whatsNew.title": "新功能",
-    "whatsNew.subtitle": "看看 Somewhere 新增了哪些功能",
+    "whatsNew.subtitle": "看看 SOMEWHERE 新增了哪些功能",
     "whatsNew.latest": "最新",
     "whatsNew.empty": "暂时还没有新功能",
     "notices.title": "公告",
-    "notices.subtitle": "Somewhere 的重要消息与通知",
+    "notices.subtitle": "SOMEWHERE 的重要消息与通知",
     "notices.empty": "暂时还没有公告",
     "notices.back": "公告列表",
     "lang.option.ko": "한국어",
@@ -489,28 +489,28 @@ const I18N = {
     "store.qr": "前往二维码",
     "theme.toggle": "切换主题",
 
-    "hero.eyebrow": "Somewhere AI旅行规划应用",
-    "hero.title.1": "Somewhere",
+    "hero.eyebrow": "SOMEWHERE AI旅行规划应用",
+    "hero.title.1": "SOMEWHERE",
     "hero.title.2": "AI旅行规划应用",
     "seo.title": "旅行行程规划·路线地图·AA分账应用",
     "hero.lead":
-      "轻松制定专属旅行计划。Somewhere 将行程规划、路线地图、消费记录与结算整合在一个流程中。",
+      "轻松制定专属旅行计划。SOMEWHERE 将行程规划、路线地图、消费记录与结算整合在一个流程中。",
     "hero.note": "App Store · Google Play 免费下载",
-    "hero.screen.trips": "Somewhere 旅行列表界面",
-    "hero.screen.map": "Somewhere 路线地图界面",
-    "hero.screens": "Somewhere 应用界面截图",
+    "hero.screen.trips": "SOMEWHERE 旅行列表界面",
+    "hero.screen.map": "SOMEWHERE 路线地图界面",
+    "hero.screens": "SOMEWHERE 应用界面截图",
 
     "feature.map.kicker": "地图",
     "feature.map.title": "在地图上查看旅行路线",
     "feature.map.desc": "在地图上标记想去的地点，一眼查看出行路线",
-    "feature.map.alt": "平板电脑上的 Somewhere 旅行地图",
+    "feature.map.alt": "平板电脑上的 SOMEWHERE 旅行地图",
     "feature.live.dynamic.title": "实时状态",
     "feature.live.dynamic.desc":
-      "在主屏幕的灵动岛中查看当前旅行状态（Somewhere Pro 专享）",
+      "在主屏幕的灵动岛中查看当前旅行状态（SOMEWHERE PRO 专享）",
     "feature.live.dynamic.alt": "主屏幕灵动岛中的当前旅行状态",
     "feature.live.lock.title": "实时状态",
     "feature.live.lock.desc":
-      "在锁定屏幕上一眼查看当前旅行状态（Somewhere Pro 专享）",
+      "在锁定屏幕上一眼查看当前旅行状态（SOMEWHERE PRO 专享）",
     "feature.live.lock.alt": "锁定屏幕底部的当前旅行状态",
     "feature.expense.kicker": "支出",
     "feature.expense.title": "支出记录与结算",
@@ -528,7 +528,7 @@ const I18N = {
     "feature.large.kicker": "大屏幕",
     "feature.large.title": "为大屏幕优化的界面",
     "feature.large.desc": "在折叠屏、平板电脑等大屏幕上也能舒适使用",
-    "feature.large.alt": "折叠屏上的 Somewhere 旅行日程界面",
+    "feature.large.alt": "折叠屏上的 SOMEWHERE 旅行日程界面",
     "feature.supplies.kicker": "行李清单",
     "feature.supplies.title": "一起准备行李",
     "feature.supplies.desc": "分开勾选共享和个人行李清单里的物品，常用物品可一次添加",
@@ -556,7 +556,7 @@ const I18N = {
     "a11y.screenReader": "支持屏幕阅读器（TalkBack、VoiceOver）",
 
     "pro.eyebrow": "订阅",
-    "pro.title": "Somewhere Pro",
+    "pro.title": "SOMEWHERE PRO",
     "pro.ads": "移除广告",
     "pro.credits": "每周提供免费积分",
     "pro.friends": "增加好友邀请数量",
@@ -566,7 +566,7 @@ const I18N = {
     "pro.expenseCsv": "可将支出导出为 CSV 文件",
 
     "cta.title": "今天就开始旅行",
-    "cta.sub": "下载 Somewhere，创建你的第一次旅行",
+    "cta.sub": "下载 SOMEWHERE，创建你的第一次旅行",
     "cta.qr": "用相机扫描下载",
 
     "footer.developer": "开发者",
@@ -584,17 +584,17 @@ const I18N = {
 
     "redirect.auto.title": "正在前往应用商店…",
     "redirect.auto.sub": "请稍候",
-    "redirect.manual.title": "下载 Somewhere",
+    "redirect.manual.title": "下载 SOMEWHERE",
     "redirect.manual.sub": "请选择适用于你设备的应用商店",
     "redirect.home": "返回首页",
 
     "join.documentTitle": "旅行邀请",
     "join.title": "你收到了一份旅行邀请",
     "join.description":
-      "如果已安装 Somewhere，请点击下方按钮查看旅行信息并加入旅行。",
+      "如果已安装 SOMEWHERE，请点击下方按钮查看旅行信息并加入旅行。",
     "join.open": "在应用中打开",
     "join.download": "下载应用",
-    "join.home": "前往 Somewhere 首页",
+    "join.home": "前往 SOMEWHERE 首页",
     "error.notFound": "找不到页面",
     "error.home": "返回首页",
     "legal.redirect.title": "正在前往隐私政策",
@@ -608,11 +608,11 @@ const I18N = {
     "lang.name": "繁體中文",
     "lang.select": "選擇語言",
     "whatsNew.title": "新功能",
-    "whatsNew.subtitle": "看看 Somewhere 新增了哪些功能",
+    "whatsNew.subtitle": "看看 SOMEWHERE 新增了哪些功能",
     "whatsNew.latest": "最新",
     "whatsNew.empty": "目前還沒有新功能",
     "notices.title": "公告",
-    "notices.subtitle": "Somewhere 的重要消息與通知",
+    "notices.subtitle": "SOMEWHERE 的重要消息與通知",
     "notices.empty": "目前還沒有公告",
     "notices.back": "公告列表",
     "lang.option.ko": "한국어",
@@ -632,28 +632,28 @@ const I18N = {
     "store.qr": "前往QR碼",
     "theme.toggle": "切換主題",
 
-    "hero.eyebrow": "Somewhere AI旅行規劃應用程式",
-    "hero.title.1": "Somewhere",
+    "hero.eyebrow": "SOMEWHERE AI旅行規劃應用程式",
+    "hero.title.1": "SOMEWHERE",
     "hero.title.2": "AI旅行規劃應用程式",
     "seo.title": "旅行行程規劃·路線地圖·分帳 App",
     "hero.lead":
-      "輕鬆規劃專屬旅程。Somewhere 將行程規劃、路線地圖、消費記錄與結算整合在一個流程中。",
+      "輕鬆規劃專屬旅程。SOMEWHERE 將行程規劃、路線地圖、消費記錄與結算整合在一個流程中。",
     "hero.note": "App Store · Google Play 免費下載",
-    "hero.screen.trips": "Somewhere 旅程列表畫面",
-    "hero.screen.map": "Somewhere 路線地圖畫面",
-    "hero.screens": "Somewhere 應用程式畫面截圖",
+    "hero.screen.trips": "SOMEWHERE 旅程列表畫面",
+    "hero.screen.map": "SOMEWHERE 路線地圖畫面",
+    "hero.screens": "SOMEWHERE 應用程式畫面截圖",
 
     "feature.map.kicker": "地圖",
     "feature.map.title": "在地圖上查看旅程路線",
     "feature.map.desc": "在地圖上標記想去的地點，一眼查看移動路線",
-    "feature.map.alt": "平板電腦上的 Somewhere 旅程地圖",
+    "feature.map.alt": "平板電腦上的 SOMEWHERE 旅程地圖",
     "feature.live.dynamic.title": "即時狀態",
     "feature.live.dynamic.desc":
-      "在主畫面的動態島查看目前的旅程狀態（Somewhere Pro 專享）",
+      "在主畫面的動態島查看目前的旅程狀態（SOMEWHERE PRO 專享）",
     "feature.live.dynamic.alt": "主畫面動態島中的目前旅程狀態",
     "feature.live.lock.title": "即時狀態",
     "feature.live.lock.desc":
-      "在鎖定畫面上一眼查看目前的旅程狀態（Somewhere Pro 專享）",
+      "在鎖定畫面上一眼查看目前的旅程狀態（SOMEWHERE PRO 專享）",
     "feature.live.lock.alt": "鎖定畫面底部的目前旅程狀態",
     "feature.expense.kicker": "支出",
     "feature.expense.title": "支出記錄與結算",
@@ -671,7 +671,7 @@ const I18N = {
     "feature.large.kicker": "大螢幕",
     "feature.large.title": "為大螢幕最佳化的介面",
     "feature.large.desc": "在摺疊螢幕、平板電腦等大螢幕上也能舒適使用",
-    "feature.large.alt": "摺疊螢幕上的 Somewhere 旅程行程畫面",
+    "feature.large.alt": "摺疊螢幕上的 SOMEWHERE 旅程行程畫面",
     "feature.supplies.kicker": "行李清單",
     "feature.supplies.title": "一起準備行李",
     "feature.supplies.desc": "分開勾選共享與個人行李清單裡的物品，常用物品可一次加入",
@@ -699,7 +699,7 @@ const I18N = {
     "a11y.screenReader": "支援螢幕閱讀器（TalkBack、VoiceOver）",
 
     "pro.eyebrow": "訂閱",
-    "pro.title": "Somewhere Pro",
+    "pro.title": "SOMEWHERE PRO",
     "pro.ads": "移除廣告",
     "pro.credits": "每週提供免費點數",
     "pro.friends": "增加好友邀請數量",
@@ -709,7 +709,7 @@ const I18N = {
     "pro.expenseCsv": "可將支出匯出為 CSV 檔案",
 
     "cta.title": "今天就開始旅行",
-    "cta.sub": "下載 Somewhere，建立你的第一趟旅程",
+    "cta.sub": "下載 SOMEWHERE，建立你的第一趟旅程",
     "cta.qr": "用相機掃描下載",
 
     "footer.developer": "開發者",
@@ -727,17 +727,17 @@ const I18N = {
 
     "redirect.auto.title": "正在前往應用程式商店…",
     "redirect.auto.sub": "請稍候",
-    "redirect.manual.title": "下載 Somewhere",
+    "redirect.manual.title": "下載 SOMEWHERE",
     "redirect.manual.sub": "請選擇適用於你裝置的應用程式商店",
     "redirect.home": "返回首頁",
 
     "join.documentTitle": "旅程邀請",
     "join.title": "你收到了一份旅程邀請",
     "join.description":
-      "如果已安裝 Somewhere，請點選下方按鈕查看旅程資訊並加入旅程。",
+      "如果已安裝 SOMEWHERE，請點選下方按鈕查看旅程資訊並加入旅程。",
     "join.open": "在應用程式中開啟",
     "join.download": "下載應用程式",
-    "join.home": "前往 Somewhere 首頁",
+    "join.home": "前往 SOMEWHERE 首頁",
     "error.notFound": "找不到頁面",
     "error.home": "返回首頁",
     "legal.redirect.title": "正在前往隱私權政策",
@@ -751,11 +751,11 @@ const I18N = {
     "lang.name": "Français",
     "lang.select": "Choisir la langue",
     "whatsNew.title": "Nouveautés",
-    "whatsNew.subtitle": "Découvrez les nouveautés de Somewhere",
+    "whatsNew.subtitle": "Découvrez les nouveautés de SOMEWHERE",
     "whatsNew.latest": "Nouveau",
     "whatsNew.empty": "Aucune nouveauté pour le moment",
     "notices.title": "Annonces",
-    "notices.subtitle": "Les actualités et informations importantes de Somewhere",
+    "notices.subtitle": "Les actualités et informations importantes de SOMEWHERE",
     "notices.empty": "Aucune annonce pour le moment",
     "notices.back": "Toutes les annonces",
     "lang.option.ko": "한국어",
@@ -775,30 +775,30 @@ const I18N = {
     "store.qr": "Accéder au code QR",
     "theme.toggle": "Changer de thème",
 
-    "hero.eyebrow": "Application de voyage IA Somewhere",
-    "hero.title.1": "Somewhere",
+    "hero.eyebrow": "Application de voyage IA SOMEWHERE",
+    "hero.title.1": "SOMEWHERE",
     "hero.title.2": "Application de voyage IA",
     "seo.title": "Planificateur de voyage : itinéraires et dépenses",
     "hero.lead":
-      "Créez facilement votre propre voyage. Somewhere réunit la planification, les itinéraires sur carte et le suivi des dépenses avec le partage des frais dans un seul parcours.",
+      "Créez facilement votre propre voyage. SOMEWHERE réunit la planification, les itinéraires sur carte et le suivi des dépenses avec le partage des frais dans un seul parcours.",
     "hero.note": "Téléchargement gratuit sur l’App Store et Google Play",
-    "hero.screen.trips": "Écran des voyages Somewhere",
-    "hero.screen.map": "Écran de carte d’itinéraire Somewhere",
-    "hero.screens": "Captures d’écran de l’application Somewhere",
+    "hero.screen.trips": "Écran des voyages SOMEWHERE",
+    "hero.screen.map": "Écran de carte d’itinéraire SOMEWHERE",
+    "hero.screens": "Captures d’écran de l’application SOMEWHERE",
 
     "feature.map.kicker": "Carte",
     "feature.map.title": "Vos itinéraires sur une carte",
     "feature.map.desc":
       "Marquez les endroits à visiter et visualisez votre itinéraire en un coup d’œil",
-    "feature.map.alt": "Carte de voyage Somewhere sur une tablette",
+    "feature.map.alt": "Carte de voyage SOMEWHERE sur une tablette",
     "feature.live.dynamic.title": "Activités en direct",
     "feature.live.dynamic.desc":
-      "Consultez l’état de votre voyage dans la Dynamic Island depuis l’écran d’accueil (disponible avec Somewhere Pro)",
+      "Consultez l’état de votre voyage dans la Dynamic Island depuis l’écran d’accueil (disponible avec SOMEWHERE PRO)",
     "feature.live.dynamic.alt":
       "État actuel du voyage dans la Dynamic Island de l’écran d’accueil",
     "feature.live.lock.title": "Activités en direct",
     "feature.live.lock.desc":
-      "Consultez l’état de votre voyage en un coup d’œil sur l’écran verrouillé (disponible avec Somewhere Pro)",
+      "Consultez l’état de votre voyage en un coup d’œil sur l’écran verrouillé (disponible avec SOMEWHERE PRO)",
     "feature.live.lock.alt":
       "État actuel du voyage en bas de l’écran verrouillé",
     "feature.expense.kicker": "Dépenses",
@@ -819,8 +819,8 @@ const I18N = {
     "feature.large.kicker": "Grands écrans",
     "feature.large.title": "Optimisé pour les grands écrans",
     "feature.large.desc":
-      "Utilisez Somewhere confortablement sur les appareils pliables, les tablettes et autres grands écrans",
-    "feature.large.alt": "Écran d’itinéraire Somewhere sur un appareil pliable",
+      "Utilisez SOMEWHERE confortablement sur les appareils pliables, les tablettes et autres grands écrans",
+    "feature.large.alt": "Écran d’itinéraire SOMEWHERE sur un appareil pliable",
     "feature.supplies.kicker": "Bagages",
     "feature.supplies.title": "Préparer ses bagages ensemble",
     "feature.supplies.desc": "Cochez les affaires de la liste partagée et de la liste personnelle, et ajoutez les essentiels courants en une fois",
@@ -849,7 +849,7 @@ const I18N = {
       "Prise en charge du lecteur d’écran (TalkBack, VoiceOver)",
 
     "pro.eyebrow": "Abonnement",
-    "pro.title": "Somewhere Pro",
+    "pro.title": "SOMEWHERE PRO",
     "pro.ads": "Supprimer les publicités",
     "pro.credits": "Crédits gratuits offerts chaque semaine",
     "pro.friends": "Limite d’invitations d’amis augmentée",
@@ -861,7 +861,7 @@ const I18N = {
     "pro.expenseCsv": "Exportez vos dépenses au format CSV",
 
     "cta.title": "Commencez votre voyage aujourd’hui",
-    "cta.sub": "Téléchargez Somewhere et créez votre premier voyage",
+    "cta.sub": "Téléchargez SOMEWHERE et créez votre premier voyage",
     "cta.qr": "Scannez pour télécharger",
 
     "footer.developer": "Développeur",
@@ -879,17 +879,17 @@ const I18N = {
 
     "redirect.auto.title": "Redirection vers le store…",
     "redirect.auto.sub": "Veuillez patienter",
-    "redirect.manual.title": "Télécharger Somewhere",
+    "redirect.manual.title": "Télécharger SOMEWHERE",
     "redirect.manual.sub": "Choisissez le store correspondant à votre appareil",
     "redirect.home": "Accueil",
 
     "join.documentTitle": "Invitation à un voyage",
     "join.title": "Vous avez été invité",
     "join.description":
-      "Si Somewhere est installé, utilisez le bouton ci-dessous pour consulter le voyage et le rejoindre dans l’application.",
+      "Si SOMEWHERE est installé, utilisez le bouton ci-dessous pour consulter le voyage et le rejoindre dans l’application.",
     "join.open": "Ouvrir dans l’application",
     "join.download": "Télécharger l’application",
-    "join.home": "Accéder à l’accueil de Somewhere",
+    "join.home": "Accéder à l’accueil de SOMEWHERE",
     "error.notFound": "Page introuvable",
     "error.home": "Accueil",
     "legal.redirect.title": "Redirection vers la politique de confidentialité",
@@ -903,11 +903,11 @@ const I18N = {
     "lang.name": "Deutsch",
     "lang.select": "Sprache auswählen",
     "whatsNew.title": "Neue Funktionen",
-    "whatsNew.subtitle": "Entdecke, was es Neues in Somewhere gibt",
+    "whatsNew.subtitle": "Entdecke, was es Neues in SOMEWHERE gibt",
     "whatsNew.latest": "Neu",
     "whatsNew.empty": "Noch keine neuen Funktionen",
     "notices.title": "Mitteilungen",
-    "notices.subtitle": "Wichtige Neuigkeiten und Hinweise zu Somewhere",
+    "notices.subtitle": "Wichtige Neuigkeiten und Hinweise zu SOMEWHERE",
     "notices.empty": "Noch keine Mitteilungen",
     "notices.back": "Alle Mitteilungen",
     "lang.option.ko": "한국어",
@@ -927,30 +927,30 @@ const I18N = {
     "store.qr": "Zum QR-Code springen",
     "theme.toggle": "Darstellung wechseln",
 
-    "hero.eyebrow": "Somewhere KI-Reiseplaner-App",
-    "hero.title.1": "Somewhere",
+    "hero.eyebrow": "SOMEWHERE KI-Reiseplaner-App",
+    "hero.title.1": "SOMEWHERE",
     "hero.title.2": "KI-Reiseplaner-App",
     "seo.title": "Reiseplaner-App mit Routenkarte & Kostenteilung",
     "hero.lead":
-      "Planen Sie Ihre eigene Reise ganz unkompliziert. Somewhere vereint Reiseplanung, Routen auf der Karte sowie Ausgabenaufzeichnung und Abrechnung in einem Ablauf.",
+      "Planen Sie Ihre eigene Reise ganz unkompliziert. SOMEWHERE vereint Reiseplanung, Routen auf der Karte sowie Ausgabenaufzeichnung und Abrechnung in einem Ablauf.",
     "hero.note": "Kostenlos im App Store und bei Google Play",
-    "hero.screen.trips": "Reiseübersicht von Somewhere",
-    "hero.screen.map": "Routenkarte von Somewhere",
-    "hero.screens": "Screenshots der Somewhere-App",
+    "hero.screen.trips": "Reiseübersicht von SOMEWHERE",
+    "hero.screen.map": "Routenkarte von SOMEWHERE",
+    "hero.screens": "Screenshots der SOMEWHERE-App",
 
     "feature.map.kicker": "Karte",
     "feature.map.title": "Reiserouten auf der Karte",
     "feature.map.desc":
       "Markieren Sie die Orte, die Sie besuchen möchten, und sehen Sie Ihre Route auf einen Blick",
-    "feature.map.alt": "Somewhere-Reisekarte auf einem Tablet",
+    "feature.map.alt": "SOMEWHERE-Reisekarte auf einem Tablet",
     "feature.live.dynamic.title": "Live-Aktivitäten",
     "feature.live.dynamic.desc":
-      "Sehen Sie den aktuellen Stand Ihrer Reise in der Dynamic Island auf dem Home-Bildschirm (mit Somewhere Pro verfügbar)",
+      "Sehen Sie den aktuellen Stand Ihrer Reise in der Dynamic Island auf dem Home-Bildschirm (mit SOMEWHERE PRO verfügbar)",
     "feature.live.dynamic.alt":
       "Aktueller Reisestatus in der Dynamic Island auf dem Home-Bildschirm",
     "feature.live.lock.title": "Live-Aktivitäten",
     "feature.live.lock.desc":
-      "Sehen Sie den aktuellen Stand Ihrer Reise auf dem Sperrbildschirm auf einen Blick (mit Somewhere Pro verfügbar)",
+      "Sehen Sie den aktuellen Stand Ihrer Reise auf dem Sperrbildschirm auf einen Blick (mit SOMEWHERE PRO verfügbar)",
     "feature.live.lock.alt":
       "Aktueller Reisestatus am unteren Rand des Sperrbildschirms",
     "feature.expense.kicker": "Ausgaben",
@@ -971,8 +971,8 @@ const I18N = {
     "feature.large.kicker": "Große Bildschirme",
     "feature.large.title": "Für große Bildschirme optimiert",
     "feature.large.desc":
-      "Nutzen Sie Somewhere bequem auf faltbaren Geräten, Tablets und anderen großen Bildschirmen",
-    "feature.large.alt": "Somewhere-Reiseplan auf einem faltbaren Gerät",
+      "Nutzen Sie SOMEWHERE bequem auf faltbaren Geräten, Tablets und anderen großen Bildschirmen",
+    "feature.large.alt": "SOMEWHERE-Reiseplan auf einem faltbaren Gerät",
     "feature.supplies.kicker": "Packliste",
     "feature.supplies.title": "Gemeinsam packen",
     "feature.supplies.desc": "Haken Sie gemeinsame und persönliche Sachen getrennt ab und fügen Sie gängige Basics auf einmal hinzu",
@@ -1001,7 +1001,7 @@ const I18N = {
       "Unterstützung für Screenreader (TalkBack, VoiceOver)",
 
     "pro.eyebrow": "Abonnement",
-    "pro.title": "Somewhere Pro",
+    "pro.title": "SOMEWHERE PRO",
     "pro.ads": "Werbung entfernen",
     "pro.credits": "Kostenlose Credits pro Woche",
     "pro.friends": "Höhere Grenze für Freundeseinladungen",
@@ -1013,7 +1013,7 @@ const I18N = {
     "pro.expenseCsv": "Ausgaben als CSV-Datei exportieren",
 
     "cta.title": "Starten Sie heute Ihre Reise",
-    "cta.sub": "Laden Sie Somewhere herunter und erstellen Sie Ihre erste Reise",
+    "cta.sub": "Laden Sie SOMEWHERE herunter und erstellen Sie Ihre erste Reise",
     "cta.qr": "Zum Download scannen",
 
     "footer.developer": "Entwickler",
@@ -1031,17 +1031,17 @@ const I18N = {
 
     "redirect.auto.title": "Weiterleitung zum Store…",
     "redirect.auto.sub": "Bitte warten Sie einen Moment",
-    "redirect.manual.title": "Somewhere herunterladen",
+    "redirect.manual.title": "SOMEWHERE herunterladen",
     "redirect.manual.sub": "Wählen Sie den Store für Ihr Gerät",
     "redirect.home": "Startseite",
 
     "join.documentTitle": "Reiseeinladung",
     "join.title": "Sie wurden eingeladen",
     "join.description":
-      "Wenn Somewhere installiert ist, können Sie über die Schaltfläche unten die Reise ansehen und in der App beitreten.",
+      "Wenn SOMEWHERE installiert ist, können Sie über die Schaltfläche unten die Reise ansehen und in der App beitreten.",
     "join.open": "In der App öffnen",
     "join.download": "App herunterladen",
-    "join.home": "Zur Somewhere-Startseite",
+    "join.home": "Zur SOMEWHERE-Startseite",
     "error.notFound": "Seite nicht gefunden",
     "error.home": "Startseite",
     "legal.redirect.title": "Weiterleitung zur Datenschutzerklärung",
@@ -1055,11 +1055,11 @@ const I18N = {
     "lang.name": "Español",
     "lang.select": "Seleccionar idioma",
     "whatsNew.title": "Novedades",
-    "whatsNew.subtitle": "Descubre las novedades de Somewhere",
+    "whatsNew.subtitle": "Descubre las novedades de SOMEWHERE",
     "whatsNew.latest": "Nuevo",
     "whatsNew.empty": "Todavía no hay novedades",
     "notices.title": "Avisos",
-    "notices.subtitle": "Noticias e información importante sobre Somewhere",
+    "notices.subtitle": "Noticias e información importante sobre SOMEWHERE",
     "notices.empty": "Todavía no hay avisos",
     "notices.back": "Todos los avisos",
     "lang.option.ko": "한국어",
@@ -1079,30 +1079,30 @@ const I18N = {
     "store.qr": "Ir al código QR",
     "theme.toggle": "Cambiar tema",
 
-    "hero.eyebrow": "Aplicación de viajes con IA Somewhere",
-    "hero.title.1": "Somewhere",
+    "hero.eyebrow": "Aplicación de viajes con IA SOMEWHERE",
+    "hero.title.1": "SOMEWHERE",
     "hero.title.2": "Aplicación de viajes con IA",
     "seo.title": "Planificador de viajes con mapa de rutas y gastos",
     "hero.lead":
-      "Crea tu propio viaje sin complicaciones. Somewhere reúne la planificación, las rutas en el mapa y el registro y reparto de gastos en un solo flujo.",
+      "Crea tu propio viaje sin complicaciones. SOMEWHERE reúne la planificación, las rutas en el mapa y el registro y reparto de gastos en un solo flujo.",
     "hero.note": "Descarga gratis en App Store y Google Play",
-    "hero.screen.trips": "Pantalla de viajes de Somewhere",
-    "hero.screen.map": "Pantalla de mapa de rutas de Somewhere",
-    "hero.screens": "Capturas de pantalla de la aplicación Somewhere",
+    "hero.screen.trips": "Pantalla de viajes de SOMEWHERE",
+    "hero.screen.map": "Pantalla de mapa de rutas de SOMEWHERE",
+    "hero.screens": "Capturas de pantalla de la aplicación SOMEWHERE",
 
     "feature.map.kicker": "Mapa",
     "feature.map.title": "Rutas de viaje en un mapa",
     "feature.map.desc":
       "Marca los lugares que quieres visitar y consulta tu ruta de un vistazo",
-    "feature.map.alt": "Mapa de viaje de Somewhere en una tableta",
+    "feature.map.alt": "Mapa de viaje de SOMEWHERE en una tableta",
     "feature.live.dynamic.title": "Actividades en directo",
     "feature.live.dynamic.desc":
-      "Consulta el estado actual de tu viaje en la Dynamic Island desde la pantalla de inicio (disponible con Somewhere Pro)",
+      "Consulta el estado actual de tu viaje en la Dynamic Island desde la pantalla de inicio (disponible con SOMEWHERE PRO)",
     "feature.live.dynamic.alt":
       "Estado actual del viaje en la Dynamic Island de la pantalla de inicio",
     "feature.live.lock.title": "Actividades en directo",
     "feature.live.lock.desc":
-      "Consulta el estado actual de tu viaje de un vistazo en la pantalla bloqueada (disponible con Somewhere Pro)",
+      "Consulta el estado actual de tu viaje de un vistazo en la pantalla bloqueada (disponible con SOMEWHERE PRO)",
     "feature.live.lock.alt":
       "Estado actual del viaje en la parte inferior de la pantalla bloqueada",
     "feature.expense.kicker": "Gastos",
@@ -1123,8 +1123,8 @@ const I18N = {
     "feature.large.kicker": "Pantallas grandes",
     "feature.large.title": "Optimizada para pantallas grandes",
     "feature.large.desc":
-      "Usa Somewhere cómodamente en dispositivos plegables, tabletas y otras pantallas grandes",
-    "feature.large.alt": "Pantalla de itinerario de Somewhere en un dispositivo plegable",
+      "Usa SOMEWHERE cómodamente en dispositivos plegables, tabletas y otras pantallas grandes",
+    "feature.large.alt": "Pantalla de itinerario de SOMEWHERE en un dispositivo plegable",
     "feature.supplies.kicker": "Equipaje",
     "feature.supplies.title": "Preparar el equipaje juntos",
     "feature.supplies.desc": "Marca por separado lo compartido y lo personal, y añade lo esencial de una vez",
@@ -1153,7 +1153,7 @@ const I18N = {
       "Compatibilidad con lectores de pantalla (TalkBack, VoiceOver)",
 
     "pro.eyebrow": "Suscripción",
-    "pro.title": "Somewhere Pro",
+    "pro.title": "SOMEWHERE PRO",
     "pro.ads": "Quitar anuncios",
     "pro.credits": "Créditos gratis cada semana",
     "pro.friends": "Más invitaciones de amigos",
@@ -1164,7 +1164,7 @@ const I18N = {
     "pro.expenseCsv": "Exporta los gastos en formato CSV",
 
     "cta.title": "Empieza tu viaje hoy",
-    "cta.sub": "Descarga Somewhere y crea tu primer viaje",
+    "cta.sub": "Descarga SOMEWHERE y crea tu primer viaje",
     "cta.qr": "Escanea para descargar",
 
     "footer.developer": "Desarrollador",
@@ -1182,17 +1182,17 @@ const I18N = {
 
     "redirect.auto.title": "Te llevamos a la tienda…",
     "redirect.auto.sub": "Espera un momento",
-    "redirect.manual.title": "Descargar Somewhere",
+    "redirect.manual.title": "Descargar SOMEWHERE",
     "redirect.manual.sub": "Elige la tienda para tu dispositivo",
     "redirect.home": "Inicio",
 
     "join.documentTitle": "Invitación a un viaje",
     "join.title": "Te han invitado",
     "join.description":
-      "Si Somewhere está instalado, usa el botón de abajo para consultar el viaje y unirte desde la aplicación.",
+      "Si SOMEWHERE está instalado, usa el botón de abajo para consultar el viaje y unirte desde la aplicación.",
     "join.open": "Abrir en la aplicación",
     "join.download": "Descargar la aplicación",
-    "join.home": "Ir al inicio de Somewhere",
+    "join.home": "Ir al inicio de SOMEWHERE",
     "error.notFound": "No se ha encontrado la página",
     "error.home": "Inicio",
     "legal.redirect.title": "Te llevamos a la política de privacidad",
@@ -1264,19 +1264,19 @@ function updateDocumentTitle(lang) {
   const legalRegion = document.documentElement.dataset.legalRegion;
   const keepRegionalLegalTitle = legalRegion && legalRegion !== "kr";
   if (!keepRegionalLegalTitle && path.endsWith("/privacy.html")) {
-    document.title = `Somewhere — ${lang === "ko" ? "대한민국 개인정보처리방침" : "Korea Privacy Policy"}`;
+    document.title = `SOMEWHERE — ${lang === "ko" ? "대한민국 개인정보처리방침" : "Korea Privacy Policy"}`;
     return;
   }
   if (!keepRegionalLegalTitle && path.endsWith("/terms.html")) {
-    document.title = `Somewhere — ${lang === "ko" ? "대한민국 이용약관" : "Korea Terms of Service"}`;
+    document.title = `SOMEWHERE — ${lang === "ko" ? "대한민국 이용약관" : "Korea Terms of Service"}`;
     return;
   }
   if (path.endsWith("/download.html")) {
-    document.title = `Somewhere — ${getString("redirect.manual.title", lang)}`;
+    document.title = `SOMEWHERE — ${getString("redirect.manual.title", lang)}`;
     return;
   }
   if (document.documentElement.hasAttribute("data-page-lang") || path.endsWith("/index.html") || path === "/") {
-    document.title = `Somewhere — ${getString("seo.title", lang)}`;
+    document.title = `SOMEWHERE — ${getString("seo.title", lang)}`;
   }
 }
 

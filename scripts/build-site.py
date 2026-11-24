@@ -246,18 +246,18 @@ def landing(source, lang, data):
 
     url = ORIGIN + home_path(lang)
     # The search title names the main features; the visible h1 keeps the short hero.title.2.
-    title = "Somewhere — " + translate("seo.title")
+    title = "SOMEWHERE — " + translate("seo.title")
     description = text(translate("hero.lead"))
     schema = {
         "@context": "https://schema.org", "@graph": [
             {"@type": "Organization", "@id": ORIGIN + "/#organization", "name": "NP", "alternateName": "엔피",
              "url": ORIGIN + "/", "logo": ORIGIN + "/assets/img/app-icon.svg", "email": "np@npsomewhere.com"},
-            {"@type": "WebSite", "@id": ORIGIN + "/#website", "url": ORIGIN + "/", "name": "Somewhere",
+            {"@type": "WebSite", "@id": ORIGIN + "/#website", "url": ORIGIN + "/", "name": "SOMEWHERE",
              "inLanguage": data["languages"], "publisher": {"@id": ORIGIN + "/#organization"}},
             {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": title,
              "description": description, "inLanguage": lang, "isPartOf": {"@id": ORIGIN + "/#website"},
              "mainEntity": {"@id": ORIGIN + "/#app"}},
-            {"@type": "SoftwareApplication", "@id": ORIGIN + "/#app", "name": "Somewhere",
+            {"@type": "SoftwareApplication", "@id": ORIGIN + "/#app", "name": "SOMEWHERE",
              "operatingSystem": "iOS, Android", "applicationCategory": "TravelApplication", "url": ORIGIN + "/",
              "description": description, "publisher": {"@id": ORIGIN + "/#organization"},
              "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
@@ -370,7 +370,7 @@ def feature_page(slug, lang, data):
          "inLanguage": lang, "isPartOf": {"@id": ORIGIN + "/#website"}, "about": {"@id": ORIGIN + "/#app"},
          "breadcrumb": {"@id": url + "#breadcrumb"}},
         {"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Somewhere", "item": ORIGIN + home_path(lang)},
+            {"@type": "ListItem", "position": 1, "name": "SOMEWHERE", "item": ORIGIN + home_path(lang)},
             {"@type": "ListItem", "position": 2, "name": eyebrow, "item": url}]},
     ]
     if faq:
@@ -697,8 +697,8 @@ def main():
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += "".join(f"  <url><loc>{url}</loc><lastmod>{date}</lastmod></url>\n" for url, date in entries) + "</urlset>\n"
     (output / "sitemap.xml").write_text(sitemap)
-    llms = "# Somewhere\n\n> A travel planning app for schedules, route maps, shared trips, expenses and settlement.\n\n"
-    llms += "The app is free to download. Optional Somewhere Pro subscriptions provide additional features; free download does not mean every feature is free.\n\n## Official product pages\n\n"
+    llms = "# SOMEWHERE\n\n> A travel planning app for schedules, route maps, shared trips, expenses and settlement.\n\n"
+    llms += "The app is free to download. Optional SOMEWHERE PRO subscriptions provide additional features; free download does not mean every feature is free.\n\n## Official product pages\n\n"
     llms += "".join(f"- [{lang}]({ORIGIN + home_path(lang)}): {text(data['translations'][lang]['hero.title.2'])}\n" for lang in data["languages"])
     llms += "\n## Feature pages\n\n" + "".join(
         f"- [{lang}]({ORIGIN + feature_path(slug, lang)}): "
