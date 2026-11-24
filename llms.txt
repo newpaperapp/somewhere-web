@@ -8,11 +8,11 @@ Somewhere (여행 계획 앱 "Somewhere", developed by NP) is not a booking serv
 
 - [AI itinerary](https://npsomewhere.com/en/features/ai/): Pick a destination, dates, companions and trip type, and AI builds a day-by-day itinerary that can be refined by chatting with AI.
 - [Route map](https://npsomewhere.com/en/features/map/): Places added to the itinerary are connected on the map in visiting order for each day. Includes place search, importing places from Google Maps and directions.
-- [Expense splitting](https://npsomewhere.com/en/features/expense/): Log trip expenses in 50 currencies, manage a shared fund, see spending by category, and get a summary of who owes whom.
+- [Expense splitting](https://npsomewhere.com/en/features/expense/): Log trip expenses in 50 currencies (including Fill with AI from a receipt or payment photo, itemized entries and notes), manage a shared fund, see spending by category, and get a summary of who owes whom.
 - [Plan together](https://npsomewhere.com/en/features/together/): Invite friends by link or QR code to edit the same itinerary, map and expenses, with per-friend permissions, across Android and iPhone.
 - [Packing list](https://npsomewhere.com/en/features/packing/): Each trip has a shared packing list and a private one for each trip mate, where common essentials can be picked and added at once.
 - Weather and trip duplication: Trip date cards show the weather forecast for upcoming dates, and a trip can be duplicated to plan a similar one.
-- [Vouchers & tickets](https://npsomewhere.com/en/features/vouchers/): Flight tickets, stay vouchers and other bookings can be saved with photos or PDFs, linked to places and expenses, and opened offline.
+- [Vouchers & tickets](https://npsomewhere.com/en/features/vouchers/): Flight tickets, stay vouchers and other bookings can be saved with photos or PDFs, viewed as reorderable cards or grouped by day, linked to places and expenses, and opened offline.
 
 ## Korean pages
 
