@@ -5,6 +5,36 @@
       "date": "2026.11.23",
       "items": [
         {
+          "ko": "Google 지도 공개 목록 가져오기 및 링크 붙여넣기로 임시보관함에 장소 추가 지원",
+          "en": "Supports importing public Google Maps lists and pasting links directly into Saved items",
+          "ja": "Google マップの公開リストの取り込みと、リンク貼り付けによる保存済みスポットへの追加に対応",
+          "zh-CN": "支持导入 Google 地图公开列表，并可通过粘贴链接直接添加到暂存地点",
+          "zh-TW": "支援匯入 Google 地圖公開清單，並可透過貼上連結直接加入暫存地點",
+          "fr": "Prise en charge de l’importation de listes publiques Google Maps et de l’ajout par lien dans Lieux enregistrés",
+          "de": "Unterstützt den Import öffentlicher Google-Maps-Listen sowie das Einfügen von Links in Gespeicherte Orte",
+          "es": "Permite importar listas públicas de Google Maps y añadir lugares pegando enlaces en Lugares guardados"
+        },
+        {
+          "ko": "임시보관함에서 편집 모드 없이 바로 순서 변경과 편집 지원",
+          "en": "Lets you reorder and edit Saved items directly without entering edit mode",
+          "ja": "保存済みスポットで編集モードに入らずに並び替えや編集が可能に",
+          "zh-CN": "无需进入编辑模式，即可在暂存地点中直接调整顺序和编辑",
+          "zh-TW": "無須進入編輯模式，即可在暫存地點中直接調整順序與編輯",
+          "fr": "Réorganisation et modification directes dans Lieux enregistrés sans passer par le mode édition",
+          "de": "Ermöglicht direktes Sortieren und Bearbeiten in Gespeicherte Orte ohne Bearbeitungsmodus",
+          "es": "Permite reordenar y editar directamente en Lugares guardados sin entrar al modo de edición"
+        },
+        {
+          "ko": "진행 중인 여행에서 연결된 바우처·티켓 바로 열기 및 연결 해제 기능 추가",
+          "en": "Adds quick access to linked Vouchers & tickets on your current trip and easier unlinking",
+          "ja": "進行中の旅行からリンクしたバウチャー・チケットをすぐ開けるようになり、リンク解除も簡単に",
+          "zh-CN": "支持在当前行程中快速打开关联的凭证与票券，并优化关联管理体验",
+          "zh-TW": "支援在目前行程中快速開啟關聯的憑證與票券，並優化關聯管理體驗",
+          "fr": "Accès rapide aux Réservations et billets liés depuis votre voyage en cours et dissociation simplifiée",
+          "de": "Bietet Schnellzugriff auf verknüpfte Buchungen & Tickets bei der aktuellen Reise und einfacheres Aufheben von Verknüpfungen",
+          "es": "Añade acceso rápido a Reservas y billetes vinculados en tu viaje actual y facilita desvincular elementos"
+        },
+        {
           "ko": "영수증이나 결제 사진을 읽어 입력하는 지출 AI 자동 채우기 추가",
           "en": "Adds Fill with AI for expenses to read a receipt or payment photo",
           "ja": "レシートや支払い画面の写真を読み取って入力できる支出のAI自動入力を追加",
