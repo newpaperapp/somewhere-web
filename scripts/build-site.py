@@ -24,8 +24,8 @@ LEGAL_ROUTES = {lang: {"privacy.html": "/privacy", "terms.html": "/terms"} for l
 # Hand-written feature pages: features/<slug>/<lang>.html holds the localized <title>, description
 # and <main>, wrapped in features/_shell.html and served at feature_path(slug, lang).
 # Each date is the page's last content change and becomes its sitemap lastmod.
-FEATURE_PAGES = {"expense": "2026-11-24", "map": "2026-11-22", "together": "2026-11-22", "ai": "2026-11-24",
-                 "packing": "2026-11-22", "vouchers": "2026-11-24"}
+FEATURE_PAGES = {"expense": "2026-11-24", "map": "2026-11-26", "together": "2026-11-22", "ai": "2026-11-24",
+                 "packing": "2026-11-22", "vouchers": "2026-11-26"}
 FEATURE_LANGUAGES = ["ko", "en", "ja", "zh-CN", "zh-TW", "fr", "de", "es"]
 # Legal shells: page -> (fragment folder, page language, script listing its versions).
 # Each fragment's file name is its effective date. The build embeds the version in
@@ -694,7 +694,7 @@ def main():
     entries += [(ORIGIN + "/ja/commercial-transactions.html", "2026-09-28")]
     # Import guides are listed at their canonical extensionless URLs. The Triple guide is now a
     # noindex end-of-service notice the app still opens, so it is left out.
-    entries += [(ORIGIN + "/import-place", "2026-10-02")]
+    entries += [(ORIGIN + "/import-place", "2026-11-26")]
     entries += [(ORIGIN + feature_path(slug, lang), date)
                 for slug, date in FEATURE_PAGES.items() for lang in FEATURE_LANGUAGES]
     # Changes with every published release, so it follows the newest release date.
