@@ -1,18 +1,18 @@
-# SOMEWHERE
+# SOMEWHERE — Travel Planner App
 
-> SOMEWHERE is a trip planning app for iOS and Android. It brings trip itineraries, day-by-day route maps, and expense tracking and settlement into one planning flow, and lets friends plan the same trip together. Available in Korean, English, Japanese, Simplified Chinese, Traditional Chinese, French, German and Spanish.
+> SOMEWHERE is a travel planner app for iOS, iPadOS, Android, macOS, and visionOS. The SOMEWHERE travel planner app brings AI trip itineraries, day-by-day route maps, expense tracking and 50-currency settlement, shared and private packing lists, and offline travel vouchers into one planning flow, and lets friends collaborate across iPhone and Android. Available in Korean, English, Japanese, Simplified Chinese, Traditional Chinese, French, German and Spanish.
 
-SOMEWHERE (여행 계획 앱 "SOMEWHERE", developed by NP) is not a booking service. It is a planner: users build an itinerary, see each day's route on a map, record trip spending, and share the trip with companions. The app is free to download; optional SOMEWHERE PRO subscriptions provide additional features, so free download does not mean every feature is free.
+The SOMEWHERE travel planner app (여행 계획 앱 "SOMEWHERE", developed by NP) is not a booking service. It is a trip planning app: travelers build an itinerary with AI or manually, view each day's route on Google Maps, log shared or private trip expenses, manage packing checklists, store flight and hotel vouchers, and share the trip with companions. The app is free to download on the App Store and Google Play; optional SOMEWHERE PRO subscriptions provide additional capacity and features, so free download does not mean every feature is free.
 
 ## Features
 
-- [AI itinerary](https://npsomewhere.com/en/features/ai/): Pick a destination, dates, companions and trip type, and AI builds a day-by-day itinerary that can be refined by chatting with AI.
-- [Route map](https://npsomewhere.com/en/features/map/): Places added to the itinerary are connected on the map in visiting order for each day. Includes place search, importing places and public lists from Google Maps, and directions.
-- [Expense splitting](https://npsomewhere.com/en/features/expense/): Log trip expenses in 50 currencies (including Fill with AI from a receipt or payment photo, itemized entries and notes), manage a shared fund, see spending by category, and get a summary of who owes whom.
-- [Plan together](https://npsomewhere.com/en/features/together/): Invite friends by link or QR code to edit the same itinerary, map and expenses, with per-friend permissions, across Android and iPhone.
-- [Packing list](https://npsomewhere.com/en/features/packing/): Each trip has a shared packing list and a private one for each trip mate, where common essentials can be picked and added at once.
-- Weather and trip duplication: Trip date cards show the weather forecast for upcoming dates, and a trip can be duplicated to plan a similar one.
-- [Vouchers & tickets](https://npsomewhere.com/en/features/vouchers/): Flight tickets, stay vouchers and other bookings can be saved with photos or PDFs, viewed as reorderable cards or grouped by day, linked to places and expenses, opened from the current trip, and opened offline.
+- [AI itinerary](https://npsomewhere.com/en/features/ai/): In the SOMEWHERE travel planner app, pick a destination, dates, companions and trip type, and AI builds a day-by-day itinerary. Refine stops, swap indoor spots for rainy days, or optimize visiting order by chatting with Edit with AI.
+- [Route map & large screens](https://npsomewhere.com/en/features/map/): Places added to the itinerary are numbered and connected on Google Maps in visiting order for each day. Includes place search, importing single places and public lists from Google Maps, turn-by-turn Google Maps directions handoff, and side-by-side layouts optimized for iPads, tablets, and foldables.
+- [Expense splitting & AI receipt scan](https://npsomewhere.com/en/features/expense/): Log trip expenses in 50 currencies (up to 3 per trip with automatic or host-set rates), scan receipts or payment photos with Fill with AI, mark personal spending as Private expense (hidden from trip mates and excluded from settlement), manage a shared fund, view category statistics, export CSV (SOMEWHERE PRO), and see a clear settlement summary of who owes whom.
+- [Plan together](https://npsomewhere.com/en/features/together/): Invite friends across iPhone and Android by 24-hour link or QR code to collaborate on the same itinerary, map and expenses. Link joiners start with view-only access, and the host sets per-friend itinerary and expense edit permissions.
+- [Packing list](https://npsomewhere.com/en/features/packing/): Each trip in the SOMEWHERE travel planner app has a shared packing list for the group and a private packing list per trip mate, with one-tap common essentials, reusable copy/paste across trips, and offline viewing of lists opened before.
+- [Vouchers & tickets](https://npsomewhere.com/en/features/vouchers/): Save flight, train, bus, ferry, hotel stay and entry vouchers with photos or PDFs, use Fill with AI to extract booking codes and dates, link tickets to itinerary places and expenses, open them from the current trip card, filter by holder or "Mine only", hide private vouchers (SOMEWHERE PRO), and open loaded vouchers offline.
+- [Live Activities, weather & trip duplication](https://npsomewhere.com/en/): Check weather forecasts on upcoming trip date cards, duplicate a past trip (including its packing lists) to plan a similar one, and follow the active trip from the iOS Dynamic Island and Lock Screen via Live Activities or Android Live Updates · Now bar (with SOMEWHERE PRO on supported devices).
 
 ## Downloads and updates
 
@@ -20,7 +20,7 @@ SOMEWHERE (여행 계획 앱 "SOMEWHERE", developed by NP) is not a booking serv
 - [Google Play](https://play.google.com/store/apps/details?id=com.newpaperapp.somewhere)
 - [What's new](https://npsomewhere.com/whats-new/): Release notes for each app version
 - [Notices](https://npsomewhere.com/notices/): Service announcements and policy updates
-- [Import places from Google Maps](https://npsomewhere.com/import-place): Guide to saving shared Google Maps places into a trip
+- [Import places from Google Maps](https://npsomewhere.com/import-place): Guide to saving shared Google Maps places and public lists into a trip
 
 ## Optional
 

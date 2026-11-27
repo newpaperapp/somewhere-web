@@ -24,8 +24,8 @@ LEGAL_ROUTES = {lang: {"privacy.html": "/privacy", "terms.html": "/terms"} for l
 # Hand-written feature pages: features/<slug>/<lang>.html holds the localized <title>, description
 # and <main>, wrapped in features/_shell.html and served at feature_path(slug, lang).
 # Each date is the page's last content change and becomes its sitemap lastmod.
-FEATURE_PAGES = {"expense": "2026-11-24", "map": "2026-11-26", "together": "2026-11-22", "ai": "2026-11-24",
-                 "packing": "2026-11-22", "vouchers": "2026-11-26"}
+FEATURE_PAGES = {"expense": "2026-11-27", "map": "2026-11-27", "together": "2026-11-27", "ai": "2026-11-27",
+                 "packing": "2026-11-27", "vouchers": "2026-11-27"}
 FEATURE_LANGUAGES = ["ko", "en", "ja", "zh-CN", "zh-TW", "fr", "de", "es"]
 # Legal shells: page -> (fragment folder, page language, script listing its versions).
 # Each fragment's file name is its effective date. The build embeds the version in
@@ -235,6 +235,42 @@ def store_listings(config):
             "https://play.google.com/store/apps/details?id=" + play[1]]
 
 
+def organization_schema():
+    return {"@type": "Organization", "@id": ORIGIN + "/#organization", "name": "NP", "alternateName": "엔피",
+            "url": ORIGIN + "/", "logo": ORIGIN + "/assets/img/app-icon.svg", "email": "np@npsomewhere.com"}
+
+
+def website_schema(data):
+    return {"@type": "WebSite", "@id": ORIGIN + "/#website", "url": ORIGIN + "/", "name": "SOMEWHERE",
+            "alternateName": "SOMEWHERE Travel Planner App",
+            "inLanguage": data["languages"], "publisher": {"@id": ORIGIN + "/#organization"}}
+
+
+def app_schema(lang, data):
+    dictionary, english = data["translations"][lang], data["translations"]["en"]
+
+    def tr(key):
+        return text(dictionary.get(key, english.get(key)))
+
+    return {
+        "@type": "SoftwareApplication", "@id": ORIGIN + "/#app", "name": "SOMEWHERE",
+        "alternateName": ["SOMEWHERE Travel Planner App", "SOMEWHERE Trip Planner", "썸웨어"],
+        "operatingSystem": "iOS, iPadOS, Android, macOS, visionOS",
+        "applicationCategory": "TravelApplication", "url": ORIGIN + "/",
+        "inLanguage": data["languages"], "description": tr("hero.lead"),
+        "featureList": [
+            tr("hero.title.2"), tr("feature.map.title"), tr("feature.expense.title"),
+            tr("feature.together.title"), tr("feature.supplies.title"), tr("feature.voucher.title"),
+            tr("feature.large.title"), tr("pro.liveActivities"), tr("support.weather"), tr("support.duplicate"),
+        ],
+        "publisher": {"@id": ORIGIN + "/#organization"},
+        "offers": {"@type": "Offer", "price": "0",
+                   "priceCurrency": {"ko": "KRW", "ja": "JPY", "fr": "EUR", "de": "EUR", "es": "EUR"}.get(lang, "USD")},
+        "downloadUrl": [data["config"]["APP_STORE_URL"], data["config"]["PLAY_STORE_URL"]],
+        "sameAs": store_listings(data["config"]),
+    }
+
+
 def landing(source, lang, data):
     document = Document(source)
     dictionary = data["translations"][lang]
@@ -248,21 +284,20 @@ def landing(source, lang, data):
     # The search title names the main features; the visible h1 keeps the short hero.title.2.
     title = "SOMEWHERE — " + translate("seo.title")
     description = text(translate("hero.lead"))
+    faq_items = [
+        {"@type": "Question", "name": " ".join(text(translate(f"faq.q{index}")).split()),
+         "acceptedAnswer": {"@type": "Answer", "text": " ".join(text(translate(f"faq.a{index}")).split())}}
+        for index in range(1, 7)
+    ]
     schema = {
         "@context": "https://schema.org", "@graph": [
-            {"@type": "Organization", "@id": ORIGIN + "/#organization", "name": "NP", "alternateName": "엔피",
-             "url": ORIGIN + "/", "logo": ORIGIN + "/assets/img/app-icon.svg", "email": "np@npsomewhere.com"},
-            {"@type": "WebSite", "@id": ORIGIN + "/#website", "url": ORIGIN + "/", "name": "SOMEWHERE",
-             "inLanguage": data["languages"], "publisher": {"@id": ORIGIN + "/#organization"}},
+            organization_schema(),
+            website_schema(data),
             {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": title,
              "description": description, "inLanguage": lang, "isPartOf": {"@id": ORIGIN + "/#website"},
              "mainEntity": {"@id": ORIGIN + "/#app"}},
-            {"@type": "SoftwareApplication", "@id": ORIGIN + "/#app", "name": "SOMEWHERE",
-             "operatingSystem": "iOS, Android", "applicationCategory": "TravelApplication", "url": ORIGIN + "/",
-             "description": description, "publisher": {"@id": ORIGIN + "/#organization"},
-             "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
-             "downloadUrl": [data["config"]["APP_STORE_URL"], data["config"]["PLAY_STORE_URL"]],
-             "sameAs": store_listings(data["config"])}
+            app_schema(lang, data),
+            {"@type": "FAQPage", "@id": url + "#faq", "inLanguage": lang, "mainEntity": faq_items},
         ]}
     head = None
     for node in document.elements():
@@ -366,6 +401,9 @@ def feature_page(slug, lang, data):
                             "acceptedAnswer": {"@type": "Answer", "text": plain(answer)}})
     url = ORIGIN + feature_path(slug, lang)
     graph = [
+        organization_schema(),
+        website_schema(data),
+        app_schema(lang, data),
         {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": title, "description": description,
          "inLanguage": lang, "isPartOf": {"@id": ORIGIN + "/#website"}, "about": {"@id": ORIGIN + "/#app"},
          "breadcrumb": {"@id": url + "#breadcrumb"}},
@@ -569,7 +607,19 @@ def validate(output, data):
         assert policy_links == ["/privacy", "/terms"]
         for node in nodes:
             if node.tag == "script" and node.attrs.get("type") == "application/ld+json":
-                json.loads("".join(node.children))
+                parsed = json.loads("".join(node.children))
+                by_type = {item["@type"]: item for item in parsed["@graph"]}
+                assert "SOMEWHERE Travel Planner App" in by_type["SoftwareApplication"]["alternateName"]
+                assert len(by_type["SoftwareApplication"]["featureList"]) >= 8
+                dom_faq = [
+                    (" ".join(text(next(c for c in item.children if isinstance(c, Element) and c.tag == "h3").render()).split()),
+                     " ".join(text(next(c for c in item.children if isinstance(c, Element) and c.tag == "p").render()).split()))
+                    for item in nodes if item.attrs.get("class") == "faq-item"
+                ]
+                schema_faq = [
+                    (q["name"], q["acceptedAnswer"]["text"]) for q in by_type["FAQPage"]["mainEntity"]
+                ]
+                assert len(dom_faq) == 6 and dom_faq == schema_faq, f"Landing FAQ mismatch in {lang}"
             values = [node.attrs.get("href", ""), node.attrs.get("src", "")]
             # Every language's screenshot must exist for the runtime language switch.
             values += [node.attrs["data-i18n-src"].replace("{lang}", l.lower())
@@ -639,7 +689,9 @@ def validate_features(output):
             assert len(descriptions) == 1 and descriptions[0].strip(), f"Needs a description: {slug}/{lang}"
             for node in nodes:
                 if node.tag == "script" and node.attrs.get("type") == "application/ld+json":
-                    json.loads("".join(node.children))
+                    parsed = json.loads("".join(node.children))
+                    by_type = {item["@type"]: item for item in parsed["@graph"]}
+                    assert "SOMEWHERE Travel Planner App" in by_type["SoftwareApplication"]["alternateName"]
                 href = node.attrs.get("href", "") if node.tag == "a" else ""
                 if href.startswith("/") and not href.startswith("//"):
                     assert served(output, href), f"Broken link in {slug}/{lang}: {href}"
@@ -688,7 +740,7 @@ def main():
     in_force = embed_legal(output, build_day())
     # Keep explicit content dates stable across rebuilds. Update these dates only
     # when the corresponding public content changes, never on every deployment.
-    entries = [(ORIGIN + home_path(lang), "2026-11-22") for lang in data["languages"]]
+    entries = [(ORIGIN + home_path(lang), "2026-11-27") for lang in data["languages"]]
     # Legal pages change content on the effective date of their version in force.
     entries += [(ORIGIN + "/" + page, date) for page, date in in_force.items()]
     entries += [(ORIGIN + "/ja/commercial-transactions.html", "2026-09-28")]
