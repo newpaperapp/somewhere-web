@@ -499,6 +499,14 @@ def notice_body(blocks):
         for block in blocks)
 
 
+def notice_links(notice):
+    assert not ("link" in notice and "links" in notice), f"Notice cannot define both link and links: {notice['id']}"
+    if "links" in notice:
+        assert isinstance(notice["links"], list) and notice["links"], f"Notice links must be a non-empty list: {notice['id']}"
+        return notice["links"]
+    return [notice["link"]] if "link" in notice else []
+
+
 def notices(output, data):
     """Render notices/notices.json into the list page and one page per notice at /notices/<id>/.
 
@@ -526,15 +534,15 @@ def notices(output, data):
 
     items, sitemap, published = [], [], []
     for notice in entries:
-        nid, link = notice["id"], notice.get("link")
+        nid, links = notice["id"], notice_links(notice)
         assert re.fullmatch(r"[a-z0-9-]+", nid), f"Notice id must be a URL path segment: {nid}"
         assert re.fullmatch(r"\d{4}\.\d{2}\.\d{2}", notice["date"]), f"Notice date must be YYYY.MM.DD: {nid}"
         langs = set(notice["title"])
         assert "en" in langs and langs <= set(data["languages"]), f"Notice needs English and site languages only: {nid}"
-        assert set(notice["body"]) == langs and (not link or set(link["label"]) == langs), \
+        assert set(notice["body"]) == langs and all(set(link["label"]) == langs for link in links), \
             f"Notice title, body and link label need the same languages: {nid}"
         # validate_notices() checks that the target exists once every page is built.
-        assert not link or (link["href"].startswith("/") and not link["href"].startswith("//")), \
+        assert all(link["href"].startswith("/") and not link["href"].startswith("//") for link in links), \
             f"Notice link must be a site path starting with /: {nid}"
         if notice["date"].replace(".", "-") > today:
             continue
@@ -552,11 +560,18 @@ def notices(output, data):
             f'<li data-notice><a class="notice-item" href="{path}" data-notices-link>'
             + variants("span", ' class="notice-item__title"', lambda lang: html.escape(notice["title"][lang]))
             + f'<span class="notice-item__date">{date}</span></a></li>')
-        body = variants("div", "", lambda lang: notice_body(notice["body"][lang]) + (
-            f'<a class="notice-detail__link" href="{html.escape(link["href"], quote=True)}">'
-            f'{html.escape(link["label"][lang])}'
-            '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">'
-            '<path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z" /></svg></a>' if link else ""))
+        def render_links(lang):
+            if not links:
+                return ""
+            rendered = "".join(
+                f'<a class="notice-detail__link" href="{html.escape(link["href"], quote=True)}">'
+                f'{html.escape(link["label"][lang])}'
+                '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">'
+                '<path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z" /></svg></a>'
+                for link in links)
+            return f'<div class="notice-detail__links">{rendered}</div>' if len(links) > 1 else rendered
+
+        body = variants("div", "", lambda lang: notice_body(notice["body"][lang]) + render_links(lang))
         article = (
             '<article class="notice-detail" data-notice>'
             + '<h1 class="notice-detail__title">'
@@ -669,8 +684,8 @@ def validate_notices(output):
     # Checks every notice in the source, including ones dated after today, so a broken link
     # fails the pull request build instead of the scheduled deploy on the notice's date.
     for notice in json.loads((ROOT / "notices/notices.json").read_text())["notices"]:
-        link = notice.get("link")
-        assert not link or served(output, link["href"]), f"Broken link in notice {notice['id']}: {link['href']}"
+        for link in notice_links(notice):
+            assert served(output, link["href"]), f"Broken link in notice {notice['id']}: {link['href']}"
 
 
 def validate_features(output):

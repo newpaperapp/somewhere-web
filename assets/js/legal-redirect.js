@@ -29,7 +29,8 @@
     return supported.includes(language) ? language : null;
   }
 
-  function selectedLanguage() {
+  function selectedLanguage(urlLanguage) {
+    if (urlLanguage) return urlLanguage;
     const legalLanguage = normalizeLanguage(readStorage(languageKey));
     if (legalLanguage) return legalLanguage;
     if (window.SomewhereI18N) {
@@ -60,7 +61,19 @@
       : `/eu/${legalLanguage}/${documentType}.html`;
   }
 
-  const language = selectedLanguage();
+  function withVersion(path, version) {
+    if (!version) return path;
+    const url = new URL(path, "https://local");
+    url.searchParams.set("version", version);
+    return url.pathname + url.search;
+  }
+
+  const query = new URLSearchParams(window.location.search);
+  const urlLanguage = normalizeLanguage(query.get("lang"));
+  const requestedVersion = query.get("version");
+  const version = requestedVersion && /^\d{4}-\d{2}-\d{2}$/.test(requestedVersion) ? requestedVersion : null;
+
+  const language = selectedLanguage(urlLanguage);
   const region = chooseRegion(language, readStorage(regionKey));
 
   if (window.SomewhereI18N) {
@@ -68,5 +81,5 @@
     const titleKey = documentType === "privacy" ? "legal.redirect.title" : "legal.redirect.termsTitle";
     document.title = `Somewhere — ${window.SomewhereI18N.get(titleKey, language)}`;
   }
-  window.location.replace(target(region, language));
+  window.location.replace(withVersion(target(region, language), version));
 })();

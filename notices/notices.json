@@ -114,7 +114,35 @@
           "Los viajes y gastos que ya importaste siguen en SOMEWHERE. El tiempo solo usa las coordenadas de los lugares del viaje redondeadas a unos 1 km, sin los datos de tu cuenta. Las fotos y los PDF que usas para rellenar billetes o gastos con IA no se guardan por separado para el procesamiento con IA; solo se conservan si se guardan como adjuntos de un billete o un gasto.",
           "Si no estás de acuerdo, puedes eliminar tu cuenta antes de la fecha de entrada en vigor. Si sigues usando el Servicio después, se considerará que aceptas la actualización, salvo cuando la ley exija tu consentimiento explícito."
         ]
-      }
+      },
+      "links": [
+        {
+          "href": "/terms?version=2026-12-05",
+          "label": {
+            "ko": "개정 약관 보기",
+            "en": "View the updated Terms",
+            "ja": "改定後の利用規約を見る",
+            "zh-CN": "查看修订后的服务条款",
+            "zh-TW": "查看修訂後的服務條款",
+            "fr": "Voir les Conditions mises à jour",
+            "de": "Aktualisierte Nutzungsbedingungen ansehen",
+            "es": "Ver los Términos actualizados"
+          }
+        },
+        {
+          "href": "/privacy?version=2026-12-05",
+          "label": {
+            "ko": "개정 개인정보처리방침 보기",
+            "en": "View the updated Privacy Policy",
+            "ja": "改定後のプライバシーポリシーを見る",
+            "zh-CN": "查看修订后的隐私政策",
+            "zh-TW": "查看修訂後的隱私權政策",
+            "fr": "Voir la Politique de confidentialité mise à jour",
+            "de": "Aktualisierte Datenschutzerklärung ansehen",
+            "es": "Ver la Política de privacidad actualizada"
+          }
+        }
+      ]
     },
     {
       "id": "2026-11-triple-import-end",
