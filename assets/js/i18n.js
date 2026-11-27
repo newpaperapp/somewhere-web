@@ -122,6 +122,26 @@ const I18N = {
     "cta.sub": "지금 SOMEWHERE를 다운로드하고 첫 여행을 만들어 보세요",
     "cta.qr": "카메라로 스캔해서 다운로드",
 
+    "faq.title": "자주 묻는 질문",
+    "faq.q1": "SOMEWHERE 여행 앱에서는 어떤 기능을 한 번에 쓸 수 있나요?",
+    "faq.a1":
+      "AI 여행 일정 생성부터 구글 지도 기반 동선 확인, 50개 통화 경비 기록·정산, 공용·개인 준비물 체크리스트, 항공권·숙소 바우처 보관까지 한 곳에서 관리할 수 있어요. iPhone과 Android 모두 지원해 기기가 달라도 같은 여행을 함께 계획할 수 있어요.",
+    "faq.q2": "여행 공금 정산, 영수증 AI 입력, 개인 지출 분리 기록도 되나요?",
+    "faq.a2":
+      "네, 영수증이나 결제 내역 사진을 올리면 ‘AI로 자동 채우기’가 금액과 항목, 날짜를 자동으로 채워줘요. 공금과 1/N 더치페이 정산은 물론, ‘나만 보기’로 기록하면 여행 친구에게 보이지 않고 정산에서도 빠져요.",
+    "faq.q3": "항공권과 호텔 바우처를 저장하고 오프라인에서도 볼 수 있나요?",
+    "faq.a3":
+      "항공권, 기차표, 숙소, 입장권 등을 사진이나 PDF로 저장하면 AI가 예약 정보를 채워주고 일정 장소나 지출과도 연결할 수 있어요. 한 번 불러온 바우처는 인터넷이 없는 오프라인에서도 열람할 수 있으며, SOMEWHERE PRO에서는 나만 보는 개인 바우처도 등록할 수 있어요.",
+    "faq.q4": "구글 지도 장소 가져오기와 지도 동선 확인, 동선 최적화는 어떻게 작동하나요?",
+    "faq.a4":
+      "구글 지도의 장소나 공개 목록을 공유하거나 링크를 붙여넣어 ‘임시보관함’에 저장한 뒤 날짜별 일정에 담으면 방문 순서대로 직선 동선이 지도에 그려져요. 장소 순서는 직접 드래그해 바꾸거나 ‘AI 일정 수정’으로 동선 최적화를 요청할 수 있고, 구글 지도 길찾기로 바로 연결돼요.",
+    "faq.q5": "날씨 예보와 잠금 화면 실시간 현황, 아이패드·태블릿·폴더블 대화면도 지원하나요?",
+    "faq.a5":
+      "다가오는 여행 날짜 카드에서 현지 날씨 예보를 확인할 수 있고, iPad·태블릿·폴더블폰 등 큰 화면에서는 일정과 지도를 넓게 보는 대화면 레이아웃을 지원해요. SOMEWHERE PRO 구독 시 iOS Dynamic Island·잠금 화면 실시간 현황과 Android 실시간 정보·Now bar도 이용할 수 있어요.",
+    "faq.q6": "보기 전용 초대 링크 공유, 공용·개인 준비물 분리, 이전 여행 복제도 가능한가요?",
+    "faq.a6":
+      "네, 24시간 유효한 링크나 QR 코드로 친구를 초대하면 링크로 참여한 멤버는 기본 '보기 전용'으로 시작하고 호스트가 일정·지출 수정 권한을 따로 설정할 수 있어요. 여행마다 공용 준비물과 개인 준비물 리스트가 분리되어 있고, 지난 여행을 복제해 새 여행 일정과 준비물을 그대로 이어서 짤 수 있어요.",
+
     "footer.developer": "개발자",
     "footer.contact": "문의",
     "footer.privacy": "개인정보처리방침",
@@ -190,9 +210,9 @@ const I18N = {
     "hero.eyebrow": "SOMEWHERE AI Trip Planner App",
     "hero.title.1": "SOMEWHERE",
     "hero.title.2": "AI Trip Planner App",
-    "seo.title": "Trip Planner with Route Maps & Expense Splitting",
+    "seo.title": "Travel Planner App with AI, Maps & Expense Splitting",
     "hero.lead":
-      "Build your own trip without the busywork. SOMEWHERE brings trip planning, route maps, and expense tracking & settlement into one planning flow.",
+      "Plan trips without the busywork. The SOMEWHERE travel planner app brings AI itineraries, route maps, expense splitting, packing lists, and vouchers into one flow.",
     "hero.note": "Free on the App Store and Google Play",
     "hero.screen.trips": "SOMEWHERE trips screen",
     "hero.screen.map": "SOMEWHERE route map screen",
@@ -231,7 +251,7 @@ const I18N = {
     "feature.large.kicker": "Large screens",
     "feature.large.title": "Optimized for bigger displays",
     "feature.large.desc":
-      "Use SOMEWHERE comfortably on foldables, tablets, and other large screens",
+      "Use the SOMEWHERE travel planner app comfortably on iPads, tablets, foldables, and other large screens",
     "feature.large.alt": "SOMEWHERE itinerary screen on a foldable device",
     "feature.supplies.kicker": "Packing",
     "feature.supplies.title": "Pack together",
@@ -272,8 +292,28 @@ const I18N = {
     "pro.expenseCsv": "Export expenses as CSV",
 
     "cta.title": "Start your journey today",
-    "cta.sub": "Download SOMEWHERE and create your first trip",
+    "cta.sub": "Download the SOMEWHERE travel planner app and create your first trip",
     "cta.qr": "Scan to download",
+
+    "faq.title": "Frequently asked questions",
+    "faq.q1": "What can the SOMEWHERE travel planner app do in one place?",
+    "faq.a1":
+      "The SOMEWHERE travel planner app brings AI itinerary creation, Google Maps route visualization, shared and private expense settlement in 50 currencies, packing checklists, and travel vouchers into one flow. Both iPhone and Android are supported so friends can plan the same trip together.",
+    "faq.q2": "Can SOMEWHERE scan receipts with AI, settle shared funds, and keep personal spending private?",
+    "faq.a2":
+      "Yes. Upload a receipt or payment photo in the SOMEWHERE travel planner app and Fill with AI extracts the title, amount, items, and date, while shared funds and 50-currency splits settle who owes whom. Turning on Private expense hides personal spending from trip mates and leaves it out of the group settlement.",
+    "faq.q3": "Can SOMEWHERE store flight tickets and hotel vouchers for offline viewing?",
+    "faq.a3":
+      "Yes. Save transport, stay, or entry confirmations as photos or PDFs in the SOMEWHERE travel planner app and let Fill with AI pull out booking details or link them to itinerary stops and expenses. Tickets loaded once can be opened offline, and SOMEWHERE PRO lets you add private vouchers visible only to you.",
+    "faq.q4": "How does SOMEWHERE import Google Maps lists, map routes, and optimize travel order?",
+    "faq.a4":
+      "Share places or public lists from Google Maps or paste a link into Saved items, and the SOMEWHERE travel planner app numbers each day's stops on Google Maps with straight-line routes. You can drag stops to reorder them, jump to turn-by-turn Google Maps directions, or ask Edit with AI to optimize your route.",
+    "faq.q5": "Does SOMEWHERE offer weather forecasts, Live Activities, and large-screen tablet or foldable support?",
+    "faq.a5":
+      "Yes. The SOMEWHERE travel planner app displays weather forecasts on upcoming trip date cards and adapts its layout for iPads, Android tablets, and foldables. With SOMEWHERE PRO on supported devices, you can also track your active trip via iOS Live Activities on the Dynamic Island and Lock Screen or Android Live Updates and Now bar.",
+    "faq.q6": "Can friends join with view-only links, split shared and personal packing lists, and duplicate past trips?",
+    "faq.a6":
+      "Yes. Friends invited by link in the SOMEWHERE travel planner app start with view-only access, and the host can grant itinerary or expense edit permissions per person across iPhone and Android. Each trip separates shared group packing items from private checklists, and duplicating a trip copies your itinerary and packing lists for your next trip.",
 
     "footer.developer": "Developer",
     "footer.contact": "Contact",
@@ -426,6 +466,26 @@ const I18N = {
     "cta.sub": "SOMEWHEREをダウンロードして、最初の旅行を作りましょう",
     "cta.qr": "カメラでスキャンしてダウンロード",
 
+    "faq.title": "よくある質問",
+    "faq.q1": "SOMEWHERE旅行計画アプリではどのような機能をまとめて使えますか？",
+    "faq.a1":
+      "AIでの旅程作成からGoogleマップ上のルート確認、50通貨対応の旅費記録と割り勘精算、共有・個人持ち物リスト、航空券・ホテルのバウチャー管理までひとつにまとまっています。iPhoneとAndroidの両方に対応しているため、端末が違っても同じ旅行を一緒に計画できます。",
+    "faq.q2": "レシートのAI読み取り、共有資金の精算、個人支出の非公開記録もできますか？",
+    "faq.a2":
+      "はい、レシートや決済画面の写真をアップロードすると「AIで自動入力」が金額や品目、日時を自動で入力し、共有資金や50通貨の割り勘精算も計算します。「自分のみ表示」で記録すると、旅のメンバーには表示されず精算からも除外できます。",
+    "faq.q3": "航空券やホテルのバウチャーを保存してオフラインでも確認できますか？",
+    "faq.a3":
+      "航空券や鉄道・バス、宿泊、入場券などの写真やPDFを保存すると、AIが予約情報を入力し旅程のスポットや支出と紐づけられます。一度読み込んだチケットはオフラインでも開くことができ、SOMEWHERE PROでは自分だけが見られる非公開バウチャーも登録できます。",
+    "faq.q4": "Googleマップからの場所インポートやルート表示、ルート最適化はどう機能しますか？",
+    "faq.a4":
+      "Googleマップの場所や公開リストを共有またはリンク貼り付けで「保存済みスポット」に追加して日程に入れると、訪問順の番号付き直線ルートが地図に表示されます。順番のドラッグ変更やGoogleマップの経路案内への遷移に加え、「AIで編集」でルート最適化を依頼できます。",
+    "faq.q5": "天気予報やライブアクティビティ、iPad・タブレット・折りたたみ端末の大画面にも対応していますか？",
+    "faq.a5":
+      "近づいた旅行日のカードで現地の天気予報を確認でき、iPadやAndroidタブレット、折りたたみ端末向けの大画面レイアウトにも対応しています。対応端末でSOMEWHERE PROを利用すると、iOSのDynamic Islandやロック画面のライブアクティビティ、Androidのリアルタイム情報・Now barも使えます。",
+    "faq.q6": "閲覧専用リンクでの招待、共有・個人持ち物リストの分離、過去の旅行の複製はできますか？",
+    "faq.a6":
+      "はい、24時間有効なリンクまたはQRコードで友だちを招待でき、リンク参加時は閲覧専用から始まり、ホストがメンバーごとに旅程・支出の編集権限を設定できます。持ち物リストは共有と個人用に分かれており、旅行を複製すれば旅程と持ち物リストをそのまま引き継げます。",
+
     "footer.developer": "開発者",
     "footer.contact": "お問い合わせ",
     "footer.privacy": "プライバシーポリシー",
@@ -569,6 +629,26 @@ const I18N = {
     "cta.sub": "下载 SOMEWHERE，创建你的第一次旅行",
     "cta.qr": "用相机扫描下载",
 
+    "faq.title": "常见问题",
+    "faq.q1": "SOMEWHERE 旅行规划应用可以一站式使用哪些功能？",
+    "faq.a1":
+      "SOMEWHERE 将 AI 行程生成、基于 Google 地图的路线查看、50 种货币的账单记录与 AA 结算、共享与个人行李清单以及机票酒店凭证收纳整合在一起。同时支持 iPhone 和 Android，同伴设备不同也能一起规划同一趟旅行。",
+    "faq.q2": "支持小票 AI 识别记账、共同基金结算以及分开记录个人隐私支出吗？",
+    "faq.a2":
+      "支持，上传收据或付款照片后，“用 AI 自动填写”可自动填入金额、项目和日期时间，并自动计算共同基金与多币种分账结果。设为“仅自己可见”即可对旅伴隐藏个人花销，且不计入共同结算。",
+    "faq.q3": "可以保存机票和酒店凭证并在离线状态下查看吗？",
+    "faq.a3":
+      "可以将机票、火车票、酒店或门票的照片与 PDF 存入行程，由 AI 提取预订信息并与地点或支出关联。加载过的凭证在无网络时也能离线打开，订阅 SOMEWHERE PRO 还可以添加仅自己可见的私密凭证。",
+    "faq.q4": "Google 地图地点导入、路线显示和路线优化是如何运作的？",
+    "faq.a4":
+      "通过分享或粘贴链接将 Google 地图地点及公开清单保存到“暂存地点”，添加到日程后地图会按游览顺序编号并用直线连接每日路线。你可以手动拖拽调整顺序、跳转 Google 地图导航，或通过“AI行程编辑”对话请求优化路线。",
+    "faq.q5": "支持天气预报、实时活动以及 iPad、平板和折叠屏大屏吗？",
+    "faq.a5":
+      "临近出发的日程卡片会显示目的地天气预报，并针对 iPad、Android 平板和折叠屏提供大屏分栏布局。使用 SOMEWHERE PRO 且设备支持时，还可在 iOS 灵动岛和锁屏查看实时活动，或在 Android 上使用实时信息 · Now bar。",
+    "faq.q6": "支持仅查看权限的邀请链接、共享与个人行李分开管理以及复制过往旅行吗？",
+    "faq.a6":
+      "支持，通过 24 小时有效的邀请链接或二维码即可邀请好友，通过链接加入的成员默认仅可查看，创建者可按成员单独设置行程和账单编辑权限。每次旅行均将共享与个人行李清单分开，复制过往旅行还能将日程与行李清单一同带入新行程。",
+
     "footer.developer": "开发者",
     "footer.contact": "联系",
     "footer.privacy": "隐私政策",
@@ -711,6 +791,26 @@ const I18N = {
     "cta.title": "今天就開始旅行",
     "cta.sub": "下載 SOMEWHERE，建立你的第一趟旅程",
     "cta.qr": "用相機掃描下載",
+
+    "faq.title": "常見問題",
+    "faq.q1": "SOMEWHERE 旅行規劃應用程式可以一次使用哪些功能？",
+    "faq.a1":
+      "SOMEWHERE 將 AI 行程規劃、Google 地圖路線檢視、50 種幣別支出記錄與分帳結算、共享與個人行李清單以及機票住宿憑證集中於一處。同時支援 iPhone 與 Android，即使使用不同手機也能與朋友共同規劃同一趟旅程。",
+    "faq.q2": "支援收據 AI 辨識、共同基金結算，以及將個人消費分開保密記錄嗎？",
+    "faq.a2":
+      "支援，只要上傳收據或付款照片，「用 AI 自動填寫」就能自動帶入金額、項目與日期時間，並計算共同基金與多幣別分帳結果。設為「僅自己可見」後，該筆個人消費將對旅伴隱藏且不會計入團體結算。",
+    "faq.q3": "可以儲存機票與飯店憑證並在離線時查看嗎？",
+    "faq.a3":
+      "將機票、車票、住宿或門票以相片或 PDF 儲存後，AI 可協助填寫預訂資訊，也能連結至行程地點與支出。曾載入過的憑證在無網路環境下也能離線開啟，透過 SOMEWHERE PRO 更可新增僅限自己查看的私人憑證。",
+    "faq.q4": "Google 地圖匯入、路線地圖與路線最佳化如何運作？",
+    "faq.a4":
+      "只要分享或貼上連結將 Google 地圖地點與公開清單儲存到「暫存地點」並加入每日行程，地圖就會依造訪順序編號並以直線連起路線。你可自行拖曳調整順序、開啟 Google 地圖導航，或透過「AI 行程編輯」對話請求最佳化路線。",
+    "faq.q5": "支援天氣預報、即時動態，以及 iPad、平板與摺疊螢幕大畫面嗎？",
+    "faq.a5":
+      "即將出發的日期卡片會顯示當地天氣預報，並針對 iPad、Android 平板與摺疊裝置提供大螢幕最佳化介面。訂閱 SOMEWHERE PRO 並使用支援裝置時，也能在 iOS 動態島與鎖定畫面查看即時動態，或在 Android 使用即時資訊 · Now bar。",
+    "faq.q6": "可以分享僅供檢視的邀請連結、分開管理共享與個人行李，並複製過去的旅程嗎？",
+    "faq.a6":
+      "可以，透過 24 小時有效的邀請連結或 QR 碼即可邀請旅伴，經連結加入的成員預設為僅供檢視，主辦人可針對每位朋友設定行程與支出編輯權限。每趟旅程皆區分共享與個人行李清單，複製過往旅程也能一併沿用行程與行李清單。",
 
     "footer.developer": "開發者",
     "footer.contact": "聯絡",
@@ -864,6 +964,26 @@ const I18N = {
     "cta.sub": "Téléchargez SOMEWHERE et créez votre premier voyage",
     "cta.qr": "Scannez pour télécharger",
 
+    "faq.title": "Questions fréquentes",
+    "faq.q1": "Que réunit l’application de planification de voyage SOMEWHERE ?",
+    "faq.a1":
+      "L’application de voyage SOMEWHERE rassemble la création d’itinéraires par IA, les tracés sur Google Maps, le suivi et le partage des dépenses en 50 devises, les listes de bagages et le rangement des billets et réservations. Elle fonctionne sur iPhone et Android pour planifier le même voyage entre amis.",
+    "faq.q2": "SOMEWHERE permet-il de scanner des reçus avec l’IA, gérer une cagnotte et masquer ses dépenses personnelles ?",
+    "faq.a2":
+      "Oui. Importez la photo d’un reçu ou d’un paiement pour laisser « Remplir avec l’IA » renseigner le montant, les articles et la date, tout en gérant votre cagnotte et la répartition des frais. Les dépenses marquées comme « Dépense personnelle » restent masquées pour vos compagnons et exclues du règlement.",
+    "faq.q3": "Peut-on enregistrer ses billets d’avion et réservations d’hôtel pour les consulter hors ligne ?",
+    "faq.a3":
+      "Oui. Ajoutez vos confirmations en photo ou PDF afin que l’IA renseigne les détails de réservation et relie chaque billet à votre itinéraire ou à vos dépenses. Les billets déjà chargés s’ouvrent hors ligne, et SOMEWHERE PRO permet de conserver des billets privés visibles uniquement par vous.",
+    "faq.q4": "Comment fonctionnent l’import Google Maps, la carte d’itinéraire et l’optimisation du trajet ?",
+    "faq.a4":
+      "Partagez des lieux ou des listes publiques depuis Google Maps ou collez un lien dans « Lieux enregistrés », et SOMEWHERE relie les étapes de chaque journée dans l’ordre sur Google Maps. Réorganisez les étapes par glisser-déposer, lancez l’itinéraire Google Maps ou utilisez « Modifier avec l’IA » pour optimiser l’ordre.",
+    "faq.q5": "L’application propose-t-elle la météo, les Activités en direct et une interface pour tablettes ou appareils pliables ?",
+    "faq.a5":
+      "Oui. SOMEWHERE affiche les prévisions météo sur les cartes des prochains jours de voyage et adapte son affichage aux iPad, tablettes Android et écrans pliables. Avec SOMEWHERE PRO sur les appareils compatibles, suivez aussi le voyage en cours dans la Dynamic Island et sur l’écran verrouillé (iOS) ou via Now bar (Android).",
+    "faq.q6": "Peut-on partager un lien en lecture seule, séparer les bagages partagés et privés et dupliquer un voyage ?",
+    "faq.a6":
+      "Oui. Les amis invités par lien (valable 24 heures) ou code QR commencent en lecture seule, et l’organisateur règle les droits d’édition d’itinéraire et de dépenses pour chacun. Chaque voyage distingue la liste commune de la liste personnelle, et la duplication copie l’itinéraire ainsi que vos listes de bagages.",
+
     "footer.developer": "Développeur",
     "footer.contact": "Contact",
     "footer.privacy": "Politique de confidentialité",
@@ -1016,6 +1136,26 @@ const I18N = {
     "cta.sub": "Laden Sie SOMEWHERE herunter und erstellen Sie Ihre erste Reise",
     "cta.qr": "Zum Download scannen",
 
+    "faq.title": "Häufig gestellte Fragen",
+    "faq.q1": "Was bietet die Reiseplaner-App SOMEWHERE an einem Ort?",
+    "faq.a1":
+      "Die Reiseplaner-App SOMEWHERE vereint KI-Reisepläne, Google-Maps-Routen, gemeinsame und private Ausgabenabrechnung in 50 Währungen, Packlisten sowie Flug- und Hotelbuchungen in einem Ablauf. Da iPhone und Android unterstützt werden, planen Gruppen gemeinsam über Plattformgrenzen hinweg.",
+    "faq.q2": "Kann SOMEWHERE Belege per KI scannen, Gemeinschaftskassen verwalten und private Ausgaben trennen?",
+    "faq.a2":
+      "Ja. Laden Sie ein Foto eines Belegs oder einer Zahlung hoch, damit „Mit KI ausfüllen“ Titel, Betrag, Posten und Datum automatisch einträgt und Gemeinschaftskassen sowie 50 Währungen abrechnet. Als „Private Ausgabe“ erfasste Beträge bleiben für Mitreisende unsichtbar und außerhalb der Abrechnung.",
+    "faq.q3": "Lassen sich Flugtickets und Hotelbuchungen in SOMEWHERE offline speichern?",
+    "faq.a3":
+      "Ja. Speichern Sie Tickets und Buchungen als Foto oder PDF, lassen Sie Buchungsdaten per KI ausfüllen und verknüpfen Sie sie mit Orten oder Ausgaben. Einmal geladene Tickets lassen sich offline öffnen, und mit SOMEWHERE PRO können Sie private Buchungen nur für sich selbst anlegen.",
+    "faq.q4": "Wie funktionieren Google-Maps-Import, Routenkarte und Routenoptimierung in SOMEWHERE?",
+    "faq.a4":
+      "Teilen Sie Orte oder öffentliche Listen aus Google Maps oder fügen Sie den Link unter „Gespeicherte Orte“ ein, und SOMEWHERE verbindet die Stopps jedes Tages nummeriert auf Google Maps. Sie können Stopps per Drag-and-drop neu anordnen, Google-Maps-Wegbeschreibungen öffnen oder „Mit KI bearbeiten“ um eine Routenoptimierung bitten.",
+    "faq.q5": "Unterstützt SOMEWHERE Wettervorhersagen, Live-Aktivitäten sowie Tablets und faltbare Bildschirme?",
+    "faq.a5":
+      "Ja. SOMEWHERE zeigt Wettervorhersagen auf den Tageskarten bevorstehender Reisen und passt das Layout für iPads, Android-Tablets und faltbare Geräte an. Mit SOMEWHERE PRO nutzen Sie auf unterstützten Geräten zudem Live-Aktivitäten in Dynamic Island und Sperrbildschirm (iOS) sowie Live-Updates · Now bar (Android).",
+    "faq.q6": "Sind schreibgeschützte Einladungslinks, getrennte Packlisten und das Duplizieren von Reisen möglich?",
+    "faq.a6":
+      "Ja. Freunde, die über einen 24-Stunden-Einladungslink oder QR-Code beitreten, starten mit Nur-Lese-Zugriff, während der Host Bearbeitungsrechte pro Person vergibt. Jede Reise trennt gemeinsame und persönliche Packlisten, und beim Duplizieren einer Reise werden Reiseplan und Packlisten übernommen.",
+
     "footer.developer": "Entwickler",
     "footer.contact": "Kontakt",
     "footer.privacy": "Datenschutzerklärung",
@@ -1166,6 +1306,26 @@ const I18N = {
     "cta.title": "Empieza tu viaje hoy",
     "cta.sub": "Descarga SOMEWHERE y crea tu primer viaje",
     "cta.qr": "Escanea para descargar",
+
+    "faq.title": "Preguntas frecuentes",
+    "faq.q1": "¿Qué reúne la aplicación de planificación de viajes SOMEWHERE en un solo lugar?",
+    "faq.a1":
+      "La app de viajes SOMEWHERE combina itinerarios con IA, rutas en Google Maps, seguimiento y reparto de gastos en 50 monedas, listas de equipaje y reservas de vuelos u hoteles. Funciona en iPhone y Android para que todo el grupo planifique el mismo viaje sin importar el móvil.",
+    "faq.q2": "¿Puede SOMEWHERE escanear recibos con IA, gestionar fondos comunes y ocultar gastos privados?",
+    "faq.a2":
+      "Sí. Sube una foto del recibo o pago para que «Rellenar con IA» complete el importe, los artículos y la fecha mientras calcula fondos compartidos y liquidaciones en 50 monedas. Los gastos marcados como «Gasto privado» quedan ocultos para tus compañeros y fuera del reparto.",
+    "faq.q3": "¿Se pueden guardar billetes de avión y reservas de hotel para verlos sin conexión?",
+    "faq.a3":
+      "Sí. Guarda billetes, alojamientos y entradas como foto o PDF para que la IA extraiga los datos y los vincule con tu itinerario y gastos. Los documentos ya cargados se abren sin conexión, y SOMEWHERE PRO permite añadir reservas privadas visibles solo para ti.",
+    "faq.q4": "¿Cómo funcionan la importación de listas de Google Maps, las rutas en el mapa y la optimización del orden?",
+    "faq.a4":
+      "Comparte lugares o listas públicas desde Google Maps o pega el enlace en «Lugares guardados», y SOMEWHERE numera y conecta cada día en Google Maps. Puedes arrastrar paradas para reordenarlas, abrir indicaciones en Google Maps o pedir a «Editar con IA» que optimice tu ruta.",
+    "faq.q5": "¿Incluye SOMEWHERE previsión del tiempo, Actividades en directo y soporte para tabletas o plegables?",
+    "faq.a5":
+      "Sí. SOMEWHERE muestra el pronóstico del tiempo en las tarjetas de próximos días de viaje y adapta su diseño a iPad, tabletas Android y pantallas plegables. Con SOMEWHERE PRO en dispositivos compatibles también ofrece Actividades en directo en iOS (Dynamic Island y pantalla bloqueada) y Now bar en Android.",
+    "faq.q6": "¿Permite enlaces de solo lectura, listas de equipaje compartidas y privadas y duplicar viajes anteriores?",
+    "faq.a6":
+      "Sí. Quienes se unen mediante un enlace válido por 24 horas o código QR empiezan en modo de solo lectura y el anfitrión decide quién puede editar itinerario o gastos. Cada viaje separa el equipaje compartido del personal, y duplicar un viaje copia el itinerario y las listas de equipaje.",
 
     "footer.developer": "Desarrollador",
     "footer.contact": "Contacto",
